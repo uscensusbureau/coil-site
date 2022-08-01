@@ -1,0 +1,80 @@
+---
+layout: base
+---
+  <!-- based on 18F blog/index.html -->
+  <!-- this is what get compiled to make the page. Kind like main.scss it can include base styles + partcials in the form of includes -->
+  <!-- because base has the coil-nav + coil-footer the content will be wrapped around it -->
+  <!-- This creates a layout that is to be linked in an md file -->
+
+
+  <section class="usa-section bg-primary-dark">
+    <div class="grid-container">
+        <h1 class="section-heading section-heading-alt">{{ page.title }}</h1>
+        <h2>{{ page.blog_tagline }}</h2>
+    </div>
+  </section>
+  
+  <section class="grid-container usa-section content-wide">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-8 content-focus ">
+        <section class="pagination grid-row content-focus">
+          <div>
+            {% if paginator.previous_page %}
+              <a class="link-arrow-left" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
+                {% include svg/icons/arrow-left.svg %} Previous {{ paginator.per_page }} posts
+              </a>
+            {% else %}
+            <p></p>
+            {% endif %}
+          </div>
+          <div>
+            <p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+          </div>
+          <div>
+            {% if paginator.next_page %}
+            <a class="link-arrow-right" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
+              Next {{ paginator.per_page }} posts {% include svg/icons/arrow-right.svg %}
+            </a>
+            {% else %}
+            <p></p>
+            {% endif %}
+          </div>
+        </section>
+      </div>
+      {% assign featured_blog_content = site.data.featured_blog_content %}
+      <aside class="sidebar tablet:grid-col-4">
+        <h4 class="sidebar-heading-topic">Browse by topic</h4>
+        <ul>
+          {% for item in featured_blog_content.topics %}
+          <li>
+            <a href="{{ site.baseurl }}/tags/{{ item.tag }}">{{ item.topic }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="sidebar-callout">
+          <h4>Most popular</h4>
+          <ul>
+            {% for item in featured_blog_content.promoted_posts %}
+            <li>
+              <a href="{{ site.baseurl }}{{ item.url }}">
+                {{ item.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <a class="sidebar-icons media_link" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+          <img class="sidebar-icon-rss" src="{{ site.baseurl }}/assets/img/social-icons/svg/rss25.svg" alt="RSS">
+        </a>
+        <a class="sidebar-icons media_link" href="https://twitter.com/18F">
+          <img class="sidebar-icon-twitter" src="{{ site.baseurl }}/assets/img/social-icons/svg/twitter16.svg" alt="Twitter">
+        </a>
+        <a class="sidebar-icons media_link" href="https://github.com/18F/">
+          <img class="sidebar-icon-github" src="{{ site.baseurl }}/assets/img/social-icons/svg/github.svg" alt="GitHub">
+        </a>
+      </aside>
+    </div>
+    </section>
+    <!-- {% include banner-cta.html %} -->
+  
+    <!-- Pagination links -->
