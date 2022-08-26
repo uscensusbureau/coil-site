@@ -8,6 +8,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "author": "COIL",
   "contributors": [
+    "Sadie <19538219+sadiejay@users.noreply.github.com>",
     "Sam Potasznik <samuel.h.potasznik@census.gov>"
   ],
   "repository": {
@@ -45,7 +46,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-watch": "^5.0.1",
     "sass": "^1.37.2",
-    "uswds": "^2.12.0"
+    "uswds": "^2.13.3"
   },
   "devDependencies": {
     "gulp-rename": "^2.0.0",

@@ -3,21 +3,17 @@
   name: Haley Ashcom Miller
   pageOrder: 5
   title: Deputy Director, The Opportunity Project
-- email: caleb.m.hopler@census.gov
-  img: caleb.jpg
-  name: Caleb Hopler
-  pageOrder: 1
-  title: Innovation Fellowships Program Manager
+
 - email: dominica.zhu@census.gov
   img: dominica.jpg
   name: Dominica Zhu
-  pageOrder: 2
+  pageOrder: 1
   title: Head of Human Centered Innovation
 
 - email: drew.a.zachary@census.gov
   img: drew.jpg
   name: Drew Zachary
-  pageOrder: 4
+  pageOrder: 3
   title: Managing Director
 
 - airtable_createdTime: "2021-04-13T19:13:58.000Z"
@@ -38,7 +34,7 @@
   img: COIL_headshot_VF.png
   name: Victoria Fine
   pageOrder: 9
-  title: Lead Program Strategist
+  title: Senior Advisor - Program Development and Communication
 
 - img: sadiejay.jpg
   name: Sadie Jay
@@ -51,8 +47,13 @@
   pageOrder: 8
   title: UX Designer
   
-# - email: dorcas.lin.census@gmail.com
-- img: dorcaslin.png
+- email: dorcas.lin@census.gov
+  img: dorcaslin.png
   name: Dorcas Lin
-  pageOrder: 3
+  pageOrder: 2
   title: Graphic & Interaction Designer
+
+- img: erica.webp
+  name: Erica Liepmann
+  pageOrder: 4
+  title: Civic Tech Project Manager
