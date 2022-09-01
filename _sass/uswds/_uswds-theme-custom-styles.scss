@@ -321,34 +321,106 @@ $left-dash-width: 50%;
 .statventure {
  @include u-padding-x(2);
  background: color('blue-warm-10v');
- &.mobile-only {
-  // media query that hides after x screen width
-  display: none;
- }
- > nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  border: 2px dotted white;
- }
-  > section {
-    background: color('gold-20v');
-    border: 4px solid gray;
-
-    &.fun-fact {
-      background: color('blue-warm-60v');
-      color: color('gray-cool-2');
-    }
-
-    &.challenge-intro--mobile {
-      background: color('indigo-cool-90');
-      color: color('gray-cool-2');
-    }
-  }
- 
+ & > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include u-padding-x(2);
 }
 
+img {
+  object-fit: cover;
+  background-color:color('blue-warm-10v');
+  min-width: 100%;
+  max-height: 100%;
+}
+
+ h1.visually-hidden { 
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+  clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+ > header {
+  justify-content: space-around;
+  border: 2px dotted white;
+
+
+  section.scrolling-words-container {
+    display: flex;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+
+    div.scrolling-words-box {
+      height: 3rem;
+      overflow: hidden;
+        ul {
+          margin: 0;
+          padding: 0;
+          animation: scrollUp 4s infinite;
+  
+          li {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              height: 3rem;
+              list-style: none;
+              width: fit-content; 
+          }
+        }
+    }
+  }
+  
+  
+ }
+ > section {
+  & > * {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  background: color('gold-20v');
+  border: 4px solid red;
+
+   &.mobile-only {
+    @include at-media('tablet') {
+    // media query that hides after x screen width
+      display: none;
+    }
+ }
+  &.challenge-intro--mobile {
+    background: color('indigo-cool-90');
+    color: color('gray-cool-2');
+  }
+  } 
+
+}
+
+
+// animation 
+// https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/
+$item-count: 7;
+
+@keyframes scrollUp {
+  @for $i from 1 through ($item-count - 1) {
+    #{($i * 25) - 10%}, #{$i * 25%} {
+      transform: translateY((-100% / $item-count) * $i);
+    }
+  }
+}
 
 /**********
  * BUTTONS
