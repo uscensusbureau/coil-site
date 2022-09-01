@@ -308,6 +308,48 @@ $left-dash-width: 50%;
   @include u-margin-top(6);
 }
 
+// statventures
+// colors
+  //  blue #0050D8-- color('blue-warm-60v')
+  // black #13192F -- color('indigo-cool-90')
+  // white #F6F8FB -- color('gray-cool-2') 
+  // yellow #F9C636 color('gold-20v')
+  // red #DE4317 -- color('red-warm-50v') 
+// fonts
+  // Poppins
+// 
+.statventure {
+ @include u-padding-x(2);
+ background: color('blue-warm-10v');
+ &.mobile-only {
+  // media query that hides after x screen width
+  display: none;
+ }
+ > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px dotted white;
+ }
+  > section {
+    background: color('gold-20v');
+    border: 4px solid gray;
+
+    &.fun-fact {
+      background: color('blue-warm-60v');
+      color: color('gray-cool-2');
+    }
+
+    &.challenge-intro--mobile {
+      background: color('indigo-cool-90');
+      color: color('gray-cool-2');
+    }
+  }
+ 
+}
+
+
 /**********
  * BUTTONS
  ***********/
