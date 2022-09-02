@@ -320,7 +320,7 @@ $left-dash-width: 50%;
 // 
 .statventure {
  @include u-padding-x(2);
- background: color('blue-warm-10v');
+ background: color('gray-cool-2');
  & > * {
     display: flex;
     flex-direction: column;
@@ -329,12 +329,6 @@ $left-dash-width: 50%;
     @include u-padding-x(2);
 }
 
-img {
-  object-fit: cover;
-  background-color:color('blue-warm-10v');
-  min-width: 100%;
-  max-height: 100%;
-}
 
  h1.visually-hidden { 
   border: 0;
@@ -348,12 +342,65 @@ img {
   clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
   clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
   white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
-}
+ }
 
  > header {
-  justify-content: space-around;
+  justify-content: space-evenly;
   border: 2px dotted white;
 
+  &.bar {
+    flex-flow: row nowrap;
+    background-color:color('gray-cool-2');
+    border-bottom: color('blue-warm-60v') 1px solid;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    color: color('blue-warm-60v');
+
+  }
+  
+  & .logo-container {
+    width: 83.16px;
+    height: 71px;
+  }
+
+  img {
+    object-fit: contain;
+    min-width: 0;
+    
+
+    &.logo-img-blue {
+      min-height: 71px;
+      aspect-ratio: auto;
+    }
+
+  }
+  
+  &.splash, 
+  &.splash-secondary {
+    @include grid-container;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    & figure {
+      
+      max-width: 961px;
+      height: auto;
+      aspect-ratio: 961/962;
+      @include at-media(tablet) {
+        @include grid-col(6);
+      }
+    
+    }
+
+    & section {
+      @include at-media(tablet) {
+        @include grid-col(6);
+      }
+    
+    }
+
+  }
 
   section.scrolling-words-container {
     display: flex;
@@ -385,27 +432,35 @@ img {
   
   
  }
- > section {
-  & > * {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  background: color('gold-20v');
-  border: 4px solid red;
+ >section {
+   &>* {
+     display: flex;
+     flex-flow: row wrap;
+     align-items: center;
+     justify-content: center;
+   }
+
+   background: color('gold-20v');
+   border: 4px solid pink;
 
    &.mobile-only {
-    @include at-media('tablet') {
-    // media query that hides after x screen width
-      display: none;
-    }
+     @include at-media('tablet') {
+       // media query that hides after x screen width
+       display: none;
+     }
+   }
+
+   &.challenge-intro--mobile {
+     background: color('indigo-cool-90');
+     color: color('gray-cool-2');
+   }
+
+   & .challenge-intro--static-content {
+      background: color('indigo-cool-90') url(/assets/img/statventures/textures/grid-bg-texture.png);
+      background-size: contain;
+      color: color('gray-cool-2');
+   }
  }
-  &.challenge-intro--mobile {
-    background: color('indigo-cool-90');
-    color: color('gray-cool-2');
-  }
-  } 
 
 }
 
