@@ -409,6 +409,8 @@ $left-dash-width: 50%;
     align-items: start;
     justify-content: center;
     width: 100%;
+    position: relative;
+    z-index:-1;
 
     div.scrolling-words-box {
       height: 3rem;
@@ -455,11 +457,55 @@ $left-dash-width: 50%;
      color: color('gray-cool-2');
    }
 
-   & .challenge-intro--static-content {
+   &.challenge-intro--static-content {
       background: color('indigo-cool-90') url(/assets/img/statventures/textures/grid-bg-texture.png);
       background-size: contain;
       color: color('gray-cool-2');
+
+      & .content-container {
+        display: flex;
+        flex-direction: row;
+        background-color: color('blue-warm-60v');
+      }
    }
+
+   &.challenge-intro--desktop {
+    background: color('gray-cool-2');
+  
+    & .active-phase {
+      position: relative;
+      top: 60px;
+      right: 60px;
+      z-index: 1;
+    }
+
+    & .usa-card__container {
+      border-color: color('blue-warm-60v');
+      color: color('blue-warm-60v');
+      background: color('gray-cool-2');
+    }
+  
+    & .usa-card__img img {
+      height: 283px;
+      aspect-ratio: 1/1;
+      background: color('gray-cool-2');
+  
+    }
+
+    & .usa-card__footer button {
+      background: color('gray-cool-2');
+      color: color('blue-warm-60v');
+      border: color('blue-warm-60v') 2px solid;
+    }
+    li.usa-card:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1) {
+      color: color('gray-cool-2');
+      background-color: color('blue-warm-60v');
+      border: none;
+     }
+     
+  }
+
+
  }
 
 }
@@ -474,6 +520,25 @@ $item-count: 7;
     #{($i * 25) - 10%}, #{$i * 25%} {
       transform: translateY((-100% / $item-count) * $i);
     }
+  }
+}
+
+// test
+
+.test {
+  background: color('gray-cool-2');
+
+  & .usa-card__container {
+    border-color: color('blue-warm-60v');
+    background: color('gray-cool-2');
+    // min-height: 563px;
+  }
+
+  & .usa-card__img img {
+    height: 283px;
+    aspect-ratio: 1/1;
+    background: color('gray-cool-2');
+
   }
 }
 
