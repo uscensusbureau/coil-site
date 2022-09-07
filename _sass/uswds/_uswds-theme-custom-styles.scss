@@ -378,9 +378,10 @@ $left-dash-width: 50%;
   
   &.splash, 
   &.splash-secondary {
-    @include grid-container;
+    // @include grid-container;
     flex-direction: row-reverse;
     align-items: center;
+    border: 4px solid pink;
 
     & figure {
       
@@ -391,6 +392,16 @@ $left-dash-width: 50%;
         @include grid-col(6);
       }
     
+      & figcaption {
+        margin-top: -50px;
+        visibility: hidden;
+        color: white;
+        background-color: black;
+
+        &:hover {
+          visibility: visible;
+        }
+      }
     }
 
     & section {
@@ -430,6 +441,7 @@ $left-dash-width: 50%;
           }
         }
     }
+
   }
   
   
@@ -462,15 +474,33 @@ $left-dash-width: 50%;
       background-size: contain;
       color: color('gray-cool-2');
 
+        
       & .content-container {
+        @include grid-container;
+        flex-flow: column nowrap;
+      }
+
+      & .content-container .split-paragraph {
         display: flex;
         flex-direction: row;
         background-color: color('blue-warm-60v');
       }
    }
 
-   &.challenge-intro--desktop {
+   &.challenge-intro--card-content {
     background: color('gray-cool-2');
+    
+    & .content-container {
+      @include grid-container;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+    }
+
+    h2, 
+    .card-container, 
+    button {
+      align-self: center;
+    }
   
     & .active-phase {
       position: relative;
