@@ -345,8 +345,8 @@ $left-dash-width: 50%;
  }
 
  > header {
-  justify-content: space-evenly;
-  border: 2px dotted white;
+  justify-content: space-between;
+  // border: 2px dotted white;
 
   &.bar {
     flex-flow: row nowrap;
@@ -356,7 +356,6 @@ $left-dash-width: 50%;
     position: sticky;
     top: 0;
     color: color('blue-warm-60v');
-
   }
   
   & .logo-container {
@@ -381,19 +380,20 @@ $left-dash-width: 50%;
     // @include grid-container;
     flex-direction: row-reverse;
     align-items: center;
-    border: 4px solid pink;
+    // border: 4px solid pink;
 
     & figure {
-      
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
       max-width: 961px;
       height: auto;
       aspect-ratio: 961/962;
       @include at-media(tablet) {
         @include grid-col(6);
       }
-    
+    // ! Need to tweak to make cpation visible on IMG hover
       & figcaption {
-        margin-top: -50px;
         visibility: hidden;
         color: white;
         background-color: black;
@@ -413,6 +413,14 @@ $left-dash-width: 50%;
 
   }
 
+  &.splash {
+    color: color('blue-warm-60v');
+    & .usa-button--outline {
+      color: color('blue-warm-60v');
+      box-shadow: inset 0 0 0 2px color('blue-warm-60v');;
+    }
+  }
+
   section.scrolling-words-container {
     display: flex;
     font-size: 2rem;
@@ -422,6 +430,7 @@ $left-dash-width: 50%;
     width: 100%;
     position: relative;
     z-index:-1;
+    font-weight: bold;
 
     div.scrolling-words-box {
       height: 3rem;
@@ -455,7 +464,7 @@ $left-dash-width: 50%;
    }
 
    background: color('gold-20v');
-   border: 4px solid pink;
+  //  border: 4px solid pink;
 
    &.mobile-only {
      @include at-media('tablet') {
@@ -484,6 +493,11 @@ $left-dash-width: 50%;
         display: flex;
         flex-direction: row;
         background-color: color('blue-warm-60v');
+
+        p {
+          padding: 0 20px;
+          width: 50%;
+        }
       }
    }
 
@@ -500,6 +514,10 @@ $left-dash-width: 50%;
     .card-container, 
     button {
       align-self: center;
+    }
+
+    h5 {
+      margin-bottom: 0;
     }
   
     & .active-phase {
@@ -543,11 +561,11 @@ $left-dash-width: 50%;
 
 // animation 
 // https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/
-$item-count: 7;
+$item-count: 8;
 
 @keyframes scrollUp {
   @for $i from 1 through ($item-count - 1) {
-    #{($i * 25) - 10%}, #{$i * 25%} {
+    #{($i * 11) - 6%}, #{$i * 11%} {
       transform: translateY((-100% / $item-count) * $i);
     }
   }
