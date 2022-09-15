@@ -318,8 +318,45 @@ $left-dash-width: 50%;
 // fonts
   // Poppins
 // 
+@font-face {
+  font-family: "Poppins";
+  src: url('/assets/fonts/poppins/Poppins-Regular.ttf');
+  src: url('/assets/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url('/assets/fonts/poppins/Poppins-SemiBold.ttf');
+  src: url('/assets/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url('/assets/fonts/poppins/Poppins-ExtraBold.ttf');
+  src: url('/assets/fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 .statventure {
-//  @include u-padding-x(2);
+  //  fonts
+
+  & * {
+    font-family:'Poppins','Public Sans Web','Silka',Helvetica, Arial, sans;
+    line-height: 1.6;
+  }
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Poppins';
+}
+
+p {
+  font-family: "Poppins";
+  font-weight: normal;
+}
+
  background: color('gray-cool-2');
  & > * {
     display: flex;
@@ -327,22 +364,22 @@ $left-dash-width: 50%;
     align-items: center;
     justify-content: center;
     @include u-padding-x(2);
-}
+  }
 
 
  h1.visually-hidden { 
-  border: 0;
-  padding: 0;
-  margin: 0;
-  position: absolute !important;
-  height: 1px; 
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-  clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
-  clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
-  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
- }
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+    clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+    clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+    white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+  }
 
  > header {
   justify-content: space-between;
@@ -373,7 +410,6 @@ $left-dash-width: 50%;
       min-height: 71px;
       aspect-ratio: auto;
     }
-
   }
   
   &.splash, 
@@ -391,7 +427,7 @@ $left-dash-width: 50%;
       max-width: 50%;
       height: auto;
       margin: 0;
-      aspect-ratio: 961/962;
+      // aspect-ratio: 961/962;
       @include at-media(tablet) {
         @include grid-col(6);
       }
@@ -401,12 +437,14 @@ $left-dash-width: 50%;
       }
     // ! Need to tweak to make cpation visible on IMG hover
       & figcaption {
-        // visibility: hidden;
-        color: white;
+        position: relative;
         background-color: black;
         bottom: 30px;
-        position: relative;
+        margin-bottom: -30px;
         z-index: 9;
+        // visibility: hidden;
+        color: white;
+
 
         &:hover {
           visibility: visible;
@@ -447,43 +485,45 @@ $left-dash-width: 50%;
     }
   }
 
+  &.splash-secondary {
+    text-align: center;
+  }
 
-
-
+  @media (max-width: 'tablet') {
+    display: none;
+  }
+  
 // Round by myself
 
-// .statventure > header.splash-secondary figure {
-//   /* justify-content: center; */
-// }
 
-// /* Element | http://127.0.0.1:4000/statventure.html */
+/* Element | http://127.0.0.1:4000/statventure.html */
 
-// .splash-secondary {
-//   height: max-content;
+// div.content-container:nth-child(4) {
+//   padding: 62px 144px;
 //   width: 100%;
+//   border-radius: 40px;
 // }
 
-// /* Element | http://127.0.0.1:4000/statventure.html */
+/* styles.css | http://127.0.0.1:4000/assets/uswds/css/styles.css */
 
-// .splash-secondary {
-//   /* height: max-content; */
-//   /* width: 100%; */
-//   display: flex;
-//   flex-direction: row-reverse;
-//   padding: 0;
-// }
-
-// /* Element | http://127.0.0.1:4000/statventure.html */
-
-// .splash-secondary > figure:nth-child(2) {
+// .statventure > section.challenge-intro--static-content .content-container .split-paragraph p {
+  /* padding: 0 20px; */
+  /* width: 50%; */
+//   width: max-content;
 //   margin: 0;
-//   width: 50%;
 // }
 
-// /* Element | http://127.0.0.1:4000/statventure.html */
+/* Element | http://127.0.0.1:4000/statventure.html */
 
-// .splash-secondary > section:nth-child(1) {
-//   width: 50%;
+// div.content-container:nth-child(4) > p:nth-child(1) {
+//   margin-right: 20px;
+// }
+
+/* Element | http://127.0.0.1:4000/statventure.html */
+
+// div.content-container:nth-child(4) > p:nth-child(2) {
+//   margin: ;
+//   margin-left: 20px;
 // }
 
 
@@ -491,7 +531,7 @@ $left-dash-width: 50%;
 
   section.scrolling-words-container {
     display: flex;
-    font-size: 2rem;
+    font-size: 4rem;
     flex-direction: column;
     align-items: start;
     justify-content: center;
@@ -501,7 +541,7 @@ $left-dash-width: 50%;
     font-weight: bold;
 
     div.scrolling-words-box {
-      height: 3rem;
+      height: 5.5rem;
       overflow: hidden;
         ul {
           margin: 0;
@@ -512,7 +552,7 @@ $left-dash-width: 50%;
               display: flex;
               align-items: center;
               justify-content: flex-end;
-              height: 3rem;
+              height: 5rem;
               list-style: none;
               width: fit-content; 
           }
@@ -550,10 +590,13 @@ $left-dash-width: 50%;
       background: color('indigo-cool-90') url(/assets/img/statventures/textures/grid-bg-texture.png);
       background-size: contain;
       color: color('gray-cool-2');
-      min-height: 80vh;
+      // min-height: 80vh;
       justify-content: space-around;
 
-        
+       & h3 {
+          text-align: center;
+        }
+
       & .content-container {
         @include grid-container;
         flex-flow: column nowrap;
@@ -577,6 +620,7 @@ $left-dash-width: 50%;
    &.challenge-intro--card-content {
     background: color('gray-cool-2');
     
+
     & .content-container {
       @include grid-container;
       flex-flow: column nowrap;
@@ -592,12 +636,17 @@ $left-dash-width: 50%;
     h5 {
       margin-bottom: 0;
     }
+
+    & .card-container {
+      margin-top: -70px;
+    }
   
     & .active-phase {
       position: relative;
       top: 60px;
-      right: 60px;
+      right: 40px;
       z-index: 1;
+      width: 10%;
     }
 
     & .usa-card__container {
@@ -631,10 +680,10 @@ $left-dash-width: 50%;
 
 footer {
   padding: 0;
-}
+  }
 
  .footer-horizontal {
-    display: inline-table;
+    display: flex;
     flex-direction: column;
     text-align: center;
     background-color: color('blue-warm-60v');
@@ -642,12 +691,49 @@ footer {
     width: 100%;
  }
 
+  // media query
+  @media screen and (max-width: 640px) {
+    // for direct children
+    & .desktop {
+      display: none;
+     }
+
+    & .bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-top: 2rem;
+
+      & .bar--text {
+        display: none;
+      }
+    }
+
+    & header {
+      &.splash {
+        margin-top: 175px;
+        flex-direction: column;
+      }
+
+      &.splash-secondary {
+        order: 4;
+
+        figure {
+          display: none;
+        }
+      }
+    }
+
+  }
 }
+
 
 
 // animation 
 // https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/
-$item-count: 8;
+$item-count: 7;
 
 @keyframes scrollUp {
   @for $i from 1 through ($item-count - 1) {
