@@ -744,20 +744,42 @@ $item-count: 7;
 }
 
 // test
-
+// accordion-intro
+// accordion-phases
 .test {
-  background: color('gray-cool-2');
 
-  & .usa-card__container {
-    border-color: color('blue-warm-60v');
-    background: color('gray-cool-2');
-    // min-height: 563px;
+  #accordion-intro h4.usa-accordion__heading button {
+    background-color: color('blue-warm-60v');
+    color: color('gray-cool-2');
+    background-blend-mode: color-burn;
+    & [aria-expanded="true"], & [aria-expanded="false"] {
+      color: color('gray-cool-2');
+      background-blend-mode: color-burn;
+    }
   }
 
-  & .usa-card__img img {
-    height: 283px;
-    aspect-ratio: 1/1;
-    background: color('gray-cool-2');
+  #m-a1 {
+    background-color: color('indigo-cool-90');
+    color: color('gray-cool-2');
+    border-bottom: 1px solid color('gray-cool-2');
+  }
+  #accordion-phases, #accordion-phases h4.usa-accordion__heading button, #m-a2, #m-a3, #m-a4  {
+    background-color: color('indigo-cool-90');
+    color: color('gray-cool-2');
+    border-bottom: 1px solid color('gray-cool-2');
+    margin-top: 0;
+  }
+  h4.usa-accordion__heading:nth-child(2) {
+    border-top: color('gray-cool-2') solid 1px;
+   }
+   
+
+  #accordion-phases h5 {
+    color: color('gold-20v') ;
+  }
+
+  & .accordion-phases & .usa-accordion__heading {
+    background: color('indigo-cool-90');
 
   }
 }
