@@ -314,7 +314,8 @@ $left-dash-width: 50%;
   // black #13192F -- color('indigo-cool-90')
   // white #F6F8FB -- color('gray-cool-2') 
   // yellow #F9C636 color('gold-20v')
-  // red #DE4317 -- color('red-warm-50v') 
+  // red #DE4317 -- color('red-warm-50v')
+  // special blue #15295E --  color('indigo-80v') 
 // fonts
   // Poppins
 // 
@@ -339,7 +340,7 @@ $left-dash-width: 50%;
   font-weight: 700;
   font-style: normal;
 }
-.statventure {
+.statventures {
   //  fonts
 
   & * {
@@ -759,7 +760,7 @@ $item-count: 7;
   }
 
   #m-a1 {
-    background-color: color('indigo-cool-90');
+    background-color: color('indigo-80v');
     color: color('gray-cool-2');
     border-bottom: 1px solid color('gray-cool-2');
   }
