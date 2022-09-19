@@ -26,7 +26,14 @@ challenge-intro-static-content:
   icon: /icons/icon_work-with-us.svg
 
 challenge-intro-card-content:
-  title: Meet the Team
+  active-phase:
+    icon: /icons/star.png
+  phase-1:
+    icon: /icons/phase1.png
+  phase-2:
+    icon: /icons/phase2.png
+  phase-3:
+    icon: /icons/phase3.png
 
 footer-vertical-mobile:
   img: /photos/mobile-footer.png
