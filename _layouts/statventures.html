@@ -8,7 +8,7 @@ class:
         <p>The Challenge: Supply Chain</p>
     </div>
     <div class="logo-container">
-        <img src="/assets/img/statventures/logos/Stacked_Blue_StatVentures.png" alt="stat logo" class="logo-img-blue">
+        <img src="{{ site.baseurl }}/assets/img/statventures{{page.bar.img}}" alt="StatVentures logo" class="logo-img-blue">
         <!-- <img src="" alt="stat logo" class="logo-img-white"> -->
     </div>
     <div class="bar--text">
@@ -18,7 +18,7 @@ class:
 <!-- !GTG -->
 <header class="splash">
     <figure>
-        <img src="/assets/img/statventures/photos/splash.png" alt="">
+        <img src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img}}" alt="">
         <!-- <figcaption>Image Source: US Census Bureau</figcaption> -->
     </figure>
     <section>
@@ -86,7 +86,7 @@ class:
     <div class="content-container">
         <h2>Fresh, new data in 3, 2, 1</h2>
         <div class="card-container">
-            <img class="active-phase" src="/assets/img/statventures/icons/star.png" alt="">
+            <img class="active-phase" src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content.active-phase.icon}}" alt="">
             <ul class="usa-card-group">
                 <li class="usa-card tablet:grid-col-4 usa-card--header-first">
                     <div class="usa-card__container display-flex flex-column flex-align-center">
@@ -94,8 +94,8 @@ class:
                             <h2 class="usa-card__heading">Phase 1 Concept</h2>
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
-                            <div class="usa-card__img">
-                                <img src="/assets/img/statventures/icons/phase1.png" alt="A placeholder image" />
+                            <div class="usa-card__img phase-1-img">
+                                <img src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content.phase-1.icon}}" alt="" data-proofer-ignore/>
                             </div>
                         </div>
 
@@ -110,8 +110,8 @@ class:
                             <h2 class="usa-card__heading">Phase 2 Roadmap</h2>
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
-                            <div class="usa-card__img">
-                                <img src="/assets/img/statventures/icons/phase2.png" alt="A placeholder image" />
+                            <div class="usa-card__img phase-2-img">
+                                <img src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content/phase-2.icon}}" alt="" data-proofer-ignore="" />
                             </div>
                         </div>
                         <div class="usa-card__footer">
@@ -125,8 +125,8 @@ class:
                             <h2 class="usa-card__heading">Phase 3 Test</h2>
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
-                            <div class="usa-card__img">
-                                <img src="/assets/img/statventures/icons/phase3.png" alt="A placeholder image" />
+                            <div class="usa-card__img phase-3-img">
+                                <img src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content.phase-3.icon}}" alt="" data-proofer-ignore="" />
                             </div>
                         </div>
 
@@ -152,18 +152,20 @@ class:
 <!-- !dbc -->
 <section class="pre-footer-mobile mobile-only">
     <!-- mobile pre-footer -->
+    <img src="" alt="">
 </section>
 
-<footer class="desktop">
-    <section class="footer-vertical-mobile"> <!-- mobile only -->
+<footer>
+    <section class="footer-vertical-mobile mobile-only"> <!-- mobile only -->
         <!-- using CSS grid -->
+        <img src="{{ site.baseurl }}/assets/img/statventures{{page.footer-vertical-mobile.img}}" alt="StatVentures is a program of CENSUS OPEN INNOVATION LABS at the U.S. Census Bureau.">
         <p>at the U.S. Census Bureau.</p>
     </section>
 
-    <section class="footer-horizontal"> <!-- tablet / desktop only -->
+    <section class="footer-horizontal desktop"> <!-- tablet / desktop only -->
         <p>StatVentures is a program of</p>
         <p>CENSUS OPEN INNOVATION LABS</p>
         <p>at the U.S. Census Bureau.</p>
-        <img src="/assets/img/statventures/icons/footer-icons.png" alt="">
+        <img src="{{ site.baseurl }}/assets/img/statventures{{page.footer-horizontal-desktop.icon}}" alt="">
     </section>
 </footer>
