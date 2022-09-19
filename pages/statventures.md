@@ -5,7 +5,7 @@ layout: statventures
 class: statventures
   
 # names are based on class names in layout
-# new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img}}"
+# new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
 
