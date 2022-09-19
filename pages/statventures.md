@@ -3,7 +3,10 @@ permalink: /statventures
 title: "Census Open Innovation Labs"
 layout: statventures
 class: statventures
-  
+font:
+  regular: /poppins/Poppins-Regular.ttf
+  semi-bold: /poppins/Poppins-SemiBold.ttf
+  extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
