@@ -319,27 +319,28 @@ $left-dash-width: 50%;
 // fonts
   // Poppins
 // 
-@font-face {
-  font-family: "Poppins";
-  src: url('{{ site.baseurl }}/assets/fonts/{{page.font.regular}}');
-  src: url('{{ site.baseurl }}/assets/fonts/{{page.font.regular}}') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url('{{ site.baseurl }}/assets/fonts/{{page.font.semi-bold}}');
-  src: url('{{ site.baseurl }}/assets/fonts/{{page.font.semi-bold}}') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url('{{ site.baseurl }}/assets/fonts/{{page.font.extra-bold}}');
-  src: url('{{ site.baseurl }}/assets/fonts/{{page.font.extra-bold}}') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+// @font-face {
+//   font-family: "Poppins";
+//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.regular}}');
+//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.regular}}') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Poppins";
+//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.semi-bold}}');
+//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.semi-bold}}') format('truetype');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "Poppins";
+//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.extra-bold}}');
+//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.extra-bold}}') format('truetype');
+//   font-weight: 700;
+//   font-style: normal;
+// }
 .statventures {
   //  fonts
 
