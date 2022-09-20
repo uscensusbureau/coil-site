@@ -91,7 +91,6 @@ Go to `127.0.0.1:4000` in your browser — you should be viewing a local instanc
 
 - Change the coil_people.yml file to reflect current team
 - Add both .png/.jpg and .webp files to the assets/img/team folder 
-   -  Without the .webp file the photo WILL NOT load correctly on the site
 - The .webp file needs to have a size of 214x271
 
 

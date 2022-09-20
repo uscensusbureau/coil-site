@@ -3,7 +3,10 @@ permalink: /statventures
 title: "Census Open Innovation Labs"
 layout: statventures
 class: statventures
-  
+font:
+  regular: /poppins/Poppins-Regular.ttf
+  semi-bold: /poppins/Poppins-SemiBold.ttf
+  extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
@@ -18,7 +21,7 @@ splash:
 
 splash-secondary:
   title: Our Work
-  icon: /icons/icon_our-work.svg
+  icon: /photos/population-counter-img.png
   subtitle: Whether your team is looking to build a new tech product, hire new talent, or integrate design thinking into your process, COIL has a program that can help you do it.
 
 challenge-intro-static-content:
