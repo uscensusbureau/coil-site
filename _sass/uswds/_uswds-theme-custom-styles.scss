@@ -731,9 +731,16 @@ $left-dash-width: 50%;
 
  }
 
-footer {
-  padding: 0;
+  footer {
+    padding: 0;
   }
+
+  .footer-vertical-mobile.mobile-only {
+      @include at-media('tablet') {
+        // media query that hides after x screen width
+        display: none;
+      }
+    }
 
  .footer-horizontal {
     display: flex;
@@ -768,13 +775,43 @@ footer {
       &.splash {
         margin-top: 175px;
         flex-direction: column;
+        @include u-padding-x(2);
       }
 
       &.splash-secondary {
-        order: 4;
+        order: 2;
+        @include u-padding-x(2);
+        text-align: left;
+        color: color('blue-warm-60v');
 
         figure {
           display: none;
+        }
+      }
+    }
+
+    & section {
+      &.challenge-intro--mobile {
+        color: yellowgreen;
+        order: 1;
+        text-align: left;
+        justify-content: flex-start;
+      }
+    }
+
+    & footer {
+      order: 99;
+      & .footer-vertical-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        border: color('blue-warm-60v') solid 1px;
+        color: color('blue-warm-60v');
+
+        & img {
+          width: 100%;
         }
       }
     }
@@ -808,7 +845,7 @@ $item-count: 7;
   }
   #accordion-intro,
   #accordion-phases {
-    & [aria-expanded="true"],
+    & [aria-expanded="true"], 
     & [aria-expanded="false"] {
       // filter:brightness(5);
     }
