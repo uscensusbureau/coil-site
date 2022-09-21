@@ -441,7 +441,7 @@ $left-dash-width: 50%;
      & img {
         width: 100%;
         &.mobile-only {
-          @include at-media('tablet') {
+          @include at-media('desktop') {
             // media query that hides after x screen width
             display: none;
           }
@@ -465,7 +465,7 @@ $left-dash-width: 50%;
     }
 
     & section {
-      @include at-media(tablet) {
+      @include at-media(desktop) {
         @include grid-col(6);
       }
     
@@ -501,7 +501,7 @@ $left-dash-width: 50%;
     text-align: center;
   }
 
-  @media (max-width: 'tablet') {
+  @media (max-width: 'desktop') {
     display: none;
   }
   
@@ -587,7 +587,7 @@ $left-dash-width: 50%;
   //  border: 4px solid pink;
 
    &.mobile-only {
-     @include at-media('tablet') {
+     @include at-media('desktop') {
        // media query that hides after x screen width
        display: none;
      }
@@ -742,7 +742,7 @@ $left-dash-width: 50%;
   }
 
   .footer-vertical-mobile.mobile-only {
-      @include at-media('tablet') {
+      @include at-media('desktop') {
         // media query that hides after x screen width
         display: none;
       }
@@ -758,7 +758,7 @@ $left-dash-width: 50%;
  }
 
   // media query
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     // for direct children
     & .desktop {
       display: none;
