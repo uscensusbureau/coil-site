@@ -349,15 +349,19 @@ $left-dash-width: 50%;
     line-height: 1.6;
   }
 
-h1 {
-  font-size: 2.5rem;
-  font-family: 'Poppins';
-}
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+  }
 
-p {
-  font-family: "Poppins";
-  font-weight: normal;
-}
+  h3, h4, h5 {
+    font-family: 'Poppins';
+  }
+
+  p {
+    font-family: "Poppins";
+    font-weight: normal;
+  }
 
  background: color('gray-cool-2');
  & > * {
@@ -583,10 +587,57 @@ p {
      }
    }
 
-   &.challenge-intro--mobile {
-     background: color('indigo-cool-90');
-     color: color('gray-cool-2');
-   }
+    &.challenge-intro--mobile {
+      background: color('indigo-cool-90');
+      color: color('gray-cool-2');
+
+      #accordion-intro h4.usa-accordion__heading button {
+        background-color: color('blue-warm-60v');
+        color: color('gray-cool-2');
+        background-blend-mode: color-burn;
+      }
+
+      #accordion-intro,
+      #accordion-phases {
+
+        & [aria-expanded="true"],
+        & [aria-expanded="false"] {
+          // filter:brightness(5);
+        }
+      }
+
+      #m-a1 {
+        background-color: color('indigo-80v');
+        color: color('gray-cool-2');
+        border-bottom: 1px solid color('gray-cool-2');
+      }
+
+      #accordion-phases,
+      #accordion-phases h4.usa-accordion__heading button,
+      #m-a2,
+      #m-a3,
+      #m-a4 {
+        background-color: color('indigo-cool-90');
+        color: color('gray-cool-2');
+        border-bottom: 1px solid color('gray-cool-2');
+        margin-top: 0;
+      }
+
+      h4.usa-accordion__heading:nth-child(2) {
+        border-top: color('gray-cool-2') solid 1px;
+      }
+
+
+      #accordion-phases h5 {
+        color: color('gold-20v');
+      }
+
+      & .accordion-phases & .usa-accordion__heading {
+        background: color('indigo-cool-90');
+
+      }
+
+    }
 
    &.challenge-intro--static-content {
       background: color('indigo-cool-90') url(/assets/img/statventures/textures/grid-bg-texture.png);
@@ -680,9 +731,16 @@ p {
 
  }
 
-footer {
-  padding: 0;
+  footer {
+    padding: 0;
   }
+
+  .footer-vertical-mobile.mobile-only {
+      @include at-media('tablet') {
+        // media query that hides after x screen width
+        display: none;
+      }
+    }
 
  .footer-horizontal {
     display: flex;
@@ -717,13 +775,43 @@ footer {
       &.splash {
         margin-top: 175px;
         flex-direction: column;
+        @include u-padding-x(2);
       }
 
       &.splash-secondary {
-        order: 4;
+        order: 2;
+        @include u-padding-x(2);
+        text-align: left;
+        color: color('blue-warm-60v');
 
         figure {
           display: none;
+        }
+      }
+    }
+
+    & section {
+      &.challenge-intro--mobile {
+        color: yellowgreen;
+        order: 1;
+        text-align: left;
+        justify-content: flex-start;
+      }
+    }
+
+    & footer {
+      order: 99;
+      & .footer-vertical-mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: center;
+        border: color('blue-warm-60v') solid 1px;
+        color: color('blue-warm-60v');
+
+        & img {
+          width: 100%;
         }
       }
     }
@@ -754,12 +842,14 @@ $item-count: 7;
     background-color: color('blue-warm-60v');
     color: color('gray-cool-2');
     background-blend-mode: color-burn;
-    & [aria-expanded="true"], & [aria-expanded="false"] {
-      color: color('gray-cool-2');
-      background-blend-mode: color-burn;
+  }
+  #accordion-intro,
+  #accordion-phases {
+    & [aria-expanded="true"], 
+    & [aria-expanded="false"] {
+      // filter:brightness(5);
     }
   }
-
   #m-a1 {
     background-color: color('indigo-80v');
     color: color('gray-cool-2');
