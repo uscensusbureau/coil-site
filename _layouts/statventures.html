@@ -18,7 +18,8 @@ class:
 <!-- !GTG -->
 <header class="splash">
     <figure>
-        <img src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img}}" alt="">
+        <img class="desktop" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img}}" alt="" data-proofer-ignore >
+        <img class="mobile-only" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img-tablet}}" alt="" data-proofer-ignore>
         <!-- <figcaption>Image Source: US Census Bureau</figcaption> -->
     </figure>
     <section>
@@ -57,9 +58,9 @@ class:
 <section class="challenge-intro--mobile mobile-only"> <!-- visible only on mobile -->
     <div>
         <h4>Supply Chain Challenge</h4>
-        <h2>###MOBILE#### Data is greater than the sum of its parts.</h2>
+        <h2>Data is greater than the sum of its parts.</h2>
         <h3>Help us identify & use new ways to produce more <strong>timely, granular, and robust</strong> information about our nation’s supply chain infrastructure.</h3>
-        <p class="mobile-only">In order to support the nation’s need for information on critical goods, the U.S. Census Bureau seeks to improve its capability to measure the flow of goods through the supply chain. We primarily collect information on the domestic movement of goods through surveys and shipment records provided by businesses across America. We’re seeking new ways to improve or replace current data sources and methodologies.</p>
+        <p class="desktop">In order to support the nation’s need for information on critical goods, the U.S. Census Bureau seeks to improve its capability to measure the flow of goods through the supply chain. We primarily collect information on the domestic movement of goods through surveys and shipment records provided by businesses across America. We’re seeking new ways to improve or replace current data sources and methodologies.</p>
     </div>
 
     <div id="accordion-container">

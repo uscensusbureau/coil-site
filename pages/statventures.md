@@ -16,6 +16,7 @@ splash:
   text: 'Trailblazing open government through cross-sector collaboration, design, and technology.'
   subtext: Want to work with us?
   img: /photos/splash.png
+  img-tablet: /photos/splash-tablet.png
   cta: 
     text: Contact&nbsp;Us
 
