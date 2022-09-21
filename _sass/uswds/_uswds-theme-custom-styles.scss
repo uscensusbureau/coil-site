@@ -426,6 +426,10 @@ $left-dash-width: 50%;
     // border: 4px solid pink;
     padding: 0;
 
+    & section {
+      @include u-padding-x(2);
+    }
+
     & figure {
       display: flex;
       flex-flow: column;
@@ -694,6 +698,7 @@ $left-dash-width: 50%;
 
     h5 {
       margin-bottom: 0;
+      font-size: 1.25rem;
     }
 
     & .card-container {
@@ -781,7 +786,10 @@ $left-dash-width: 50%;
       &.splash {
         margin-top: 175px;
         flex-direction: column;
-        @include u-padding-x(2);
+        .scrolling-words-container, p {
+          @include u-padding-x(2);
+        }
+
 
         figure {
           min-width: 100%;
@@ -806,6 +814,8 @@ $left-dash-width: 50%;
         text-align: left;
 
         div {
+          flex-direction: column;
+          align-items: flex-start;
           justify-content: flex-start;
         }
       }
