@@ -782,6 +782,10 @@ $left-dash-width: 50%;
         margin-top: 175px;
         flex-direction: column;
         @include u-padding-x(2);
+
+        figure {
+          min-width: 100%;
+        }
       }
 
       &.splash-secondary {
