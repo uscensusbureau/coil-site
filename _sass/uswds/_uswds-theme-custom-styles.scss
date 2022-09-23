@@ -449,6 +449,7 @@ $left-dash-width: 50%;
     & section {
       @include at-media(desktop) {
         @include grid-col(6);
+        padding: 0 3rem;
       }
     
     }
@@ -750,6 +751,14 @@ $left-dash-width: 50%;
       display: none;
      }
 
+     & .statventures-btn {
+      @include u-padding-y(1);
+      @include u-padding-x(05);
+      @include u-margin-bottom(2);
+      align-self: stretch;
+      text-align: center;
+     }
+
     & .bar {
       display: flex;
       flex-direction: column;
@@ -768,13 +777,12 @@ $left-dash-width: 50%;
         margin-top: 6rem;
         flex-direction: column;
 
-        .scrolling-words-container, p {
-          @include u-padding-x(2);
+        .scrolling-words-container, p, a {
+          margin: 1rem .5rem;
         }
         .scrolling-words-container {
           font-size: 3rem;
         }
-
 
         figure {
           min-width: 100%;
@@ -799,6 +807,11 @@ $left-dash-width: 50%;
       &.challenge-intro--mobile {
         order: 1;
         text-align: left;
+        padding:0 3rem ;
+
+        .content-container, a {
+          margin: 1rem 0rem;
+        }
 
         div {
           flex-direction: column;
@@ -810,6 +823,11 @@ $left-dash-width: 50%;
 
     & footer {
       order: 99;
+
+      & .footer-horizontal{
+      padding: 0;
+      }
+
       & img {
         width: 100%;
       }
