@@ -319,30 +319,22 @@ $left-dash-width: 50%;
 // fonts
   // Poppins
 // 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-// @font-face {
-//   font-family: "Poppins";
-//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.regular}}');
-//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.regular}}') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: "Poppins";
-//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.semi-bold}}');
-//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.semi-bold}}') format('truetype');
-//   font-weight: 600;
-//   font-style: normal;
-// }
-// @font-face {
-//   font-family: "Poppins";
-//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.extra-bold}}');
-//   src: url('{{ site.baseurl }}/assets/fonts/{{page.font.extra-bold}}') format('truetype');
-//   font-weight: 700;
-//   font-style: normal;
-// }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .statventures {
-  //  fonts
+
+  & .statventures-btn {
+    color: color('blue-warm-60v');
+    box-shadow: inset 0 0 0 2px color('blue-warm-60v');
+    padding: .5rem;
+    background-color: color('gray-cool-2');
+    text-decoration: none;
+    border-radius: .5rem;
+    &:hover, &:active {
+      background-color: color('blue-warm-60v');
+      color: color('gray-cool-2');
+    }
+  }
 
   & * {
     font-family:'Poppins','Public Sans Web','Silka',Helvetica, Arial, sans;
@@ -427,7 +419,8 @@ $left-dash-width: 50%;
     padding: 0;
 
     & section {
-      @include u-padding-x(2);
+      // @include u-padding-x(2);
+      // @include u-padding-y(4);
     }
 
     & figure {
@@ -451,21 +444,6 @@ $left-dash-width: 50%;
           }
         }
       }
-    // ! Need to tweak to make cpation visible on IMG hover
-      & figcaption {
-        position: relative;
-        background-color: black;
-        bottom: 30px;
-        margin-bottom: -30px;
-        z-index: 9;
-        // visibility: hidden;
-        color: white;
-
-
-        &:hover {
-          visibility: visible;
-        }
-      }
     }
 
     & section {
@@ -479,10 +457,7 @@ $left-dash-width: 50%;
 
   &.splash {
     color: color('blue-warm-60v');
-    & .usa-button--outline {
-      color: color('blue-warm-60v');
-      box-shadow: inset 0 0 0 2px color('blue-warm-60v');;
-    }
+    padding-top: 4rem;
     & figure {
       width: 50%;
       // background-image: url(/assets/img/statventures/photos/data-processor-img.png);
@@ -499,6 +474,15 @@ $left-dash-width: 50%;
     & img {
       width: 100%;
     }
+
+    & section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 3rem;
+    }
+
   }
 
   &.splash-secondary {
@@ -509,41 +493,6 @@ $left-dash-width: 50%;
     display: none;
   }
   
-// Round by myself
-
-
-/* Element | http://127.0.0.1:4000/statventure.html */
-
-// div.content-container:nth-child(4) {
-//   padding: 62px 144px;
-//   width: 100%;
-//   border-radius: 40px;
-// }
-
-/* styles.css | http://127.0.0.1:4000/assets/uswds/css/styles.css */
-
-// .statventure > section.challenge-intro--static-content .content-container .split-paragraph p {
-  /* padding: 0 20px; */
-  /* width: 50%; */
-//   width: max-content;
-//   margin: 0;
-// }
-
-/* Element | http://127.0.0.1:4000/statventure.html */
-
-// div.content-container:nth-child(4) > p:nth-child(1) {
-//   margin-right: 20px;
-// }
-
-/* Element | http://127.0.0.1:4000/statventure.html */
-
-// div.content-container:nth-child(4) > p:nth-child(2) {
-//   margin: ;
-//   margin-left: 20px;
-// }
-
-
-
 
   section.scrolling-words-container {
     display: flex;
@@ -555,6 +504,7 @@ $left-dash-width: 50%;
     position: relative;
     z-index:-1;
     font-weight: bold;
+    padding: 0;
 
     div.scrolling-words-box {
       height: 5.5rem;
@@ -576,7 +526,6 @@ $left-dash-width: 50%;
     }
 
   }
-  
   
  }
  >section {
@@ -655,9 +604,13 @@ $left-dash-width: 50%;
       color: color('gray-cool-2');
       // min-height: 80vh;
       justify-content: space-around;
+      min-height: 70vh;
+      padding: 2rem 0;
 
        & h3 {
           text-align: center;
+          max-width: 66%;
+          font-weight: 400;
         }
 
       & .content-container {
@@ -668,11 +621,15 @@ $left-dash-width: 50%;
       & .content-container .split-paragraph {
         display: flex;
         flex-direction: row;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
         background-color: color('blue-warm-60v');
+        border-radius: 1rem;
+        max-width: 66%;
 
         p {
-          padding: 0 20px;
-          width: 50%;
+          padding: 0 2rem;
         }
       }
       & button {
@@ -682,12 +639,17 @@ $left-dash-width: 50%;
 
    &.challenge-intro--card-content {
     background: color('gray-cool-2');
+    padding: 5rem 0;
     
 
     & .content-container {
       @include grid-container;
       flex-flow: column nowrap;
       align-items: flex-start;
+
+      & .statventures-btn {
+        align-self: center;
+      }
     }
 
     h2, 
@@ -746,13 +708,6 @@ $left-dash-width: 50%;
     padding: 0;
   }
 
-  .footer-vertical-mobile.mobile-only {
-      @include at-media('desktop') {
-        // media query that hides after x screen width
-        display: none;
-      }
-    }
-
  .footer-horizontal {
     display: flex;
     flex-direction: column;
@@ -760,6 +715,32 @@ $left-dash-width: 50%;
     background-color: color('blue-warm-60v');
     color: color('gray-cool-2');
     width: 100%;
+    padding-top: 4rem;
+    img {
+      padding-top: 4rem;
+    }
+
+    & .all-caps {
+      text-transform: uppercase;
+    }
+    & .coil-logo-text-treatment {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+
+      & span:nth-child(1) {
+        font-weight: 600;
+      }
+      & span:nth-child(2) {
+        font-weight: 500;
+      }
+      & span:nth-child(3) {
+        font-weight: 400;
+      }
+      & span:nth-child(4) {
+        font-weight: 300;
+      }
+
+    }
  }
 
   // media query
@@ -784,10 +765,14 @@ $left-dash-width: 50%;
 
     & header {
       &.splash {
-        margin-top: 175px;
+        margin-top: 6rem;
         flex-direction: column;
+
         .scrolling-words-container, p {
           @include u-padding-x(2);
+        }
+        .scrolling-words-container {
+          font-size: 3rem;
         }
 
 
@@ -801,6 +786,8 @@ $left-dash-width: 50%;
         @include u-padding-x(2);
         text-align: left;
         color: color('blue-warm-60v');
+        font-size: 1.35rem;
+        padding-bottom: 16px;
 
         figure {
           display: none;
@@ -823,18 +810,8 @@ $left-dash-width: 50%;
 
     & footer {
       order: 99;
-      & .footer-vertical-mobile {
+      & img {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center ;
-        justify-content: center;
-        border: color('blue-warm-60v') solid 1px;
-        color: color('blue-warm-60v');
-
-        & img {
-          width: 100%;
-        }
       }
     }
 
