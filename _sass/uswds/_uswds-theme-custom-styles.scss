@@ -716,10 +716,7 @@ $left-dash-width: 50%;
     background-color: color('blue-warm-60v');
     color: color('gray-cool-2');
     width: 100%;
-    padding-top: 4rem;
-    img {
-      padding-top: 4rem;
-    }
+    padding-top: 2rem;
 
     & .all-caps {
       text-transform: uppercase;
@@ -765,7 +762,7 @@ $left-dash-width: 50%;
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding-top: 2rem;
+      padding-top: 1rem;
 
       & .bar--text {
         display: none;
@@ -774,7 +771,7 @@ $left-dash-width: 50%;
 
     & header {
       &.splash {
-        margin-top: 6rem;
+        margin-top: 1rem;
         flex-direction: column;
 
         .scrolling-words-container, p, a {
