@@ -308,6 +308,588 @@ $left-dash-width: 50%;
   @include u-margin-top(6);
 }
 
+// statventures
+// colors
+  //  blue #0050D8-- color('blue-warm-60v')
+  // black #13192F -- color('indigo-cool-90')
+  // white #F6F8FB -- color('gray-cool-2') 
+  // yellow #F9C636 color('gold-20v')
+  // red #DE4317 -- color('red-warm-50v')
+  // special blue #15295E --  color('indigo-80v') 
+// fonts
+  // Poppins
+// 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.statventures {
+
+  & .statventures-btn {
+    color: color('blue-warm-60v');
+    box-shadow: inset 0 0 0 2px color('blue-warm-60v');
+    padding: .5rem;
+    background-color: color('gray-cool-2');
+    text-decoration: none;
+    border-radius: .5rem;
+    &:hover, &:active {
+      background-color: color('blue-warm-60v');
+      color: color('gray-cool-2');
+    }
+  }
+
+  & * {
+    font-family:'Poppins','Public Sans Web','Silka',Helvetica, Arial, sans;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+  }
+
+  h3, h4, h5 {
+    font-family: 'Poppins';
+  }
+
+  p {
+    font-family: "Poppins";
+    font-weight: normal;
+  }
+
+ background: color('gray-cool-2');
+ & > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include u-padding-x(2);
+  }
+
+
+ h1.visually-hidden { 
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+    clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+    clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+    white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+  }
+
+ > header {
+  justify-content: space-between;
+  // border: 2px dotted white;
+
+  &.bar {
+    flex-flow: row nowrap;
+    background-color:color('gray-cool-2');
+    border-bottom: color('blue-warm-60v') 1px solid;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    color: color('blue-warm-60v');
+  }
+  
+  & .logo-container {
+    width: 83.16px;
+    height: 71px;
+  }
+
+  img {
+    object-fit: contain;
+    min-width: 0;
+    
+
+    &.logo-img-blue {
+      min-height: 71px;
+      aspect-ratio: auto;
+    }
+  }
+  
+  &.splash, 
+  &.splash-secondary {
+    // @include grid-container;
+    flex-direction: row-reverse;
+    align-items: center;
+    // border: 4px solid pink;
+    padding: 0;
+
+    & section {
+      // @include u-padding-x(2);
+      // @include u-padding-y(4);
+    }
+
+    & figure {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      max-width: 50%;
+      height: auto;
+      margin: 0;
+      // aspect-ratio: 961/962;
+      @include at-media(tablet) {
+        @include grid-col(6);
+      }
+
+     & img {
+        width: 100%;
+        &.mobile-only {
+          @include at-media('desktop') {
+            // media query that hides after x screen width
+            display: none;
+          }
+        }
+      }
+    }
+
+    & section {
+      @include at-media(desktop) {
+        @include grid-col(6);
+        padding: 0 3rem;
+      }
+    
+    }
+
+  }
+
+  &.splash {
+    color: color('blue-warm-60v');
+    padding-top: 4rem;
+    & figure {
+      width: 50%;
+      // background-image: url(/assets/img/statventures/photos/data-processor-img.png);
+      background-position: right bottom;
+      background-blend-mode: soft-light;
+      // background-color: color('indigo-cool-90');
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;      
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    & img {
+      width: 100%;
+    }
+
+    & section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 3rem;
+    }
+
+  }
+
+  &.splash-secondary {
+    text-align: center;
+  }
+
+  @media (max-width: 'desktop') {
+    display: none;
+  }
+  
+
+  section.scrolling-words-container {
+    display: flex;
+    font-size: 4rem;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    z-index:-1;
+    font-weight: bold;
+    padding: 0;
+
+    div.scrolling-words-box {
+      height: 5.5rem;
+      overflow: hidden;
+        ul {
+          margin: 0;
+          padding: 0;
+          animation: scrollUp 4s infinite;
+  
+          li {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              height: 5rem;
+              list-style: none;
+              width: fit-content; 
+          }
+        }
+    }
+
+  }
+  
+ }
+ >section {
+   &>* {
+     display: flex;
+     flex-flow: row wrap;
+     align-items: center;
+     justify-content: center;
+   }
+
+   background: color('gold-20v');
+  //  border: 4px solid pink;
+
+   &.mobile-only {
+     @include at-media('desktop') {
+       // media query that hides after x screen width
+       display: none;
+     }
+   }
+
+    &.challenge-intro--mobile {
+      background: color('indigo-cool-90');
+      color: color('gray-cool-2');
+
+      #accordion-intro h4.usa-accordion__heading button {
+        background-color: color('blue-warm-60v');
+        color: color('gray-cool-2');
+        background-blend-mode: color-burn;
+      }
+
+      #accordion-intro,
+      #accordion-phases {
+
+        & [aria-expanded="true"],
+        & [aria-expanded="false"] {
+          // filter:brightness(5);
+        }
+      }
+
+      #m-a1 {
+        background-color: color('indigo-80v');
+        color: color('gray-cool-2');
+        border-bottom: 1px solid color('gray-cool-2');
+      }
+
+      #accordion-phases,
+      #accordion-phases h4.usa-accordion__heading button,
+      #m-a2,
+      #m-a3,
+      #m-a4 {
+        background-color: color('indigo-cool-90');
+        color: color('gray-cool-2');
+        border-bottom: 1px solid color('gray-cool-2');
+        margin-top: 0;
+      }
+
+      h4.usa-accordion__heading:nth-child(2) {
+        border-top: color('gray-cool-2') solid 1px;
+      }
+
+
+      #accordion-phases h5 {
+        color: color('gold-20v');
+      }
+
+      & .accordion-phases & .usa-accordion__heading {
+        background: color('indigo-cool-90');
+
+      }
+
+    }
+
+   &.challenge-intro--static-content {
+      background: color('indigo-cool-90') url(/assets/img/statventures/textures/grid-bg-texture.png);
+      background-size: contain;
+      color: color('gray-cool-2');
+      // min-height: 80vh;
+      justify-content: space-around;
+      min-height: 70vh;
+      padding: 2rem 0;
+
+       & h3 {
+          text-align: center;
+          max-width: 66%;
+          font-weight: 400;
+        }
+
+      & .content-container {
+        @include grid-container;
+        flex-flow: column nowrap;
+      }
+
+      & .content-container .split-paragraph {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: center;
+        text-align: center;
+        background-color: color('blue-warm-60v');
+        border-radius: 1rem;
+        max-width: 66%;
+
+        p {
+          padding: 0 2rem;
+        }
+      }
+      & button {
+        background-color: white;
+      }
+   }
+
+   &.challenge-intro--card-content {
+    background: color('gray-cool-2');
+    padding: 5rem 0;
+    
+
+    & .content-container {
+      @include grid-container;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+
+      & .statventures-btn {
+        align-self: center;
+      }
+    }
+
+    h2, 
+    .card-container, 
+    button {
+      align-self: center;
+    }
+
+    h5 {
+      margin-bottom: 0;
+      font-size: 1.25rem;
+    }
+
+    & .card-container {
+      margin-top: -70px;
+    }
+  
+    & .active-phase {
+      position: relative;
+      top: 60px;
+      right: 40px;
+      z-index: 1;
+      width: 10%;
+    }
+
+    & .usa-card__container {
+      border-color: color('blue-warm-60v');
+      color: color('blue-warm-60v');
+      background: color('gray-cool-2');
+      justify-content: space-between;
+    }
+  
+    & .usa-card__img img {
+      aspect-ratio: 1;
+      background: color('gray-cool-2');
+  
+    }
+
+    & .usa-card__footer button {
+      background: color('gray-cool-2');
+      color: color('blue-warm-60v');
+      border: color('blue-warm-60v') 2px solid;
+    }
+    li.usa-card:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1) {
+      color: color('gray-cool-2');
+      background-color: color('blue-warm-60v');
+      border: none;
+     }
+     
+  }
+
+
+ }
+
+  footer {
+    padding: 0;
+  }
+
+ .footer-horizontal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: color('blue-warm-60v');
+    color: color('gray-cool-2');
+    width: 100%;
+    padding-top: 2rem;
+
+    & .all-caps {
+      text-transform: uppercase;
+    }
+    & .coil-logo-text-treatment {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+
+      & span:nth-child(1) {
+        font-weight: 600;
+      }
+      & span:nth-child(2) {
+        font-weight: 500;
+      }
+      & span:nth-child(3) {
+        font-weight: 400;
+      }
+      & span:nth-child(4) {
+        font-weight: 300;
+      }
+
+    }
+ }
+
+  // media query
+  @media screen and (max-width: 1024px) {
+    // for direct children
+    & .desktop {
+      display: none;
+     }
+
+     & .statventures-btn {
+      @include u-padding-y(1);
+      @include u-padding-x(05);
+      @include u-margin-bottom(2);
+      align-self: stretch;
+      text-align: center;
+     }
+
+    & .bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-top: 1rem;
+
+      & .bar--text {
+        display: none;
+      }
+    }
+
+    & header {
+      &.splash {
+        margin-top: 1rem;
+        flex-direction: column;
+
+        .scrolling-words-container, p, a {
+          margin: 1rem .5rem;
+        }
+        .scrolling-words-container {
+          font-size: 3rem;
+        }
+
+        figure {
+          min-width: 100%;
+        }
+      }
+
+      &.splash-secondary {
+        order: 2;
+        @include u-padding-x(2);
+        text-align: left;
+        color: color('blue-warm-60v');
+        font-size: 1.35rem;
+        padding-bottom: 16px;
+
+        figure {
+          display: none;
+        }
+      }
+    }
+
+    & section {
+      &.challenge-intro--mobile {
+        order: 1;
+        text-align: left;
+        padding:0 3rem ;
+
+        .content-container, a {
+          margin: 1rem 0rem;
+        }
+
+        div {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    & footer {
+      order: 99;
+
+      & .footer-horizontal{
+      padding: 0;
+      }
+
+      & img {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+
+
+// animation 
+// https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/
+$item-count: 7;
+
+@keyframes scrollUp {
+  @for $i from 1 through ($item-count - 1) {
+    #{($i * 11) - 6%}, #{$i * 11%} {
+      transform: translateY((-100% / $item-count) * $i);
+    }
+  }
+}
+
+// test
+// accordion-intro
+// accordion-phases
+.test {
+
+  #accordion-intro h4.usa-accordion__heading button {
+    background-color: color('blue-warm-60v');
+    color: color('gray-cool-2');
+    background-blend-mode: color-burn;
+  }
+  #accordion-intro,
+  #accordion-phases {
+    & [aria-expanded="true"], 
+    & [aria-expanded="false"] {
+      // filter:brightness(5);
+    }
+  }
+  #m-a1 {
+    background-color: color('indigo-80v');
+    color: color('gray-cool-2');
+    border-bottom: 1px solid color('gray-cool-2');
+  }
+  #accordion-phases, #accordion-phases h4.usa-accordion__heading button, #m-a2, #m-a3, #m-a4  {
+    background-color: color('indigo-cool-90');
+    color: color('gray-cool-2');
+    border-bottom: 1px solid color('gray-cool-2');
+    margin-top: 0;
+  }
+  h4.usa-accordion__heading:nth-child(2) {
+    border-top: color('gray-cool-2') solid 1px;
+   }
+   
+
+  #accordion-phases h5 {
+    color: color('gold-20v') ;
+  }
+
+  & .accordion-phases & .usa-accordion__heading {
+    background: color('indigo-cool-90');
+
+  }
+}
+
 /**********
  * BUTTONS
  ***********/
