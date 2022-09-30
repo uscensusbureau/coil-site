@@ -706,10 +706,14 @@ $left-dash-width: 50%;
   
     }
 
-    & .usa-card__footer button {
-      background: color('gray-cool-2');
-      color: color('blue-warm-60v');
-      border: color('blue-warm-60v') 2px solid;
+    & .usa-card__footer {
+      align-self: stretch;
+      button {
+        background: color('gray-cool-2');
+        color: color('blue-warm-60v');
+        border: color('blue-warm-60v') 2px solid;
+        width: 100%;
+      }
     }
     li.usa-card:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1) {
       color: color('gray-cool-2');
