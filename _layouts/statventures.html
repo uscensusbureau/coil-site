@@ -201,4 +201,16 @@ class:
         <p class="desktop">at the U.S. Census Bureau.</p>
         <img src="{{ site.baseurl }}/assets/img/statventures{{page.footer-horizontal-desktop.icon}}" alt="">
     </section>
+    <section
+    class="footer-section-bottom usa-media-block__footer grid-row display-flex flex-align-center padding-y-4"
+  >
+    {% for link in site.data.navigation.footer %}
+      <a href="{% unless link.isExternal %}{{ site.baseurl }}/{% endunless %}{{ link.href }}"
+        class="border-base-dark
+          {% unless forloop.first %} border-left padding-left-2 {% endunless %}
+          {% unless forloop.last %} padding-right-2 {% endunless %}
+        "
+      >{{ link.text }}</a>
+    {% endfor %}
+    </section>
 </footer>

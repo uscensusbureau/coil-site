@@ -724,6 +724,20 @@ $left-dash-width: 50%;
 
   footer {
     padding: 0;
+    background-color: color('blue-warm-60v');
+  }
+
+  .footer-section-bottom {
+    background-color: color('blue-warm-60v');
+
+    & .border-base-dark {
+    color: color('gray-cool-2');
+    border-color:color('gray-cool-2');
+      &:hover, &:active, &:visited {
+        background-color: color('blue-warm-60v');
+        color: color('gray-cool-2');
+      }
+    }
   }
 
  .footer-horizontal {
