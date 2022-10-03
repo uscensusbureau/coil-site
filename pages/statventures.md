@@ -1,6 +1,6 @@
 ---
 permalink: /statventures/
-title: "Census Open Innovation Labs"
+title: "StatVentures"
 layout: statventures
 class: statventures
 font:

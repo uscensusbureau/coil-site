@@ -18,8 +18,8 @@ class:
 <!-- !GTG -->
 <header class="splash">
     <figure>
-        <img class="desktop" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img}}" alt="" data-proofer-ignore >
-        <img class="mobile-only" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img-tablet}}" alt="" data-proofer-ignore>
+        <img class="desktop" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img}}" alt="StatVentures Census Open Innovation Labs" data-proofer-ignore >
+        <img class="mobile-only" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img-tablet}}" alt="StatVentures Census Open Innovation Labs" data-proofer-ignore>
         <!-- <figcaption>Image Source: US Census Bureau</figcaption> -->
     </figure>
     <section class="content-container">
@@ -30,7 +30,7 @@ class:
                 <ul>
                     <li>hummus</li>
                     <li>lumber</li>
-                    <li>door</li>
+                    <li>battery</li>
                     <li>refrigerator</li>
                     <li>sriracha</li>
                     <li>microchip</li>
@@ -39,7 +39,7 @@ class:
             </div>
             <span>data.</span>
         </section>
-        <p>StatVentures scouts technology through collaborations with innovators outside government to ensure the U.S. Census Bureau provides quality data more efficiently, creatively and effectively.</p>
+        <p>StatVentures scouts technology through collaborations with innovators outside government to ensure the U.S. Census Bureau provides quality data more efficiently, creatively, and effectively.</p>
         <a class="statventures-btn" href="http://statventuresinfosession.splashthat.com" target="_blank">Bring Us the Goods</a>
     </section>
 </header>
@@ -51,6 +51,7 @@ class:
     </section>
     <figure class="desktop">
         <img src='{{ site.baseurl }}/assets/img/statventures{{page.splash-secondary.img}}' alt="Population count machine displaying the current population of the US as 206751918 Source: Library of Congress">
+        <figcaption>Image Source: Library of Congress</figcaption>
     </figure>
 </header>
 <!-- !GTG -->
@@ -83,7 +84,7 @@ class:
             <div id="m-a2" class="usa-accordion__content usa-prose">
                 <h5>October to January</h5>
                 <p>
-                    Propose an idea to improve U.S. Census data sources. 10 of the most innovative and promising ideas will be awarded $10,000 and their submitters will be invited to join the inaugural StatVentures cohort.
+                    Propose an idea to improve U.S. Census data sources. Ten of the most innovative and promising ideas will be awarded $10,000 and their submitters will be invited to join the inaugural StatVentures cohort.
                 </p>
             </div>
             <h4 class="usa-accordion__heading">
@@ -183,7 +184,7 @@ class:
         </div>
         <div class="content-container">
             <h5>Phase 1: Concept</h5>
-            <p>Propose an idea to improve U.S. Census data sources. 10 of the most innovative and promising ideas will be awarded $10,000 and their submitters will be invited to join the inaugural StatVentures cohort.</p>
+            <p>Propose an idea to improve U.S. Census data sources. Ten of the most innovative and promising ideas will be awarded $10,000 and their submitters will be invited to join the inaugural StatVentures cohort.</p>
             <h5>Phase 2: Roadmap</h5>
             <p>Iterate on your idea from phase 1, with direct collaboration and feedback from the U.S. Census Bureau team. Finalists with the most promising roadmaps will receive awards to move from plan to prototype. Missed phase 1? Don’t worry, new “walk on” teams have the opportunity to join in phases 2 and 3.</p>
             <h5>Phase 3: Test</h5>
@@ -199,5 +200,17 @@ class:
         <p class="desktop coil-logo-text-treatment"><span>CENSUS</span> <span>OPEN</span> <span>INNOVATION</span> <span>LABS</span></p>
         <p class="desktop">at the U.S. Census Bureau.</p>
         <img src="{{ site.baseurl }}/assets/img/statventures{{page.footer-horizontal-desktop.icon}}" alt="">
+    </section>
+    <section
+    class="footer-section-bottom usa-media-block__footer grid-row display-flex flex-align-center padding-y-4"
+  >
+    {% for link in site.data.navigation.footer %}
+      <a href="{% unless link.isExternal %}{{ site.baseurl }}/{% endunless %}{{ link.href }}"
+        class="border-base-dark
+          {% unless forloop.first %} border-left padding-left-2 {% endunless %}
+          {% unless forloop.last %} padding-right-2 {% endunless %}
+        "
+      >{{ link.text }}</a>
+    {% endfor %}
     </section>
 </footer>

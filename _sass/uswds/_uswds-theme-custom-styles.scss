@@ -488,6 +488,23 @@ $left-dash-width: 50%;
 
   &.splash-secondary {
     text-align: center;
+
+    figure {
+      background-image: linear-gradient(359.64deg, #13192F 0.33%, rgba(217, 217, 217, 0) 99.71%);
+
+      > img {
+      z-index: -1;
+      }
+      > figcaption {
+        position: relative;
+        text-align: left;
+        background-image: linear-gradient(359.64deg, #13192F 0.33%, rgba(217, 217, 217, 0) 99.71%);
+        bottom: 30px;
+        margin-bottom: -1rem;
+        margin-left: 3rem;
+        color: white;
+      }
+    }
   }
 
   @media (max-width: 'desktop') {
@@ -689,10 +706,14 @@ $left-dash-width: 50%;
   
     }
 
-    & .usa-card__footer button {
-      background: color('gray-cool-2');
-      color: color('blue-warm-60v');
-      border: color('blue-warm-60v') 2px solid;
+    & .usa-card__footer {
+      align-self: stretch;
+      button {
+        background: color('gray-cool-2');
+        color: color('blue-warm-60v');
+        border: color('blue-warm-60v') 2px solid;
+        width: 100%;
+      }
     }
     li.usa-card:nth-child(1) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1) {
       color: color('gray-cool-2');
@@ -707,6 +728,20 @@ $left-dash-width: 50%;
 
   footer {
     padding: 0;
+    background-color: color('blue-warm-60v');
+  }
+
+  .footer-section-bottom {
+    background-color: color('blue-warm-60v');
+
+    & .border-base-dark {
+    color: color('gray-cool-2');
+    border-color:color('gray-cool-2');
+      &:hover, &:active, &:visited {
+        background-color: color('blue-warm-60v');
+        color: color('gray-cool-2');
+      }
+    }
   }
 
  .footer-horizontal {
