@@ -3,6 +3,7 @@ permalink: /statventures/
 title: "StatVentures"
 layout: statventures
 class: statventures
+image: assets/img/statventures/logos/Stacked_Blue_StatVentures.png
 font:
   regular: /poppins/Poppins-Regular.ttf
   semi-bold: /poppins/Poppins-SemiBold.ttf
