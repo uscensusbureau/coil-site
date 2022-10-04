@@ -3,11 +3,16 @@ permalink: /statventures/
 title: "StatVentures"
 layout: statventures
 class: statventures
+image: assets/img/statventures/logos/Stacked_Blue_StatVentures.png
 font:
   regular: /poppins/Poppins-Regular.ttf
   semi-bold: /poppins/Poppins-SemiBold.ttf
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
+banner:
+  text: RSVP to attend an information session on October 13, October 27, or November 17
+  href: http://statventuresinfosession.splashthat.com
+  isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png

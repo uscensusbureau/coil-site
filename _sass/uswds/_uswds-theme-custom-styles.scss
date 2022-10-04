@@ -559,6 +559,17 @@ $left-dash-width: 50%;
    background: color('gold-20v');
   //  border: 4px solid pink;
 
+  &.site-banner {
+    position: relative;
+    top: 72px;
+    a {
+      font-size: 1rem;
+      &:hover, &:active, &:visited {
+        color: color('indigo-cool-90');
+      }
+    }
+  }
+
    &.mobile-only {
      @include at-media('desktop') {
        // media query that hides after x screen width
@@ -792,6 +803,10 @@ $left-dash-width: 50%;
       align-self: stretch;
       text-align: center;
      }
+
+     & section.site-banner {
+      top: 86px;
+    }
 
     & .bar {
       display: flex;
