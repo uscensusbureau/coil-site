@@ -587,13 +587,12 @@ $left-dash-width: 50%;
         background-blend-mode: color-burn;
       }
 
-      #accordion-intro,
-      #accordion-phases {
+      .usa-accordion__button {
+        @include add-background-svg("usa-icons-bg/add--white")
+      }
 
-        & [aria-expanded="true"],
-        & [aria-expanded="false"] {
-          // filter:brightness(5);
-        }
+      .usa-accordion__button[aria-expanded="false"] {
+        @include add-background-svg("usa-icons-bg/remove--white");
       }
 
       #m-a1 {
