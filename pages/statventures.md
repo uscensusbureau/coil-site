@@ -10,7 +10,7 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: RSVP to attend an information session on October 13, October 27, or November 17
+  text: RSVP to attend an information session on October 27 or November 17
   href: http://statventuresinfosession.splashthat.com
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
