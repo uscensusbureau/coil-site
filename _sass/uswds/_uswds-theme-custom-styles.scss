@@ -392,6 +392,12 @@ $left-dash-width: 50%;
     z-index: 99;
     top: 0;
     color: color('blue-warm-60v');
+    & a{
+      color: color('blue-warm-60v');
+      &:hover, &:active, &:visited {
+        color: color('blue-warm-60v');
+      }
+    }
   }
   
   & .logo-container {
