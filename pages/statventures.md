@@ -1,6 +1,7 @@
 ---
 permalink: /statventures/
 title: "StatVentures"
+description: "Innovate the way the U.S. Census Bureau provides supply chain data."
 layout: statventures
 class: statventures
 image: assets/img/statventures/logos/Stacked_Blue_StatVentures.png
