@@ -6,10 +6,10 @@ class: coil
 
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
-hero: 
+hero:
   text: 'Trailblazing open government through cross-sector collaboration, design, and technology.'
   subtext: Want to work with us?
-  cta: 
+  cta:
     text: Contact&nbsp;Us
 
 work-section:
@@ -17,13 +17,10 @@ work-section:
   icon: /icons/icon_our-work.svg
   subtitle: Whether your team is looking to build a new tech product, hire new talent, or integrate design thinking into your process, COIL has a program that can help you do it.
 
-get-involved:
-  title: Work With Us
-  icon: /icons/icon_work-with-us.svg
 
 team:
   title: Meet the Team
-  
+
 ---
 
 If you’re interested in participating in TOP, please [fill out this interest form]({{ site.top-form }}).

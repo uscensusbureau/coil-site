@@ -4,7 +4,7 @@ class:
 ---
 
 <main id="main-content">
-  
+
   {% comment %}
     {% include scrolling-gallery.html data=site.data.coil-images %}
   {% endcomment %}
@@ -35,17 +35,6 @@ class:
       {% for projectSection in site.data.coil-projects %}
         {% include coil-project-section.html data=projectSection %}
       {% endfor %}
-    </div>
-  </section>
-
-  <section id="get-involved" class="coil-section usa-section--dark bg-base-darkest">
-    <div class="grid-container">
-      <div>
-        <img class="abstract-icon" src="{{ site.baseurl }}/assets/img{{page.get-involved.icon}}" alt="" data-proofer-ignore>
-      </div>
-      <h2 id="{{ page.get-involved.title | slugify }}">{{ page.get-involved.title }}</h2>
-      {{ content }}
-
     </div>
   </section>
 
