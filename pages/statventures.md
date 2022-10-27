@@ -11,19 +11,19 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: RSVP to attend an information session on October 27 or November 17
+  text: RSVP to attend an information session on November 17
   href: http://statventuresinfosession.splashthat.com
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
 
-splash: 
+splash:
   text: 'Trailblazing open government through cross-sector collaboration, design, and technology.'
   subtext: Want to work with us?
   img: /photos/splash.png
   img-tablet: /photos/splash-tablet.png
-  cta: 
+  cta:
     text: Contact&nbsp;Us
 
 splash-secondary:
