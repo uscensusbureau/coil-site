@@ -47,7 +47,6 @@ footer {
 
 $coil-left-padding: 4;
 $coil-left-padding-wide: 10;
-$dotted-border:  1px dotted color('white');
 
 /*****************
  * Typography
@@ -69,31 +68,6 @@ h2, h3 {
 
 a[href="mailto:census.openinnovationlabs@census.gov"] {
   word-break: break-all;
-}
-
-$left-dash-width: 50%;
-.dashed {  // based on https://jsfiddle.net/j0y7uaqL/
-  width: 100vw;
-  overflow: visible;
-  white-space: nowrap;
-  padding-left: 0 !important;
-  transform: translateX(-$left-dash-width);
-  h3 {
-    display: inline;
-  }
-  &:before, &:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    border-bottom: 1px dotted color('base-light');
-  }
-  &:before {
-    width: $left-dash-width;
-  }
-  &:after {
-    width: 80%;
-    margin: 0 -55% 0 units($coil-left-padding) * .25;
-  }
 }
 
 
@@ -165,7 +139,7 @@ $left-dash-width: 50%;
   .project-headers, .project-details {
     @include u-padding-x(2);
   }
-  
+
   &:first-child {
     @include grid-col(12);
     .project-large-text:first-child{
@@ -235,43 +209,6 @@ $left-dash-width: 50%;
   }
 }
 
-.project-tags {
-  @include u-margin-y(1);
-}
-.project-tag {
-  @include u-font('sans', '3xs');
-  @include u-text('uppercase');
-  @include u-padding-x('05');
-  @include u-border('1px', dotted);
-  @include u-radius('pill');
-  &__comm, &__faci, &__expe, &__prod, &__tale {
-    @extend .project-tag;
-  }
-  &__comm {
-    @include u-color('orange-warm-50v');
-  }
-  &__faci {
-    @include u-color('blue-50v')
-  }
-  &__expe {
-    @include u-color('green-cool-50v');
-  }
-  &__tale {
-    @include u-color('indigo-cool-80v');
-  }
-  &__prod {
-    @include u-color('red-cool-50v');
-  }
-}
-
-.coil-help-list {
-  list-style-type: '\2713';
-  
-  li {
-    @include u-padding-left(1);
-  }
-}
-
 .coil-bio {
   @include u-margin-bottom(4);
   @include grid-col(6);
@@ -303,22 +240,18 @@ $left-dash-width: 50%;
   overflow-wrap: anywhere;
 }
 
-.abstract-icon {
-  @include u-maxh(15);
-  @include u-margin-top(6);
-}
 
 // statventures
 // colors
   //  blue #0050D8-- color('blue-warm-60v')
   // black #13192F -- color('indigo-cool-90')
-  // white #F6F8FB -- color('gray-cool-2') 
+  // white #F6F8FB -- color('gray-cool-2')
   // yellow #F9C636 color('gold-20v')
   // red #DE4317 -- color('red-warm-50v')
-  // special blue #15295E --  color('indigo-80v') 
+  // special blue #15295E --  color('indigo-80v')
 // fonts
   // Poppins
-// 
+//
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .statventures {
@@ -365,12 +298,12 @@ $left-dash-width: 50%;
   }
 
 
- h1.visually-hidden { 
+ h1.visually-hidden {
     border: 0;
     padding: 0;
     margin: 0;
     position: absolute !important;
-    height: 1px; 
+    height: 1px;
     width: 1px;
     overflow: hidden;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
@@ -399,7 +332,7 @@ $left-dash-width: 50%;
       }
     }
   }
-  
+
   & .logo-container {
     width: 83.16px;
     height: 71px;
@@ -408,15 +341,15 @@ $left-dash-width: 50%;
   img {
     object-fit: contain;
     min-width: 0;
-    
+
 
     &.logo-img-blue {
       min-height: 71px;
       aspect-ratio: auto;
     }
   }
-  
-  &.splash, 
+
+  &.splash,
   &.splash-secondary {
     // @include grid-container;
     flex-direction: row-reverse;
@@ -457,7 +390,7 @@ $left-dash-width: 50%;
         @include grid-col(6);
         padding: 0 3rem;
       }
-    
+
     }
 
   }
@@ -473,7 +406,7 @@ $left-dash-width: 50%;
       // background-color: color('indigo-cool-90');
       flex-direction: column;
       justify-content: center;
-      align-items: center;      
+      align-items: center;
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -518,7 +451,7 @@ $left-dash-width: 50%;
   @media (max-width: 'desktop') {
     display: none;
   }
-  
+
 
   section.scrolling-words-container {
     display: flex;
@@ -539,20 +472,20 @@ $left-dash-width: 50%;
           margin: 0;
           padding: 0;
           animation: scrollUp 4s infinite;
-  
+
           li {
               display: flex;
               align-items: center;
               justify-content: flex-end;
               height: 5rem;
               list-style: none;
-              width: fit-content; 
+              width: fit-content;
           }
         }
     }
 
   }
-  
+
  }
  >section {
    &>* {
@@ -676,7 +609,7 @@ $left-dash-width: 50%;
    &.challenge-intro--card-content {
     background: color('gray-cool-2');
     padding: 5rem 0;
-    
+
 
     & .content-container {
       @include grid-container;
@@ -688,8 +621,8 @@ $left-dash-width: 50%;
       }
     }
 
-    h2, 
-    .card-container, 
+    h2,
+    .card-container,
     button {
       align-self: center;
     }
@@ -702,7 +635,7 @@ $left-dash-width: 50%;
     & .card-container {
       margin-top: -70px;
     }
-  
+
     & .active-phase {
       position: relative;
       top: 60px;
@@ -717,11 +650,11 @@ $left-dash-width: 50%;
       background: color('gray-cool-2');
       justify-content: space-between;
     }
-  
+
     & .usa-card__img img {
       aspect-ratio: 1;
       background: color('gray-cool-2');
-  
+
     }
 
     & .usa-card__footer {
@@ -741,7 +674,7 @@ $left-dash-width: 50%;
       background-color: color('blue-warm-60v');
       border: none;
      }
-     
+
   }
 
 
@@ -895,7 +828,7 @@ $left-dash-width: 50%;
 
 
 
-// animation 
+// animation
 // https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/
 $item-count: 7;
 
@@ -919,7 +852,7 @@ $item-count: 7;
   }
   #accordion-intro,
   #accordion-phases {
-    & [aria-expanded="true"], 
+    & [aria-expanded="true"],
     & [aria-expanded="false"] {
       // filter:brightness(5);
     }
@@ -938,7 +871,7 @@ $item-count: 7;
   h4.usa-accordion__heading:nth-child(2) {
     border-top: color('gray-cool-2') solid 1px;
    }
-   
+
 
   #accordion-phases h5 {
     color: color('gold-20v') ;
