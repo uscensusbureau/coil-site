@@ -2,9 +2,9 @@
 layout: base
 class:
 ---
-
+{% include coil-nav.html %}
 <main id="main-content">
-  
+
   {% comment %}
     {% include scrolling-gallery.html data=site.data.coil-images %}
   {% endcomment %}
@@ -51,3 +51,4 @@ class:
 
   {% include coil-team-section.html %}
 </main>
+{% include coil-footer.html %}
