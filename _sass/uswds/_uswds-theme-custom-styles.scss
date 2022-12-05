@@ -223,7 +223,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 }
 .coil-bio__image {
-  border: $dotted-border;
+  // border: $dotted-border;
+  border: 1px solid color('gray-cool-2');
 }
 .coil-bio__text {
   text-align: left;
@@ -243,6 +244,40 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .cr-coil-projects {
   display: flex;
   flex-flow: column wrap;
+}
+
+// cr styles
+.cr-header,
+.coil-history {
+  display: flex;
+  flex-direction: column;
+  p {
+    width:66%;
+    max-width: 768px;
+  }
+}
+// about page
+.about {
+  background-color: color('indigo-cool-90');
+  color: color('gray-cool-2');
+
+  * .info-blurbs{
+    display: flex;
+    flex-flow: row wrap;
+      &.two-sections {
+        background-color: color('blue-warm-60v');
+      }
+      &.three-sections {
+        background-color: color('blue-warm-60v');
+        flex-basis: 33%;
+        &:first-child {
+          background-color: yellow;
+        }
+      }
+  }
+  .mid-coil {
+    display: flex;
+  }
 }
 
 // statventures
