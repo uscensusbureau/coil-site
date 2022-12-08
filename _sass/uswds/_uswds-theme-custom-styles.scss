@@ -209,6 +209,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 }
 
+@include at-media('desktop') {
+  #meet-the-team {
+  text-align: center;
+  }
+}
+
 .coil-bio {
   @include u-margin-bottom(4);
   @include grid-col(6);
@@ -251,6 +257,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .coil-history {
   display: flex;
   flex-direction: column;
+  @include u-padding-x(4);
   p {
     width:66%;
     max-width: 768px;
@@ -260,6 +267,10 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .about {
   background-color: color('indigo-cool-90');
   color: color('gray-cool-2');
+
+  .coil-history {
+    display: none;
+  }
 
   * .info-blurbs{
     display: flex;
