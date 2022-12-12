@@ -140,6 +140,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     @include u-padding-x(2);
   }
 
+
   &:first-child {
     @include grid-col(12);
     .project-large-text:first-child{
@@ -212,6 +213,14 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 @include at-media('desktop') {
   #meet-the-team {
   text-align: center;
+  }
+}
+
+.coil-help-list {
+  list-style-type: '\2713';
+
+  li {
+    @include u-padding-left(1);
   }
 }
 
@@ -296,11 +305,14 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   //  blue #0050D8-- color('blue-warm-60v')
   // black #13192F -- color('indigo-cool-90')
   // white #F6F8FB -- color('gray-cool-2')
+  // white #F6F8FB -- color('gray-cool-2')
   // yellow #F9C636 color('gold-20v')
   // red #DE4317 -- color('red-warm-50v')
   // special blue #15295E --  color('indigo-80v')
+  // special blue #15295E --  color('indigo-80v')
 // fonts
   // Poppins
+//
 //
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -349,10 +361,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
 
  h1.visually-hidden {
+ h1.visually-hidden {
     border: 0;
     padding: 0;
     margin: 0;
     position: absolute !important;
+    height: 1px;
     height: 1px;
     width: 1px;
     overflow: hidden;
@@ -370,10 +384,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     flex-flow: row nowrap;
     background-color:color('gray-cool-2');
     border-bottom: color('blue-warm-60v') 1px solid;
-    position: fixed;
     width: 100%;
     z-index: 99;
-    top: 0;
     color: color('blue-warm-60v');
     & a{
       color: color('blue-warm-60v');
@@ -382,6 +394,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       }
     }
   }
+
 
   & .logo-container {
     width: 83.16px;
@@ -393,6 +406,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     min-width: 0;
 
 
+
     &.logo-img-blue {
       min-height: 71px;
       aspect-ratio: auto;
@@ -400,17 +414,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 
   &.splash,
+
+  &.splash,
   &.splash-secondary {
     // @include grid-container;
     flex-direction: row-reverse;
     align-items: center;
-    // border: 4px solid pink;
     padding: 0;
-
-    & section {
-      // @include u-padding-x(2);
-      // @include u-padding-y(4);
-    }
 
     & figure {
       display: flex;
@@ -419,7 +429,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       max-width: 50%;
       height: auto;
       margin: 0;
-      // aspect-ratio: 961/962;
+
       @include at-media(tablet) {
         @include grid-col(6);
       }
@@ -441,13 +451,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         padding: 0 3rem;
       }
 
+
     }
 
   }
 
   &.splash {
     color: color('blue-warm-60v');
-    padding-top: 4rem;
     & figure {
       width: 50%;
       // background-image: url(/assets/img/statventures/photos/data-processor-img.png);
@@ -456,6 +466,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       // background-color: color('indigo-cool-90');
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       align-items: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -503,6 +514,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 
 
+
   section.scrolling-words-container {
     display: flex;
     font-size: 4rem;
@@ -523,6 +535,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
           padding: 0;
           animation: scrollUp 4s infinite;
 
+
           li {
               display: flex;
               align-items: center;
@@ -530,27 +543,37 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
               height: 5rem;
               list-style: none;
               width: fit-content;
+              width: fit-content;
           }
         }
     }
 
   }
 
+
  }
  >section {
+    justify-content: center;
+
    &>* {
      display: flex;
      flex-flow: row wrap;
      align-items: center;
-     justify-content: center;
    }
 
-   background: color('gold-20v');
-  //  border: 4px solid pink;
+   &.usa-banner[aria-label="Official government website"]{
+    justify-content: left;
+    color: color('gray-cool-2');
+   }
 
   &.site-banner {
     position: relative;
-    top: 72px;
+    background: color('gold-20v');
+
+    & .usa-accordion {
+    justify-content: center;
+    }
+
     a {
       font-size: 1rem;
       &:hover, &:active, &:visited {
@@ -661,6 +684,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     padding: 5rem 0;
 
 
+
     & .content-container {
       @include grid-container;
       flex-flow: column nowrap;
@@ -671,6 +695,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       }
     }
 
+    h2,
+    .card-container,
     h2,
     .card-container,
     button {
@@ -685,6 +711,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     & .card-container {
       margin-top: -70px;
     }
+
 
     & .active-phase {
       position: relative;
@@ -701,9 +728,11 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       justify-content: space-between;
     }
 
+
     & .usa-card__img img {
       aspect-ratio: 1;
       background: color('gray-cool-2');
+
 
     }
 
@@ -724,6 +753,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       background-color: color('blue-warm-60v');
       border: none;
      }
+
 
   }
 
@@ -795,10 +825,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       text-align: center;
      }
 
-     & section.site-banner {
-      top: 86px;
-    }
-
     & .bar {
       display: flex;
       flex-direction: column;
@@ -814,7 +840,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
     & header {
       &.splash {
-        margin-top: 1rem;
         flex-direction: column;
 
         .scrolling-words-container, p, a {
@@ -879,6 +904,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
 
 // animation
+// animation
 // https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/
 $item-count: 7;
 
@@ -903,6 +929,7 @@ $item-count: 7;
   #accordion-intro,
   #accordion-phases {
     & [aria-expanded="true"],
+    & [aria-expanded="true"],
     & [aria-expanded="false"] {
       // filter:brightness(5);
     }
@@ -921,6 +948,7 @@ $item-count: 7;
   h4.usa-accordion__heading:nth-child(2) {
     border-top: color('gray-cool-2') solid 1px;
    }
+
 
 
   #accordion-phases h5 {

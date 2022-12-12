@@ -16,14 +16,6 @@
   pageOrder: 3
   title: Managing Director
 
-- airtable_createdTime: "2021-04-13T19:13:58.000Z"
-  airtable_id: recd1lEiRkP9bK1Nk
-  email: lorena.molina-irizarry@census.gov
-  img: lorena.jpg
-  name: Lorena Molina-Irizarry
-  pageOrder: 6
-  title: Director of Operations
-
 - email: alessandra.v.hartkopf@census.gov
   img: COIL_headshot_AH.png
   name: Alessandra Hartkopf
@@ -33,20 +25,20 @@
 - email: victoria.e.fine@census.gov
   img: COIL_headshot_VF.png
   name: Victoria Fine
-  pageOrder: 9
+  pageOrder: 8
   title: Senior Advisor - Program Development and Communication
 
 - img: sadiejay.jpg
   name: Sadie Jay
-  pageOrder: 7
+  pageOrder: 6
   title: Front-end Web Developer
 
 - email: vanessa.l.yip@census.gov
   img: vanessayip.png
   name: Vanessa Yip
-  pageOrder: 8
+  pageOrder: 7
   title: UX Designer
-  
+
 - email: dorcas.lin@census.gov
   img: dorcaslin.png
   name: Dorcas Lin
