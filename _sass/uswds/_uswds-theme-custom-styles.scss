@@ -342,6 +342,15 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     max-width: 768px;
   }
 }
+.our-values {
+  padding:0 32px;
+  background-color: color('gray-cool-2');
+  #accordion-values .usa-accordion__heading .usa-accordion__button {
+      background-color: inherit;
+      border-top: 1px solid;
+    }
+}
+
 // about page
 .about {
   background-color: color('indigo-cool-90');
