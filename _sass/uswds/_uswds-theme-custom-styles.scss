@@ -75,7 +75,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 /***************
  * Layout
  ****************/
-
+.home {
+  background-color: #13192F;
+}
 .coil-header {
   @include u-position('sticky');
   @include u-top('neg-2px');
@@ -115,8 +117,76 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 }
 
+@mixin project-card-img {
+    height: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 42px;
+}
+
 .coil-hero {
   @include u-margin-top(0);
+  padding: 0 32px;
+  color: color('gray-cool-2');
+  height: 800px;
+  background-image: url(/assets/img/homepage/animation-pulse.gif);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+    p {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+}
+
+#our-work-section {
+  padding: 0 32px;
+  h2, p {
+    color: color('gray-cool-2');
+    font-size: 2rem;
+  }
+  .usa-card__heading {
+    font-size:1.3rem;
+    color: black;
+    font-family: inherit;
+    font-size: 1.3rem;
+  }
+  .usa-card__body p {
+    font-size: 1.125rem;
+    color: red;
+  }
+
+  .usa-card__img {
+    @include project-card-img();
+  }
+
+  .project-card__top {
+    .usa-card__img {
+
+      background-color: color('red-warm-50v');
+
+    }
+  }
+
+  .project-card__data-usability {
+    .usa-card__img {
+      padding:0;
+      background-color: yellow;
+    }
+  }
+  .project-card__statventures {
+    .usa-card__img {
+      padding: 0px;
+      padding-right:42px;
+      background-color: color('blue-warm-60v');
+    }
+  }
+
+
 }
 
 .coil-project-lg, .project-large-text, .coil-card-container {
@@ -989,5 +1059,13 @@ $item-count: 7;
     &:hover, &:active {
       @include u-color('base-darkest');
     }
+  }
+}
+}
+
+// media features
+@media (prefers-reduced-motion) {
+  .coil-hero {
+    background-image: none;
   }
 }
