@@ -12,6 +12,15 @@ body {
 
 footer {
   flex-grow: 1;
+  background-image:url(/assets/img/icons/wave-ball-footer.png);
+  background-repeat: no-repeat;
+  // background-position-y: bottom;
+  background-size: cover;
+  // min-height: 300px;
+  @include at-media('tablet') {
+        background-image: url(/assets/img/icons/wave-footer.png);
+
+    }
 }
 
 .footer-section-bottom {
