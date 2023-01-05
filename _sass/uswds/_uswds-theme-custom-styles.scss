@@ -167,6 +167,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     color: color('gray-cool-2');
     font-size: 2rem;
   }
+  ul.featured-projects-list {
+    display: flex;
+  }
   .usa-card__heading {
     font-size:1.3rem;
     color: black;
@@ -204,6 +207,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     }
   }
 
+  @include at-media('tablet') {
+    padding: 0;
+
+    p {
+      font-size: 2rem;
+    }
+  }
 
 }
 
