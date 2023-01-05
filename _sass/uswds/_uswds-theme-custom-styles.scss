@@ -10,6 +10,11 @@ body {
   flex-direction: column;
 }
 
+::selection {
+  background-color: color('gold-20v');
+  color: color('indigo-cool-90');
+}
+
 footer {
   flex-grow: 1;
   background-image:url(/assets/img/icons/wave-ball-footer.png);
