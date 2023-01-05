@@ -150,7 +150,16 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       font-size: 3rem;
     }
 
-}
+    @include at-media('tablet') {
+      padding: 0;
+      display: flex;
+      height: 500px;
+
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
 
 #our-work-section {
   padding: 0 32px;
@@ -341,6 +350,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 }
 
 // cr styles
+
+.coil-logo-container{
+  width: 33%;
+  background-color: color("gray-cool-2");
+}
+
 .cr-header,
 .coil-history {
   display: flex;
