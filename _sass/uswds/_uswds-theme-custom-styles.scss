@@ -1082,34 +1082,30 @@ $item-count: 7;
 /**********
  * BUTTONS
  ***********/
+a[href="#"] {
+  background-color: red;
 
+}
 .coil-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: color('blue-warm-60v');
+  box-shadow: inset 0 0 0 1px color('gray-cool-2');
+  padding: .8rem;
+  background-color: inherit;
   text-decoration: none;
-  padding: .3rem .5rem;
-  &:hover, &:active {
-    text-decoration: underline;
-  }
-  &__secondary-white {
-    @extend .coil-btn;
-    border: 1px dotted color('white');
-    &:hover, &:active {
-      @include u-border-color('primary-lighter');
-    }
-  }
-  &__primary-white {
-    @extend .coil-btn;
-    color: color('base-darkest') !important;
-    // @include u-color('base-darkest');
-    @include u-bg('white');
-    @include u-padding(1);
-    @include u-text('uppercase');
-    @include u-font('sans', 'xl');
-    &:hover, &:active {
-      @include u-color('base-darkest');
-    }
+  border-radius: .5rem;
+  margin-top: 32px;
+  margin-bottom: 3rem;
+
+  &:hover,
+  &:active {
+    background-color: color('blue-warm-60v');
+    color: color('gray-cool-2');
   }
 }
-}
+
 
 // media features
 @media (prefers-reduced-motion) {
