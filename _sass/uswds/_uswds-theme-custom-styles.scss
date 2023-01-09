@@ -90,7 +90,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
  * Layout
  ****************/
 .home {
-  background-color: #13192F;
+  background-color: color('indigo-cool-90');
 }
 .coil-header {
   @include u-position('sticky');
@@ -1286,6 +1286,11 @@ a[href="#"] {
   &:active {
     background-color: color('blue-warm-60v');
     color: color('gray-cool-2');
+  }
+  &.small-only {
+    @include at-media('tablet') {
+        display: none;
+      }
   }
 }
 
