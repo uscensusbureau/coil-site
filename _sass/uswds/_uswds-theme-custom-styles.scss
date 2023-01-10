@@ -287,6 +287,9 @@ li.featured-projects-item.project-item-statventures div {
       align-items: flex-start;
       justify-content: center;
       gap: 32px;
+      h2 {
+        margin: 32px 0;
+      }
       p {
         max-width: 50%;
       }
