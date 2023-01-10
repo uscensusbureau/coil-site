@@ -468,19 +468,23 @@ li.featured-projects-item.project-item-statventures div {
 
     @include at-media('tablet') {
       background-color: color('indigo-cool-90');
-      background-image: url(/assets/img/homepage/animation-pulse.gif);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
 
 
       .our-values-circle {
-          width: 100%;
-          min-height: 600px;
+          background-image: url(/assets/img/homepage/animation-pulse.gif);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position-y: center;
           display: flex;
-          flex-flow: column;
           align-items: center;
           justify-content: center;
+          width: 100%;
+          min-height: 600px;
           color: color('gray-cool-2');
           text-align: center;
 
@@ -498,6 +502,11 @@ li.featured-projects-item.project-item-statventures div {
             justify-content: center;
             align-items: center;
             outline: 1px color('gray-cool-2') solid;
+
+            ul {
+              position:absolute;
+              list-style-type: none;
+            }
           }
 
           .inner-circle {
@@ -526,6 +535,18 @@ li.featured-projects-item.project-item-statventures div {
               color: inherit;
             }
           }
+        }
+        ul li.list-style-image-v1{
+          ::after{
+            content: url(/assets/img/icons/list-item-v1.svg);
+          }
+
+        }
+        ul li.list-style-image-v2{
+          &::after{
+            content: url(/assets/img/icons/list-item-v2.svg);
+          }
+
         }
     }
 }
