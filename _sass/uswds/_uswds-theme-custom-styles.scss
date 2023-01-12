@@ -275,12 +275,18 @@ li.featured-projects-item.project-item-statventures div {
     }
   }
 
-  .wave-ball-left {
-    width: 100%;
+  .wave-ball-desktop {
+    display: none;
   }
 
-  @include at-media('tablet') {
+  @include at-media('desktop') {
     padding: 0;
+
+    .wave-ball-desktop {
+      display: unset;
+      width: 100%;
+      margin-top: -310px;
+    }
 
     .our-work-blurb {
       display: flex;
@@ -469,7 +475,7 @@ li.featured-projects-item.project-item-statventures div {
       display: none;
     }
 
-    @include at-media('tablet') {
+    @include at-media('desktop') {
       background-color: color('indigo-cool-90');
       display: flex;
       flex-flow: column;
@@ -540,16 +546,55 @@ li.featured-projects-item.project-item-statventures div {
           }
         }
         ul li.list-style-image-v1{
-          ::after{
+          &::after{
             content: url(/assets/img/icons/list-item-v1.svg);
+            position: relative;
+            right: 300px;
           }
-
+          span {
+            position: relative;
+            bottom: 100px;
+            right: 190px;
+          }
         }
         ul li.list-style-image-v2{
-          &::after{
+          &::after {
             content: url(/assets/img/icons/list-item-v2.svg);
+            position: relative;
+            right: 300px;
+            top: 150px;
           }
+          span {
+            position: relative;
+            top: 140px;
+            right: 210px;
+          }
+        }
+        ul li.list-style-image-v3 {
+          &::before{
+            content: url(/assets/img/icons/list-item-v3.svg);
+            position: relative;
+            bottom: 100px;
+            left: 400px;
+          }
+          span {
+            position: relative;
+            bottom: 200px;
+            left: 270px;
+          }
+        }
 
+        ul li.list-style-image-v4 {
+          &::before{
+            content: url(/assets/img/icons/list-item-v4.svg);
+            position: relative;
+            left: 200px;
+          }
+          span {
+            position: relative;
+            bottom: 10px;
+            left: 115px;
+          }
         }
     }
 }
