@@ -104,15 +104,15 @@ run `npm run html-proofer:skip-external` to save time by skipping validating ext
 
 <br/>
 
-## Building with Federalist
+## Building with Pages
 
-This repository is hooked up to [Federalist](https://federalist.18f.gov/documentation/), an automatic build process used by many government websites.
-Whenever you push changes to Github, Federalist will make a new build (using the `federalist` command in `package.json`). 
+This repository is hooked up to [Pages](https://cloud.gov/pages/documentation/), an automatic build process used by many government websites.
+Whenever you push changes to Github, Pages will make a new build (using the `federalist` command in `package.json`).
 
-Federalist will then provide a URL for this build which you can use for user testing. To get the URL for the build, click on the green check-mark next to the build status for whatever branch you just pushed to, and then click the "Details" link.
+Pages will then provide a URL for this build which you can use for user testing. To get the URL for the build, click on the green check-mark next to the build status for whatever branch you just pushed to, and then click the "Details" link.
 
-When you merge a branch into `main`, Federalist will then make a new build with the same process and deploy it to opportunity.census.gov
+When you merge a branch into `main`, Pages will then make a new build with the same process and deploy it to opportunity.census.gov
 
 ### When a build fails
 
-If Federalist fails to build, the status dot on the branch in Github will change from yellow (in progress) to red (failed). If this happens, contact Logan Powell via Slack in the Census Bureau workspace to see the logs from the failed build. He has access to Federalist itself. We do not.
+If Pages fails to build, the status dot on the branch in Github will change from yellow (in progress) to red (failed). If this happens, contact Luke Keller via Slack in the Census Bureau workspace to see the logs from the failed build. He has access to Pages itself. We do not.
