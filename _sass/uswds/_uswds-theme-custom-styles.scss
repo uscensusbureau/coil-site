@@ -163,7 +163,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
       p {
         font-size: 2rem;
-        max-width: 600px;
+
         padding-left: 90px;
       }
     }
@@ -182,7 +182,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     flex-wrap: nowrap;
     margin-top: 0;
     li {
-      outline: red 1px solid;
+      outline: yellow 1px solid;
       list-style-type: none;
       padding: 32px;
     }
@@ -609,6 +609,24 @@ li.featured-projects-item.project-item-statventures div {
           }
         }
     }
+}
+
+#collaborate-section {
+  @include grid-row;
+  @include u-flex('align-center');
+  @include u-flex('justify-center');
+  color: color('gray-cool-2');
+  > * {
+    @include u-margin-y(7);
+    color: color('gray-cool-2');
+
+  }
+  a {
+    @include u-font('sans', 'lg')
+  }
+  img {
+    @include u-margin-x(2);
+  }
 }
 
 // about page
