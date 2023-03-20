@@ -17,84 +17,14 @@ class: home
 
   <section id="our-work-section">
     <!-- projects section -->
-    <ul class="featured-projects-list grid-row">
-      <li class="featured-projects-item highlight-project project-item-statventures grid-col">
-        <div>
-          <p>The future of <span> supply chain</span> data</p>
-          <!-- <img src="" alt=""> -->
-          <img src="/assets/img/statventures/logos/Stacked_White_COIL_StatVentures.png" alt="StatVentures Logo" class="statventures-logo-img">
-        </div>
-      </li>
-      <li class="featured-projects-item grid-col project-item-data-usability">
-        <div>
-          <p>Data Usability & Equity</p>
-        </div>
-      </li>
-      <li class="featured-projects-item grid-col project-item-top">
-        <div>
-          <img src="/assets/img/projects/top-full-white-logo.png" alt="The Opportunity Project Logo">
-        </div>
-      </li>
-    </ul>
+    {% include coil-project-large.html %}
     <section class="our-work-blurb">
-    <h2>Lorem ipsum</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim pretium eros, mauris, aliquam in. Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit. Dignissim pretium eros</p>
+    <h2>Who We Are</h2>
+    <p>Census Open Innovation Labs (COIL) is a nimble, startup-like team within the U.S. Census Bureau with a portfolio of projects that set a standard for open innovation across government.</p>
     </section>
-      <!-- project cards -->
-    <ul class="usa-card-group margin-x-2 small-only project-card-group">
-      <li class="usa-card tablet:grid-col-4 project-card__statventures">
-        <div class="usa-card__container">
-          <div class="usa-card__header">
-            <h2 class="usa-card__heading">StatVentures</h2>
-          </div>
-          <div class="usa-card__media usa-card__media--exdent">
-            <div class="usa-card__img">
-              <img src="../assets/img/projects/statventures-logo-group.png"
-                alt="The Opportunity Project Logo" />
-            </div>
-          </div>
-          <div class="usa-card__body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-      </li>
-      <li class="usa-card tablet:grid-col-4 project-card__data-usability">
-        <div class="usa-card__container">
-          <div class="usa-card__header">
-            <h2 class="usa-card__heading">Data Usability</h2>
-          </div>
-          <div class="usa-card__media usa-card__media--exdent">
-            <div class="usa-card__img">
-              <img src="../assets/img/projects/data-usability.png"
-                alt="A placeholder image" />
-            </div>
-          </div>
-          <div class="usa-card__body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-      </li>
-      <li class="usa-card tablet:grid-col-4 project-card__top">
-        <div class="usa-card__container">
-          <div class="usa-card__header">
-            <h2 class="usa-card__heading">The Opportunity Project</h2>
-          </div>
-          <div class="usa-card__media usa-card__media--exdent">
-            <div class="usa-card__img">
-              <img src="../assets/img/projects/top-full-white-logo.png"
-                alt="The Opportunity Project Logo" />
-            </div>
-          </div>
-          <div class="usa-card__body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-      </li>
-    </ul>
+
+    {% include accordion.html %}
+
     <img src="/assets/img/icons/wave-ball-right.svg" class="wave-ball-desktop" alt="">
     <a class="coil-btn small-only" href="#" target="_blank">Lorem</a>
   </section>
