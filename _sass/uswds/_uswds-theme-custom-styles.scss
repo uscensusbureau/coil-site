@@ -617,12 +617,11 @@ li.featured-projects-item.project-item-statventures div {
   @include u-flex('justify-center');
   color: color('gray-cool-2');
   > * {
-    @include u-margin-y(7);
     color: color('gray-cool-2');
 
   }
   a {
-    @include u-font('sans', 'lg')
+    @include u-font('sans', 'sm')
   }
   img {
     @include u-margin-x(2);
