@@ -638,6 +638,27 @@ li.featured-projects-item.project-item-statventures div {
     display: none;
   }
 
+  .capabilities {
+    h2 {
+      text-align: center;
+    }
+    ul {
+      @include grid-gap;
+      li {
+        @include u-border(1px);
+        border-color: inherit;
+        @include u-bg('primary');
+        @include u-width('card-lg');
+        @include u-radius('lg');
+        text-align: center;
+        @include u-padding-x(1);
+        @include u-padding-y(3);
+
+
+      }
+    }
+  }
+
   * .info-blurbs{
     display: flex;
     flex-flow: row wrap;
