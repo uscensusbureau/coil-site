@@ -20,6 +20,7 @@ footer {
   background-image:url(/assets/img/icons/wave-ball-footer.png);
   background-repeat: no-repeat;
   // background-position-y: bottom;
+  background-color: color('indigo-cool-90');
   background-size: cover;
   // min-height: 300px;
   @include at-media('tablet') {
@@ -653,6 +654,9 @@ li.featured-projects-item.project-item-statventures div {
   }
   .mid-coil {
     display: flex;
+  }
+  #coil-team {
+    background: color('indigo-cool-90');
   }
 }
 
