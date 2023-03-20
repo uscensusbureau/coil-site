@@ -551,6 +551,9 @@ li.featured-projects-item.project-item-statventures div {
             text-decoration:underline;
             text-transform:uppercase;
             font-size: 1rem;
+            position: relative;
+            z-index: 99;
+
 
             &:hover,
             &:active,
