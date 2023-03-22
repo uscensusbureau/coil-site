@@ -101,6 +101,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   @include u-border-bottom('2px', 'white');
   @include u-padding-y(2);
 }
+#coil-navbar-container {
+  align-items: center;
+
+  .usa-menu-btn {
+    background-color: transparent;
+  }
+}
 .coil-navbar {
   @include u-padding-x(3);
   width: 100%;
@@ -111,6 +118,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   a {
     text-transform: uppercase;
     @include u-font("mono", "3xs");
+    &[href="mailto:{{ site.email }}?subject=Collaborate with COIL"] {
+      border-bottom: white 1px solid;
+    }
   }
 }
 
