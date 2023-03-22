@@ -169,7 +169,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     @include at-media('tablet') {
       padding: 0;
       display: flex;
-      height: 448px; //account for padding
+      height: 444px; //same height as coil-logo-container's width to make a square
       align-items: center;
 
       p {
@@ -177,6 +177,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
         padding-left: 90px;
       }
+    }
+    .coil-logo-container {
+      width: 344px;
     }
   }
 
@@ -199,7 +202,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     }
   }
   .highlight-project {
-    @include grid-col(fill)
+    width: 344px; // same width as coil-logo-container
   }
   .featured-projects-item div p{
     font-size: 1rem;
@@ -481,7 +484,7 @@ li.featured-projects-item.project-item-statventures div {
 .coil-history {
   display: flex;
   flex-direction: column;
-  @include u-padding-x(4);
+  // @include u-padding-x(6);
   p {
     width:66%;
     max-width: 768px;
