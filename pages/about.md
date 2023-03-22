@@ -5,6 +5,10 @@ description: "Showcase our mission and team"
 layout: about
 class: about
 
+header:
+  - name: Our Mission
+    blurb: COIL’s mission is to source knowledge and solutions to solve key challenges for the Census Bureau and the public at large through human-centered design, data, creative media, and technology.
+
 coil-capabilities:
   - name: Experiments for Scale
     blurb: big-picture program strategy + implementation

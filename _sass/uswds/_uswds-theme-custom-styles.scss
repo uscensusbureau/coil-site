@@ -651,6 +651,10 @@ li.featured-projects-item.project-item-statventures div {
   background-color: color('indigo-cool-90');
   color: color('gray-cool-2');
 
+  .cr-header {
+    background: linear-gradient(0deg, rgba(0, 80, 216, 0) 0%, rgba(0, 80, 216, 0.26) 26%, rgba(21, 22, 34, 1) 52%);
+  }
+
   .coil-history {
     display: none;
   }
