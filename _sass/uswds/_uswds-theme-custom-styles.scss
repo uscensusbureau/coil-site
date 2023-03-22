@@ -90,6 +90,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .home {
   background-color: color('indigo-cool-90');
 }
+#main-content {
+  border-top: 0;
+}
 .coil-header {
   @include u-position('sticky');
   @include u-top('neg-2px');
