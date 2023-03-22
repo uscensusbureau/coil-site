@@ -664,6 +664,8 @@ li.featured-projects-item.project-item-statventures div {
   }
 
   .capabilities {
+    background-image: url(/assets/img/textures/about_our_capabilities_background.png);
+    background-size: contain;
     h2 {
       text-align: center;
     }
@@ -703,6 +705,10 @@ li.featured-projects-item.project-item-statventures div {
   }
   #coil-team {
     background: color('indigo-cool-90');
+      background-image: url(/assets/img/textures/animation-pulse.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
   }
 }
 
