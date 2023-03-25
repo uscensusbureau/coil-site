@@ -17,10 +17,10 @@ body {
 
 footer {
   flex-grow: 1;
-  background-image:url(/assets/img/icons/wave-ball-footer.png);
+  // background-image:url(/assets/img/icons/wave-ball-footer.png);
   background-repeat: no-repeat;
   // background-position-y: bottom;
-  background-color: color('indigo-cool-90');
+  // background-color: color('indigo-cool-90');
   background-size: cover;
   // min-height: 300px;
 
@@ -35,6 +35,12 @@ footer {
   justify-content: center;
 }
 
+.combined-footer {
+  @include at-media('tablet') {
+      background-image: url(/assets/img/textures/footer_background.png);
+
+    }
+}
 .dark-mode {
   @include u-bg('base-darkest');
   @include u-text('white');

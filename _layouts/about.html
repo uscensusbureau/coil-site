@@ -1,6 +1,6 @@
 ---
 layout: base
-class:
+class: about
 ---
 {% include coil-nav.html %}
 <main id="main-content">
@@ -43,6 +43,8 @@ class:
     </section>
     {% include coil-capabilities-section.html %}
     {% include coil-team-section.html %}
-    {% include coil-collaborate-section.html %}
 </main>
-{% include coil-footer.html %}
+<div class="combined-footer">
+    {% include coil-collaborate-section.html %}
+    {% include coil-footer.html %}
+</div>
