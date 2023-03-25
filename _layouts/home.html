@@ -2,18 +2,19 @@
 layout: base
 class: home
 ---
-{% include coil-nav.html %}
-<header>
-  <!-- NAV -->
+<header class="coil-hero grid-row">
+  <div class="coil-logo-container display-none desktop:display-flex flex-column flex-justify-center flex-align-center">
+    <img class="coil-logo-img" src="/assets/img/logos/coil-logo-l-navy.png" alt="Census Open Innovation Labs Logo">
+  </div>
+  <div class="grid-col-fill height-full display-flex desktop:flex-colum flex-wrap">
+    <!-- add nav include here -->
+    {% include coil-nav.html %}
+    <p class="">Trailblazing open government through cross-sector collaboration, design, and technology.</p>
+  </div>
 </header>
+
 <main id="main-content">
-  <section class="coil-hero grid-row">
-    <!-- header -->
-    <div class="coil-logo-container">
-      <img class="coil-logo-img" src="/assets/img/logos/coil-logo-l-navy.png" alt="Census Open Innovation Labs Logo">
-    </div>
-    <p class="grid-col-fill">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
-  </section>
+
 
   <section id="our-work-section">
     <!-- projects section -->
