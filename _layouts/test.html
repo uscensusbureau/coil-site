@@ -3,53 +3,37 @@ layout: orphan-page
 class:
 ---
 
-
-<div class="usa-accordion" id="accordion-intro">
-    <h4 class="usa-accordion__heading">
-        <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="m-a1">
-            In order to...
-        </button>
-    </h4>
-    <div id="m-a1" class="usa-accordion__content usa-prose">
-        <p>
-            support the nation’s need for information on critical goods, the U.S. Census Bureau seeks to improve its capability to measure the flow of goods through the supply chain. We primarily collect information on the domestic movement of goods through surveys and shipment records provided by businesses across America. We’re seeking new ways to improve or replace current data sources and methodologies. 
-        </p>
+<!-- <div class="usa-overlay"></div> -->
+<header class="usa-header usa-header--basic minh-15">
+    <div class="usa-nav-container" id="coil-navbar-container">
+        <div class="usa-navbar border-0">
+            <div class="usa-logo margin-left-0 minh-9 margin-top-205" id="coil-logo">
+                <!-- <em class="usa-logo__text"><a href="{{ site.baseurl }}/" title="Home">COIL</a></em> -->
+                <a class="width-15 display-inline-block" href="{{ site.baseurl }}/" title="Home">
+                    <img src="/assets/img/logos/coil-logo-l-navy.png" alt="Census Open Innovation Labs Homepage" class="bg-white width-15 padding-3 display-none desktop:display-inline-block">
+                    <img src="/assets/img/logos/coil-logo-l-navy.png" alt="Census Open Innovation Labs Homepage" class="width-15 padding-3 desktop:display-none">
+                </a>
+            </div>
+            <button type="button" class="usa-menu-btn">Menu</button>
+        </div>
+        <nav aria-label="Primary navigation" class="usa-nav">
+            <button type="button" class="usa-nav__close">
+                <img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" />
+            </button>
+            <ul class="usa-nav__primary usa-accordion">
+                <li class="usa-nav__primary-item">
+                    <a href="{{ site.baseurl }}/" class="usa-nav-link"><span>Home</span></a>
+                </li>
+                <li class="usa-nav__primary-item">
+                    <a href="{{ site.baseurl }}/about" class="usa-nav-link"><span>About</span></a>
+                </li>
+                <!-- <li class="usa-nav__primary-item">
+                    <a href="{{ site.baseurl }}/portfolio" class="usa-nav-link"><span>Portfolio</span></a>
+                </li> -->
+                <li class="usa-nav__primary-item">
+                    <a href="{{ site.baseurl }}#" class="usa-nav-link text-normal border border-white"><span>Collaborate With Us</span></a>
+                </li>
+            </ul>
+        </nav>
     </div>
-</div>
-<div class="usa-accordion usa-accordion--multiselectable" id="accordion-phases" data-allow-multiple>
-    <h3>Phases</h3>
-    <h4 class="usa-accordion__heading">
-        <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="m-a2">
-            Phase 01 Concept
-        </button>
-    </h4>
-
-    <div id="m-a2" class="usa-accordion__content usa-prose">
-        <h5>October to January</h5>
-        <p>
-            Propose an idea to improve U.S. Census data sources. 10 of the most innovative and promising ideas will be awarded $10,000 and their submitters will be invited to join the inaugural StatVentures cohort.  
-        </p>
-    </div>
-    <h4 class="usa-accordion__heading">
-        <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">
-            Phase 02 Roadmap
-        </button>
-    </h4>
-    <div id="m-a3" class="usa-accordion__content usa-prose">
-        <h5>Spring 2023</h5>
-        <p>
-            Iterate on your idea from phase 1, with direct collaboration and feedback from the U.S. Census Bureau team. Finalists with the most promising roadmaps will receive awards to move from plan to prototype. Missed phase 1? Don’t worry, new “walk on” teams have the opportunity to join in phases 2 and 3.
-        </p>
-    </div>
-    <h4 class="usa-accordion__heading">
-        <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4">
-            Phase 03 Demo
-        </button>
-    </h4>
-    <div id="m-a4" class="usa-accordion__content usa-prose">
-        <h5>Late 2023</h5>
-        <p>
-            Build your prototype and test it in real-world scenarios. Prototype demos are evaluated on their potential to serve the U.S. Census Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by the U.S. Census Bureau.
-        </p>
-    </div>
-</div>
+</header>

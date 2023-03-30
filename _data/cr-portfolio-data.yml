@@ -1,0 +1,35 @@
+- isMain: true
+  projects:
+    - title: The Opportunity Project
+      img:
+        src: projects/workshop2.jpg
+        alt: workshop participants huddling around a large sticky pad
+      # icon:
+      #   src:
+      #   alt:
+      callout: Build digital tools and bridge communities with federal open data.
+      details: TOP brings together community advocates, technology specialists, and federal data stewards to our nation’s toughest challenges. Over twelve weeks, stakeholders from these three groups form teams, create digital products, and demo them to the public with COIL’s facilitation.
+      href: https://opportunity.census.gov
+      isExternal: true
+    - title: StatVentures
+      img:
+        src: statventures/logos/Stacked_Blue_StatVentures.png
+        alt: StatVentures logo
+      # icon:
+      #   src:
+      #   alt:
+      callout: StatVentures Callout
+      details: StatVentures details
+      href: "https://opportunity.census.gov"
+      isExternal: false
+    - title: Data Usability & Eq
+      img:
+        src: projects/workshop2.jpg
+        alt: workshop participants huddling around a large sticky pad
+      # icon:
+      #   src:
+      #   alt:
+      callout: Data Usability Callout
+      details: Data Usability Details
+      href: https://opportunity.census.gov
+      isExternal: true

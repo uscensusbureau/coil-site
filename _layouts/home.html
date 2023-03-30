@@ -1,54 +1,66 @@
 ---
 layout: base
-class:
+class: home
 ---
-{% include coil-nav.html %}
+<header class="coil-hero grid-row">
+  <div class="coil-logo-container display-none desktop:display-flex flex-column flex-justify-center flex-align-center">
+    <img class="coil-logo-img" src="/assets/img/logos/coil-logo-l-navy.png" alt="Census Open Innovation Labs Logo">
+  </div>
+  <div class="grid-col-fill height-full display-flex desktop:flex-column flex-wrap">
+    <!-- add nav include here -->
+    {% include coil-nav.html %}
+    <p class="">Trailblazing open government through cross-sector collaboration, design, and technology.</p>
+  </div>
+</header>
+
 <main id="main-content">
 
-  {% comment %}
-    {% include scrolling-gallery.html data=site.data.coil-images %}
-  {% endcomment %}
 
-  <section class="coil-hero coil-section usa-section usa-section--dark bg-base-darkest">
-    <div class="grid-container">
-      <div>
-        <h1 class="line-height-sans-3 font-sans-2xl maxw-tablet-lg">{{ page.hero.text }}</h1>
-      </div>
-      <div class="font-sans-lg margin-bottom-2">
-        {{ page.hero.subtext | markdownify }}
-      </div>
-      <div>
-        <a class="coil-btn__primary-white" href="mailto:{{ site.email }}" target="_blank" rel="noopener">
-          {{ page.hero.cta.text }}&nbsp;&rarr;
-        </a>
+  <section id="our-work-section">
+    <!-- projects section -->
+    {% include coil-project-large.html %}
+    <section class="our-work-blurb minh-mobile-lg">
+      <h2>Who We Are</h2>
+      <p>Census Open Innovation Labs (COIL) is a nimble, startup-like team within the U.S. Census Bureau with a portfolio of projects that set a standard for open innovation across government.</p>
+    </section>
+
+    <section>
+      {% include card-group.html %}
+    </section>
+  <section class="our-values">
+    <!-- accordion -->
+    <div id="accordion-container" class="small-only">
+      {% include accordion.html %}
+    </div>
+    <a class="coil-btn small-only" href="#"
+      target="_blank">Lorem</a>
+    <div class="our-values-circle">
+      <div class="outer-circle">
+              <ul>
+                <li class="list-style-image-v1">
+                  <span>Lorem ipsum</span>
+                </li>
+                <li class="list-style-image-v2">
+                  <span>Lorem ipsum dolor</span>
+                </li>
+                <li class="list-style-image-v3">
+                  <span>Lorem & Ipsum</span>
+                </li>
+                <li class="list-style-image-v4">
+                  <span>Lorem</span>
+                </li>
+              </ul>
+        <div class="inner-circle">
+          <section class="our-values-circle--text">
+            <h3>Our Capabilities</h3>
+            <a href="{{ site.baseurl }}/about">Meet the Team</a>
+          </section>
+        </div>
       </div>
     </div>
   </section>
-
-  <section id="our-work-section" class="coil-section">
-    <div class="grid-container">
-      <div>
-        <img class="abstract-icon" src="{{ site.baseurl }}/assets/img{{page.work-section.icon}}" alt="" data-proofer-ignore>
-      </div>
-      <h2 id="{{ page.work-section.title | slugify }}">{{ page.work-section.title }}</h2>
-      <p>{{ page.work-section.subtitle }}</p>
-      {% for projectSection in site.data.coil-projects %}
-        {% include coil-project-section.html data=projectSection %}
-      {% endfor %}
-    </div>
-  </section>
-
-  <section id="get-involved" class="coil-section usa-section--dark bg-base-darkest">
-    <div class="grid-container">
-      <div>
-        <img class="abstract-icon" src="{{ site.baseurl }}/assets/img{{page.get-involved.icon}}" alt="" data-proofer-ignore>
-      </div>
-      <h2 id="{{ page.get-involved.title | slugify }}">{{ page.get-involved.title }}</h2>
-      {{ content }}
-      {% include coil-help-section.html %}
-    </div>
-  </section>
-
-  {% include coil-team-section.html %}
 </main>
-{% include coil-footer.html %}
+<div class="combined-footer">
+  {% include coil-collaborate-section.html %}
+  {% include coil-footer.html %}
+</div>
