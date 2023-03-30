@@ -195,16 +195,16 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   padding: 0 32px;
   h2, p {
     color: color('gray-cool-2');
-    font-size: 2rem;
+    // font-size: 2rem;
   }
   ul.featured-projects-list {
-    display: flex;
+    // display: flex;
     padding: 0;
     min-height: 425px;
     flex-wrap: nowrap;
     margin-top: 0;
     li {
-      outline: white 5px solid;
+      // outline: white 5px solid;
       list-style-type: none;
       padding: 32px;
     }
@@ -218,53 +218,67 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
 
   .project-item-statventures {
-    background: blue;
+    background: color('blue-warm-60v');
+    background-image: url(/assets/img/textures/statventures_placard_graphic.png);
+      background-repeat: no-repeat;
+      background-size: cover;
     padding: 32px;
     div {
-        display: flex;
-        flex-flow: column;
-        min-height: 100%;
-        justify-content: space-between;
         p {
           width: 13ch;
         }
-        span {
-          font-weight: 600;
-        }
-      }
     }
+  }
 
-li.featured-projects-item.project-item-statventures div {
-  display: flex;
-  flex-flow: column;
-  min-height: 100%;
-  justify-content: space-between;
-}
+  li.featured-projects-item.project-item-statventures div,
+  li.featured-projects-item.project-item-data-usability div,
+  li.featured-projects-item.project-item-top div {
+    display: flex;
+    flex-flow: column;
+    min-height: 100%;
+    justify-content: space-between;
+    width: 100%;
+  }
 
   .project-item-data-usability {
     background: green;
-    background-image: url(/assets/img/projects/desktop_homepage_data_usability_card.png);
+    background-image: url(/assets/img/projects/desktop_homepage_data_usability_graphic.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px;
-    div {
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-end;
-        min-height: 100%;
+    div .blurb {
+      width: 14ch;
+    }
+    div .name {
         font-weight: 600;
       }
   }
 
   .project-item-top {
-    background: red;
+    background: color('red-warm-50v');
+    background-image: url(/assets/img/textures/TOP_placard_pattern.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    div .blurb {
+      width: 10ch;
+    }
+  }
+  .statventures-logo-img,
+  .top-logo-img,
+  .project-item-data-usability div p.name
+   {
+    align-self: flex-end;
   }
   .statventures-logo-img {
     width: 100px;
-    align-self: flex-end;
+  }
+  .top-logo-img {
+    width: 200px;
   }
   .usa-card__heading {
     font-size:1.3rem;
@@ -274,7 +288,7 @@ li.featured-projects-item.project-item-statventures div {
   }
   .usa-card__body p {
     font-size: 1.125rem;
-    color: red;
+    color: inherit;
   }
 
   .usa-card__img {
@@ -318,14 +332,18 @@ li.featured-projects-item.project-item-statventures div {
 
     .our-work-blurb {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
       gap: 32px;
+      background-image: url(/assets/img/icons/wave-ball-right.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
       h2 {
         margin: 32px 0;
       }
       p {
-        max-width: 50%;
+        max-width: 39%;
       }
     }
   }
