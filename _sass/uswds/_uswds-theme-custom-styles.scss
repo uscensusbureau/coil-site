@@ -143,11 +143,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     @include u-padding-top(8);
     @include u-padding-bottom(10);
   }
-  &:last-of-type {
-    @include u-padding-bottom(15);
-    @include u-border-top(1px, 'white');
-    @include u-border-bottom(1px, 'white');
-  }
 }
 
 @mixin project-card-img {
