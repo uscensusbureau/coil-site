@@ -11,10 +11,10 @@
           <div class="coil-bio__text">
             <h3>{{ item.name }}</h3>
             {% if item.title %}
-              <p>{{ item.title | upcase }}</p>
+              <p>{{ item.title }}</p>
             {% endif %}
             <p>
-              <a class="coil-bio__email text-white" href="mailto:{{ item.email }}">{{ item.email }}</a>
+              <a class="coil-bio__email text-white text-lowercase" href="mailto:{{ item.email }}">{{ item.email }}</a>
             </p>
           </div>
         </div>

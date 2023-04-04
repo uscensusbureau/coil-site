@@ -38,7 +38,10 @@ footer {
 }
 
 .combined-footer {
-  @include at-media('tablet') {
+  background-image: url(/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include at-media('desktop') {
       background-image: url(/assets/img/textures/footer_background.png);
 
     }
@@ -158,18 +161,22 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .coil-hero {
   @include u-margin-top(0);
   padding: 0 32px;
-  color: color('gray-cool-2');
-  height: 800px;
-  background-image: url(/assets/img/textures/animation-pulse.gif);
-  background-position: left;
+  background: url(/assets/img/textures/mobile_homepage_static_background.png);
   background-repeat: no-repeat;
   background-size: cover;
-    p {
-      margin: 0;
-      font-size: 3rem;
-    }
+  background-position: left top;
+  color: color('gray-cool-2');
+  height: 800px;
+  p {
+    margin: 0;
+    font-size: 3rem;
+  }
 
-    @include at-media('desktop') {
+  @include at-media('desktop') {
+      background-image: url(/assets/img/textures/desktop_landing_static_murmation_full.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
       padding: 0;
       display: flex;
       min-height: 444px; //same height as coil-logo-container's width to make a square
@@ -306,8 +313,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
   .project-card__statventures {
     .usa-card__img {
-      padding: 0px;
-      padding-right:42px;
+      padding: 16px;
+      // width: 50%;
       background-color: color('blue-warm-60v');
     }
   }
@@ -330,7 +337,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       align-items: center;
       justify-content: center;
       gap: 32px;
-      background-image: url(/assets/img/icons/wave-ball-right.svg);
+      background-image: url(/assets/img/icons/wave-ball-right.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: bottom;
@@ -436,11 +443,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 }
 
-@include at-media('desktop') {
-  #meet-the-team {
-  text-align: center;
-  }
-}
 
 .coil-help-list {
   list-style-type: '\2713';
@@ -469,9 +471,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 }
 .coil-bio__text {
   text-align: left;
-  // @include at-media('tablet') {
-  //   padding-left: 1.6rem;
-  // }
+  text-transform: capitalize;
   h3, p {
     @include u-margin-y(0);
   }
@@ -516,7 +516,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 }
 .our-values {
   padding:0 32px;
-  background-color: color('gray-cool-2');
+  color: color('gray-cool-2');
   #accordion-values .usa-accordion__heading .usa-accordion__button {
       background-color: inherit;
       border-top: 1px solid;
@@ -653,6 +653,18 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     }
 }
 
+.capabilities-container {
+  color: color('gray-cool-2');
+  background-image: linear-gradient(180deg, rgba(0, 80, 216, 0) 0%, rgba(0, 80, 216, .9) 103.4%), url(/assets/img/textures/about_our_capabilities_background.png);
+  background-size: contain;
+  h2, h3 {
+    margin-inline: 32px;
+  }
+  .capabilities-list {
+    width: 100%;
+  }
+}
+
 #collaborate-section {
   @include grid-row;
   @include u-flex('align-center');
@@ -667,6 +679,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
   img {
     @include u-margin-x(2);
+  }
+
+  h2 {
+    width: 12ch;
+    @include at-media('desktop') {
+        width: fit-content;
+      }
   }
 
 }
@@ -687,23 +706,24 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   .capabilities {
     background-image: url(/assets/img/textures/about_our_capabilities_background.png);
     background-size: contain;
-    h2 {
-      text-align: center;
-    }
     ul {
       @include grid-gap;
       li {
-        @include u-border(1px);
+        @include u-border-top(1px);
         border-color: inherit;
-        @include u-bg('primary');
-        @include u-width('card-lg');
-        @include u-radius('lg');
-        text-align: center;
+        // text-align: center;
         @include u-padding-x(1);
         @include u-padding-y(3);
 
+        @include at-media('desktop') {
+          @include grid-col(4);
+          @include u-border(0);
+        }
 
       }
+    }
+    .capabilities-icon {
+      width: 35%;
     }
   }
 
@@ -1404,7 +1424,7 @@ a[href="#"] {
 
 }
 .coil-btn {
-  display: inline-block;
+  // display: inline-block;
   width: 100%;
   text-align: center;
   color: color('blue-warm-60v');
