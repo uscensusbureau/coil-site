@@ -313,8 +313,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
   .project-card__statventures {
     .usa-card__img {
-      padding: 0px;
-      padding-right:42px;
+      padding: 16px;
+      // width: 50%;
       background-color: color('blue-warm-60v');
     }
   }
@@ -516,7 +516,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 }
 .our-values {
   padding:0 32px;
-  background-color: color('gray-cool-2');
+  color: color('gray-cool-2');
   #accordion-values .usa-accordion__heading .usa-accordion__button {
       background-color: inherit;
       border-top: 1px solid;
@@ -1424,7 +1424,7 @@ a[href="#"] {
 
 }
 .coil-btn {
-  display: inline-block;
+  // display: inline-block;
   width: 100%;
   text-align: center;
   color: color('blue-warm-60v');
