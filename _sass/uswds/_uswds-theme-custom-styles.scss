@@ -38,7 +38,10 @@ footer {
 }
 
 .combined-footer {
-  @include at-media('tablet') {
+  background-image: url(/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include at-media('desktop') {
       background-image: url(/assets/img/textures/footer_background.png);
 
     }
@@ -158,18 +161,22 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .coil-hero {
   @include u-margin-top(0);
   padding: 0 32px;
-  color: color('gray-cool-2');
-  height: 800px;
-  background-image: url(/assets/img/textures/animation-pulse.gif);
-  background-position: left;
+  background: url(/assets/img/textures/mobile_homepage_static_background.png);
   background-repeat: no-repeat;
   background-size: cover;
-    p {
-      margin: 0;
-      font-size: 3rem;
-    }
+  background-position: left top;
+  color: color('gray-cool-2');
+  height: 800px;
+  p {
+    margin: 0;
+    font-size: 3rem;
+  }
 
-    @include at-media('desktop') {
+  @include at-media('desktop') {
+      background-image: url(/assets/img/textures/desktop_landing_static_murmation_full.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
       padding: 0;
       display: flex;
       min-height: 444px; //same height as coil-logo-container's width to make a square
@@ -330,7 +337,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       align-items: center;
       justify-content: center;
       gap: 32px;
-      background-image: url(/assets/img/icons/wave-ball-right.svg);
+      background-image: url(/assets/img/icons/wave-ball-right.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: bottom;
