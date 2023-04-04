@@ -34,9 +34,13 @@ project-card-group:
     alt: The Opportunity Project Logo
     blurb: Digital tools for the public good.
 
-team:
-  title: Meet the Team
-
+coil-capabilities:
+  - name: Creative Solutions to Sticky Problems
+  - name: Design & User Research
+  - name: Challenges, Tech Sprints, & Crowdsourcing
+  - name: Strategic Cross-Sector Collaborations
+  - name: Policy Innovation
+  - name: Facilitation
 ---
 
 If you’re interested in participating in TOP, please [fill out this interest form]({{ site.top-form }}).
