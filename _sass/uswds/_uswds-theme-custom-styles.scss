@@ -681,6 +681,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     @include u-margin-x(2);
   }
 
+  h2 {
+    width: 12ch;
+    @include at-media('desktop') {
+        width: fit-content;
+      }
+  }
+
 }
 
 // about page
