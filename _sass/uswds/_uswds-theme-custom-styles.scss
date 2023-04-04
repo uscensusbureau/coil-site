@@ -436,11 +436,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 }
 
-@include at-media('desktop') {
-  #meet-the-team {
-  text-align: center;
-  }
-}
 
 .coil-help-list {
   list-style-type: '\2713';
@@ -469,9 +464,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 }
 .coil-bio__text {
   text-align: left;
-  // @include at-media('tablet') {
-  //   padding-left: 1.6rem;
-  // }
+  text-transform: capitalize;
   h3, p {
     @include u-margin-y(0);
   }
