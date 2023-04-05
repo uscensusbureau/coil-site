@@ -28,6 +28,16 @@ footer {
 
 }
 
+.footer-info {
+  background-image: url(/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include at-media('desktop') {
+    background: none;
+  }
+
+}
+
 .footer-section-bottom {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.8);
@@ -38,9 +48,6 @@ footer {
 }
 
 .combined-footer {
-  background-image: url(/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   @include at-media('desktop') {
       background-image: url(/assets/img/textures/footer_background.png);
 
