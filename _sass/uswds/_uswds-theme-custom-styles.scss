@@ -89,6 +89,7 @@ h1 {
 }
 h2 {
   // @include u-font('sans', 'xl');
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -489,6 +490,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   h3, p {
     @include u-margin-y(0);
   }
+  h3 {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
 
 .coil-bio__email {
@@ -524,8 +531,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   flex-direction: column;
   // @include u-padding-x(6);
   p {
-    width:66%;
-    max-width: 768px;
+    // width:66%;
+    max-width: 860px;
+    font-size: 1.5rem;
   }
 }
 .our-values {
@@ -738,12 +746,19 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         @include at-media('desktop') {
           @include grid-col(4);
           @include u-border(0);
+          h3 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 1.125rem;
+          }
         }
 
       }
     }
     .capabilities-icon {
-      width: 35%;
+      max-height: 960px;
     }
   }
 
