@@ -28,6 +28,16 @@ footer {
 
 }
 
+.footer-info {
+  background-image: url(/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include at-media('desktop') {
+    background: none;
+  }
+
+}
+
 .footer-section-bottom {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.8);
@@ -38,9 +48,6 @@ footer {
 }
 
 .combined-footer {
-  background-image: url(/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   @include at-media('desktop') {
       background-image: url(/assets/img/textures/footer_background.png);
 
@@ -75,11 +82,14 @@ $coil-left-padding-wide: 10;
  * Typography
  ****************/
 h1 {
-  @include u-font('sans', '2xl');
+  // @include u-font('sans', '2xl');
+  font-size: 2.5rem;
   @include u-margin(0);
+  font-weight: 600;
 }
 h2 {
-  @include u-font('sans', 'xl');
+  // @include u-font('sans', 'xl');
+  font-weight: 600;
 }
 
 h2, h3 {
@@ -169,7 +179,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   height: 800px;
   p {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   @include at-media('desktop') {
@@ -183,8 +193,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       align-items: center;
 
       p {
-        font-size: 2rem;
-
+        font-size: 2.5rem;
+        max-width: 34ch;
         padding-left: 90px;
       }
     }
@@ -228,6 +238,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     div {
         p {
           width: 13ch;
+          font-size: 1.5rem;
         }
     }
   }
@@ -250,6 +261,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     padding: 32px;
     div .blurb {
       width: 14ch;
+      font-size: 1.5rem;
     }
     div .name {
         font-weight: 600;
@@ -268,6 +280,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
     div .blurb {
       width: 10ch;
+      font-size: 1.5rem;
     }
   }
   .statventures-logo-img,
@@ -334,7 +347,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
     .our-work-blurb {
       display: flex;
-      align-items: center;
+      align-items: baseline;
       justify-content: center;
       gap: 32px;
       background-image: url(/assets/img/icons/wave-ball-right.png);
@@ -346,6 +359,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       }
       p {
         max-width: 39%;
+        font-size: 1.5rem;
       }
     }
   }
@@ -547,7 +561,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
           min-height: 600px;
           color: color('gray-cool-2');
           text-align: center;
-
+          h2 {
+            font-size: 2rem;
+          }
           div {
             border-radius: 50%;
             /* border: 1px solid red; */
@@ -566,6 +582,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
             ul {
               position:absolute;
               list-style-type: none;
+              font-size: 1.5rem;
             }
           }
 
@@ -586,8 +603,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
           }
           a {
             text-decoration:underline;
+            text-underline-offset: 8px;
             text-transform:uppercase;
-            font-size: 1rem;
+            font-size: 1.125rem;
             position: relative;
             z-index: 99;
 
@@ -675,7 +693,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
   }
   a {
-    @include u-font('sans', 'sm')
+    // @include u-font('sans', 'sm');
+    font-size: 1.313rem;
   }
   img {
     @include u-margin-x(2);
@@ -685,6 +704,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     width: 12ch;
     @include at-media('desktop') {
         width: fit-content;
+        font-size: 2rem;
       }
   }
 
