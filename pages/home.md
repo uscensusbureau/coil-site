@@ -23,6 +23,7 @@ project-card-group:
     image: ../assets/img/logos/statventures_placard_logo.png
     alt: StatVentures Logo
     blurb: The future of Census Bureau data.
+    internal-link: statventures/
   - name: Data Equity & Usability
     class: data-usability
     image: ../assets/img/projects/desktop_homepage_data_usability_graphic.png
@@ -33,6 +34,7 @@ project-card-group:
     image: ../assets/img/logos/top-full-white-logo.png
     alt: The Opportunity Project Logo
     blurb: Digital tools for the public good.
+    external-link: https://opportunity.census.gov/
 
 coil-capabilities:
   - name: Creative Solutions to Sticky Problems

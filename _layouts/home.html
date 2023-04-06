@@ -55,7 +55,7 @@ class: home
         <div class="inner-circle">
           <section class="our-values-circle--text">
             <h2>Our Capabilities</h2>
-            <a href="{{ site.baseurl }}/about#capabilities">Explore</a>
+            <a href="{{ site.baseurl }}/about#capabilities" class="text-uppercase"> Explore</a>
           </section>
         </div>
       </div>
@@ -64,11 +64,13 @@ class: home
   <div class="desktop:display-none capabilities-container">
     {% include coil-capabilities-section.html %}
     <div class="grid-container">
-      <a class="coil-btn display-inline-block" href="{{site.baseurl}}/about#capabilities">Explore</a>
+      <a class="coil-btn display-inline-block" href="{{site.baseurl}}/about#capabilities">EXPLORE</a>
     </div>
   </div>
 </main>
 <div class="combined-footer">
-  {% include coil-collaborate-section.html %}
-  {% include coil-footer.html %}
+  <div class="grid-container">
+    {% include coil-collaborate-section.html %}
+    {% include coil-footer.html %}
+  </div>
 </div>

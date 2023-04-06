@@ -41,10 +41,22 @@ footer {
 .footer-section-bottom {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.8);
-
+  @include u-flex('column');
   width: 90%;
   margin: 0 auto;
   justify-content: center;
+
+  a {
+      border: 0;
+      font-size: 1rem;
+    }
+  @include at-media('desktop') {
+    @include u-flex('row');
+    a {
+    border: unset;
+  }
+}
+
 }
 
 .combined-footer {
@@ -285,9 +297,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      min-height:100%;
+    }
 
     div .blurb {
       width: 10ch;
@@ -332,7 +347,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   .project-card__data-usability {
     .usa-card__img {
       padding:0;
-      background-color: yellow;
+      // background-color: yellow;
     }
   }
   .project-card__statventures {
@@ -742,6 +757,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   @include u-flex('align-center');
   @include u-flex('justify-center');
   color: color('gray-cool-2');
+  width: 90%;
+  margin: 0 auto;
+  @include u-padding-x(2);
+  .collaborate-section-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
   > * {
     color: color('gray-cool-2');
 
@@ -749,6 +771,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   a {
     // @include u-font('sans', 'sm');
     font-size: 1.313rem;
+    color: white;
   }
   img {
     @include u-margin-x(2);
@@ -756,10 +779,22 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
   h2 {
     width: 12ch;
-    @include at-media('desktop') {
-        width: fit-content;
-        font-size: 2rem;
-      }
+  }
+
+  @include at-media('desktop') {
+    width: 100%;
+    @include u-padding-x(2);
+    .collaborate-section-container {
+      padding: 0;
+    }
+    h2 {
+    width: fit-content;
+    font-size: 2rem;
+    }
+
+    a {
+      font-size: 1.2rem;
+    }
   }
 
 }
@@ -818,7 +853,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         background-color: color('blue-warm-60v');
         flex-basis: 33%;
         &:first-child {
-          background-color: yellow;
+          // background-color: yellow;
         }
       }
   }
