@@ -297,9 +297,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    a {
+      display: flex;
+      justify-content: center;
+      min-height:100%;
+    }
 
     div .blurb {
       width: 10ch;
