@@ -41,10 +41,22 @@ footer {
 .footer-section-bottom {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.8);
-
+  @include u-flex('column');
   width: 90%;
   margin: 0 auto;
   justify-content: center;
+
+  a {
+      border: 0;
+      font-size: 1rem;
+    }
+  @include at-media('desktop') {
+    @include u-flex('row');
+    a {
+    border: unset;
+  }
+}
+
 }
 
 .combined-footer {
@@ -756,6 +768,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   a {
     // @include u-font('sans', 'sm');
     font-size: 1.313rem;
+    color: white;
   }
   img {
     @include u-margin-x(2);
