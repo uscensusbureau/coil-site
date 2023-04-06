@@ -1,24 +1,100 @@
-<a class="usa-skipnav" href="#main-content">Skip to main content</a>
-<header class="coil-header">
-  <div class="coil-navbar font-family-mono font-family-3xs">
-    <a href="https://opportunity.census.gov">
-      &larr;&nbsp;<span class="large-only">The Opportunity Project</span><span class="small-only">Back</span>
-    </a>
-    <div id="logo">
-      <div>
-        <a class="text-white margin-0 font-sans-lg large-only text-no-underline"
-          href="{{ site.baseurl }}/">
-          <b>CENSUS OPEN</b> INNOVATION LABS
-        </a>
-        <a class="text-white margin-0 font-sans-lg small-only text-no-underline"
-        href="{{ site.baseurl }}/">
-          <b>COIL</b>
+<!-- <a class="usa-skipnav" href="#main-content">Skip to main content</a> -->
+
+{% if page.name == "home.md" %}
+
+<!-- <div class="usa-overlay"></div> -->
+<section class="usa-header usa-header--basic width-full desktop:minh-15 margin-bottom-10 desktop:margin-bottom-0">
+  <div class="usa-nav-container maxw-full padding-left-0" id="coil-navbar-container">
+    <div class="usa-navbar border-0 desktop:display-none">
+      <div class="usa-logo margin-left-0 minh-9 margin-top-8" id="coil-logo">
+        <!-- <em class="usa-logo__text"><a href="{{ site.baseurl }}/" title="Home">COIL</a></em> -->
+        <a class="width-15 display-inline-block" href="{{ site.baseurl }}/" title="Home">
+          <img src="{{site.baseurl}}/assets/img/logos/coil-logo-l-navy.png" alt="Census Open Innovation Labs Homepage" class="bg-white width-15 padding-3 desktop:display-none">
         </a>
       </div>
+      <button type="button" class="usa-menu-btn">
+        <pre class="margin-0 padding-05">
+          Menu
+          <span class="font-sans-xl hamburger-icon display-inline-block">☰</span>
+        </pre>
+        </span>
+      </button>
+      <!-- <button type="button" class="usa-menu-btn">
+        <span class="menu-btn-content-container display-inline-block">Menu
+          <span class="font-sans-xl hamburger-icon display-inline-block">☰</span>
+        </span>
+      </button> -->
     </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button type="button" class="usa-nav__close">
+        <img src="{{site.baseurl}}/assets/img/usa-icons/close.svg" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-dark-background usa-accordion" style="background:#151622;">
+        <li class="usa-nav__primary-item">
+          <a href="{{ site.baseurl }}/" class="usa-nav-link"><span>Home</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="{{ site.baseurl }}/about" class="usa-nav-link"><span>About</span></a>
+        </li>
+        <!-- <li class="usa-nav__primary-item">
+                    <a href="{{ site.baseurl }}/portfolio" class="usa-nav-link"><span>Portfolio</span></a>
+                </li> -->
+        <li class="usa-nav__primary-item">
+          <a href="mailto:{{ site.email }}?subject=Collaborate with COIL" class="usa-nav-link border border-white" style="border-bottom:1px white solid; font-weight: normal;"><span>Collaborate With Us</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
 
-    <a class="coil-btn__secondary-white margin-top-0" href="mailto:{{ site.email }}" target="_blank" rel="noopener">
-      Contact&nbsp;Us
-    </a>
+{% else %}
+
+<header class="usa-header usa-header--basic minh-15">
+  <div class="usa-nav-container maxw-full padding-left-0" id="coil-navbar-container">
+    <div class="usa-navbar border-0">
+      <div class="usa-logo margin-left-0 minh-9 margin-top-205" id="coil-logo">
+        <!-- <em class="usa-logo__text"><a href="{{ site.baseurl }}/" title="Home">COIL</a></em> -->
+        <a class="width-15 display-inline-block" href="{{ site.baseurl }}/" title="Home">
+          <img src="{{site.baseurl}}/assets/img/logos/coil-logo-l-navy.png" alt="Census Open Innovation Labs Homepage"
+            class="bg-white width-15 padding-3 display-none desktop:display-inline-block">
+          <img src="{{site.baseurl}}/assets/img/logos/coil_logo_l-white.png" alt="Census Open Innovation Labs Homepage"
+            class="width-15 padding-3 desktop:display-none">
+        </a>
+      </div>
+      <button type="button" class="usa-menu-btn">
+        <pre class="margin-0 padding-05">
+          Menu
+          <span class="font-sans-xl hamburger-icon display-inline-block">☰</span>
+        </pre>
+        </span>
+      </button>
+      <!-- <button type="button" class="usa-menu-btn">
+        <span class="menu-btn-content-container display-inline-block">Menu
+          <span class="font-sans-xl hamburger-icon display-inline-block">☰</span>
+        </span>
+      </button> -->
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button type="button" class="usa-nav__close">
+        <img src="{{site.baseurl}}/assets/img/usa-icons/close.svg" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-dark-background usa-accordion" style="background:#151622;">
+        <li class="usa-nav__primary-item">
+          <a href="{{ site.baseurl }}/" class="usa-nav-link"><span>Home</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="{{ site.baseurl }}/about" class="usa-nav-link"><span>About</span></a>
+        </li>
+        <!-- <li class="usa-nav__primary-item">
+                    <a href="{{ site.baseurl }}/portfolio" class="usa-nav-link"><span>Portfolio</span></a>
+                </li> -->
+        <li class="usa-nav__primary-item">
+          <a href="mailto:{{ site.email }}?subject=Collaborate with COIL" class="usa-nav-link border border-white"
+            style="border-bottom:1px white solid; font-weight: normal;"><span>Collaborate With
+              Us</span></a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
+{% endif %}
