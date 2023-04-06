@@ -33,22 +33,28 @@ class: home
       <div class="outer-circle">
               <ul>
                 <li class="list-style-image-v1">
-                  <span>Lorem ipsum</span>
+                  <span>Creative Solutions to Sticky Problems</span>
                 </li>
                 <li class="list-style-image-v2">
-                  <span>Lorem ipsum dolor</span>
+                  <span>Design & User Research</span>
                 </li>
                 <li class="list-style-image-v3">
-                  <span>Lorem & Ipsum</span>
+                  <span>Challenges, Tech Sprints, & Crowdsourcing</span>
                 </li>
                 <li class="list-style-image-v4">
-                  <span>Lorem</span>
+                  <span>Strategic Cross-Sector Collaborations</span>
+                </li>
+                <li class="list-style-image-v5">
+                  <span>Policy Innovation</span>
+                </li>
+                <li class="list-style-image-v6">
+                  <span>Facilitation</span>
                 </li>
               </ul>
         <div class="inner-circle">
           <section class="our-values-circle--text">
             <h2>Our Capabilities</h2>
-            <a href="{{ site.baseurl }}/about">Explore</a>
+            <a href="{{ site.baseurl }}/about#capabilities">Explore</a>
           </section>
         </div>
       </div>
@@ -56,7 +62,9 @@ class: home
   </section>
   <div class="desktop:display-none capabilities-container">
     {% include coil-capabilities-section.html %}
-    <a class="coil-btn display-inline-block" href="#" target="_blank">Explore</a>
+    <div class="grid-container">
+      <a class="coil-btn display-inline-block" href="{{site.baseurl}}/about#capabilities">Explore</a>
+    </div>
   </div>
 </main>
 <div class="combined-footer">

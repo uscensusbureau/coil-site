@@ -590,7 +590,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
             ul {
               position:absolute;
               list-style-type: none;
-              font-size: 1.5rem;
+              font-size: 1.3rem;
             }
           }
 
@@ -625,55 +625,87 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
             }
           }
         }
+        ul li span {
+          display: inline-block;
+          position: relative;
+        }
         ul li.list-style-image-v1{
           &::after{
-            content: url(/assets/img/icons/list-item-v1.svg);
+            content: url(/assets/img/icons/creative-solutions.svg);
             position: relative;
-            right: 300px;
+            bottom: -40px;
+            right: 380px;
           }
           span {
-            position: relative;
-            bottom: 100px;
-            right: 190px;
+            width: 35%;
+            bottom: 60px;
+            left: -140px;
+            text-align: left;
           }
         }
         ul li.list-style-image-v2{
           &::after {
-            content: url(/assets/img/icons/list-item-v2.svg);
+            content: url(/assets/img/icons/design-and-user-research_line.svg);
             position: relative;
-            right: 300px;
-            top: 150px;
+            right: 441px;
+            top: 110px;
           }
           span {
-            position: relative;
-            top: 140px;
-            right: 210px;
+            top: 50px;
+            right: 190px;
           }
         }
         ul li.list-style-image-v3 {
-          &::before{
-            content: url(/assets/img/icons/list-item-v3.svg);
+          &::after{
+            content: url(/assets/img/icons/challenges-line.svg);
             position: relative;
-            bottom: 100px;
-            left: 400px;
+            right: 434px;
+            top: 160px;
           }
           span {
-            position: relative;
-            bottom: 200px;
-            left: 270px;
+            width: 40%;
+            top: 140px;
+            right: 160px;
+            text-align: left;
           }
         }
 
         ul li.list-style-image-v4 {
           &::before{
-            content: url(/assets/img/icons/list-item-v4.svg);
+            content: url(/assets/img/icons/strategic-cross-sector-collab_line.svg);
             position: relative;
-            left: 200px;
+            bottom: -70px;
+            left: 344px;
           }
           span {
+            width: 35%;
+            bottom: -50px;
+            left: 100px;
+            text-align: right;
+          }
+        }
+        ul li.list-style-image-v5 {
+          &::before{
+            content: url(/assets/img/icons/policy-innovation.svg);
             position: relative;
-            bottom: 10px;
-            left: 115px;
+            left: 360px;
+            bottom: 80px;
+          }
+          span {
+            bottom: 100px;
+            left: 176px;
+          }
+        }
+        ul li.list-style-image-v6 {
+          &::before{
+            content: url(/assets/img/icons/facillitation-line.svg);
+            position: relative;
+            bottom: 300px;
+            left: 280px;
+          }
+          span {
+            bottom: 390px;
+            left: 160px;
           }
         }
     }
@@ -731,7 +763,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     display: none;
   }
 
-  .capabilities {
+  #capabilities {
     background-image: url(/assets/img/textures/about_our_capabilities_background.png);
     background-size: contain;
     ul {
@@ -1458,6 +1490,10 @@ a[href="#"] {
   background-color: red;
 
 }
+a[href="/about#capabilities"] {
+  color: white;
+
+}
 .coil-btn {
   // display: inline-block;
   width: 100%;
@@ -1470,6 +1506,10 @@ a[href="#"] {
   border-radius: .5rem;
   margin-top: 32px;
   margin-bottom: 3rem;
+
+  #capabilities & {
+    color: white;
+  }
 
   &:hover,
   &:active {

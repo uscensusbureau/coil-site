@@ -11,7 +11,7 @@ header:
 
 coil-capabilities:
   - name: |-
-      Creative Solutions <br>to Sticky Problems
+      Creative Solutions to Sticky Problems
     blurb: We help you identify unique solutions when well-worn paths are unsuccessful.
   - name: |-
       Design & User Research<br><br>
