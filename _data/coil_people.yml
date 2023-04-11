@@ -1,46 +1,58 @@
 - email: haley.m.ashcom@census.gov
   img: haley.jpg
   name: Haley Ashcom Miller
-  pageOrder: 4
+  pageOrder: 5
   title: Deputy Director, The Opportunity Project
 
 - email: dominica.zhu@census.gov
   img: dominica.jpg
   name: Dominica Zhu
-  pageOrder: 1
+  pageOrder: 2
   title: Head of Human Centered Innovation
 
 - email: drew.a.zachary@census.gov
   img: drew.jpg
   name: Drew Zachary
-  pageOrder: 3
+  pageOrder: 4
   title: Managing Director
 
 - email: alessandra.v.hartkopf@census.gov
   img: COIL_headshot_AH.png
   name: Alessandra Hartkopf
   pageOrder: 0
-  title: Lead Design Strategist
+  title: Senior Designer & Digital Team Lead
 
 - email: victoria.e.fine@census.gov
   img: COIL_headshot_VF.png
   name: Victoria Fine
-  pageOrder: 7
+  pageOrder: 9
   title: Senior Advisor - Program Development and Communication
 
 - img: sadiejay.jpg
   name: Sadie Jay
-  pageOrder: 5
+  pageOrder: 6
   title: Front-end Web Developer
 
 - email: vanessa.l.yip@census.gov
   img: vanessayip.png
   name: Vanessa Yip
-  pageOrder: 6
+  pageOrder: 8
   title: UX Designer
 
 - email: dorcas.lin@census.gov
   img: dorcaslin.png
   name: Dorcas Lin
-  pageOrder: 2
+  pageOrder: 3
   title: Graphic & Interaction Designer
+
+- email: alexandra.s.barker@census.gov
+  img: alexandra.png
+  name: Alexandra Barker
+  pageOrder: 1
+  title: Advisor for Strategic Digital Communications & Innovation
+
+- email: thera.m.naiman@census.gov
+  img: thera.png
+  name: Thera Naiman
+  pageOrder: 7
+  title: Innovation Program Manager
