@@ -11,8 +11,12 @@
                 <ul class="usa-list usa-list--unstyled display-flex flex-row flex-wrap capabilities-list">
                     {% for capability in capabilities %}
                 <li class="border-top grid-col-full margin-y-2">
+                    {% if page.name == "about.md" %}
                     <h3>{{ capability.name }}</h3>
                     <p>{{ capability.blurb }}</p>
+                    {% else %}
+                    <h3 class="text-normal">{{ capability.name }}</h3>
+                    {% endif %}
                 </li>
                 {% endfor %}
             </ul>
