@@ -1,11 +1,11 @@
-<footer class="usa-section--dark bg-base-darkest padding-bottom-6" role="contentinfo">
+<footer class="footer-info" role="contentinfo">
   <div
-    class="footer-section-bottom usa-media-block__footer grid-row display-flex flex-align-center padding-y-4"
+    class="footer-section-bottom usa-media-block__footer grid-row display-flex desktop:flex-row flex-column grid-container desktop:flex-align-center padding-y-4"
   >
     {% for link in site.data.navigation.footer %}
       <a href="{% unless link.isExternal %}{{ site.baseurl }}/{% endunless %}{{ link.href }}"
-        class="border-base-dark
-          {% unless forloop.first %} border-left padding-left-2 {% endunless %}
+        class="text-white
+          {% unless forloop.first %} border-left {% endunless %}
           {% unless forloop.last %} padding-right-2 {% endunless %}
         "
       >{{ link.text }}</a>
