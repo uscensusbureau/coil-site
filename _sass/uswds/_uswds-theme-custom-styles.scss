@@ -141,6 +141,10 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   .usa-menu-btn {
     background-color: transparent;
   }
+
+  .usa-nav-link:hover {
+    background-color: color('blue-warm-60v');
+  }
 }
 .coil-navbar {
   @include u-padding-x(3);
