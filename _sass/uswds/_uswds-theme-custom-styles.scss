@@ -1224,12 +1224,13 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
             }
         }
         .winners-list--item p{
-          border: 2px solid;
-            border-radius: 50%;
-            height: 100%;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
+          border: 1px solid;
+          border-radius: 50%;
+          height: 100%;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          font-weight: 600;
         }
       }
 
