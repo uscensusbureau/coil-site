@@ -54,6 +54,31 @@ class:
         <figcaption>Image Source: Library of Congress</figcaption>
     </figure>
 </header>
+<section class="winners display-flex flex-column">
+    <div class="display-flex flex-justify-center winner-content">
+        <div class="maxw-mobile-lg">
+            <h2>Supply Chain Challenge
+            Phase One Winners
+            Announced</h2>
+            <a class="statventures-btn" href="#" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="download-icon" role="img">
+                    <title id="download-icon">Download Icon</title>
+                    <path
+                        d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67 2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
+                </svg>
+                View Winners
+            </a>
+        </div>
+    </div>
+    <div class="flex-fill display-flex flex-justify-center winners-list-container">
+        <h2>Phase One Winners</h2>
+        <ul class="winners-list usa-list usa-list--unstyled display-flex flex-row flex-wrap flex-justify-center">
+        {% for winner in page.phase-one-winners %}
+            <li class="winners-list--item height-card width-card display-flex flex-justify-center flex-align-center border-1px margin-2"><p class="display-flex text-center">{{winner}}</p></li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
 <!-- !GTG -->
 <section class="challenge-intro--mobile mobile-only"> <!-- visible only on mobile -->
     <div class="content-container">
