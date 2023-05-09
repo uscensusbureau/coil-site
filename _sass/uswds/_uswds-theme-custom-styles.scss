@@ -1183,6 +1183,38 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         }
       }
 
+      &.winners {
+        // flex-direction: row;
+        // background: color('blue-warm-60v');
+        padding-left: 0px;
+        padding-right: 0px;
+        color: white;
+        @include at-media('desktop') {
+            flex-direction: row;
+          }
+        .winner-content {
+          background: color('blue-warm-60v');
+          width: 100%;
+          @include at-media('desktop') {
+            @include u-flex('fill');
+            @include u-minh('full');
+            width: auto;
+          }
+        }
+        .winners-list-container {
+          background: color('indigo-cool-90');
+          color: white;
+        }
+        .winners-list--item p{
+          border: 2px solid;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+      }
+
       &.challenge-intro--mobile {
         background: color('indigo-cool-90');
         color: color('gray-cool-2');
