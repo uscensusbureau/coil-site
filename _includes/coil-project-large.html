@@ -1,14 +1,42 @@
+<!-- directly under happening now section -->
+
 {% assign data = include.data %}
 {% assign hasTags = data.tags %}
-<div class="coil-project-lg" id="{{ data.title | slugify }}">
+<div class="coil-project-lg display-none" id="{{ data.title | slugify }}">
   <div class="project-content">
     {% include image.html src=data.img.src alt=data.img.alt %}
     <div class="project-texts">
       {% include project-large-text.html data=data %}
-    
+
       {% if data.subproject %}
         {% include project-large-text.html data=data.subproject isSubproject=true %}
       {% endif %}
     </div>
   </div>
 </div>
+
+<ul class="featured-projects-list grid-row display-none desktop:display-flex">
+  <li class="featured-projects-item highlight-project project-item-statventures">
+    <a href="{{site.baseurl}}/statventures/" class="text-no-underline">
+      <div>
+        <p class="blurb">The future of Census Bureau data.</p>
+        <img src="{{site.baseurl}}/assets/img/logos/statventures_placard_logo.png" alt="StatVentures Logo"
+          class="statventures-logo-img">
+      </div>
+    </a>
+  </li>
+  <li class="featured-projects-item grid-col project-item-data-usability">
+    <div>
+      <p class="blurb">Improving access to data resources.</p>
+      <p class="name">Data Usability & Equity</p>
+    </div>
+  </li>
+  <li class="featured-projects-item grid-col project-item-top">
+    <a href="https://opportunity.census.gov/" class="text-no-underline">
+    <div>
+        <p class="blurb">Digital tools for the public good.</p>
+        <img src="{{site.baseurl}}/assets/img/logos/top-full-white-logo.png" alt="The Opportunity Project Logo" class="top-logo-img">
+      </div>
+    </a>
+  </li>
+</ul>
