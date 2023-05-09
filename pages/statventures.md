@@ -52,17 +52,17 @@ footer-horizontal-desktop:
   icon: /icons/footer-icons.png
 
 phase-one-winners:
-  - winner name
-  - longer winner name
-  - winner name
-  - longer winner name
-  - winner name
-  - longer winner name
-  - winner name
-  - longer winner name
-  - winner name
-  - winner name
-  - winner name
+  - "AEROSPIKE"
+  - "Bunting Labs, Inc."
+  - "CANA LLC"
+  - "Data Driven Supply Chain, LLC"
+  - "DigitalNomads"
+  - "Esri"
+  - "FreightWaves"
+  - "Made in Manchester"
+  - "Murano Corporation"
+  - "Noguera Tintelnot"
+  - "Transautomata"
 ---
 
 
