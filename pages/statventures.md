@@ -50,6 +50,19 @@ footer-vertical-mobile:
 
 footer-horizontal-desktop:
   icon: /icons/footer-icons.png
+
+phase-one-winners:
+  - winner name
+  - longer winner name
+  - winner name
+  - longer winner name
+  - winner name
+  - longer winner name
+  - winner name
+  - longer winner name
+  - winner name
+  - winner name
+  - winner name
 ---
 
 
