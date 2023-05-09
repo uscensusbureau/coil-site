@@ -884,10 +884,16 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
 .statventures {
 
+
+  & .statventures-btn svg {
+      fill: color('blue-warm-60v');
+    }
   & .statventures-btn {
+    display: inline-flex;
+    justify-content: center;
     color: color('blue-warm-60v');
     box-shadow: inset 0 0 0 2px color('blue-warm-60v');
-    padding: .5rem;
+    padding: .5rem 1.25rem;
     background-color: color('gray-cool-2');
     text-decoration: none;
     border-radius: .5rem;
@@ -896,6 +902,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     &:active {
       background-color: color('blue-warm-60v');
       color: color('gray-cool-2');
+      svg {
+        fill: color('gray-cool-2');
+      }
     }
   }
 
