@@ -12,7 +12,7 @@ class:
         <!-- <img src="" alt="stat logo" class="logo-img-white"> -->
     </div>
     <div class="bar--text">
-        <p>Phase 1 Applications Are Now Closed</p>
+        <p>Phase 1 Winners Announced</p>
     </div>
 </header>
 <!-- !GTG -->
@@ -54,6 +54,31 @@ class:
         <figcaption>Image Source: Library of Congress</figcaption>
     </figure>
 </header>
+<section class="winners display-flex flex-column">
+    <div class="display-flex flex-justify-center winner-content-wrapper">
+        <div class="winner-content">
+            <h2>Supply Chain Challenge
+            Phase One Winners
+            Announced</h2>
+            <a class="statventures-btn" href="{{ site.baseurl }}/assets/files/statventures-supply-chain-phase1-winners.pdf" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-labelledby="download-icon" role="img">
+                    <title id="download-icon">Download Icon</title>
+                    <path
+                        d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67 2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
+                </svg>
+                View Winners
+            </a>
+        </div>
+    </div>
+    <div class="flex-fill display-flex flex-justify-center winners-list-container">
+        <h2>Phase One Winners</h2>
+        <ul class="winners-list usa-list usa-list--unstyled display-flex flex-row flex-wrap flex-justify-center">
+        {% for winner in page.phase-one-winners %}
+            <li class="winners-list--item height-card width-card display-flex flex-justify-center flex-align-center border-1px margin-2"><p class="display-flex text-center">{{winner}}</p></li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
 <!-- !GTG -->
 <section class="challenge-intro--mobile mobile-only"> <!-- visible only on mobile -->
     <div class="content-container">
@@ -82,7 +107,7 @@ class:
                 </button>
             </h4>
             <div id="m-a2" class="usa-accordion__content usa-prose">
-                <h5>October to May</h5>
+                <h5>Complete</h5>
                 <p>
                     Propose an idea to improve U.S. Census data sources. Ten of the most innovative and promising ideas will be awarded $10,000 and their submitters will be invited to join the inaugural StatVentures cohort.
                 </p>
@@ -93,7 +118,7 @@ class:
                 </button>
             </h4>
             <div id="m-a3" class="usa-accordion__content usa-prose">
-                <h5>Spring 2023</h5>
+                <h5>2023</h5>
                 <p>
                     Iterate on your idea from phase 1, with direct collaboration and feedback from the U.S. Census Bureau team. Finalists with the most promising roadmaps will receive awards to move from plan to prototype. Missed phase 1? Don’t worry, new “walk on” teams have the opportunity to join in phases 2 and 3.
                 </p>
@@ -104,7 +129,7 @@ class:
                 </button>
             </h4>
             <div id="m-a4" class="usa-accordion__content usa-prose">
-                <h5>Late 2023</h5>
+                <h5>2024</h5>
                 <p>
                     Build your prototype and test it in real-world scenarios. Prototype demos are evaluated on their potential to serve the U.S. Census Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by the U.S. Census Bureau.
                 </p>
@@ -145,7 +170,7 @@ class:
                         </div>
 
                         <div class="usa-card__footer">
-                            <div class="usa-button">October to May</div>
+                            <div class="usa-button">Complete</div>
                         </div>
                     </div>
                 </li>
@@ -160,7 +185,7 @@ class:
                             </div>
                         </div>
                         <div class="usa-card__footer">
-                            <div class="usa-button">Early 2023</div>
+                            <div class="usa-button">2023</div>
                         </div>
                     </div>
                 </li>
@@ -176,7 +201,7 @@ class:
                         </div>
 
                         <div class="usa-card__footer">
-                            <div class="usa-button">Late 2023</div>
+                            <div class="usa-button">2024</div>
                         </div>
                     </div>
                 </li>
