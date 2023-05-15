@@ -870,6 +870,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 50%;
+        @include at-media('desktop') {
+          background-size: 100%;
+          }
   }
 }
 
