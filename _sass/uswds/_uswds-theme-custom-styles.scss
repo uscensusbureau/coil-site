@@ -141,6 +141,10 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   .usa-menu-btn {
     background-color: transparent;
   }
+
+  .usa-nav-link:hover {
+    background-color: color('blue-warm-60v');
+  }
 }
 .coil-navbar {
   @include u-padding-x(3);
@@ -866,6 +870,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 50%;
+        @include at-media('desktop') {
+          background-size: 100%;
+          }
   }
 }
 
@@ -1187,16 +1194,24 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       &.winners {
         // flex-direction: row;
         // background: color('blue-warm-60v');
+        min-height: 680px;
         padding-left: 0px;
         padding-right: 0px;
         color: white;
+        background: url(/assets/img/statventures/textures/mobile-phase-one-winners-graphic.png) no-repeat 0 0;
+        background-size: cover;
         @include at-media('desktop') {
+          background: url(/assets/img/statventures/textures/desktop-phase-one-winners-graphic.png) no-repeat 0 0;
+          background-size: cover;
             flex-direction: row;
+            min-height: 620px;
+
           }
         .winner-content-wrapper {
           background: color('blue-warm-60v');
           width: 100%;
-          padding: 56px 0;
+          padding: 56px 3rem;
+          height: 100%;
           @include at-media('desktop') {
             @include u-flex('fill');
             @include u-minh('full');
@@ -1204,34 +1219,22 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
           }
         }
         .winner-content {
-            flex-direction: column;
-            align-items: center;
-            padding: 0 3rem;
-            & .statventures-btn:hover {
-              border: 1px white solid;
-            }
-            @include at-media('desktop') {
-                @include u-maxw('mobile-lg');
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          // padding: 0 3rem;
+          h2 {
+            max-width: 31ch;
+          }
+          & .statventures-btn:hover {
+            border: 1px white solid;
+          }
+          @include at-media('desktop') {
+                & .statventures-btn {
+                  max-width: 200px;
+                }
               }
             }
-        .winners-list-container {
-          background: color('indigo-cool-90');
-          color: white;
-          padding: 56px 0;
-          border-bottom: 1px #F6F8FB solid;
-          @include at-media('desktop') {
-              border-bottom: none;
-            }
-        }
-        .winners-list--item p{
-          border: 1px solid;
-          border-radius: 50%;
-          height: 100%;
-          width: 100%;
-          align-items: center;
-          justify-content: center;
-          font-weight: 600;
-        }
       }
 
       &.challenge-intro--mobile {
@@ -1361,8 +1364,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
         & .active-phase {
           position: relative;
-          top: 60px;
-          right: 40px;
+          top: 50px;
+          left: 300px;
           z-index: 1;
           width: 10%;
         }
@@ -1397,7 +1400,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
           }
         }
 
-        li.usa-card:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(1) {
+        li.usa-card:nth-child(2)>div:nth-child(1)>div:nth-child(3)>div:nth-child(1) {
           color: color('gray-cool-2');
           background-color: color('blue-warm-60v');
           border: none;
@@ -1515,7 +1518,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         }
 
         &.splash-secondary {
-          order: 2;
+          order: 3;
           @include u-padding-x(2);
           text-align: left;
           color: color('blue-warm-60v');
@@ -1544,6 +1547,9 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
             align-items: flex-start;
             justify-content: flex-start;
           }
+        }
+        &.winners {
+          order: 2;
         }
       }
 
