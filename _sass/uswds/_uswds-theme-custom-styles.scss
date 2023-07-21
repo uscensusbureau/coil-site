@@ -1198,7 +1198,11 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         padding-left: 0px;
         padding-right: 0px;
         color: white;
+        background: url(/assets/img/statventures/textures/mobile-phase-one-winners-graphic.png) no-repeat 0 0;
+        background-size: cover;
         @include at-media('desktop') {
+          background: url(/assets/img/statventures/textures/desktop-phase-one-winners-graphic.png) no-repeat 0 0;
+          background-size: cover;
             flex-direction: row;
             min-height: 620px;
 
