@@ -1207,9 +1207,10 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         .winner-content-wrapper {
           background: color('blue-warm-60v');
           background-image: url(/assets/img/statventures/textures/mobile-phase-one-winners-graphic-v3.png);
-          background-position-y: bottom;
+          background-size: 80%;
+          background-position-y: bottom -150px;
+          background-position-x: right -170px;
           background-repeat: no-repeat;
-          background-size: 50%;
           width: 100%;
           padding: 56px 3rem;
           height: 100%;
