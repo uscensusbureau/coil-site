@@ -1201,12 +1201,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         background-size: cover;
         @include at-media('desktop') {
           flex-direction: row;
-          min-height: 620px;
+          min-height: 310px;
 
         }
         .winner-content-wrapper {
           background: color('blue-warm-60v');
-          background-image: url(/assets/img/statventures/textures/mobile-phase-one-winners-graphic.png);
+          background-image: url(/assets/img/statventures/textures/mobile-phase-one-winners-graphic-v3.png);
           background-position-y: bottom;
           background-repeat: no-repeat;
           background-size: 50%;
