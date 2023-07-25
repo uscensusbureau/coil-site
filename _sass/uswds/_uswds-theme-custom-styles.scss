@@ -1251,12 +1251,12 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
           background-blend-mode: color-burn;
         }
 
-        .usa-accordion__button {
-          @include add-background-svg("usa-icons-bg/add--white")
+        .usa-accordion__button[aria-expanded="true"] {
+          @include add-background-svg("usa-icons-bg/remove--white")
         }
 
         .usa-accordion__button[aria-expanded="false"] {
-          @include add-background-svg("usa-icons-bg/remove--white");
+          @include add-background-svg("usa-icons-bg/add--white");
         }
 
         #m-a1 {
