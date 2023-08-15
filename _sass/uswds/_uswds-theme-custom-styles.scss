@@ -876,6 +876,23 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
 }
 
+// portfolio page
+.portfolio {
+  background-color: color('indigo-cool-90');
+  color: color('gray-cool-2');
+
+  section.current-programs {
+      &.program-statventures {
+        background: color('blue-warm-60v');
+      }
+
+      &.program-summit {
+        background: navy;
+      }
+    }
+}
+
+
 // statventures
 // colors
   //  blue #0050D8-- color('blue-warm-60v')

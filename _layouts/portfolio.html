@@ -1,11 +1,62 @@
 ---
 layout: base
-class:
+class: portfolio
 ---
-
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+{% include coil-nav.html %}
 <main id="main-content">
     {% include cr-header.html %}
-    {% include cr-coil-projects.html %}
-    {% include cr-coil-projects.html %}
-    {% include cr-coil-projects.html %}
+    <section class="current-programs program-top">
+        <div class="grid-container">
+        <h2>The Opportunity Project</h2>
+        <img src="/assets/img/projects/top-graphic.png" alt="">
+        <div>
+            <p>TOP is an innovation program that engages technologists, government, and communities in 12-week technology development
+            sprints, to prototype digital products that solve real-world problems with open data.</p>
+        </div>
+    </div>
+    </section>
+    <section class="current-programs program-statventures">
+        <img src="/assets/img/projects/mobile-statventures-graphic.png" alt="" class="width-full">
+        <div class="grid-container">
+        <h2>StatVentures</h2>
+        <div>
+            <p>StatVentures scouts technology through collaborations with innovators outside government to ensure the U.S. Census
+            Bureau provides quality data more efficiently, creatively, and effectively.</p>
+        </div>
+        </div>
+    </section>
+    <section class="current-programs program-data-usability">
+        <div class="grid-container">
+        <h2>Data Usability & Equity</h2>
+        <img src="/assets/img/projects/data-usability-graphic.png" alt="">
+        <div>
+            <p>Using human centered design and design thinking methodologies, COIL collaborates with other teams within the Census
+            Bureau and with the public to facilitate community conversations, gather valuable feedback on current data accessibility, and improve overall Census data usability in thoughtful, creative, and impactful ways.</p>
+
+            <p>This work supports a core goal of the President Management Agenda to deliver “excellent, equitable, and secure Federal services and customer experience.” We prioritize data accessibility as an inherent equity issue. We work to build clear paths for the Census Bureau to hear from the public, and create a safe space for Census Bureau staff and community to collaborate on data products that are easier to use, by everyone.</p>
+
+            <p>We facilitate frequent workshops and community conversations and other ways to meaningfully engage the public. If you are interested in learning more, participating in this work, or getting involved, please email us at <a href="census.openinnovationlabs@census.gov" target="_blank">census.openinnovationlabs@census.gov</a>.</p>
+        </div>
+        </div>
+    </section>
+    <section class="current-programs program-summit">
+        <div class="grid-container">
+        <h2>Annual Innovation Summit</h2>
+        <img src="/assets/img/projects/summit-graphic.png" alt="">
+        <div>
+            <p>The Opportunity Project Summit is a multi-day virtual conference that features speakers, discussions, product demonstrations and hands-on learning opportunities on open innovation in the public sector, new civic technology, and emerging models for cross-sector collaboration and inclusive design.</p>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="grid-container">
+        <h2>Past Programs</h2>
+        {% include card-group.html %}
+        </div>
+    </section>
 </main>
+<div class="combined-footer">
+    {% include coil-collaborate-section.html %}
+    {% include coil-footer.html %}
+</div>
