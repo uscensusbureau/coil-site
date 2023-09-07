@@ -177,12 +177,30 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
 @mixin project-card-img {
     height: 100%;
-    min-height: 250px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 42px;
+}
+
+.project-card-group {
+
+  .usa-card__heading {
+    font-size: 1.3rem;
+    color: black;
+    font-family: inherit;
+    font-size: 1.3rem;
+  }
+
+  .usa-card__body p {
+    font-size: 1.125rem;
+    color: inherit;
+  }
+
+  .usa-card__img {
+    @include project-card-img();
+  }
+
 }
 
 .coil-hero {
@@ -325,19 +343,24 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   .top-logo-img {
     width: 200px;
   }
-  .usa-card__heading {
-    font-size:1.3rem;
-    color: black;
-    font-family: inherit;
-    font-size: 1.3rem;
-  }
-  .usa-card__body p {
-    font-size: 1.125rem;
-    color: inherit;
-  }
 
-  .usa-card__img {
-    @include project-card-img();
+  .project-card-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .usa-card__img {
+      min-height: 250px;
+      padding: 42px;
+    }
+
+    .usa-card__heading, .usa-card__body p {
+        color: black;
+      }
+
+    @include at-media('desktop') {
+      display: none;
+    }
   }
 
   .project-card__top {
@@ -790,6 +813,10 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     @include u-padding-x(2);
     .collaborate-section-container {
       padding: 0;
+
+      .coil-btn{
+        display: none;
+      }
     }
     h2 {
     width: fit-content;
@@ -881,15 +908,119 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   background-color: color('indigo-cool-90');
   color: color('gray-cool-2');
 
+  .tablet-h2 {
+    font-size: 1.125rem;
+    @include u-margin-y(0);
+    @include at-media('tablet') {
+          font-weight: normal;
+      }
+    @include at-media('desktop') {
+      font-size:1.5rem;
+      font-weight: 600;
+      }
+  }
+  .tablet-p {
+    font-size: 0.625rem;
+    line-height: 15px;
+    max-width: 248px;
+    @include u-margin-top(1);
+    @include u-margin-bottom(2);
+    @include at-media('desktop') {
+        font-size: .875rem;
+        line-height: 21px;
+        max-width: 360px;
+      }
+  }
+
+  .tablet-btn {
+    display: inline-flex;
+    font-size: 0.75rem;
+    align-items: center;
+    @include at-media('desktop') {
+        font-size: 1rem;
+      }
+  }
+
+
+  .cr-header {
+    // background-color: #f7f9fa;
+    background-image: url(/assets/img/textures/mobile-portfolio-splash-graphic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: center;
+    color: color('indigo-cool-90');
+    padding-left: 32px;
+    padding-right: 32px;
+    p {
+      padding-bottom: 80px;
+    }
+    @include at-media('tablet') {
+      background-image: url(/assets/img/textures/desktop-portfolio-splash-graphic.png);
+      background-color: unset;
+      }
+  }
+
   section.current-programs {
-      &.program-statventures {
-        background: color('blue-warm-60v');
+    &.program-top {
+      h2 {
+        width: min-content;
       }
 
-      &.program-summit {
-        background: navy;
+      @include at-media('tablet') {
+        h2 {
+          width: initial;
+        }
+      }
+
+    }
+
+    &.program-statventures {
+      background: color('blue-warm-60v');
+    }
+
+    &.program-data-usability {
+
+      h2 {
+        width: 12ch;
+        @include at-media('tablet') {
+            width: 100%
+          }
+      }
+      img {
+        @include at-media('tablet') {
+            height: 201.9px;
+            width: 201.9px;
+          }
       }
     }
+
+    &.program-summit {
+      background: hsla(218, 100%, 42%, 0.2);
+
+      h2 {
+        width: 20ch;
+      }
+    }
+  }
+
+  section.past-programs {
+    background: hsla(218, 100%, 42%, 0.4);
+
+    .usa-card__heading {
+      text-align: start;
+    }
+
+    @include at-media('tablet') {
+      h2 {
+        text-align: center;
+      }
+  }
+
+    @include at-media('desktop') {
+      background: inherit;
+    }
+  }
 }
 
 
@@ -1568,12 +1699,14 @@ a[href="/about#capabilities"] {
 
 }
 .coil-btn {
-  // display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   text-align: center;
   color: color('blue-warm-60v');
   box-shadow: inset 0 0 0 1px color('gray-cool-2');
-  padding: .8rem;
+  padding: 1.2rem;
   background-color: inherit;
   text-decoration: none;
   border-radius: .5rem;
