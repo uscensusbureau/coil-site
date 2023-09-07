@@ -24,7 +24,7 @@ project-card-group:
     alt: StatVentures Logo
     blurb: The future of Census Bureau data.
     internal-link: statventures/
-  - name: Data Equity & Usability
+  - name: Data Usability & Equity
     class: data-usability
     image: ../assets/img/projects/desktop_homepage_data_usability_graphic.png
     alt: Photo of people gathered around a laptop

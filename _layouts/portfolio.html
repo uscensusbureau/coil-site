@@ -1,11 +1,190 @@
 ---
 layout: base
-class:
+class: portfolio
 ---
-
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+{% include coil-nav.html %}
 <main id="main-content">
     {% include cr-header.html %}
-    {% include cr-coil-projects.html %}
-    {% include cr-coil-projects.html %}
-    {% include cr-coil-projects.html %}
+    <section class="current-programs program-top">
+        <!-- mobile only -->
+        <div class="grid-container display-flex flex-column flex-align-center tablet:display-none">
+        <h2 class="flex-align-self-start margin-x-2">The Opportunity Project</h2>
+        <img class="margin-bottom-1" src="/assets/img/projects/top-graphic.png" alt="">
+        <div class="margin-x-2">
+            <p>TOP engages technologists, government, and communities in 12-week technology development sprints to prototype digital
+            products that solve real-world problems with open data.</p>
+        </div>
+        <a href="https://opportunity.census.gov/"
+            class=" text-white desktop:display-none coil-btn ">Learn More</a>
+        </div>
+
+        <!-- tablet/desktop only-->
+        <div class="grid-container display-none tablet:display-block padding-x-9">
+            <div class="grid-row margin-y-6 desktop:margin-y-8">
+                <div class="grid-col desktop:margin-left-8 display-flex flex-align-end">
+                    <img class="height-card margin-x-1" src="/assets/img/projects/desktop-top-graphic.png" alt="">
+                </div>
+                <div class="content-block grid-col display-flex flex-column">
+                    <h2 class="tablet-h2 flex-align-self-start">The Opportunity Project</h2>
+                    <div>
+                        <p class="tablet-p">TOP engages technologists, government, and communities in 12-week technology development sprints to prototype digital
+                        products that solve real-world problems with open data.</p>
+                    </div>
+                    <a href="https://opportunity.census.gov/"
+                        class="text-white text-no-underline hover:text-underline tablet-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="width-2 desktop:width-3 margin-right-05">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path
+                                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                                fill="#ffbe2e" />
+                        </svg>
+                        Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="current-programs program-statventures">
+        <!-- mobile -->
+        <img src="/assets/img/projects/mobile-statventures-graphic.png" alt="" class="margin-bottom-1 width-full tablet:display-none">
+        <div class="grid-container tablet:display-none margin-x-1">
+            <h2 class="margin-x-1">StatVentures</h2>
+            <div class="margin-x-1">
+                <p>StatVentures scouts technology through collaborations with innovators outside government to ensure the U.S. Census
+                Bureau provides quality data more efficiently, creatively, and effectively.</p>
+                </div>
+                <a href="{{site.baseurl}}/statventures"
+                class=" text-white desktop:display-none coil-btn ">Learn More</a>
+        </div>
+
+        <!-- tablet/desktop -->
+        <div class="display-none tablet:display-block">
+            <div class="grid-row">
+                <div class="grid-col display-flex flex-column flex-justify-center padding-left-10  margin-y-6 desktop:margin-y-8 content-block">
+                    <h2 class="desktop:margin-left-8  tablet-h2">StatVentures</h2>
+                    <div class="desktop:margin-left-8 ">
+                        <p class="tablet-p">StatVentures scouts technology through collaborations with innovators outside government to ensure the U.S. Census
+                        Bureau provides quality data more efficiently, creatively, and effectively.</p>
+                    </div>
+                    <a href="{{site.baseurl}}/statventures"
+                        class="desktop:margin-left-8  text-white text-no-underline hover:text-underline tablet-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="width-2 desktop:width-3 margin-right-05">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="#ffbe2e" />
+                        </svg>
+                        Learn More</a>
+                </div>
+                <img src="/assets/img/projects/desktop-statventures-graphic.png" alt=""
+                    class="margin-0 width-full tablet:display-inline grid-col">
+            </div>
+        </div>
+
+    </section>
+    <section class="current-programs program-data-usability">
+        <!-- mobile -->
+        <div class="grid-container display-flex flex-column flex-align-center tablet:display-none">
+        <h2 class="flex-align-self-start margin-x-1">Data Usability & Equity</h2>
+        <img class="margin-bottom-1" src="/assets/img/projects/data-usability-graphic.png" alt="">
+        <div class="margin-x-1">
+            <p>Using human centered design and design thinking methodologies, COIL collaborates with other teams within the Census
+            Bureau and with the public to facilitate community conversations, gather valuable feedback on current data
+            accessibility, and improve overall Census data usability in thoughtful, creative, and impactful ways.</p>
+        </div>
+        <a href="https://www.youtube.com/playlist?list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme" class=" text-white desktop:display-none margin-x-1 coil-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"
+                class="width-2 desktop:width-3 margin-right-05">
+                <path d="M0 0h24v24H0z" fill="transparent"/>
+                <path
+                    d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" fill="#ffbe2e" />
+            </svg>
+            Learn More
+        </a>
+        </div>
+
+        <!-- tablet/desktop -->
+        <div class="grid-container display-flex flex-column flex-align-center display-none tablet:display-block padding-x-9">
+            <div class="grid-row margin-y-6 desktop:margin-y-8">
+                <div class="grid-col desktop:margin-left-8 margin-bottom-1 display-flex flex-align-end">
+                    <img class="" src="/assets/img/projects/data-usability-graphic.png" alt="">
+                </div>
+                <div class="grid-col">
+                    <h2 class="flex-align-self-start tablet-h2">Data Usability & Equity</h2>
+                    <div class="">
+                        <p class="tablet-p">Using human centered design and design thinking methodologies, COIL collaborates with other teams within the Census
+                        Bureau and with the public to facilitate community conversations, gather valuable feedback on current data
+                        accessibility, and improve overall Census data usability in thoughtful, creative, and impactful ways.</p>
+                    </div>
+                        <a href="mailto:census.openinnovationlabs@census.gov?subject=Collaborate with COIL"
+                            class=" text-white display-inline-flex text-no-underline hover:text-underline tablet-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"
+                                class="width-2 desktop:width-3 margin-right-05" >
+                                <path d="M0 0h24v24H0z" fill="none"/>
+                                <path
+                                    d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" fill="#F9C636" />
+                            </svg>
+                            Learn More
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="current-programs program-summit">
+        <!-- mobile -->
+        <div class="grid-container display-flex flex-column flex-align-center tablet:display-none">
+        <h2 class="flex-align-self-start margin-x-2">Annual <br/> Innovation Summit</h2>
+        <img class="margin-bottom-1" src="/assets/img/projects/summit-graphic.png" alt="">
+        <div class="margin-x-2">
+            <p>The Opportunity Project Summit is a multi-day virtual conference that features speakers, discussions, product
+            demonstrations, and hands-on learning opportunities on open innovation in the public sector, new civic technology, and
+            emerging models for cross-sector collaboration and inclusive design.</p>
+        </div>
+        <a href="https://www.youtube.com/playlist?list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme"
+            class=" text-white desktop:display-none coil-btn ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="width-2 desktop:width-3 margin-right-05" fill="#ffbe2e">
+                <g id="YouTube">
+                    <path
+                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.75,12.91A1.49,1.49,0,0,1,16.69,16a34.65,34.65,0,0,1-4.69.26A34.65,34.65,0,0,1,7.31,16a1.49,1.49,0,0,1-1.06-1.06A15.88,15.88,0,0,1,6,12a15.88,15.88,0,0,1,.25-2.91A1.49,1.49,0,0,1,7.31,8,34.65,34.65,0,0,1,12,7.77,34.65,34.65,0,0,1,16.69,8a1.49,1.49,0,0,1,1.06,1.06A15.88,15.88,0,0,1,18,12,15.88,15.88,0,0,1,17.75,14.91Z" />
+                    <polygon points="10.77 13.78 13.91 12 10.77 10.22 10.77 13.78" />
+                </g>
+            </svg>
+            Watch TOP Summit 2023 on YouTube</a>
+        </div>
+
+        <!-- tablet/desktop -->
+        <div class="grid-container display-flex flex-column flex-align-center display-none tablet:display-block padding-left-10 padding-right-7">
+            <div class="grid-row padding-y-6">
+                <div class="grid-col desktop:margin-y-2 desktop:margin-left-8">
+                    <h2 class="flex-align-self-start tablet-h2">Annual Innovation Summit</h2>
+                    <div class="">
+                        <p class="tablet-p">The Opportunity Project Summit is a multi-day virtual conference that features speakers, discussions, product
+                        demonstrations, and hands-on learning opportunities on open innovation in the public sector, new civic technology, and
+                        emerging models for cross-sector collaboration and inclusive design.</p>
+                    </div>
+                    <a href="https://www.youtube.com/playlist?list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme" class=" text-white text-no-underline hover:text-underline tablet-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="width-2 desktop:width-3 margin-right-05" fill="#ffbe2e">
+                            <g id="YouTube">
+                                <path
+                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5.75,12.91A1.49,1.49,0,0,1,16.69,16a34.65,34.65,0,0,1-4.69.26A34.65,34.65,0,0,1,7.31,16a1.49,1.49,0,0,1-1.06-1.06A15.88,15.88,0,0,1,6,12a15.88,15.88,0,0,1,.25-2.91A1.49,1.49,0,0,1,7.31,8,34.65,34.65,0,0,1,12,7.77,34.65,34.65,0,0,1,16.69,8a1.49,1.49,0,0,1,1.06,1.06A15.88,15.88,0,0,1,18,12,15.88,15.88,0,0,1,17.75,14.91Z" />
+                                <polygon points="10.77 13.78 13.91 12 10.77 10.22 10.77 13.78" />
+                            </g>
+                        </svg>
+                        Watch TOP Summit 2023 on YouTube</a>
+                </div>
+                <div class="grid-col display-flex flex-align-center margin-bottom-1">
+                    <img class="" src="/assets/img/projects/summit-graphic.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="past-programs">
+        <div class="grid-container">
+        <h2 class="margin-top-0 padding-y-8 padding-left-2 tablet-h2">Past Programs</h2>
+        {% include card-group.html %}
+        </div>
+    </section>
 </main>
+<div class="combined-footer">
+    {% include coil-collaborate-section.html %}
+    {% include coil-footer.html %}
+</div>
