@@ -7,7 +7,7 @@ class: portfolio
 
 header:
   - name: Portfolio
-    blurb: COIL matchmakes incredible collaborators with the tech, data, and funds they need to solve America's biggest challenges. All programs included below are run by COIL.
+    blurb: COIL matchmakes incredible collaborators with the tech, data, and funds they need to solve America's biggest challenges.
 
 
 project-card-custom-class-ul: desktop:flex-row
