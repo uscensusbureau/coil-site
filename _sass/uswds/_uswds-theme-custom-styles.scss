@@ -920,8 +920,8 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
       }
   }
   .tablet-p {
-    font-size: 0.625rem;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 18px;
     max-width: 248px;
     @include u-margin-top(1);
     @include u-margin-bottom(2);
@@ -953,7 +953,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     padding-left: 32px;
     padding-right: 32px;
     p {
-      padding-bottom: 80px;
+      padding-bottom: 64px;
     }
     @include at-media('tablet') {
       background-image: url(/assets/img/textures/desktop-portfolio-splash-graphic.png);
@@ -973,10 +973,50 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
         }
       }
 
+      @include at-media('desktop') {
+        img {
+          width: 332px ;
+          height: 267.16px;
+        }
+      }
+
     }
 
     &.program-statventures {
       background: color('blue-warm-60v');
+
+      .full-width-screen-spilt {
+        display: none;
+          @include at-media('tablet'){
+          display: grid;
+          grid-template-columns:
+          // 2rem is the padding for grid-container at tablet size
+            minmax(1rem, 1fr)
+            // 32rem = 64rem (max width of grid-container) / 2
+            minmax(0, 27.5rem)
+            minmax(0, 27.5rem)
+            minmax(1rem, 1fr);
+            align-items: center;
+            > .img-container
+            // ,img
+            {
+              grid-column: 3/-1;
+              object-fit: cover;
+            }
+            .content-block {
+              grid-column: 2/3;
+            }
+          }
+          @include at-media('desktop'){
+          grid-template-columns:
+          // 2rem is the padding for grid-container at desktop size
+            minmax(2rem, 1fr)
+            // 27.5rem = 64rem (max width of grid-container without margin + padding) / 2
+            minmax(0, 27.5rem) minmax(0, 27.5rem) minmax(2rem, 1fr);
+          }
+
+
+        }
     }
 
     &.program-data-usability {
@@ -992,34 +1032,56 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
             height: 201.9px;
             width: 201.9px;
           }
+        @include at-media('desktop') {
+            height: 323.05px;
+            width: 323.05px;
+          }
       }
     }
 
     &.program-summit {
       background: hsla(218, 100%, 42%, 0.2);
 
-      h2 {
-        width: 20ch;
+      @include at-media('tablet'){
+        h2 {
+          width: 20ch;
+        }
+
+        img {
+          height: 133.5px;
+        }
+      }
+
+      @include at-media('desktop'){
+        img{
+          height: 238.39px;
+        }
       }
     }
   }
 
   section.past-programs {
-    background: hsla(218, 100%, 42%, 0.4);
+
 
     .usa-card__heading {
       text-align: start;
     }
 
+    .usa-card__body p {
+      font-size: .75rem;
+
+      @include at-media('desktop') {
+        font-size: .875rem;
+      }
+    }
+
     @include at-media('tablet') {
+
       h2 {
         text-align: center;
       }
   }
 
-    @include at-media('desktop') {
-      background: inherit;
-    }
   }
 }
 
@@ -1704,7 +1766,7 @@ a[href="/about#capabilities"] {
   justify-content: center;
   width: 100%;
   text-align: center;
-  color: color('blue-warm-60v');
+  // color: color('blue-warm-60v');
   box-shadow: inset 0 0 0 1px color('gray-cool-2');
   padding: 1.2rem;
   background-color: inherit;
