@@ -29,6 +29,7 @@ project-card-group:
     image: ../assets/img/projects/desktop_homepage_data_usability_graphic.png
     alt: Photo of people gathered around a laptop
     blurb: Improving access to data resources.
+    internal-link: portfolio#program-data-usability-equity
   - name: The Opportunity Project
     class: top
     image: ../assets/img/logos/top-full-white-logo.png
