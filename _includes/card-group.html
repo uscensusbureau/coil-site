@@ -2,7 +2,7 @@
     {% for project in page.project-card-group %}
     <li class="usa-card tablet:grid-col-6 project-card__{{project.class | slugify}}">
         {% if project.internal-link %}
-        <a href="{{site.baseurl}}/{{project.internal-link}}" class="text-no-underline">
+        <a href="{{site.baseurl}}/{{project.internal-link}}" class="text-no-underline" target="_blank">
             <div class="usa-card__container">
                 <div class="usa-card__header">
                     <h2 class="usa-card__heading">{{project.name}}</h2>
@@ -19,7 +19,7 @@
             </div>
         </a>
         {% elsif project.external-link %}
-        <a href="{{project.external-link}}" class="text-no-underline">
+        <a href="{{project.external-link}}" class="text-no-underline" target="_blank">
             <div class="usa-card__container">
                 <div class="usa-card__header">
                     <h2 class="usa-card__heading">{{project.name}}</h2>
