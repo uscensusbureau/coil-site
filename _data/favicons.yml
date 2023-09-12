@@ -2,7 +2,7 @@
 
 - rel: shortcut icon
   type: image/ico
-  href: /assets/uswds/img/favicons/favicon.ico
+  href: /assets/img/favicons/favicon.ico
 - rel: icon
   type: image/png
   href: /assets/img/favicons/favicon.png
