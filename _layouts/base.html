@@ -14,7 +14,7 @@ main: foo, bar, qxz
     {% endif %}
   </head>
   <body class="{{ layout.class }} {{ page.class }} {% if site.site_width %}site-{{ site.site_width }}{% endif %}">
-    {% include gov-banner.html class="margin-left-0"%}
+    {% include gov-banner.html class="flex-justify-center"%}
     {{ content }}
     {% include uswds/scripts.html %}
   </body>
