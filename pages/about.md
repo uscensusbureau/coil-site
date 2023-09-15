@@ -24,7 +24,7 @@ coil-capabilities:
     blurb: We develop high-ROI avenues to partner with all levels of government, industry, academia, communities, and civil society. We can help you reach outside your usual stakeholder network and implement more valuable ways to engage your audience.
   - name: |-
       Policy Innovation<br><br>
-    blurb: We prototype repeatable and scalable innovations - such as processes, use of high value legal authorities, and hiring strategies - at the Census Bureau and can help you determine how to leverage them in your work.
+    blurb: We prototype repeatable and scalable innovations – such as processes, use of high value legal authorities, and hiring strategies – at the Census Bureau and can help you determine how to leverage them in your work.
   - name: |-
       Facilitation<br><br>
     blurb: We create award-winning, highly engaging events. If you need a cross-sector or internal conference, demo day, workshop, or brainstorm expertly facilitated to deliver insights, ideas, strategies, conclusions, or consensus, COIL's world-class facilitators can help design and implement sessions for your team.
