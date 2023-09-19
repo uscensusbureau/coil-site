@@ -974,6 +974,9 @@ header.box-shadow-header {
       background-image: url(/assets/img/textures/desktop-portfolio-splash-graphic.png);
       background-color: unset;
       }
+    @include at-media('desktop') {
+      background-image: url(/assets/img/textures/portfolio-splash-animation.gif);
+      }
   }
 
   section.current-programs {
