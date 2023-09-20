@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "Census Open Innovation Labs — About"
-description: "Showcase our mission and team"
+description: "COIL’s mission is to source knowledge and solutions to solve key challenges for the Census Bureau and the public at large through human-centered design, data, creative media, and technology."
 layout: about
 class: about
 
