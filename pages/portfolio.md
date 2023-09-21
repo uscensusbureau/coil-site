@@ -1,7 +1,7 @@
 ---
 permalink: /portfolio/
 title: "Census Open Innovation Labs — Portfolio"
-description: "Showcase our program and how public can engage"
+description: "COIL matchmakes incredible collaborators with the tech, data, and funds they need to solve America's biggest challenges."
 layout: portfolio
 class: portfolio
 
