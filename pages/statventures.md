@@ -11,8 +11,8 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: Apply to Phase 2 of the Supply Chain Challenge
-  href: https://www.challenge.gov/?challenge=statventures-supply-chain-p2
+  text: "Due to a lapse in federal funding, this website is not being updated."
+  href: https://www.commerce.gov/news/blog
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
