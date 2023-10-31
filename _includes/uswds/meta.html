@@ -7,6 +7,16 @@
 {% assign description = page.description | default: site.description %}
 {% if description %}
 <meta name="description" content="{{ description }}">
+<meta property="og:description" content="{{ description }}">
 {% endif %}
 
 {% include uswds/favicon.html %}
+
+<!-- cards -->
+<meta property="og:title" content="{% if page.title %}{{ page.title | strip_html }} | {% endif %}{{ site.title }}">
+{% if page.image %}
+<meta property="og:image" content="{{ site.url }}/{{ page.image }}">
+{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:card" content="summary_large_image">
+<!-- end of OG/FB cards -->

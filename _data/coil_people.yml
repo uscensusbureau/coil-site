@@ -2,12 +2,8 @@
   img: haley.jpg
   name: Haley Ashcom Miller
   pageOrder: 5
-  title: Deputy Director, The Opportunity Project
-- email: caleb.m.hopler@census.gov
-  img: caleb.jpg
-  name: Caleb Hopler
-  pageOrder: 1
-  title: Innovation Fellowships Program Manager
+  title: Director, The Opportunity Project
+
 - email: dominica.zhu@census.gov
   img: dominica.jpg
   name: Dominica Zhu
@@ -20,29 +16,21 @@
   pageOrder: 4
   title: Managing Director
 
-- airtable_createdTime: "2021-04-13T19:13:58.000Z"
-  airtable_id: recd1lEiRkP9bK1Nk
-  email: lorena.molina-irizarry@census.gov
-  img: lorena.jpg
-  name: Lorena Molina-Irizarry
-  pageOrder: 6
-  title: Director of Operations
-
 - email: alessandra.v.hartkopf@census.gov
   img: COIL_headshot_AH.png
   name: Alessandra Hartkopf
   pageOrder: 0
-  title: Lead Design Strategist
+  title: Senior Designer & Digital Team Lead
 
 - email: victoria.e.fine@census.gov
   img: COIL_headshot_VF.png
   name: Victoria Fine
   pageOrder: 9
-  title: Lead Program Strategist
+  title: Senior Advisor - Program Development and Communication
 
-- img: sadiejay.jpg
+- img: sadie.jpg
   name: Sadie Jay
-  pageOrder: 7
+  pageOrder: 6
   title: Front-end Web Developer
 
 - email: vanessa.l.yip@census.gov
@@ -50,9 +38,21 @@
   name: Vanessa Yip
   pageOrder: 8
   title: UX Designer
-  
-# - email: dorcas.lin.census@gmail.com
-- img: dorcaslin.png
+
+- email: dorcas.lin@census.gov
+  img: dorcaslin.png
   name: Dorcas Lin
   pageOrder: 3
   title: Graphic & Interaction Designer
+
+- email: alexandra.s.barker@census.gov
+  img: alexandra.png
+  name: Alexandra Barker
+  pageOrder: 1
+  title: Advisor for Strategic Digital Communications & Innovation
+
+- email: thera.m.naiman@census.gov
+  img: thera.png
+  name: Thera Naiman
+  pageOrder: 7
+  title: Innovation Program Manager
