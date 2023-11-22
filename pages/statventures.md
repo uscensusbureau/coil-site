@@ -11,8 +11,8 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: Apply now on Challenge.gov. Applications close December 2
-  href: https://www.challenge.gov/?challenge=statventures-supply-chain-p1
+  text: Apply now to Supply Chain Challenge Phase 2
+  href: https://www.challenge.gov/?challenge=statventures-supply-chain-p2
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
@@ -50,6 +50,19 @@ footer-vertical-mobile:
 
 footer-horizontal-desktop:
   icon: /icons/footer-icons.png
+
+phase-one-winners:
+  - "AEROSPIKE"
+  - "Bunting Labs, Inc."
+  - "CANA LLC"
+  - "Data Driven Supply Chain, LLC"
+  - "DigitalNomads"
+  - "Esri"
+  - "FreightWaves"
+  - "Made in Manchester"
+  - "Murano Corporation"
+  - "Noguera Tintelnot"
+  - "Transautomata"
 ---
 
 

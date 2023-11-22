@@ -127,6 +127,28 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 #main-content {
   border-top: 0;
 }
+.site-banner {
+  position: relative;
+  background: color('gold-20v');
+
+  & .usa-accordion {
+    justify-content: center;
+
+    .usa-banner__inner {
+      justify-content: center;
+    }
+  }
+
+  a {
+    font-size: 1rem;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: color('indigo-cool-90');
+    }
+  }
+}
 .coil-header {
   @include u-position('sticky');
   @include u-top('neg-2px');
@@ -1119,10 +1141,17 @@ header.box-shadow-header {
 
 .statventures {
 
+
+  & .statventures-btn svg {
+      fill: color('blue-warm-60v');
+      margin: 0 4px;
+    }
   & .statventures-btn {
+    display: inline-flex;
+    justify-content: center;
     color: color('blue-warm-60v');
     box-shadow: inset 0 0 0 2px color('blue-warm-60v');
-    padding: .5rem;
+    padding: .5rem 1.25rem;
     background-color: color('gray-cool-2');
     text-decoration: none;
     border-radius: .5rem;
@@ -1131,6 +1160,9 @@ header.box-shadow-header {
     &:active {
       background-color: color('blue-warm-60v');
       color: color('gray-cool-2');
+      svg {
+        fill: color('gray-cool-2');
+      }
     }
   }
 
@@ -1383,30 +1415,61 @@ header.box-shadow-header {
         color: color('gray-cool-2');
       }
 
-      &.site-banner {
-        position: relative;
-        background: color('gold-20v');
 
-        & .usa-accordion {
-          justify-content: center;
-        }
-
-        a {
-          font-size: 1rem;
-
-          &:hover,
-          &:active,
-          &:visited {
-            color: color('indigo-cool-90');
-          }
-        }
-      }
 
       &.mobile-only {
         @include at-media('desktop') {
           // media query that hides after x screen width
           display: none;
         }
+      }
+
+      &.winners {
+        // flex-direction: row;
+        // background: color('blue-warm-60v');
+        min-height: 680px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: white;
+        background-size: cover;
+        @include at-media('desktop') {
+          flex-direction: row;
+          min-height: 310px;
+
+        }
+        .winner-content-wrapper {
+          background: color('blue-warm-60v');
+          width: 100%;
+          padding: 56px 3rem;
+          height: 100%;
+          @include at-media('desktop') {
+            background-image: url(/assets/img/statventures/textures/desktop-phase-one-winners-graphic.png);
+            background-position-y: bottom -150px;
+            background-position-x: right -170px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include u-flex('fill');
+            @include u-minh('full');
+            width: auto;
+          }
+        }
+        .winner-content {
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          // padding: 0 3rem;
+          h2 {
+            max-width: 31ch;
+          }
+          & .statventures-btn:hover {
+            border: 1px white solid;
+          }
+          @include at-media('desktop') {
+                & .statventures-btn {
+                  max-width: 200px;
+                }
+              }
+            }
       }
 
       &.challenge-intro--mobile {
@@ -1419,12 +1482,12 @@ header.box-shadow-header {
           background-blend-mode: color-burn;
         }
 
-        .usa-accordion__button {
-          @include add-background-svg("usa-icons-bg/add--white")
+        .usa-accordion__button[aria-expanded="true"] {
+          @include add-background-svg("usa-icons-bg/remove--white")
         }
 
         .usa-accordion__button[aria-expanded="false"] {
-          @include add-background-svg("usa-icons-bg/remove--white");
+          @include add-background-svg("usa-icons-bg/add--white");
         }
 
         #m-a1 {
@@ -1536,8 +1599,8 @@ header.box-shadow-header {
 
         & .active-phase {
           position: relative;
-          top: 60px;
-          right: 40px;
+          top: 50px;
+          left: 300px;
           z-index: 1;
           width: 10%;
         }
@@ -1572,7 +1635,7 @@ header.box-shadow-header {
           }
         }
 
-        li.usa-card:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(1) {
+        li.usa-card:nth-child(2)>div:nth-child(1)>div:nth-child(3)>div:nth-child(1) {
           color: color('gray-cool-2');
           background-color: color('blue-warm-60v');
           border: none;
@@ -1690,7 +1753,7 @@ header.box-shadow-header {
         }
 
         &.splash-secondary {
-          order: 2;
+          order: 3;
           @include u-padding-x(2);
           text-align: left;
           color: color('blue-warm-60v');
@@ -1719,6 +1782,9 @@ header.box-shadow-header {
             align-items: flex-start;
             justify-content: flex-start;
           }
+        }
+        &.winners {
+          order: 2;
         }
       }
 
