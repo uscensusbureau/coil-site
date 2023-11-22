@@ -7,9 +7,9 @@ class: coil
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
 banner:
-  text: "Due to a lapse in federal funding, this website is not being updated."
-  href: https://www.commerce.gov/news/blog
-  isExternal: true
+  text: "Save the date! Census Open Innovation Summit is scheduled for January 17 - 19, 2024."
+  # href: https://www.commerce.gov/news/blog
+  # isExternal: true
 
 hero:
   text: 'Trailblazing open government through cross-sector collaboration, design, and technology.'
