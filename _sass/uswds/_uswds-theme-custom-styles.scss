@@ -127,6 +127,28 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 #main-content {
   border-top: 0;
 }
+.site-banner {
+  position: relative;
+  background: color('gold-20v');
+
+  & .usa-accordion {
+    justify-content: center;
+
+    .usa-banner__inner {
+      justify-content: center;
+    }
+  }
+
+  a {
+    font-size: 1rem;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: color('indigo-cool-90');
+    }
+  }
+}
 .coil-header {
   @include u-position('sticky');
   @include u-top('neg-2px');
@@ -1393,24 +1415,7 @@ header.box-shadow-header {
         color: color('gray-cool-2');
       }
 
-      &.site-banner {
-        position: relative;
-        background: color('gold-20v');
 
-        & .usa-accordion {
-          justify-content: center;
-        }
-
-        a {
-          font-size: 1rem;
-
-          &:hover,
-          &:active,
-          &:visited {
-            color: color('indigo-cool-90');
-          }
-        }
-      }
 
       &.mobile-only {
         @include at-media('desktop') {
