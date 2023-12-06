@@ -1,0 +1,18 @@
+---
+layout: blog-landing
+---
+
+<article>
+    <header>
+        <h3>{{post.project}}</h3>
+        <h1>{{page.title}}</h1>
+        <p>
+            {% for author in post.authors %}
+            {{author}}
+            {% endfor %}
+            on <time>{{page.date | date: "%B %-d, %Y"}}</time>
+        </p>
+    </header>
+
+    {{ content }}
+</article>

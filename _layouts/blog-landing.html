@@ -1,5 +1,6 @@
 ---
 layout: base
+class: blog
 ---
   <!-- based on 18F blog/index.html -->
   <!-- this is what get compiled to make the page. Kind like main.scss it can include base styles + partcials in the form of includes -->
@@ -7,13 +8,20 @@ layout: base
   <!-- This creates a layout that is to be linked in an md file -->
 
 
-  <section class="usa-section bg-primary-dark">
-    <div class="grid-container">
-        <h1 class="section-heading section-heading-alt">{{ page.title }}</h1>
-        <h2>{{ page.blog_tagline }}</h2>
-    </div>
-  </section>
-  
+
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+{% include coil-nav.html %}
+<main id="main-content">
+  {% if page.name == 'blog-landing.md' %}
+    {% include cr-header.html %}
+  {% endif %}
+  {{ content }}
+</main>
+<div class="combined-footer">
+  {% include coil-collaborate-section.html %}
+  {% include coil-footer.html %}
+</div>
+
   <section class="grid-container usa-section content-wide">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col-8 content-focus ">
@@ -76,5 +84,5 @@ layout: base
     </div>
     </section>
     <!-- {% include banner-cta.html %} -->
-  
+
     <!-- Pagination links -->

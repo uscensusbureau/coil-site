@@ -1799,6 +1799,25 @@ header.box-shadow-header {
   }
 
 
+// blog
+.blog {
+  background-color: color('indigo-cool-90');
+  color: color('gray-cool-2');
+
+  h2 a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .post-preview-container li {
+    border-top: 1px white solid;
+  }
+}
+
 
   // animation
   // animation
