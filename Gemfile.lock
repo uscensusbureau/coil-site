@@ -56,16 +56,17 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    libv8-node (15.14.0.1-arm64-darwin-21)
-    libv8-node (15.14.0.1-x86_64-darwin-19)
-    liquid (4.0.3)
-    listen (3.5.1)
+    libv8-node (18.16.0.0)
+    liquid (4.0.4)
+    listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    mini_racer (0.4.0)
-      libv8-node (~> 15.14.0.0)
-    nokogiri (1.11.7-arm64-darwin)
+    mini_portile2 (2.8.5)
+    mini_racer (0.8.0)
+      libv8-node (~> 18.16.0.0)
+    nokogiri (1.15.5)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     nokogiri (1.11.7-x64-mingw32)
       racc (~> 1.4)
@@ -108,9 +109,7 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
-  arm64-darwin-21
-  x64-mingw32
-  x86_64-darwin-19
+  ruby
 
 DEPENDENCIES
   html-proofer
