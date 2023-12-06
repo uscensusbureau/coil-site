@@ -8,7 +8,7 @@ It is built with [Jekyll](https://jekyllrb.com/docs/) using the [uswds-jekyll th
 
 ## Dependencies
 
-1. Ruby v2.7.2
+1. Ruby v3.1.3
 2. Node v4.2.3+ 
    - gulp (`npm i -g gulp`)
 3. Bundler v2.3.18+
