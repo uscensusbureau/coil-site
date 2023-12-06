@@ -8,8 +8,8 @@ It is built with [Jekyll](https://jekyllrb.com/docs/) using the [uswds-jekyll th
 
 ## Dependencies
 
-1. Ruby v3.1.3
-2. Node v4.2.3+
+1. Ruby v2.7.2
+2. Node v4.2.3+ 
    - gulp (`npm i -g gulp`)
 3. Bundler v2.3.18+
    - jekyll (`gem install jekyll`)
@@ -17,7 +17,7 @@ It is built with [Jekyll](https://jekyllrb.com/docs/) using the [uswds-jekyll th
 
 <br/>
 
-We recommend using a universal verion manager such as `asdf`
+We recommend using a universal verion manager such as `asdf` 
 - [asdf Installation Guide](https://asdf-vm.com/guide/getting-started.html#_1-install-dependencies)
 
 **NOTE: Ensure that `legacy_version_file = yes` has been added to your `.asdfrc` file in your home directory. Requires terminal restart.**
@@ -90,7 +90,7 @@ Go to `127.0.0.1:4000` in your browser — you should be viewing a local instanc
 ### Team Photos
 
 - Change the coil_people.yml file to reflect current team
-- Add both .png/.jpg and .webp files to the assets/img/team folder
+- Add both .png/.jpg and .webp files to the assets/img/team folder 
 - The .webp file needs to have a size of 214x271
 
 
