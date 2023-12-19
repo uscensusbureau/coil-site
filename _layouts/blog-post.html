@@ -3,16 +3,57 @@ layout: blog-landing
 ---
 
 <article>
-    <header>
-        <h3>{{post.project}}</h3>
-        <h1>{{page.title}}</h1>
-        <p>
-            {% for author in post.authors %}
-            {{author}}
-            {% endfor %}
-            on <time>{{page.date | date: "%B %-d, %Y"}}</time>
-        </p>
+    <header class="blog-post-header">
+        <div>
+            <h3 class="post-project">{{page.project}}</h3>
+            <h1 class="post-title">{{page.title}}</h1>
+            <p class="post-byline">
+                By {% for author in page.authors %}
+                {{author}}
+                {% endfor %}
+                on <time>{{page.date | date: "%B %-d, %Y"}}</time>
+            </p>
+        </div>
+        <img src="{{page.src}}" alt="test">
     </header>
+    <section class="post-content">
+     {{ content }}
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia saepe itaque molestiae ipsum? Consequatur
+    possimus asperiores assumenda autem eum quis optio. Vero necessitatibus optio obcaecati dicta debitis soluta culpa
+    expedita reiciendis minima, laudantium mollitia blanditiis quidem ipsam ducimus harum magni iure voluptates, deserunt ea
+    pariatur nobis at?</p>
+    <h2>test</h2>
+    <p>Aut dolores similique iste laudantium laboriosam consequatur, a ut excepturi aliquid repellat in accusantium porro eos
+    quis, obcaecati perferendis? Quasi temporibus est veritatis! Et dolorum laboriosam incidunt sequi? Error necessitatibus
+    assumenda nisi atque? Tempora itaque minima tenetur architecto veniam ratione reprehenderit eaque est, harum molestiae
+    voluptatum. Debitis, dolore officiis illo voluptas quibusdam corporis magni iure unde! Cumque temporibus eligendi nihil
+    nemo quisquam rerum molestias molestiae voluptas eveniet! Voluptates necessitatibus eveniet illum, dolorum nobis officia
+    vel exercitationem ipsum culpa veniam repudiandae repellat natus, rerum odio veritatis voluptatibus molestiae sunt,
+    perspiciatis maxime est accusantium harum nulla id!</p>
+    <h2>h2 test</h2>
+    <p>Excepturi, incidunt quas, culpa nihil atque ut, deleniti laborum perferendis consectetur laudantium eum. Facere pariatur
+    sequi vitae reprehenderit, nulla expedita vel adipisci minus earum consequatur, perspiciatis aut modi laboriosam
+    suscipit magnam delectus assumenda saepe eaque tempore quia. Dolorem fugit fugiat tempore corrupti doloribus repudiandae
+    quod possimus dolor! Eos reprehenderit nobis et, voluptate aliquid sequi iusto minima suscipit voluptates facere! Unde
+    exercitationem consequuntur, cumque odio adipisci magnam nam dolor facere amet a, totam illo eligendi nobis neque non
+    sed quia incidunt eos laborum distinctio, illum repellat ex alias accusamus. Optio, enim beatae quae deserunt minus,
+    doloremque magni possimus natus repellendus veritatis voluptates amet impedit porro cumque omnis nesciunt, nulla
+    expedita! Quo unde ea alias totam cum, placeat minus sapiente nostrum laboriosam iste culpa obcaecati nesciunt, quas
+    nulla ipsam consequuntur! Ut vero animi nisi necessitatibus itaque! Neque fugiat molestias debitis facere laborum, totam
+    quo minus harum obcaecati eveniet at! Ipsum nobis ad hic placeat incidunt quo veniam corrupti illum nisi, inventore
+    exercitationem vel ab a impedit optio ratione? Laboriosam pariatur, voluptatibus assumenda nesciunt quasi soluta ea
+    molestias sed iste labore culpa, magnam tempore ut dignissimos fuga ipsa nulla corrupti nisi in dolorem impedit unde
+    esse iusto. Nam tenetur quidem quasi quis aspernatur repellendus deserunt doloremque ex, iusto beatae nisi saepe porro
+    temporibus! Rerum, quis temporibus, eligendi ipsum molestiae perferendis odio illo esse sunt iure, inventore rem
+    architecto? Eveniet voluptates, assumenda vitae ipsa minus amet provident aperiam id maxime nihil, perferendis saepe
+    temporibus. Nihil cumque cupiditate nobis amet laborum molestiae cum reprehenderit quia asperiores corporis vel est
+    quibusdam perferendis obcaecati, dolorem enim rerum quo vero doloremque eius. Quia ducimus commodi nulla atque ea
+    accusamus itaque perferendis eos optio quasi vitae tenetur dolorem, dolorum voluptatem numquam minima quam distinctio
+    perspiciatis id aliquam eaque maxime facere. Distinctio sit placeat vero porro amet necessitatibus sunt in laboriosam.
+    Nostrum nesciunt nobis maxime fugit recusandae consectetur sunt perspiciatis est natus maiores placeat optio, labore
+    ullam. Minus eligendi, dignissimos distinctio incidunt eum, autem dicta facere corporis fugiat ducimus numquam ullam!
+    Porro nam ducimus sit maxime, laborum cumque iure temporibus in nostrum quisquam obcaecati nulla adipisci et recusandae
+    culpa, quos amet illum natus ad! Veritatis, ea culpa.</p>
 
-    {{ content }}
+    </section>
 </article>
