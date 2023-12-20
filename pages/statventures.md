@@ -11,9 +11,9 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: Apply now to Supply Chain Challenge Phase 2
-  href: https://www.challenge.gov/?challenge=statventures-supply-chain-p2
-  isExternal: true
+  text: "Launching Soon: Address Geolocation Challenge Phase 1"
+  href: assets/files/StatVentures-Geolocation-Challenge-Overview.pdf
+  isExternal: false
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
