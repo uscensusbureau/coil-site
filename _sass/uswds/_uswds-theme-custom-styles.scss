@@ -1529,7 +1529,7 @@ header.box-shadow-header {
         color: color('gray-cool-2');
         // min-height: 80vh;
         justify-content: space-around;
-        min-height: 550px;
+        // min-height: 550px;
         padding: 2rem 0;
 
         & h3 {
@@ -1613,6 +1613,7 @@ header.box-shadow-header {
           align-self: stretch;
 
           div {
+            display: none;
             background: color('gray-cool-2');
             color: color('blue-warm-60v');
             border: color('blue-warm-60v') 2px solid;
