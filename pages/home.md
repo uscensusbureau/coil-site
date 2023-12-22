@@ -6,6 +6,11 @@ class: coil
 
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
+banner:
+  text: "Join us on January 17 - 19, 2024 for the Census Open Innovation Summit! RSVP to Attend."
+  href: https://coilsummit2024.splashthat.com/
+  isExternal: true
+
 hero:
   text: 'Trailblazing open government through cross-sector collaboration, design, and technology.'
   subtext: Want to work with us?
