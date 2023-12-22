@@ -1636,6 +1636,11 @@ header.box-shadow-header {
 
     }
 
+    div.active-challenge-details.content-container {
+      display: flex;
+      flex-flow: row;
+    }
+
     footer {
       padding: 0;
       background-color: color('blue-warm-60v');

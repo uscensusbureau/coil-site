@@ -63,6 +63,39 @@ phase-one-winners:
   - "Murano Corporation"
   - "Noguera Tintelnot"
   - "Transautomata"
+
+active-challenges:
+  - active-challenge-one:
+    class: active-challenge-one
+    mobile-img: /icons/phase2.png
+    desktop-img: /icons/phase3.png
+    img-alt: phase something
+    banner: Address Geolocation Challenge
+    phase-status: phase one title
+    challenge-name: Address Geolocation Challenge
+    details: |-
+      The Address Geolocation Challenge seeks innovations on how the Census Bureau geolocates residential addresses in rural and remote locations. Phase 1 of this competition will open soon. Sign up for updates on opportunities to apply in early 2024.
+
+    button:
+      text: Read More
+      src: /icons/phase1.png
+      isExternal: false
+  - active-challenge-two:
+    class: active-challenge-two
+    mobile-img: /icons/phase2.png
+    desktop-img: /icons/phase3.png
+    img-alt: phase something
+    banner: Supply Chain Challenge
+    phase-status: phase one title
+    challenge-name: Supply Chain Challenge
+    details: |-
+      The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
+
+      Phase 2 of this competition has closed. Stay tuned for the announcement of Phase 2 winners, and opportunities to apply to Phase 3 in 2024.
+    button:
+      text: Meet the Supply Chain Challenge Phase 1 Winners
+      src: /icons/phase1.png
+      isExternal: false
 ---
 
 
