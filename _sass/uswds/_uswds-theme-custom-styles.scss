@@ -1476,12 +1476,6 @@ header.box-shadow-header {
         background: color('indigo-cool-90');
         color: color('gray-cool-2');
 
-        #accordion-intro h4.usa-accordion__heading button {
-          background-color: color('blue-warm-60v');
-          color: color('gray-cool-2');
-          background-blend-mode: color-burn;
-        }
-
         .usa-accordion__button[aria-expanded="true"] {
           @include add-background-svg("usa-icons-bg/remove--white")
         }
@@ -1503,17 +1497,18 @@ header.box-shadow-header {
         #m-a4 {
           background-color: color('indigo-cool-90');
           color: color('gray-cool-2');
-          border-bottom: 1px solid color('gray-cool-2');
+          // border-bottom: 1px solid color('gray-cool-2');
           margin-top: 0;
         }
 
-        h4.usa-accordion__heading:nth-child(2) {
+        h4.usa-accordion__heading {
           border-top: color('gray-cool-2') solid 1px;
         }
 
 
         #accordion-phases h5 {
           color: color('gold-20v');
+          display: none;
         }
 
         & .accordion-phases & .usa-accordion__heading {
@@ -1639,7 +1634,11 @@ header.box-shadow-header {
 
     div.active-challenge-details.content-container {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include at-media('tablet') {
       flex-flow: row;
+      }
     }
 
     footer {
@@ -1766,6 +1765,11 @@ header.box-shadow-header {
           order: 1;
           text-align: left;
           padding: 0 3rem;
+
+          a {
+            display: flex;
+            flex-direction: column;
+          }
 
           .content-container,
           a {
