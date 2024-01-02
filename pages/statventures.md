@@ -67,8 +67,8 @@ phase-one-winners:
 active-challenges:
   - active-challenge-one:
     class: active-challenge-one
-    mobile-img: /icons/phase2.png
-    desktop-img: /icons/phase3.png
+    mobile-img: /icons/statventures-mobile-geolocation-green-clock.png
+    desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
     img-alt: phase something
     banner: Address Geolocation Challenge
     phase-status: phase one title
@@ -82,8 +82,8 @@ active-challenges:
       isExternal: false
   - active-challenge-two:
     class: active-challenge-two
-    mobile-img: /icons/phase2.png
-    desktop-img: /icons/phase3.png
+    mobile-img: /icons/statventures-mobile-supply-chain-blue-clock.png
+    desktop-img: /icons/statventures-tablet-supply-chain-blue-clock.png
     img-alt: phase something
     banner: Supply Chain Challenge
     phase-status: phase one title

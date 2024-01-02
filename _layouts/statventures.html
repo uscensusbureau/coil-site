@@ -61,21 +61,29 @@ class:
         <h2>Data is greater than the sum of its parts.</h2>
         <h3>Compete for funding, participation in an elite cohort of technologists, and ultimately, government adoption in our open
         challenges.</h3>
+        <p>Help us identify and use new ways to produce more timely, granular, and robust data.</p>
     </div>
 
-    <div id="accordion-container">
-        <div class="usa-accordion" id="accordion-intro">
-            <h4 class="usa-accordion__heading">
-                <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="m-a1">
-                    The Challenge
-                </button>
-            </h4>
-            <div id="m-a1" class="usa-accordion__content usa-prose">
-                <p>
-                    Help us identify and use new ways to produce more <strong>timely, granular, and robust</strong> data.
-                </p>
+        <div class="active-challenges display-flex width-full">
+            {% for challenge in page.active-challenges %}
+            <div class="{{challenge.class}} width-full">
+                <div class="active-challenge-details content-container">
+                    <div class="active-challenge-img-container">
+                        <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.mobile-img}}" alt="{{challenge.img-alt}}" class="active-challenge-img">
+                    </div>
+                    <div class="active-challege-content width-full">
+                        <h3 class="display-none">{{challenge.phase-status}}</h3>
+                        <h2>{{challenge.challenge-name}}</h2>
+                        <p>{{challenge.details}}</p>
+                        <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2"
+                            target="_blank">{{challenge.button.text}}</a>
+                    </div>
+                </div>
             </div>
+            {% endfor %}
         </div>
+
+    <div id="accordion-container" class="width-full">
         <div class="usa-accordion usa-accordion--multiselectable" id="accordion-phases" data-allow-multiple>
             <h3>Phases</h3>
             <h4 class="usa-accordion__heading">
@@ -141,13 +149,13 @@ class:
             </div>
             <div class="active-challenge-details content-container">
                 <div class="active-challege-content width-full">
-                    <h3>{{challenge.phase-status}}</h3>
+                    <h3 class="display-none">{{challenge.phase-status}}</h3>
                     <h2>{{challenge.challenge-name}}</h2>
                     <p>{{challenge.details}}</p>
                     <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">{{challenge.button.text}}</a>
                 </div>
                 <div class="active-challenge-img-container">
-                    <img src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content.phase-1.icon}}" alt="" class="active-challenge-img">
+                    <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.desktop-img}}" alt="{{challenge.img-alt}}"  class="active-challenge-img">
                 </div>
             </div>
         </div>
