@@ -40,7 +40,7 @@ class:
             </div>
             <span>data.</span>
         </section>
-        <p>StatVentures scouts technology through collaborations with innovators outside government to ensure the U.S. Census Bureau provides quality data more efficiently, creatively, and effectively.</p>
+        <p>StatVentures scouts technology through collaborations with innovators outside of government to ensure the U.S. Census Bureau continues to provide the highest quality data.</p>
         <a class="statventures-btn" href="https://public.govdelivery.com/accounts/USCENSUS/signup/38054" target="_blank">Subscribe to Updates</a>
     </section>
 </header>
@@ -83,7 +83,7 @@ class:
             {% endfor %}
         </div>
 
-    <div id="accordion-container" class="width-full">
+    <div id="accordion-container" class="width-full mobile-only">
         <div class="usa-accordion usa-accordion--multiselectable" id="accordion-phases" data-allow-multiple>
             <h3>Phases</h3>
             <h4 class="usa-accordion__heading">
@@ -94,8 +94,8 @@ class:
             <div id="m-a2" class="usa-accordion__content usa-prose">
                 <h5>Complete</h5>
                 <p>
-                    Propose an idea to improve U.S. Census data sources. In Spring 2023, ten of the most innovative and promising ideas were
-            awarded $10,000 each and invited to join the Phase 2 cohort.
+                    Propose an idea to improve U.S. Census data sources. Teams with the most innovative and promising ideas will be awarded
+                    $10,000 and an invitation to join the Phase 2 StatVentures cohort.
                 </p>
             </div>
             <h4 class="usa-accordion__heading">
@@ -106,8 +106,10 @@ class:
             <div id="m-a3" class="usa-accordion__content usa-prose">
                 <h5>Open Now</h5>
                 <p>
-                    Iterate on your idea from Phase 1, with insight and feedback from supply chain data experts. Teams will be challenged to develop a clear implementation roadmap and articulate a value proposition. Finalists with the most
-            promising roadmaps will receive awards to move to Phase 3.
+                    Iterate on your idea from phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop
+                    a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will
+                    receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the
+                    opportunity to join in Phase 2.
                 </p>
             </div>
             <h4 class="usa-accordion__heading">
@@ -119,8 +121,8 @@ class:
                 <h5>2024</h5>
                 <p>
                     Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census
-            Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by
-            the U.S. Census Bureau. Missed Phase 2? Don’t worry, new “walk on” teams have the opportunity to join in Phase 3.
+                    Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by
+                    the U.S. Census Bureau. Missed Phase 2? Don’t worry, new “walk on” teams have the opportunity to join in Phase 3.
                 </p>
             </div>
         </div>
@@ -128,7 +130,7 @@ class:
     <!-- <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">View Phase 2 on challenge.gov</a> -->
 </section>
 <!-- !GTG -->
-<section class="challenge-intro--static-content desktop">
+<section class="challenge-intro--static-content">
     <!-- tablet/desktop only -->
     <div class="content-container">
         <h2 class="text-center">Data is greater than the sum of its parts.</h2>
@@ -142,17 +144,17 @@ class:
     <div class="active-challenges display-flex width-full">
         {% for challenge in page.active-challenges %}
         <div class="{{challenge.class}} width-full">
-            <div class="active-challenge-banner bg-green">
+            <div class="active-challenge-banner">
                 <div class="content-container">
-                    <h3>{{challenge.banner}}</h3>
+                    <p>{{challenge.banner}}</p>
                 </div>
             </div>
             <div class="active-challenge-details content-container">
                 <div class="active-challege-content width-full">
-                    <h3 class="display-none">{{challenge.phase-status}}</h3>
+                    <h4 class="phase-status">{{challenge.phase-status}}</h4>
                     <h2>{{challenge.challenge-name}}</h2>
                     <p>{{challenge.details}}</p>
-                    <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">{{challenge.button.text}}</a>
+                    <a class="statventures-btn" href="{{challenge.button.src}}" target="_blank">{{challenge.button.text}}</a>
                 </div>
                 <div class="active-challenge-img-container">
                     <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.desktop-img}}" alt="{{challenge.img-alt}}"  class="active-challenge-img">
@@ -241,10 +243,10 @@ class:
             <p>Propose an idea to improve U.S. Census data sources. Teams with the most innovative and promising ideas will be awarded
             $10,000 and an invitation to join the Phase 2 StatVentures cohort.</p>
             <h5>Phase 2: Roadmap</h5>
-            <p>Iterate on your idea from phase 1, with insight and feedback from supply chain data Census Bureau experts. Teams are
-            challenged to develop a clear implementation roadmap and articulate a value proposition. Finalists with the most
-            promising roadmaps will receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new
-            “walk-on” teams have the opportunity to join in Phase 2.</p>
+            <p>Iterate on your idea from phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop
+            a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will
+            receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the
+            opportunity to join in Phase 2.</p>
             <h5>Phase 3: Test</h5>
             <p>Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by the U.S. Census Bureau.</p>
         </div>

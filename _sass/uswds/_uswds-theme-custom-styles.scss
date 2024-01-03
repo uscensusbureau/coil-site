@@ -1155,6 +1155,17 @@ header.box-shadow-header {
     background-color: color('gray-cool-2');
     text-decoration: none;
     border-radius: .5rem;
+    font-size: 16px;
+    line-height: 21px;
+    @include at-media('tablet') {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include at-media('desktop') {
+      font-size: 18px;
+      line-height: 23px;
+    }
 
     &:hover,
     &:active {
@@ -1188,6 +1199,47 @@ header.box-shadow-header {
   }
 
   background: color('gray-cool-2');
+
+  h2 {
+    font-size: 24px;
+    line-height: 31px;
+
+    @include at-media('tablet') {
+      font-size: 18px;
+      line-height: 27px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 32px;
+      line-height: 41px;
+    }
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 18px;
+
+    @include at-media('tablet') {
+      font-size: 10px;
+      line-height: 15px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+
+    @include at-media('desktop') {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
 
   &>* {
     display: flex;
@@ -1354,6 +1406,19 @@ header.box-shadow-header {
             color: white;
           }
         }
+      // trying to consolidate code but not sure if the rule works as intended
+      // @include at-media-max ('tablet') {
+      //   order: 3;
+      //   @include u-padding-x(2);
+      //   text-align: left;
+      //   color: color('blue-warm-60v');
+      //   font-size: 1.35rem;
+      //   padding-bottom: 16px;
+
+      //   figure {
+      //     display: none;
+      //   }
+      // }
       }
 
       @media (max-width: 'desktop') {
@@ -1364,7 +1429,7 @@ header.box-shadow-header {
 
       section.scrolling-words-container {
         display: flex;
-        font-size: 4rem;
+        font-size: 3.4rem;
         flex-direction: column;
         align-items: start;
         justify-content: center;
@@ -1475,13 +1540,21 @@ header.box-shadow-header {
       &.challenge-intro--mobile {
         background: color('indigo-cool-90');
         color: color('gray-cool-2');
-
+        .content-container, .active-challeges {
+        @include at-media('tablet') {
+            display: none;
+          }
+        }
         .usa-accordion__button[aria-expanded="true"] {
           @include add-background-svg("usa-icons-bg/remove--white")
         }
 
         .usa-accordion__button[aria-expanded="false"] {
           @include add-background-svg("usa-icons-bg/add--white");
+        }
+
+        #accordion-phases {
+          margin-bottom: 32px;
         }
 
         #m-a1 {
@@ -1526,6 +1599,10 @@ header.box-shadow-header {
         justify-content: space-around;
         // min-height: 550px;
         padding: 2rem 0;
+        display: none;
+        @include at-media('tablet') {
+            display: flex;
+          }
 
         & h3 {
           text-align: center;
@@ -1596,6 +1673,14 @@ header.box-shadow-header {
           justify-content: space-between;
         }
 
+        & .usa-card__heading {
+          font-size: 14px;
+          line-height: 28px;
+          @include at-media('desktop') {
+              font-size: 25px;
+              line-height: 50px;
+            }
+        }
 
         & .usa-card__img img {
           aspect-ratio: 1;
@@ -1631,6 +1716,44 @@ header.box-shadow-header {
 
 
     }
+    .active-challenge-banner {
+      margin-top: 48px;
+      @include at-media('desktop') {
+        margin-top: 80px;
+      }
+      .content-container {
+        display: grid;
+        align-items: center;
+        height: 32px;
+        p {
+          margin: 0;
+          @include at-media('tablet') {
+          padding-inline-start: 92px;
+          }
+        }
+      }
+    }
+
+    .active-challege-content {
+      @include at-media('tablet') {
+      padding-inline-start: 92px;
+      }
+      h3.phase-status {
+        text-align: start;
+      }
+    }
+
+    .active-challenge-one {
+      .active-challenge-banner {
+      background: #0F9D58;
+      }
+    }
+
+    .active-challenge-two {
+      .active-challenge-banner {
+      background-color: color('blue-warm-60v');
+      }
+    }
 
     div.active-challenge-details.content-container {
       display: flex;
@@ -1638,6 +1761,19 @@ header.box-shadow-header {
       align-items: center;
       @include at-media('tablet') {
       flex-flow: row;
+      }
+    }
+
+    .active-challenge-img-container {
+      width: 100%;
+      text-align: center;
+      .active-challenge-img {
+        @include at-media('tablet') {
+          width: 133px;
+        }
+        @include at-media('desktop') {
+          width: 217px;
+        }
       }
     }
 
