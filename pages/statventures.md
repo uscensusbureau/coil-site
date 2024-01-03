@@ -77,7 +77,7 @@ active-challenges:
       The Address Geolocation Challenge seeks innovations on how the Census Bureau geolocates residential addresses in rural and remote locations. Phase 1 of this competition will open soon. Stay tuned for opportunities to apply in early 2024.
     button:
       text: Read More
-      src: /files/StatVentures-Geolocation-Challenge-Overview.pdf
+      src: /assets/files/StatVentures-Geolocation-Challenge-Overview.pdf
       isExternal: false
   - active-challenge-two:
     class: active-challenge-two
