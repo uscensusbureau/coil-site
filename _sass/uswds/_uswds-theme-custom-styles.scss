@@ -1406,6 +1406,19 @@ header.box-shadow-header {
             color: white;
           }
         }
+      // trying to consolidate code but not sure if the rule works as intended
+      // @include at-media-max ('tablet') {
+      //   order: 3;
+      //   @include u-padding-x(2);
+      //   text-align: left;
+      //   color: color('blue-warm-60v');
+      //   font-size: 1.35rem;
+      //   padding-bottom: 16px;
+
+      //   figure {
+      //     display: none;
+      //   }
+      // }
       }
 
       @media (max-width: 'desktop') {
@@ -1586,6 +1599,10 @@ header.box-shadow-header {
         justify-content: space-around;
         // min-height: 550px;
         padding: 2rem 0;
+        display: none;
+        @include at-media('tablet') {
+            display: flex;
+          }
 
         & h3 {
           text-align: center;
