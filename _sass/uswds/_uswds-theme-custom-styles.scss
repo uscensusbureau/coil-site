@@ -1163,8 +1163,8 @@ header.box-shadow-header {
     }
 
     @include at-media('desktop') {
-      font-size: 18px;
-      line-height: 23px;
+      font-size: 16px;
+      line-height: 21px;
     }
 
     &:hover,
@@ -1356,6 +1356,13 @@ header.box-shadow-header {
       &.splash {
         color: color('blue-warm-60v');
 
+        p {
+          @include at-media('desktop') {
+          font-size: 16px;
+          line-height: 21px;
+          }
+        }
+
         & figure {
           width: 50%;
           // background-image: url(/assets/img/statventures/photos/data-processor-img.png);
@@ -1382,10 +1389,32 @@ header.box-shadow-header {
           padding: 0 3rem;
         }
 
+        a {
+          @include at-media('tablet') {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+
       }
 
       &.splash-secondary {
         text-align: center;
+
+        p.subheading {
+            font-size: 18px;
+            line-height: 27px;
+
+            @include at-media('tablet') {
+              font-size: 12px;
+              line-height: 18px;
+            }
+
+            @include at-media('desktop') {
+              font-size: 16px;
+              line-height: 21px;
+            }
+          }
 
         figure {
           background-image: linear-gradient(359.64deg, #13192F 0.33%, rgba(217, 217, 217, 0) 99.71%);
@@ -1540,6 +1569,12 @@ header.box-shadow-header {
       &.challenge-intro--mobile {
         background: color('indigo-cool-90');
         color: color('gray-cool-2');
+
+        p.subheading {
+          font-size: 18px;
+          line-height: 27px;
+          }
+
         .content-container, .active-challeges {
         @include at-media('tablet') {
             display: none;
@@ -1555,6 +1590,17 @@ header.box-shadow-header {
 
         #accordion-phases {
           margin-bottom: 32px;
+          border-bottom: 1px solid;
+          border-top: 1px solid;
+
+          h3 {
+            @include at-media('tablet') {
+              font-size: 18px;
+            }
+          }
+          .usa-prose p {
+            max-width: fit-content;
+          }
         }
 
         #m-a1 {
@@ -1608,6 +1654,15 @@ header.box-shadow-header {
           text-align: center;
           max-width: 66%;
           font-weight: 400;
+
+          @include at-media('tablet') {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          @include at-media('desktop') {
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
 
         & .content-container {
@@ -1627,6 +1682,10 @@ header.box-shadow-header {
 
           p {
             padding: 0 2rem;
+            @include at-media ('desktop') {
+            font-size: 16px;
+            line-height: 24px;
+            }
           }
         }
 
@@ -1716,19 +1775,41 @@ header.box-shadow-header {
 
 
     }
+
+    .active-challenges {
+      @include at-media('tablet') {
+        padding-bottom: 16px;
+      }
+      @include at-media('desktop') {
+        padding-bottom: 64px;
+      }
+    }
     .active-challenge-banner {
       margin-top: 48px;
+      @include at-media('tablet') {
+        margin-top: 42px;
+        margin-bottom: 42px;
+      }
       @include at-media('desktop') {
         margin-top: 80px;
+        margin-bottom: 64px;
       }
       .content-container {
         display: grid;
         align-items: center;
         height: 32px;
+        @include at-media ('desktop') {
+          height: 48px;
+        }
         p {
           margin: 0;
           @include at-media('tablet') {
-          padding-inline-start: 92px;
+            padding-inline-start: 92px;
+          }
+
+          @include at-media('desktop') {
+            font-size: 18px;
+            line-height: 23px;
           }
         }
       }
@@ -1740,6 +1821,11 @@ header.box-shadow-header {
       }
       h3.phase-status {
         text-align: start;
+      }
+      p {
+        @include at-media('desktop') {
+          margin-bottom: 30px;
+        }
       }
     }
 
@@ -1873,8 +1959,13 @@ header.box-shadow-header {
             margin: 1rem .5rem;
           }
 
+          p {
+            font-size: 18px;
+            line-height: 27px;
+          }
+
           .scrolling-words-container {
-            font-size: 3rem;
+            font-size: 2.3rem;
           }
 
           figure {
@@ -1884,12 +1975,17 @@ header.box-shadow-header {
 
         &.splash-secondary {
           order: 3;
-          @include u-padding-x(2);
-          text-align: left;
+          @include u-padding-x(6);
           color: color('blue-warm-60v');
           font-size: 1.35rem;
-          padding-bottom: 16px;
+          padding-bottom: 32px;
+          padding-top: 32px;
+          text-align: left;
 
+          .subheading {
+            font-size: 18px;
+            line-height: 27px;
+          }
           figure {
             display: none;
           }

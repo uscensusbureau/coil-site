@@ -92,7 +92,7 @@ active-challenges:
 
       Phase 2 of this competition has closed. Stay tuned for the announcement of Phase 2 winners, and opportunities to apply to Phase 3 in 2024.
     button:
-      text: Meet the Supply Chain Challenge Phase 1 Winners
+      text: Meet the Phase 1 Winners
       src: https://www.challenge.gov/?challenge=statventures-supply-chain-p1&tab=winners
       isExternal: true
 ---
