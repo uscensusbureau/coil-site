@@ -1220,8 +1220,8 @@ header.box-shadow-header {
     line-height: 18px;
 
     @include at-media('tablet') {
-      font-size: 10px;
-      line-height: 15px;
+      font-size: 16px;
+      line-height: 24px;
       }
 
     @include at-media('desktop') {
@@ -1363,7 +1363,7 @@ header.box-shadow-header {
         p {
           @include at-media('desktop') {
           font-size: 16px;
-          line-height: 21px;
+          line-height: 24px;
           }
         }
 
@@ -1416,7 +1416,7 @@ header.box-shadow-header {
 
             @include at-media('desktop') {
               font-size: 16px;
-              line-height: 21px;
+              line-height: 24px;
             }
           }
 
