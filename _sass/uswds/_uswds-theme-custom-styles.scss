@@ -1158,8 +1158,8 @@ header.box-shadow-header {
     font-size: 16px;
     line-height: 21px;
     @include at-media('tablet') {
-      font-size: 12px;
-      line-height: 18px;
+      font-size: 16px;
+      line-height: 21px;
     }
 
     @include at-media('desktop') {
@@ -1234,6 +1234,10 @@ header.box-shadow-header {
     font-size: 12px;
     line-height: 18px;
 
+    @include at-media('tablet') {
+      font-size: 16px;
+      line-height: 21px;
+    }
     @include at-media('desktop') {
       font-size: 14px;
       line-height: 21px;
@@ -1406,8 +1410,8 @@ header.box-shadow-header {
             line-height: 27px;
 
             @include at-media('tablet') {
-              font-size: 12px;
-              line-height: 18px;
+              font-size: 16px;
+              line-height: 21px;
             }
 
             @include at-media('desktop') {
@@ -1656,9 +1660,10 @@ header.box-shadow-header {
           font-weight: 400;
 
           @include at-media('tablet') {
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 16px;
+            line-height: 21px;
           }
+
           @include at-media('desktop') {
             font-size: 16px;
             line-height: 24px;
