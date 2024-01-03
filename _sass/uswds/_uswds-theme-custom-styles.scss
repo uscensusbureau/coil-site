@@ -1775,19 +1775,41 @@ header.box-shadow-header {
 
 
     }
+
+    .active-challenges {
+      @include at-media('tablet') {
+        padding-bottom: 16px;
+      }
+      @include at-media('desktop') {
+        padding-bottom: 64px;
+      }
+    }
     .active-challenge-banner {
       margin-top: 48px;
+      @include at-media('tablet') {
+        margin-top: 42px;
+        margin-bottom: 42px;
+      }
       @include at-media('desktop') {
         margin-top: 80px;
+        margin-bottom: 64px;
       }
       .content-container {
         display: grid;
         align-items: center;
         height: 32px;
+        @include at-media ('desktop') {
+          height: 48px;
+        }
         p {
           margin: 0;
           @include at-media('tablet') {
-          padding-inline-start: 92px;
+            padding-inline-start: 92px;
+          }
+
+          @include at-media('desktop') {
+            font-size: 18px;
+            line-height: 23px;
           }
         }
       }
@@ -1799,6 +1821,11 @@ header.box-shadow-header {
       }
       h3.phase-status {
         text-align: start;
+      }
+      p {
+        @include at-media('desktop') {
+          margin-bottom: 30px;
+        }
       }
     }
 
