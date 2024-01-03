@@ -1975,11 +1975,12 @@ header.box-shadow-header {
 
         &.splash-secondary {
           order: 3;
-          @include u-padding-x(2);
-          text-align: left;
+          @include u-padding-x(6);
           color: color('blue-warm-60v');
           font-size: 1.35rem;
-          padding-bottom: 16px;
+          padding-bottom: 32px;
+          padding-top: 32px;
+          text-align: left;
 
           .subheading {
             font-size: 18px;
