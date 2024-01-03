@@ -1828,7 +1828,7 @@ header.box-shadow-header {
         text-align: start;
       }
       p {
-        @include at-media('desktop') {
+        @include at-media('tablet') {
           margin-bottom: 30px;
         }
       }
