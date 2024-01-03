@@ -1590,6 +1590,17 @@ header.box-shadow-header {
 
         #accordion-phases {
           margin-bottom: 32px;
+          border-bottom: 1px solid;
+          border-top: 1px solid;
+
+          h3 {
+            @include at-media('tablet') {
+              font-size: 18px;
+            }
+          }
+          .usa-prose p {
+            max-width: fit-content;
+          }
         }
 
         #m-a1 {
