@@ -1155,6 +1155,17 @@ header.box-shadow-header {
     background-color: color('gray-cool-2');
     text-decoration: none;
     border-radius: .5rem;
+    font-size: 16px;
+    line-height: 21px;
+    @include at-media('tablet') {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    @include at-media('desktop') {
+      font-size: 16px;
+      line-height: 21px;
+    }
 
     &:hover,
     &:active {
@@ -1188,6 +1199,51 @@ header.box-shadow-header {
   }
 
   background: color('gray-cool-2');
+
+  h2 {
+    font-size: 24px;
+    line-height: 31px;
+
+    @include at-media('tablet') {
+      font-size: 18px;
+      line-height: 27px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 32px;
+      line-height: 41px;
+    }
+  }
+
+  h4 {
+    font-size: 14px;
+    line-height: 18px;
+
+    @include at-media('tablet') {
+      font-size: 16px;
+      line-height: 24px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+
+    @include at-media('tablet') {
+      font-size: 16px;
+      line-height: 21px;
+    }
+    @include at-media('desktop') {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
 
   &>* {
     display: flex;
@@ -1304,6 +1360,13 @@ header.box-shadow-header {
       &.splash {
         color: color('blue-warm-60v');
 
+        p {
+          @include at-media('desktop') {
+          font-size: 16px;
+          line-height: 24px;
+          }
+        }
+
         & figure {
           width: 50%;
           // background-image: url(/assets/img/statventures/photos/data-processor-img.png);
@@ -1330,10 +1393,32 @@ header.box-shadow-header {
           padding: 0 3rem;
         }
 
+        a {
+          @include at-media('tablet') {
+            font-size: 18px;
+            line-height: 27px;
+          }
+        }
+
       }
 
       &.splash-secondary {
         text-align: center;
+
+        p.subheading {
+            font-size: 18px;
+            line-height: 27px;
+
+            @include at-media('tablet') {
+              font-size: 16px;
+              line-height: 21px;
+            }
+
+            @include at-media('desktop') {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
 
         figure {
           background-image: linear-gradient(359.64deg, #13192F 0.33%, rgba(217, 217, 217, 0) 99.71%);
@@ -1354,6 +1439,19 @@ header.box-shadow-header {
             color: white;
           }
         }
+      // trying to consolidate code but not sure if the rule works as intended
+      // @include at-media-max ('tablet') {
+      //   order: 3;
+      //   @include u-padding-x(2);
+      //   text-align: left;
+      //   color: color('blue-warm-60v');
+      //   font-size: 1.35rem;
+      //   padding-bottom: 16px;
+
+      //   figure {
+      //     display: none;
+      //   }
+      // }
       }
 
       @media (max-width: 'desktop') {
@@ -1364,7 +1462,7 @@ header.box-shadow-header {
 
       section.scrolling-words-container {
         display: flex;
-        font-size: 4rem;
+        font-size: 3.4rem;
         flex-direction: column;
         align-items: start;
         justify-content: center;
@@ -1476,18 +1574,37 @@ header.box-shadow-header {
         background: color('indigo-cool-90');
         color: color('gray-cool-2');
 
-        #accordion-intro h4.usa-accordion__heading button {
-          background-color: color('blue-warm-60v');
-          color: color('gray-cool-2');
-          background-blend-mode: color-burn;
-        }
+        p.subheading {
+          font-size: 18px;
+          line-height: 27px;
+          }
 
+        .content-container, .active-challeges {
+        @include at-media('tablet') {
+            display: none;
+          }
+        }
         .usa-accordion__button[aria-expanded="true"] {
           @include add-background-svg("usa-icons-bg/remove--white")
         }
 
         .usa-accordion__button[aria-expanded="false"] {
           @include add-background-svg("usa-icons-bg/add--white");
+        }
+
+        #accordion-phases {
+          margin-bottom: 32px;
+          border-bottom: 1px solid;
+          border-top: 1px solid;
+
+          h3 {
+            @include at-media('tablet') {
+              font-size: 18px;
+            }
+          }
+          .usa-prose p {
+            max-width: fit-content;
+          }
         }
 
         #m-a1 {
@@ -1503,17 +1620,18 @@ header.box-shadow-header {
         #m-a4 {
           background-color: color('indigo-cool-90');
           color: color('gray-cool-2');
-          border-bottom: 1px solid color('gray-cool-2');
+          // border-bottom: 1px solid color('gray-cool-2');
           margin-top: 0;
         }
 
-        h4.usa-accordion__heading:nth-child(2) {
+        h4.usa-accordion__heading {
           border-top: color('gray-cool-2') solid 1px;
         }
 
 
         #accordion-phases h5 {
           color: color('gold-20v');
+          display: none;
         }
 
         & .accordion-phases & .usa-accordion__heading {
@@ -1529,13 +1647,27 @@ header.box-shadow-header {
         color: color('gray-cool-2');
         // min-height: 80vh;
         justify-content: space-around;
-        min-height: 550px;
+        // min-height: 550px;
         padding: 2rem 0;
+        display: none;
+        @include at-media('tablet') {
+            display: flex;
+          }
 
         & h3 {
           text-align: center;
           max-width: 66%;
           font-weight: 400;
+
+          @include at-media('tablet') {
+            font-size: 16px;
+            line-height: 21px;
+          }
+
+          @include at-media('desktop') {
+            font-size: 16px;
+            line-height: 24px;
+          }
         }
 
         & .content-container {
@@ -1555,6 +1687,10 @@ header.box-shadow-header {
 
           p {
             padding: 0 2rem;
+            @include at-media ('desktop') {
+            font-size: 16px;
+            line-height: 24px;
+            }
           }
         }
 
@@ -1592,18 +1728,7 @@ header.box-shadow-header {
           font-size: 1.25rem;
         }
 
-        & .card-container {
-          margin-top: -70px;
-        }
 
-
-        & .active-phase {
-          position: relative;
-          top: 50px;
-          left: 300px;
-          z-index: 1;
-          width: 10%;
-        }
 
         & .usa-card__container {
           border-color: color('blue-warm-60v');
@@ -1612,6 +1737,14 @@ header.box-shadow-header {
           justify-content: space-between;
         }
 
+        & .usa-card__heading {
+          font-size: 14px;
+          line-height: 28px;
+          @include at-media('desktop') {
+              font-size: 25px;
+              line-height: 50px;
+            }
+        }
 
         & .usa-card__img img {
           aspect-ratio: 1;
@@ -1624,6 +1757,7 @@ header.box-shadow-header {
           align-self: stretch;
 
           div {
+            display: none;
             background: color('gray-cool-2');
             color: color('blue-warm-60v');
             border: color('blue-warm-60v') 2px solid;
@@ -1645,6 +1779,93 @@ header.box-shadow-header {
       }
 
 
+    }
+
+    .active-challenges {
+      @include at-media('tablet') {
+        padding-bottom: 16px;
+      }
+      @include at-media('desktop') {
+        padding-bottom: 64px;
+      }
+    }
+    .active-challenge-banner {
+      margin-top: 48px;
+      @include at-media('tablet') {
+        margin-top: 42px;
+        margin-bottom: 42px;
+      }
+      @include at-media('desktop') {
+        margin-top: 80px;
+        margin-bottom: 64px;
+      }
+      .content-container {
+        display: grid;
+        align-items: center;
+        height: 32px;
+        @include at-media ('desktop') {
+          height: 48px;
+        }
+        p {
+          margin: 0;
+          @include at-media('tablet') {
+            padding-inline-start: 92px;
+          }
+
+          @include at-media('desktop') {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+
+    .active-challege-content {
+      @include at-media('tablet') {
+      padding-inline-start: 92px;
+      }
+      h3.phase-status {
+        text-align: start;
+      }
+      p {
+        @include at-media('tablet') {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .active-challenge-one {
+      .active-challenge-banner {
+      background: #0F9D58;
+      }
+    }
+
+    .active-challenge-two {
+      .active-challenge-banner {
+      background-color: color('blue-warm-60v');
+      }
+    }
+
+    div.active-challenge-details.content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include at-media('tablet') {
+      flex-flow: row;
+      }
+    }
+
+    .active-challenge-img-container {
+      width: 100%;
+      text-align: center;
+      .active-challenge-img {
+        @include at-media('tablet') {
+          width: 203px;
+        }
+        @include at-media('desktop') {
+          width: 217px;
+        }
+      }
     }
 
     footer {
@@ -1743,8 +1964,13 @@ header.box-shadow-header {
             margin: 1rem .5rem;
           }
 
+          p {
+            font-size: 18px;
+            line-height: 27px;
+          }
+
           .scrolling-words-container {
-            font-size: 3rem;
+            font-size: 2.3rem;
           }
 
           figure {
@@ -1754,12 +1980,17 @@ header.box-shadow-header {
 
         &.splash-secondary {
           order: 3;
-          @include u-padding-x(2);
-          text-align: left;
+          @include u-padding-x(6);
           color: color('blue-warm-60v');
           font-size: 1.35rem;
-          padding-bottom: 16px;
+          padding-bottom: 32px;
+          padding-top: 32px;
+          text-align: left;
 
+          .subheading {
+            font-size: 18px;
+            line-height: 27px;
+          }
           figure {
             display: none;
           }
@@ -1771,6 +2002,11 @@ header.box-shadow-header {
           order: 1;
           text-align: left;
           padding: 0 3rem;
+
+          a {
+            display: flex;
+            flex-direction: column;
+          }
 
           .content-container,
           a {
