@@ -1860,7 +1860,7 @@ header.box-shadow-header {
       text-align: center;
       .active-challenge-img {
         @include at-media('tablet') {
-          width: 133px;
+          width: 203px;
         }
         @include at-media('desktop') {
           width: 217px;
