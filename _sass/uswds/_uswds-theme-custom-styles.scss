@@ -1949,7 +1949,7 @@ header.box-shadow-header {
   }
 
   main article {
-    padding: 0 40px;
+    padding: 40px;
     border-top: 1px white solid;
     border-bottom: 1px white solid;
     @include at-media('tablet') {
@@ -1961,6 +1961,22 @@ header.box-shadow-header {
       border: none;
     }
   }
+
+  .individual-post-preview {
+    @include at-media('tablet') {
+      display: flex;
+      align-items: center;
+      .individual-post-img-container {
+        order: 1;
+        width: 100%;
+        text-align: right;
+      }
+      .individual-post-content {
+        width: 100%;
+      }
+    }
+  }
+
 
   #collaborate-section {
     h2{
