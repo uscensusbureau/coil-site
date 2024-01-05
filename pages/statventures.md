@@ -11,9 +11,9 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: Apply now to Supply Chain Challenge Phase 2
-  href: https://www.challenge.gov/?challenge=statventures-supply-chain-p2
-  isExternal: true
+  text: "Launching Soon: Address Geolocation Challenge Phase 1"
+  href: assets/files/StatVentures-Geolocation-Challenge-Overview.pdf
+  isExternal: false
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
@@ -63,6 +63,35 @@ phase-one-winners:
   - "Murano Corporation"
   - "Noguera Tintelnot"
   - "Transautomata"
+
+active-challenges:
+  - active-challenge-one:
+    class: active-challenge-one
+    mobile-img: /icons/statventures-mobile-geolocation-green-clock.png
+    desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
+    img-alt: phase clock
+    banner: Address Geolocation Challenge
+    phase-status: PHASE ONE LAUNCHING SOON
+    challenge-name: Address Geolocation Challenge
+    details: |-
+      The Address Geolocation Challenge seeks innovations on how the Census Bureau geolocates residential addresses in rural and remote locations. Phase 1 of this competition will open soon. Stay tuned for opportunities to apply in early 2024.
+
+  - active-challenge-two:
+    class: active-challenge-two
+    mobile-img: /icons/statventures-mobile-supply-chain-blue-clock.png
+    desktop-img: /icons/statventures-tablet-supply-chain-blue-clock.png
+    img-alt: phase clock
+    banner: Supply Chain Challenge
+    phase-status: PHASE TWO NOW CLOSED
+    challenge-name: Supply Chain Challenge
+    details: |-
+      The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
+
+      Phase 2 of this competition has closed. Stay tuned for the announcement of Phase 2 winners, and opportunities to apply to Phase 3 in 2024.
+    button:
+      text: Meet the Phase 1 Winners
+      src: https://www.challenge.gov/?challenge=statventures-supply-chain-p1&tab=winners
+      isExternal: true
 ---
 
 
