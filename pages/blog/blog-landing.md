@@ -5,7 +5,7 @@ description: "COIL’s mission is to source knowledge and solutions to solve key
 skip_index: true
 blog_tagline: Trailblazing open government through cross-sector collaboration, design, and technology.
 class: blog
-permalink: /blog
+permalink: /blog/
 
 header:
   - name: Blog
