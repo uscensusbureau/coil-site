@@ -1,4 +1,5 @@
 ---
+layout: blog-post
 date: 2023-01-01
 title: no date in post title
 url: blog-test-2
