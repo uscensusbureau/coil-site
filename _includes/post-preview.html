@@ -4,25 +4,31 @@
     <ul class="post-preview-container">
         {% if posts %}
             {% for post in posts %}
-                <li class="individual-post-preview">
-                    <h3 class="post-project">{{post.project}}</h3>
-                    <h2 class="post-title">
-                        <a href="{{post.url | prepend: site.baseurl/}}">{{ post.title}}</a>
-                    </h2>
+                <li class="individual-post-item">
+                    <article class="individual-post-preview">
+                        {%if post.src %}
+                        <div class="individual-post-img-container">
+                            <img src="{{post.src}}" alt="test">
+                        </div>
+                        {% endif %}
+                        <div class="individual-post-content">
+                            <h3 class="post-project">{{post.project}}</h3>
+                            <h2 class="post-title">
+                                <a href="{{post.url | prepend: site.baseurl/}}">{{ post.title}}</a>
+                            </h2>
 
-                    <p class="post-byline">
-                        <span>
-                        {% for author in post.authors %}
-                        {{author}}
-                        {% endfor %}
-                        on
-                        </span>
-                        <span>{{ post.date | date: "%B %-d, %Y" }}</span>
-                    </p>
-                    <p class="post-excerpt">{{ post.excerpt }}</p>
-                    {%if page.src %}
-                    <img src="{{post.src}}" alt="test">
-                    {% endif %}
+                            <p class="post-byline">
+                                <span>
+                                    {% for author in post.authors %}
+                                    {{author}}
+                                    {% endfor %}
+                                    on
+                                </span>
+                                <span>{{ post.date | date: "%B %-d, %Y" }}</span>
+                            </p>
+                            <p class="post-excerpt">{{ post.excerpt }}</p>
+                        </div>
+                    </article>
                 </li>
             {% endfor %}
         {% else %}
