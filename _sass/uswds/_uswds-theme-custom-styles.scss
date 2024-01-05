@@ -1977,6 +1977,17 @@ header.box-shadow-header {
     }
   }
 
+  .blog-post-header {
+
+    @include at-media('tablet') {
+      .post-img-container {
+        order: 2;
+      }
+      .post-header-intro {
+        order: 1;
+      }
+    }
+  }
 
   #collaborate-section {
     h2{
