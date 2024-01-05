@@ -3,8 +3,11 @@ layout: blog-landing
 ---
 
 <article>
-    <header class="blog-post-header">
-        <div>
+    <header class="blog-post-header display-flex flex-column">
+        <div class="post-img-container">
+            <img class="post-img" src="{{site.baseurl}}{{page.src}}" alt="test">
+        </div>
+        <section class="post-header-intro">
             <h3 class="post-project">{{page.project}}</h3>
             <h1 class="post-title">{{page.title}}</h1>
             <p class="post-byline">
@@ -13,8 +16,7 @@ layout: blog-landing
                 {% endfor %}
                 on <time>{{page.date | date: "%B %-d, %Y"}}</time>
             </p>
-        </div>
-        <img src="{{page.src}}" alt="test">
+        </section>
     </header>
     <section class="post-content">
      {{ content }}
