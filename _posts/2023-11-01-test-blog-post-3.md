@@ -2,7 +2,7 @@
 layout: blog-post
 date: 2023-11-01
 title: test blog post 3
-url: blog-test-3
+permalink: /blog-test-3/
 project: StatVentures
 authors:
     - Victoria Fine
