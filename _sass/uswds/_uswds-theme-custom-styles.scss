@@ -1818,6 +1818,10 @@ header.box-shadow-header {
         linear-gradient(180deg, rgba(21, 22, 34, 1) 0%, rgba(0, 80, 216, .26) 74%, rgba(0, 80, 216, 0) 100%);
         background-repeat: no-repeat;
         background-position-x: 80%;
+        padding-left: 40px;
+    }
+    @include at-media('desktop') {
+      padding-left: 48px;
     }
     h1 {
       font-weight: 600;
