@@ -1,15 +1,15 @@
 ---
 layout: blog-landing
 title: COIL Blog
-description: "COIL’s mission is to source knowledge and solutions to solve key challenges for the Census Bureau and the public at large through human-centered design, data, creative media, and technology."
+description: "A hub for sharing the latest on innovations, best practices, and the conversations that move open data forward."
 skip_index: true
-blog_tagline: Trailblazing open government through cross-sector collaboration, design, and technology.
+blog_tagline: "A hub for sharing the latest on innovations, best practices, and the conversations that move open data forward."
 class: blog
 permalink: /blog/
 
 header:
   - name: Blog
-    blurb: COIL’s mission is to source knowledge and solutions to solve key challenges for the Census Bureau and the public at large through human-centered design, data, creative media, and technology.
+    blurb: "A hub for sharing the latest on innovations, best practices, and the conversations that move open data forward."
 ---
 
 <!-- this would make the blog landing page -->
