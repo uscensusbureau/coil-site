@@ -2065,7 +2065,12 @@ header.box-shadow-header {
   .post-content {
     padding-left: 20px;
     padding-right: 20px;
-
+    a {
+      color: inherit;
+      &:visited {
+        color:inherit;
+      }
+    }
     @include at-media('tablet') {
       padding-left: 4px;
       padding-right: 4px;
