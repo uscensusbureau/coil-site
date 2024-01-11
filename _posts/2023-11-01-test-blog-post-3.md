@@ -6,9 +6,8 @@ permalink: /blog-test-3/
 project: StatVentures
 authors:
     - Victoria Fine
-    - COIL Team
 excerpt: "We are testing our blog posts. Hopefully this works."
-src: /assets/img/projects/census-accelerate-graphic.png
+src: /assets/img/blog/features/desktop-coil-blog-expanded-post-image.png
 ---
 ## h2 right here
 Hello
