@@ -1810,11 +1810,11 @@ header.box-shadow-header {
   color: color('gray-cool-2');
 
   .cr-header {
-    background:url(/assets/img/icons/blog_hero_graphic.png);
+    background:url(/assets/img/blog/icons/blog_hero_graphic.png);
     background-repeat: no-repeat;
     @include at-media('tablet') {
       background-position: 200px;
-      background: url(/assets/img/icons/blog_hero_graphic.png),
+      background: url(/assets/img/blog/icons/blog_hero_graphic.png),
         linear-gradient(180deg, rgba(21, 22, 34, 1) 0%, rgba(0, 80, 216, .26) 74%, rgba(0, 80, 216, 0) 100%);
         background-repeat: no-repeat;
         background-position-x: 80%;
