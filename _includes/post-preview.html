@@ -8,7 +8,7 @@
                     <article class="individual-post-preview">
                         {%if post.src %}
                         <div class="individual-post-img-container">
-                            <img src="{{site.baseurl}}{{post.src}}" alt="test">
+                            <img class="post-img" src="{{site.baseurl}}{{post.src}}" alt="">
                         </div>
                         {% endif %}
                         <div class="individual-post-content">
@@ -19,12 +19,11 @@
 
                             <p class="post-byline">
                                 <span>
+                                    By
                                     {% for author in post.authors %}
                                     {{author}}
                                     {% endfor %}
-                                    on
                                 </span>
-                                <span>{{ post.date | date: "%B %-d, %Y" }}</span>
                             </p>
                             <p class="post-excerpt">{{ post.excerpt }}</p>
                         </div>

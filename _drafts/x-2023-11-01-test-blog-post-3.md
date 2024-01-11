@@ -3,12 +3,11 @@ layout: blog-post
 date: 2023-11-01
 title: test blog post 3
 permalink: /blog-test-3/
-project: StatVentures
+project: Draft
 authors:
     - Victoria Fine
-    - COIL Team
 excerpt: "We are testing our blog posts. Hopefully this works."
-src: /assets/img/projects/census-accelerate-graphic.png
+src: /assets/img/blog/features/desktop-coil-blog-expanded-post-image.png
 ---
 ## h2 right here
 Hello
