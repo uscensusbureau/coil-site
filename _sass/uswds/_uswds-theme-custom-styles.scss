@@ -1972,6 +1972,7 @@ header.box-shadow-header {
     @include at-media('desktop') {
       padding: 0 108px;
       border: none;
+      padding-bottom: 64px;
     }
   }
 
