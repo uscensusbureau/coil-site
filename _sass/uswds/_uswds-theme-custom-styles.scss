@@ -2191,8 +2191,8 @@ header.box-shadow-header {
 
       .post-excerpt, p {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }
@@ -2208,6 +2208,7 @@ header.box-shadow-header {
     @include at-media('desktop') {
       padding: 0 108px;
       border: none;
+      padding-bottom: 64px;
     }
   }
 
