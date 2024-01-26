@@ -1,0 +1,25 @@
+---
+layout: blog-landing
+---
+
+<article class="grid-container">
+    <header class="blog-post-header display-flex flex-column">
+        <div class="post-img-container">
+            <img class="post-img" src="{{site.baseurl}}{{page.src}}" alt="">
+        </div>
+        <section class="post-header-intro">
+            <h3 class="post-project">{{page.project}}</h3>
+            <h1 class="post-title">{{page.title}}</h1>
+            <p class="post-byline">
+                By {% for author in page.authors %}
+                {{author}}
+                {% endfor %}
+                on <time>{{page.date | date: "%B %-d, %Y"}}</time>
+            </p>
+            <p class="post-excerpt">{{ page.excerpt }}</p>
+        </section>
+    </header>
+    <section class="post-content">
+     {{ content }}
+    </section>
+</article>
