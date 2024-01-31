@@ -7,7 +7,7 @@ class: coil
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
 banner:
-  text: "Watch recordings of all Census Open Innovation Summit 2024 sessions on YouTube."
+  text: "Missed Census Open Innovation Summit 2024? Watch the recordings on YouTube!"
   href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme
   isExternal: true
 
