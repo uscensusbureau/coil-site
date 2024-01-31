@@ -1,0 +1,23 @@
+---
+layout: base
+class: blog
+---
+  <!-- based on 18F blog/index.html -->
+  <!-- this is what get compiled to make the page. Kind like main.scss it can include base styles + partcials in the form of includes -->
+  <!-- because base has the coil-nav + coil-footer the content will be wrapped around it -->
+  <!-- This creates a layout that is to be linked in an md file -->
+
+
+
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+{% include coil-nav.html %}
+<main id="main-content">
+  {% if page.name == 'blog-landing.md' %}
+    {% include cr-header.html %}
+  {% endif %}
+  {{ content }}
+</main>
+<div class="combined-footer">
+  {% include coil-collaborate-section.html %}
+  {% include coil-footer.html %}
+</div>
