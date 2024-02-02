@@ -73,9 +73,7 @@ active-challenges:
     banner: Address Geolocation Challenge
     phase-status: PHASE ONE LAUNCHING SOON
     challenge-name: Address Geolocation Challenge
-    details: |-
-      The Address Geolocation Challenge seeks innovations on how the Census Bureau geolocates residential addresses in rural and remote locations. Phase 1 of this competition will open soon. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) on opportunities to apply in early 2024.
-
+    details: The Address Geolocation Challenge seeks innovations on how the Census Bureau geolocates residential addresses in rural and remote locations. Phase 1 of this competition will open soon. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for opportunities to apply in early 2024.
   - active-challenge-two:
     class: active-challenge-two
     mobile-img: /icons/statventures-mobile-supply-chain-blue-clock.png
@@ -84,8 +82,7 @@ active-challenges:
     banner: Supply Chain Challenge
     phase-status: PHASE TWO NOW CLOSED
     challenge-name: Supply Chain Challenge
-    details: |-
-      The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
+    details: The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
 
       Phase 2 of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 2 winners, and opportunities to apply to Phase 3 in 2024.
     button:
