@@ -1820,7 +1820,15 @@ header.box-shadow-header {
       }
     }
 
-    .active-challege-content {
+    .active-challenge-content
+     {
+      p a {
+        color: white;
+
+        :visited {
+          color: white;
+        }
+      }
       @include at-media('tablet') {
       padding-inline-start: 92px;
       }
@@ -2006,6 +2014,13 @@ header.box-shadow-header {
           a {
             display: flex;
             flex-direction: column;
+          }
+
+          .active-challenge-content {
+            p a {
+                margin: 0;
+                display: inline;
+            }
           }
 
           .content-container,
