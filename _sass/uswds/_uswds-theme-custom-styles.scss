@@ -1820,7 +1820,8 @@ header.box-shadow-header {
       }
     }
 
-    .active-challenge-content {
+    .active-challenge-content
+     {
       p a {
         color: white;
 
@@ -2013,6 +2014,13 @@ header.box-shadow-header {
           a {
             display: flex;
             flex-direction: column;
+          }
+
+          .active-challenge-content {
+            p a {
+                margin: 0;
+                display: inline;
+            }
           }
 
           .content-container,
