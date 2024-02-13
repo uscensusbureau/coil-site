@@ -74,7 +74,7 @@ class:
                     <div class="active-challenge-content width-full">
                         <h3 class="display-none">{{challenge.phase-status}}</h3>
                         <h2>{{challenge.challenge-name}}</h2>
-                        <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+                        <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" |replace: "SITE.BASEURL", site.baseurl }}</p>
                         {% if challenge.button %}
                         <a class="statventures-btn" href="{% unless challenge.button.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}"
                             target="_blank">{{challenge.button.text}}</a>
