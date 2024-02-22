@@ -1149,10 +1149,10 @@ header.box-shadow-header {
   & .statventures-btn {
     display: inline-flex;
     justify-content: center;
-    color: color('blue-warm-60v');
-    box-shadow: inset 0 0 0 2px color('blue-warm-60v');
+    color: inherit;
+    box-shadow: inset 0 0 0 2px;
     padding: .5rem 1.25rem;
-    background-color: color('gray-cool-2');
+    background-color: transparent;
     text-decoration: none;
     border-radius: .5rem;
     font-size: 16px;
