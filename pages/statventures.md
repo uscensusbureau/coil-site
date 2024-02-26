@@ -11,8 +11,8 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: "Learn more about the Address Geolocation Challenge"
-  href: https://www.challenge.gov/?challenge=statventures-address-geolocation-phase1
+  text: "Address Geolocation Challenge Phase 1 is Now Live"
+  href: https://www.challenge.gov/?challenge=statventures-geo-phase1
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
@@ -73,10 +73,10 @@ active-challenges:
     banner: Address Geolocation Challenge
     phase-status: LEARN MORE ABOUT PHASE ONE
     challenge-name: Address Geolocation Challenge
-    details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses in rural and remote locations. Stay tuned for opportunities to apply to Phase 1 of this competition starting March 11. [Join an information session](https://statventuresgeo.splashthat.com/) to learn how to participate in Phase 1.
+    details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses in rural and remote locations. [View Phase 1 details now and apply starting March 11](https://www.challenge.gov/?challenge=statventures-geo-phase1). [Join an information session](https://statventuresgeo.splashthat.com/) to learn how to participate in Phase 1.
     button:
       text: Learn More
-      src: https://www.challenge.gov/?challenge=statventures-address-geolocation-phase1
+      src: https://www.challenge.gov/?challenge=statventures-geo-phase1
       isExternal: true
   - active-challenge-two:
     class: active-challenge-two
