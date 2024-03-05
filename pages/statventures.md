@@ -11,8 +11,8 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: "Address Geolocation Challenge Phase 1 is Now Live"
-  href: https://www.challenge.gov/?challenge=statventures-geo-phase1
+  text: "Apply Now to Address Geolocation Challenge Phase 1"
+  href: https://www.challenge.gov/?challenge=statventures-address-geolocation-phase1
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
