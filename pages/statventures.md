@@ -75,7 +75,7 @@ active-challenges:
     challenge-name: Address Geolocation Challenge
     details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
-      [Submit a concept note for Phase 1 between March 11 and April 19](https://www.challenge.gov/?challenge=statventures-geo-phase1) to Phase 1. Up to 10 winners receive $10,000 each and a spot in our Phase 2 innovator cohort. [Join an information session](https://statventuresgeo.splashthat.com/) to learn how to participate in Phase 1.
+      [Submit a concept note for Phase 1 between March 11 and April 19](https://www.challenge.gov/?challenge=statventures-geo-phase1). Up to 10 winners receive $10,000 each and a spot in our Phase 2 innovator cohort. [Join an information session](https://statventuresgeo.splashthat.com/) to learn how to participate in Phase 1.
     button:
       text: Apply Now
       src: https://www.challenge.gov/?challenge=statventures-geo-phase1
