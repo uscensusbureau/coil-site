@@ -1922,6 +1922,13 @@ header.box-shadow-header {
       & .coil-logo-text-treatment {
         text-transform: uppercase;
         font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @include at-media('desktop') {
+          display: inline;
+        }
 
         & span:nth-child(1) {
           font-weight: 600;
@@ -2053,6 +2060,7 @@ header.box-shadow-header {
 
         & .footer-horizontal {
           padding: 0;
+          align-items: center;
         }
 
         & img {
