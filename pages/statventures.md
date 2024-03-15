@@ -80,6 +80,7 @@ active-challenges:
       text: Apply Now
       src: https://www.challenge.gov/?challenge=statventures-geo-phase1
       isExternal: true
+      isDownload: false
   - active-challenge-two:
     class: active-challenge-two
     mobile-img: /icons/statventures-mobile-supply-chain-blue-clock.png
@@ -95,6 +96,7 @@ active-challenges:
       text: Meet the Phase 1 Winners
       src: /assets/files/statventures-supply-chain-phase1-winners.pdf
       isExternal: false
+      isDownload: true
 ---
 
 
