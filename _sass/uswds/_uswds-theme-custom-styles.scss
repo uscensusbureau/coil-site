@@ -2005,7 +2005,6 @@ header.box-shadow-header {
         &.splash-secondary {
           order: 3;
           @include u-padding-x(6);
-          color: color('blue-warm-60v');
           font-size: 1.35rem;
           padding-bottom: 32px;
           padding-top: 32px;
