@@ -1406,7 +1406,7 @@ header.box-shadow-header {
         text-align: center;
 
         p.subheading {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 27px;
 
             @include at-media('tablet') {
@@ -1575,7 +1575,7 @@ header.box-shadow-header {
         color: color('gray-cool-2');
 
         p.subheading {
-          font-size: 18px;
+          font-size: 16px;
           line-height: 27px;
           }
 
@@ -1614,15 +1614,20 @@ header.box-shadow-header {
         }
 
         #accordion-phases,
-        #accordion-phases h4.usa-accordion__heading button,
-        #m-a2,
-        #m-a3,
-        #m-a4 {
+        #accordion-phases h4.usa-accordion__heading button
+        {
           background-color: color('indigo-cool-90');
           color: color('gray-cool-2');
           // border-bottom: 1px solid color('gray-cool-2');
           margin-top: 0;
         }
+
+                #m-a2,
+                #m-a3,
+                #m-a4 {
+                  background: white;
+                  color: black;
+                }
 
         h4.usa-accordion__heading {
           border-top: color('gray-cool-2') solid 1px;
@@ -1917,6 +1922,13 @@ header.box-shadow-header {
       & .coil-logo-text-treatment {
         text-transform: uppercase;
         font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @include at-media('desktop') {
+          display: inline;
+        }
 
         & span:nth-child(1) {
           font-weight: 600;
@@ -1993,14 +2005,13 @@ header.box-shadow-header {
         &.splash-secondary {
           order: 3;
           @include u-padding-x(6);
-          color: color('blue-warm-60v');
           font-size: 1.35rem;
           padding-bottom: 32px;
           padding-top: 32px;
           text-align: left;
 
           .subheading {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 27px;
           }
           figure {
@@ -2048,6 +2059,7 @@ header.box-shadow-header {
 
         & .footer-horizontal {
           padding: 0;
+          align-items: center;
         }
 
         & img {
