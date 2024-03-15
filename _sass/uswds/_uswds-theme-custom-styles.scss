@@ -1406,7 +1406,7 @@ header.box-shadow-header {
         text-align: center;
 
         p.subheading {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 27px;
 
             @include at-media('tablet') {
@@ -1575,7 +1575,7 @@ header.box-shadow-header {
         color: color('gray-cool-2');
 
         p.subheading {
-          font-size: 18px;
+          font-size: 16px;
           line-height: 27px;
           }
 
@@ -2012,7 +2012,7 @@ header.box-shadow-header {
           text-align: left;
 
           .subheading {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 27px;
           }
           figure {
