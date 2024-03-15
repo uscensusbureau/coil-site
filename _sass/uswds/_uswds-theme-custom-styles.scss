@@ -1143,7 +1143,7 @@ header.box-shadow-header {
 
 
   & .statventures-btn svg {
-      fill: color('blue-warm-60v');
+      fill: currentColor;
       margin: 0 4px;
     }
   & .statventures-btn {
@@ -2017,7 +2017,7 @@ header.box-shadow-header {
 
           a {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
           }
 
           .active-challenge-content {
