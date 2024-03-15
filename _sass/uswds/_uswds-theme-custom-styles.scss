@@ -1614,15 +1614,20 @@ header.box-shadow-header {
         }
 
         #accordion-phases,
-        #accordion-phases h4.usa-accordion__heading button,
-        #m-a2,
-        #m-a3,
-        #m-a4 {
+        #accordion-phases h4.usa-accordion__heading button
+        {
           background-color: color('indigo-cool-90');
           color: color('gray-cool-2');
           // border-bottom: 1px solid color('gray-cool-2');
           margin-top: 0;
         }
+
+                #m-a2,
+                #m-a3,
+                #m-a4 {
+                  background: white;
+                  color: black;
+                }
 
         h4.usa-accordion__heading {
           border-top: color('gray-cool-2') solid 1px;
