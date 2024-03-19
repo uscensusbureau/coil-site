@@ -1403,16 +1403,18 @@ header.box-shadow-header {
       }
 
       &.splash-secondary {
-        text-align: center;
+        text-align: left;
+        @include at-media('tablet') {
+          text-align: center;
+        }
 
         p.subheading {
             font-size: 16px;
-            line-height: 27px;
+            line-height: 24px;
 
             @include at-media('tablet') {
-              font-size: 16px;
-              line-height: 21px;
-            }
+              font-size: 14px;
+              line-height: 21px;            }
 
             @include at-media('desktop') {
               font-size: 16px;
@@ -2004,11 +2006,16 @@ header.box-shadow-header {
 
         &.splash-secondary {
           order: 3;
-          @include u-padding-x(6);
+          @include u-padding-x(4);
           font-size: 1.35rem;
           padding-bottom: 32px;
           padding-top: 32px;
-          text-align: left;
+          display: flex;
+          flex-direction: column;
+
+          section {
+            max-width: 410px;
+          }
 
           .subheading {
             font-size: 16px;
