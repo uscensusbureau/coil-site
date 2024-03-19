@@ -1667,8 +1667,9 @@ header.box-shadow-header {
           font-weight: 400;
 
           @include at-media('tablet') {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 21px;
+            max-width: 388px;
           }
 
           @include at-media('desktop') {
@@ -2031,7 +2032,7 @@ header.box-shadow-header {
         &.challenge-intro--mobile {
           order: 1;
           text-align: left;
-          padding: 0 3rem;
+          padding: 0 2rem;
 
           a {
             display: flex;
