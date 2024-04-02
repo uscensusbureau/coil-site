@@ -87,14 +87,14 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-supply-chain-blue-clock.png
     img-alt: phase clock
     banner: Supply Chain Challenge
-    phase-status: PHASE TWO NOW CLOSED
+    phase-status: PHASE TWO WINNERS ANNOUNCED
     challenge-name: Supply Chain Challenge
     details: The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
 
-      Phase 2 of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 2 winners, and opportunities to apply to Phase 3 in 2024.
+      [Phase 2](https://portal.challenge.gov/public/previews/challenges?challenge=6bb4353a-4495-43cd-a4db-42c9a1a423d8&print=true) of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for opportunities to apply to Phase 3 in 2024.
     button:
-      text: Meet the Phase 1 Winners
-      src: /assets/files/statventures-supply-chain-phase1-winners.pdf
+      text: Meet the Phase 2 Winners
+      src: /assets/files/statventures-supply-chain-phase2-winners.pdf
       isExternal: false
       isDownload: true
 ---
