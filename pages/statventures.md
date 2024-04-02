@@ -28,7 +28,7 @@ splash:
 
 splash-secondary:
   title: Our Work
-  img: /photos/population-counter-img.png
+  img: /photos/current-population-section-graphic.png
   subtitle: Whether your team is looking to build a new tech product, hire new talent, or integrate design thinking into your process, COIL has a program that can help you do it.
 
 challenge-intro-static-content:
