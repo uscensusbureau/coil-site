@@ -48,14 +48,20 @@ footer {
 
   a {
       border: 0;
-      font-size: 1rem;
+      font-size: 14px;
+      line-height: 21px;
     }
   @include at-media('tablet') {
     @include u-flex('row');
     a {
     border: unset;
+    }
   }
-}
+
+  @include at-media('desktop') {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
 }
 
@@ -1156,15 +1162,15 @@ header.box-shadow-header {
     text-decoration: none;
     border-radius: .5rem;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 24px;
     @include at-media('tablet') {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 21px;
     }
 
     @include at-media('desktop') {
-      font-size: 16px;
-      line-height: 21px;
+      font-size: 18px;
+      line-height: 27px;
     }
 
     &:hover,
@@ -1202,7 +1208,8 @@ header.box-shadow-header {
 
   h2 {
     font-size: 24px;
-    line-height: 31px;
+    line-height: 36px;
+    font-weight: 600;
 
     @include at-media('tablet') {
       font-size: 18px;
@@ -1211,13 +1218,15 @@ header.box-shadow-header {
 
     @include at-media('desktop') {
       font-size: 32px;
-      line-height: 41px;
+      line-height: 48px;
     }
   }
 
-  h4 {
-    font-size: 14px;
-    line-height: 18px;
+  h3,
+  h3 button {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
 
     @include at-media('tablet') {
       font-size: 16px;
@@ -1225,22 +1234,54 @@ header.box-shadow-header {
       }
 
     @include at-media('desktop') {
+      font-size: 21px;
+      line-height: 32px;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    @include at-media('tablet') {
+      font-size: 14px;
+      line-height: 21px;
+      }
+
+    @include at-media('desktop') {
       font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+
+    @include at-media('tablet') {
+      font-size: 12px;
+      line-height: 18px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 16px;
       line-height: 24px;
     }
   }
 
   p {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 21px;
 
     @include at-media('tablet') {
-      font-size: 16px;
-      line-height: 21px;
+      font-size: 12px;
+      line-height: 18px;
     }
     @include at-media('desktop') {
-      font-size: 14px;
-      line-height: 21px;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 
@@ -1361,7 +1402,7 @@ header.box-shadow-header {
         color: color('blue-warm-60v');
 
         p {
-          @include at-media('desktop') {
+          @include at-media('tablet') {
           font-size: 16px;
           line-height: 24px;
           }
@@ -1391,12 +1432,24 @@ header.box-shadow-header {
           align-items: flex-start;
           justify-content: center;
           padding: 0 3rem;
+          padding-inline: 32px;
+
+          @include at-media('tablet') {
+            padding-left: 88px;
+            padding-right: 72px;
+            padding-bottom: 40px;
+          }
         }
 
         a {
           @include at-media('tablet') {
+            font-size: 14px;
+            line-height: 21px;
+          }
+          @include at-media('desktop') {
             font-size: 18px;
             line-height: 27px;
+            margin-top: 24px;
           }
         }
 
@@ -1404,9 +1457,23 @@ header.box-shadow-header {
 
       &.splash-secondary {
         text-align: left;
+        @include at-media('mobile'){
+          h2 {
+            margin: 0;
+            margin-top: 16px;
+          }
+        }
+
         @include at-media('tablet') {
           text-align: center;
+          section {
+            padding: 0 56px;
+            h2 {
+              margin: 32px 0 16px
+            }
+          }
         }
+
 
         p.subheading {
             font-size: 16px;
@@ -1414,11 +1481,14 @@ header.box-shadow-header {
 
             @include at-media('tablet') {
               font-size: 14px;
-              line-height: 21px;            }
+              line-height: 21px;
+              margin: 16px 0;
+            }
 
             @include at-media('desktop') {
-              font-size: 16px;
-              line-height: 24px;
+              font-size: 18px;
+              line-height: 27px;
+              margin: 0 0 16px;
             }
           }
 
@@ -1464,7 +1534,6 @@ header.box-shadow-header {
 
       section.scrolling-words-container {
         display: flex;
-        font-size: 3.3rem;
         flex-direction: column;
         align-items: start;
         justify-content: center;
@@ -1474,9 +1543,31 @@ header.box-shadow-header {
         font-weight: bold;
         padding: 0;
 
+        @include at-media('mobile') {
+          font-size: 32px;
+          line-height: 48px;
+          padding-top: 48px;
+        }
+
+        @include at-media('tablet') {
+          font-size: 32px;
+          line-height: 40px;
+          margin-top: 56px;
+        }
+
+        @include at-media('desktop') {
+          font-size: 40px;
+          line-height: 60px;
+        }
+
         div.scrolling-words-box {
           height: 5.5rem;
           overflow: hidden;
+          margin: -8px 0;
+
+          @include at-media('tablet') {
+            margin: -12px 0;
+          }
 
           ul {
             margin: 0;
@@ -1578,7 +1669,7 @@ header.box-shadow-header {
 
         p.subheading {
           font-size: 16px;
-          line-height: 27px;
+          line-height: 24px;
           }
 
         .content-container, .active-challeges {
@@ -1594,19 +1685,48 @@ header.box-shadow-header {
           @include add-background-svg("usa-icons-bg/add--white");
         }
 
+        h2 {
+          @include at-media('mobile') {
+            margin: 0;
+          }
+        }
+
+        #accordion-phases,
+        #accordion-phases h3.usa-accordion__heading button {
+          background-color: color('indigo-cool-90');
+          color: color('gray-cool-2');
+          // border-bottom: 1px solid color('gray-cool-2');
+          margin-top: 0;
+        }
+
+        #accordion-container {
+          @include at-media('mobile') {
+            padding-top: 16px;
+          }
+        }
+
         #accordion-phases {
-          margin-bottom: 32px;
+          margin-top: 24px;
+          margin-bottom: 48px;
           border-bottom: 1px solid;
           border-top: 1px solid;
+          @include at-media('tablet') {
+            margin-top: 32px;
+            margin-bottom: 56px;
+          }
 
           h3 {
             @include at-media('tablet') {
-              font-size: 18px;
+                padding-top: 8px;
             }
           }
           .usa-prose p {
             max-width: fit-content;
           }
+        }
+
+        button.usa-accordion__button {
+          padding-block: 24px;
         }
 
         #m-a1 {
@@ -1615,23 +1735,15 @@ header.box-shadow-header {
           border-bottom: 1px solid color('gray-cool-2');
         }
 
-        #accordion-phases,
-        #accordion-phases h4.usa-accordion__heading button
-        {
-          background-color: color('indigo-cool-90');
-          color: color('gray-cool-2');
-          // border-bottom: 1px solid color('gray-cool-2');
-          margin-top: 0;
+        #m-a2,
+        #m-a3,
+        #m-a4 {
+          background: white;
+          color: black;
+          padding-bottom: 24px;
         }
 
-                #m-a2,
-                #m-a3,
-                #m-a4 {
-                  background: white;
-                  color: black;
-                }
-
-        h4.usa-accordion__heading {
+        h3.usa-accordion__heading {
           border-top: color('gray-cool-2') solid 1px;
         }
 
@@ -1659,6 +1771,13 @@ header.box-shadow-header {
         display: none;
         @include at-media('tablet') {
             display: flex;
+            padding: 42px 0 24px;
+          }
+
+        h2 {
+            @include at-media('desktop') {
+              margin: 48px 0 16px;
+              }
           }
 
         & h3 {
@@ -1670,11 +1789,16 @@ header.box-shadow-header {
             font-size: 14px;
             line-height: 21px;
             max-width: 388px;
+            margin-top: 2px;
+            margin-bottom: 24px;
           }
 
           @include at-media('desktop') {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 0;
+            margin-bottom: 24px;
+            max-width: 696px;
           }
         }
 
@@ -1697,11 +1821,21 @@ header.box-shadow-header {
           border-radius: 1rem;
           max-width: 66%;
 
+          @include at-media('tablet') {
+            max-width: 69%;
+          }
+
           p {
             padding: 0 2rem;
+            @include at-media ('tablet') {
+              font-size: 14px;
+              line-height: 21px;
+            }
+
             @include at-media ('desktop') {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 18px;
+            line-height: 27px;
+            margin: 24px 0px;
             }
           }
         }
@@ -1714,7 +1848,6 @@ header.box-shadow-header {
       &.challenge-intro--card-content {
         background: color('gray-cool-2');
         padding: 5rem 0;
-
 
 
         & .content-container {
@@ -1735,12 +1868,18 @@ header.box-shadow-header {
           align-self: center;
         }
 
+        h2 {
+          margin: 0;
+        }
+
         h5 {
           margin-bottom: 0;
           font-size: 1.25rem;
         }
 
-
+        .card-container {
+          margin-top: 40px;
+        }
 
         & .usa-card__container {
           border-color: color('blue-warm-60v');
@@ -1804,8 +1943,8 @@ header.box-shadow-header {
     .active-challenge-banner {
       margin-top: 48px;
       @include at-media('tablet') {
-        margin-top: 42px;
-        margin-bottom: 42px;
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
       @include at-media('desktop') {
         margin-top: 80px;
@@ -1818,7 +1957,7 @@ header.box-shadow-header {
         @include at-media ('desktop') {
           height: 48px;
         }
-        p {
+        h4 {
           margin: 0;
           @include at-media('tablet') {
             padding-inline-start: 92px;
@@ -1834,6 +1973,14 @@ header.box-shadow-header {
 
     .active-challenge-content
      {
+
+      .phase-status {
+        margin: 0;
+      }
+
+      h2.challenge-name {
+        margin: 8px 0 16px;
+      }
       p a {
         color: white;
 
@@ -1848,8 +1995,10 @@ header.box-shadow-header {
         text-align: start;
       }
       p {
+        margin-top: 16px;
+        margin-bottom: 24px;
         @include at-media('tablet') {
-          margin-bottom: 30px;
+          margin-bottom: 32px;
         }
       }
     }
@@ -1878,6 +2027,10 @@ header.box-shadow-header {
     .active-challenge-img-container {
       width: 100%;
       text-align: center;
+      @include at-media('mobile') {
+        margin-bottom: 24px;
+      }
+
       .active-challenge-img {
         @include at-media('tablet') {
           width: 203px;
@@ -1916,18 +2069,35 @@ header.box-shadow-header {
       background-color: color('blue-warm-60v');
       color: color('gray-cool-2');
       width: 100%;
-      padding-top: 2rem;
+      padding-top: 3.4rem;
 
       & .all-caps {
         text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 24px;
+        @include at-media('tablet') {
+          margin-top: 56px;
+          margin-bottom: 8px;
+        }
+        @include at-media('desktop') {
+          margin-bottom: 24px;
+        }
       }
 
       & .coil-logo-text-treatment {
         text-transform: uppercase;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: start;
+        margin: 0;
+
+        @include at-media('mobile') {
+          margin-bottom: 6px;
+          span {
+            margin-bottom: -8px;
+          }
+        }
 
         @include at-media('desktop') {
           display: inline;
@@ -1949,6 +2119,18 @@ header.box-shadow-header {
           font-weight: 300;
         }
 
+      }
+
+      .footer-final-line {
+        margin-bottom: 40px;
+
+        @include at-media('tablet') {
+        margin-top: 8px;
+        margin-bottom: 32px;
+        }
+        @include at-media('desktop') {
+          margin: 21px 0;
+        }
       }
     }
 
@@ -1985,19 +2167,22 @@ header.box-shadow-header {
         &.splash {
           flex-direction: column;
 
-          .scrolling-words-container,
           p,
           a {
             margin: 1rem .5rem;
           }
 
+          a {
+            @include at-media('mobile') {
+                margin-top: 8px;
+                margin-bottom: 48px;
+              }
+
+          }
+
           p {
             font-size: 18px;
             line-height: 27px;
-          }
-
-          .scrolling-words-container {
-            font-size: 2.3rem;
           }
 
           figure {
@@ -2013,9 +2198,12 @@ header.box-shadow-header {
           padding-top: 32px;
           display: flex;
           flex-direction: column;
+          @include at-media('tablet') {
+            padding-bottom: 40px;
+          }
 
           section {
-            max-width: 410px;
+            max-width: 510px;
           }
 
           .subheading {
@@ -2034,6 +2222,10 @@ header.box-shadow-header {
           text-align: left;
           padding: 0 2rem;
 
+          @include at-media('mobile') {
+            padding-top: 32px;
+          }
+
           a {
             display: flex;
             flex-direction: row;
@@ -2046,7 +2238,10 @@ header.box-shadow-header {
             }
           }
 
-          .content-container,
+          .content-container {
+              margin: 1rem 0rem;
+            }
+
           a {
             margin: 1rem 0rem;
           }
@@ -2068,6 +2263,9 @@ header.box-shadow-header {
         & .footer-horizontal {
           padding: 0;
           align-items: center;
+          @include at-media('mobile') {
+            padding-top: 72px;
+          }
         }
 
         & img {
@@ -2395,13 +2593,16 @@ header.box-shadow-header {
   }
 
   .footer-section-bottom a {
-    font-size: 11px;
+    font-size: 14px;
+    line-height: 21px;
+
     @include at-media('tablet') {
-      font-size: 8px;
+      font-size: 12px;
+      line-height: 18px;
     }
     @include at-media('desktop') {
-      font-size: 12px;
-
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 
