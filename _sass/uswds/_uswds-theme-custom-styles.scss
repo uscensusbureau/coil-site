@@ -2076,10 +2076,10 @@ header.box-shadow-header {
         margin: 0;
         margin-bottom: 24px;
         @include at-media('tablet') {
-          margin-top: 56px;
           margin-bottom: 8px;
         }
         @include at-media('desktop') {
+          margin-top: 0;
           margin-bottom: 24px;
         }
       }
@@ -2125,7 +2125,7 @@ header.box-shadow-header {
         margin-bottom: 40px;
 
         @include at-media('tablet') {
-        margin-top: 8px;
+        margin-top: 0px;
         margin-bottom: 32px;
         }
         @include at-media('desktop') {
@@ -2169,7 +2169,7 @@ header.box-shadow-header {
 
           p,
           a {
-            margin: 1rem .5rem;
+            margin: 1rem 0px;
           }
 
           a {
