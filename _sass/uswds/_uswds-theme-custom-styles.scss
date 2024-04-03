@@ -1439,6 +1439,9 @@ header.box-shadow-header {
             padding-right: 72px;
             padding-bottom: 40px;
           }
+          @include at-media('desktop') {
+            padding-right: 56px;
+          }
         }
 
         a {
@@ -1558,6 +1561,7 @@ header.box-shadow-header {
         @include at-media('desktop') {
           font-size: 40px;
           line-height: 60px;
+          margin-top: 0px;
         }
 
         div.scrolling-words-box {
