@@ -91,12 +91,26 @@ active-challenges:
     challenge-name: Supply Chain Challenge
     details: The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
 
-      [Phase 2](https://portal.challenge.gov/public/previews/challenges?challenge=6bb4353a-4495-43cd-a4db-42c9a1a423d8&print=true) of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for opportunities to apply to Phase 3 in 2024.
+      [Phase 2](https://portal.challenge.gov/public/previews/challenges?challenge=6bb4353a-4495-43cd-a4db-42c9a1a423d8&print=true) winners have been announced. Subscribe to updates for opportunities to apply to Phase 3 in 2024.
     button:
       text: Meet the Phase 2 Winners
       src: /assets/files/statventures-supply-chain-phase2-winners.pdf
       isExternal: false
       isDownload: true
+
+phase-text:
+  - phase-1:
+    title: "Phase 1: Concept"
+    id: "m-a2"
+    text: "Propose a technology, method, or alternative data source to improve U.S. Census Bureau data. Teams with the most innovative and promising ideas will be awarded $10,000 and an invitation to join the Phase 2 StatVentures cohort."
+  - phase-2:
+    title: "Phase 2: Roadmap"
+    id: "m-a3"
+    text: "Iterate on your concept note from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the opportunity to join in Phase 2."
+  - phase-3:
+    title: "Phase 3: Test"
+    id: "m-a4"
+    text: "Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by the U.S. Census Bureau."
 ---
 
 
