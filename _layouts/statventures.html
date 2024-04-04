@@ -99,45 +99,18 @@ class:
     <div id="accordion-container" class="width-full mobile-only">
         <h2 class="flex-align-self-center">Fresh new data in 3, 2, 1...</h2>
         <div class="usa-accordion usa-accordion--multiselectable border" id="accordion-phases" data-allow-multiple>
+            {% for phase in page.phase-text %}
             <h3 class="usa-accordion__heading">
-                <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="m-a2">
-                    Phase 01 Concept
+                <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="{{phase.id}}">
+                    {{phase.title}}
                 </button>
             </h3>
-            <div id="m-a2" class="usa-accordion__content usa-prose">
-                <h5>Complete</h5>
+            <div id="{{phase.id}}" class="usa-accordion__content usa-prose">
                 <p>
-                    Propose an idea to improve U.S. Census data sources. Teams with the most innovative and promising ideas will be awarded
-                    $10,000 and an invitation to join the Phase 2 StatVentures cohort.
+                    {{phase.text}}
                 </p>
             </div>
-            <h3 class="usa-accordion__heading">
-                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">
-                    Phase 02 Roadmap
-                </button>
-            </h3>
-            <div id="m-a3" class="usa-accordion__content usa-prose">
-                <h5>Open Now</h5>
-                <p>
-                    Iterate on your idea from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop
-                    a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will
-                    receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the
-                    opportunity to join in Phase 2.
-                </p>
-            </div>
-            <h3 class="usa-accordion__heading">
-                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4">
-                    Phase 03 Test
-                </button>
-            </h3>
-            <div id="m-a4" class="usa-accordion__content usa-prose">
-                <h5>2024</h5>
-                <p>
-                    Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census
-                    Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by
-                    the U.S. Census Bureau.
-                </p>
-            </div>
+            {% endfor %}
         </div>
     </div>
     <!-- <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">View Phase 2 on challenge.gov</a> -->
@@ -266,16 +239,10 @@ class:
             </ul>
         </div>
         <div class="content-container">
-            <h3>Phase 1: Concept</h3>
-            <p>Propose an idea to improve U.S. Census data sources. Teams with the most innovative and promising ideas will be awarded
-            $10,000 and an invitation to join the Phase 2 StatVentures cohort.</p>
-            <h3>Phase 2: Roadmap</h3>
-            <p>Iterate on your idea from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop
-            a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will
-            receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the
-            opportunity to join in Phase 2.</p>
-            <h3>Phase 3: Test</h3>
-            <p>Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by the U.S. Census Bureau.</p>
+            {% for phase in page.phase-text %}
+            <h3>{{phase.title}}</h3>
+            <p>{{phase.text}}</p>
+            {% endfor %}
         </div>
         <!-- <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">Accept Our Challenge</a> -->
     </div>
