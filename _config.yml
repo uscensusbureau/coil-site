@@ -7,6 +7,8 @@ email: census.openinnovationlabs@census.gov
 top-form: https://www.census.gov/forms/contact-top.html
 
 google_analytics_gtm: G-E5HT6RV40X
+dap_agency: DOC
+dap_subagency: CEN
 
 # Build settings
 # theme: uswds-jekyll
