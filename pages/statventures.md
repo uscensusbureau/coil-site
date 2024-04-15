@@ -71,16 +71,12 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
     img-alt: phase clock
     banner: Address Geolocation Challenge
-    phase-status: APPLY NOW TO PHASE ONE
+    phase-status: PHASE ONE APPLICATIONS NOW CLOSED
     challenge-name: Address Geolocation Challenge
-    details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
+    details: The [Address Geolocation Challenge](https://www.challenge.gov/?challenge=statventures-geo-phase1) seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
-      [Submit a concept note for Phase 1 between March 11 and April 19](https://www.challenge.gov/?challenge=statventures-geo-phase1). Up to 10 winners receive $10,000 each and a spot in our Phase 2 innovator cohort.
-    button:
-      text: Apply Now
-      src: https://www.challenge.gov/?challenge=statventures-geo-phase1
-      isExternal: true
-      isDownload: false
+      Phase 1 of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 1 winners, and opportunities to apply to Phase 2.
+
   - active-challenge-two:
     class: active-challenge-two
     mobile-img: /icons/statventures-mobile-supply-chain-blue-clock.png
