@@ -3,15 +3,21 @@ description: >- # this means to ignore newlines until "baseurl:"
   Trailblazing open government through cross-sector collaboration, design, and technology.
 # url: "https://coil.census.gov" # the base hostname & protocol for your site, e.g. http://example.com
 
+# blog
+paginate: 4
+paginate_path: "blog/page/:num/"
 email: census.openinnovationlabs@census.gov
 top-form: https://www.census.gov/forms/contact-top.html
 
 google_analytics_gtm: G-E5HT6RV40X
+dap_agency: DOC
+dap_subagency: CEN
 
 # Build settings
 # theme: uswds-jekyll
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.

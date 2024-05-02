@@ -5,17 +5,17 @@ class:
 <!-- !GTG -->
 <header class="bar">
     <div class="bar--text">
-        <p>Current Challenge: Supply Chain</p>
+        <p>Current Challenges: Supply Chain & Address Geolocation</p>
     </div>
     <div class="logo-container">
         <img src="{{ site.baseurl }}/assets/img/statventures{{page.bar.img}}" alt="StatVentures logo" class="logo-img-blue">
         <!-- <img src="" alt="stat logo" class="logo-img-white"> -->
     </div>
     <div class="bar--text">
-        <p>Launching Soon: Address Geolocation Challenge Phase 1</p>
+        <p>Apply Now to Address Geolocation Phase 1</p>
     </div>
 </header>
-
+{% include banner.html %}
 <!-- !GTG -->
 <header class="splash">
     <figure>
@@ -41,7 +41,7 @@ class:
             <span>data.</span>
         </section>
         <p>StatVentures scouts technology through collaborations with innovators outside of government to ensure the U.S. Census Bureau continues to provide the highest quality data.</p>
-        <a class="statventures-btn" href="https://public.govdelivery.com/accounts/USCENSUS/signup/38054" target="_blank">Subscribe to Updates</a>
+        <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-geo-phase1" target="_blank">Bring Us the Goods</a>
     </section>
 </header>
 <!-- !GTG -->
@@ -62,6 +62,8 @@ class:
         <p class="subheading">Compete for funding, participation in an elite cohort of technologists, and ultimately, government adoption in our open
         challenges.</p>
         <p class="subheading">Help us identify and use new ways to produce more timely, granular, and robust data.</p>
+        <a class="statventures-btn" href="https://public.govdelivery.com/accounts/USCENSUS/signup/38054"
+            target="_blank">Subscribe to Updates</a>
     </div>
 
         <div class="active-challenges display-flex width-full">
@@ -71,13 +73,22 @@ class:
                     <div class="active-challenge-img-container">
                         <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.mobile-img}}" alt="{{challenge.img-alt}}" class="active-challenge-img">
                     </div>
-                    <div class="active-challege-content width-full">
+                    <div class="active-challenge-content width-full">
                         <h3 class="display-none">{{challenge.phase-status}}</h3>
                         <h2>{{challenge.challenge-name}}</h2>
-                        <p>{{challenge.details}}</p>
+                        <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" |replace: "SITE.BASEURL", site.baseurl }}</p>
                         {% if challenge.button %}
-                        <a class="statventures-btn" href="{% unless banner.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}"
-                            target="_blank">{{challenge.button.text}}</a>
+                        <a class="statventures-btn" href="{% unless challenge.button.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}" target="_blank">
+                            {% if challenge.button.isDownload %}
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24" aria-hidden="true"
+                                    class="width-205 margin-right-05">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
+                                </svg>
+                            {% endif %}
+                            {{challenge.button.text}}
+                        </a>
                         {% endif %}
                     </div>
                 </div>
@@ -86,47 +97,20 @@ class:
         </div>
 
     <div id="accordion-container" class="width-full mobile-only">
-        <div class="usa-accordion usa-accordion--multiselectable" id="accordion-phases" data-allow-multiple>
-            <h3>Phases</h3>
-            <h4 class="usa-accordion__heading">
-                <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="m-a2">
-                    Phase 01 Concept
+        <h2 class="flex-align-self-center">Fresh new data in 3, 2, 1...</h2>
+        <div class="usa-accordion usa-accordion--multiselectable border" id="accordion-phases" data-allow-multiple>
+            {% for phase in page.phase-text %}
+            <h3 class="usa-accordion__heading">
+                <button type="button" class="usa-accordion__button" aria-expanded="true" aria-controls="{{phase.id}}">
+                    {{phase.title}}
                 </button>
-            </h4>
-            <div id="m-a2" class="usa-accordion__content usa-prose">
-                <h5>Complete</h5>
+            </h3>
+            <div id="{{phase.id}}" class="usa-accordion__content usa-prose">
                 <p>
-                    Propose an idea to improve U.S. Census data sources. Teams with the most innovative and promising ideas will be awarded
-                    $10,000 and an invitation to join the Phase 2 StatVentures cohort.
+                    {{phase.text}}
                 </p>
             </div>
-            <h4 class="usa-accordion__heading">
-                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3">
-                    Phase 02 Roadmap
-                </button>
-            </h4>
-            <div id="m-a3" class="usa-accordion__content usa-prose">
-                <h5>Open Now</h5>
-                <p>
-                    Iterate on your idea from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop
-                    a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will
-                    receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the
-                    opportunity to join in Phase 2.
-                </p>
-            </div>
-            <h4 class="usa-accordion__heading">
-                <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4">
-                    Phase 03 Test
-                </button>
-            </h4>
-            <div id="m-a4" class="usa-accordion__content usa-prose">
-                <h5>2024</h5>
-                <p>
-                    Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census
-                    Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by
-                    the U.S. Census Bureau.
-                </p>
-            </div>
+            {% endfor %}
         </div>
     </div>
     <!-- <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">View Phase 2 on challenge.gov</a> -->
@@ -141,23 +125,35 @@ class:
         <div class="content-container split-paragraph">
             <p>Help us identify and use new ways to produce more <strong>timely, granular, and robust</strong> data.</p>
         </div>
+        <a class="statventures-btn margin-top-4" href="https://public.govdelivery.com/accounts/USCENSUS/signup/38054" target="_blank">Subscribe to Updates</a>
     </div>
-    <!-- <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">View Phase 2 on challenge.gov</a> -->
     <div class="active-challenges display-flex width-full">
         {% for challenge in page.active-challenges %}
         <div class="{{challenge.class}} width-full">
             <div class="active-challenge-banner">
                 <div class="content-container">
-                    <p>{{challenge.banner}}</p>
+                    <h4>{{challenge.banner}}</h4>
                 </div>
             </div>
             <div class="active-challenge-details content-container">
-                <div class="active-challege-content width-full">
-                    <h4 class="phase-status">{{challenge.phase-status}}</h4>
-                    <h2>{{challenge.challenge-name}}</h2>
-                    <p>{{challenge.details}}</p>
+                <div class="active-challenge-content width-full">
+                    <h5 class="phase-status">{{challenge.phase-status}}</h5>
+                    <h2 class="challenge-name">{{challenge.challenge-name}}</h2>
+                    <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" }}</p>
                     {% if challenge.button %}
-                    <a class="statventures-btn" href="{% unless banner.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}" target="_blank">{{challenge.button.text}}</a>
+                        <a class="statventures-btn"
+                            href="{% unless challenge.button.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}"
+                            target="_blank">
+                            {% if challenge.button.isDownload %}
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24" aria-hidden="true"
+                                class="width-205 margin-right-05">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z" />
+                            </svg>
+                            {% endif %}
+                            {{challenge.button.text}}
+                        </a>
                     {% endif %}
                 </div>
                 <div class="active-challenge-img-container">
@@ -196,7 +192,7 @@ class:
                 <li class="usa-card tablet:grid-col-4 usa-card--header-first">
                     <div class="usa-card__container display-flex flex-column flex-align-center">
                         <div class="usa-card__header">
-                            <h2 class="usa-card__heading">Phase 1 Concept</h2>
+                            <h3 class="usa-card__heading">Phase 1 Concept</h3>
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
                             <div class="usa-card__img phase-1-img">
@@ -212,7 +208,7 @@ class:
                 <li class="usa-card tablet:grid-col-4 usa-card--header-first">
                     <div class="usa-card__container display-flex flex-column flex-align-center">
                         <div class="usa-card__header">
-                            <h2 class="usa-card__heading">Phase 2 Roadmap</h2>
+                            <h3 class="usa-card__heading">Phase 2 Roadmap</h3>
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
                             <div class="usa-card__img phase-2-img">
@@ -227,7 +223,7 @@ class:
                 <li class="usa-card tablet:grid-col-4 usa-card--header-first">
                     <div class="usa-card__container display-flex flex-column flex-align-center">
                         <div class="usa-card__header">
-                            <h2 class="usa-card__heading">Phase 3 Test</h2>
+                            <h3 class="usa-card__heading">Phase 3 Test</h3>
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
                             <div class="usa-card__img phase-3-img">
@@ -243,16 +239,10 @@ class:
             </ul>
         </div>
         <div class="content-container">
-            <h5>Phase 1: Concept</h5>
-            <p>Propose an idea to improve U.S. Census data sources. Teams with the most innovative and promising ideas will be awarded
-            $10,000 and an invitation to join the Phase 2 StatVentures cohort.</p>
-            <h5>Phase 2: Roadmap</h5>
-            <p>Iterate on your idea from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop
-            a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will
-            receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the
-            opportunity to join in Phase 2.</p>
-            <h5>Phase 3: Test</h5>
-            <p>Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by the U.S. Census Bureau.</p>
+            {% for phase in page.phase-text %}
+            <h3>{{phase.title}}</h3>
+            <p>{{phase.text}}</p>
+            {% endfor %}
         </div>
         <!-- <a class="statventures-btn" href="https://www.challenge.gov/?challenge=statventures-supply-chain-p2" target="_blank">Accept Our Challenge</a> -->
     </div>
@@ -260,19 +250,19 @@ class:
 <!-- !dbc -->
 <footer>
     <section class="footer-horizontal"> <!-- tablet / desktop only -->
-        <p class="desktop all-caps">StatVentures is a program of</p>
-        <p class="desktop coil-logo-text-treatment"><span>CENSUS</span> <span>OPEN</span> <span>INNOVATION</span> <span>LABS</span></p>
-        <p class="desktop">at the U.S. Census Bureau.</p>
+        <h5 class="all-caps">StatVentures is a program of</h5>
+        <h2 class="coil-logo-text-treatment"><span>CENSUS</span> <span>OPEN</span> <span>INNOVATION</span> <span>LABS</span></h2>
+        <h3 class="footer-final-line">at the U.S. Census Bureau.</h3>
         <img src="{{ site.baseurl }}/assets/img/statventures{{page.footer-horizontal-desktop.icon}}" alt="">
     </section>
     <section
-    class="footer-section-bottom usa-media-block__footer grid-row display-flex flex-align-center padding-y-4"
+    class="footer-section-bottom usa-media-block__footer grid-row display-flex flex-align-center padding-top-3 padding-bottom-6 tablet:padding-bottom-7 desktop:padding-y-4"
   >
     {% for link in site.data.navigation.footer %}
       <a href="{% unless link.isExternal %}{{ site.baseurl }}/{% endunless %}{{ link.href }}"
         class="border-base-dark
-          {% unless forloop.first %} border-left padding-left-2 {% endunless %}
-          {% unless forloop.last %} padding-right-2 {% endunless %}
+          {% unless forloop.first %} border-left tablet:padding-left-2 {% endunless %}
+          {% unless forloop.last %} tablet:padding-right-2 {% endunless %}
         "
       >{{ link.text }}</a>
     {% endfor %}
