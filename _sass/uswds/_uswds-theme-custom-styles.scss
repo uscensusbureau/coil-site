@@ -2566,6 +2566,16 @@ header.box-shadow-header {
     }
   }
 
+  .usa-pagination__list {
+    li a {
+      color:white;
+    }
+    .usa-current {
+      outline: white solid 1px;
+      border-radius: 100%;
+    }
+  }
+
   #collaborate-section {
     h2{
       font-size: 24px;
