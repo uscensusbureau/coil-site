@@ -1,0 +1,44 @@
+---
+layout: blog-landing
+title: COIL Blog
+description: "A  hub for sharing the latest on innovations, best practices, and the conversations that move open data
+forward."
+skip_index: true
+blog_tagline: "A hub for sharing the latest on innovations, best practices, and the conversations that move open data
+forward."
+class: blog
+
+
+header:
+- name: Blog
+blurb: "A hub for sharing the latest on innovations, best practices, and the conversations that move open data forward."
+---
+
+<!-- this would make the blog landing page -->
+
+{%
+include post-preview.html
+posts=paginator.posts
+%}
+
+<nav aria-label="Pagination" class="usa-pagination">
+    <ul class="usa-pagination__list">
+        {% unless paginator.previous_page == nil %}
+        <li class="usa-pagination__item usa-pagination__arrow">
+            <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="usa-pagination__link usa-pagination__previous-page"
+                aria-label="Previous page"><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg" role="img" alt="Previous" aria-hidden="true" />
+                <span class="usa-pagination__link-text">Previous {{ paginator.per_page }} posts</span></a>
+        </li>
+        {% endunless %}
+        <li class="usa-pagination__item flex-align-center">
+            <p class="margin-0">Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+        </li>
+        {% unless paginator.next_page == nil %}
+            <li class="usa-pagination__item usa-pagination__arrow">
+                <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="usa-pagination__link usa-pagination__next-page"
+                    aria-label="Next page"><span class="usa-pagination__link-text">Next {{ paginator.per_page }} posts</span><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_forward--white.svg" role="img" alt="Next" aria-hidden="true" /></a>
+            </li>
+
+        {% endunless %}
+    </ul>
+</nav>
