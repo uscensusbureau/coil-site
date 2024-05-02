@@ -3,7 +3,7 @@ layout: blog-post
 date: 2024-04-23
 title: test blog post pagination 23
 permalink: /blog-test-pagination-23/
-project: Draft
+project: statventures
 authors:
     - Victoria Fine
 excerpt: "Pagination test"
@@ -11,6 +11,7 @@ src: /assets/img/blog/features/desktop-coil-blog-expanded-post-image.png
 ---
 ## h2 right here
 Hello
+
 
 ### this is an h3
 
