@@ -1,8 +1,8 @@
 ---
 layout: blog-post
-date: 2024-04-23
-title: test blog post pagination 23
-permalink: /blog-test-pagination-23/
+date: 2024-04-30
+title: test blog post pagination 30
+permalink: /blog-test-pagination-30/
 project: statventures
 authors:
     - Victoria Fine
