@@ -2480,8 +2480,7 @@ header.box-shadow-header {
         font-size: 12px;
         text-decoration: none;
         &.post-project-census-open-innovation-labs {
-          background: none;
-          width: max-content;
+          border: white solid 1px;
         }
         &.post-project-data-usability {
           background: rgba(15, 157, 88, 1);
