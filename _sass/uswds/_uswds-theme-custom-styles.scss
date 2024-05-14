@@ -2468,6 +2468,30 @@ header.box-shadow-header {
     }
     .individual-post-content {
       padding: 0 8px;
+
+      h3 a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 122px;
+        height: 32px;
+        border-radius: 16px;
+        font-size: 12px;
+        text-decoration: none;
+        &.post-project-census-open-innovation-labs {
+          background: none;
+          width: max-content;
+        }
+        &.post-project-data-usability {
+          background: rgba(15, 157, 88, 1);
+        }
+        &.post-project-statventures {
+          background: color('blue-warm-60v');
+        }
+        &.post-project-the-opportunity-project {
+         background: red;
+         }
+      }
     }
     @include at-media('tablet') {
       display: flex;
