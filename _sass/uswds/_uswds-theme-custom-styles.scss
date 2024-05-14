@@ -2473,8 +2473,9 @@ header.box-shadow-header {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 122px;
+        width: max-content;
         height: 32px;
+        padding: 16px;
         border-radius: 16px;
         font-size: 12px;
         text-decoration: none;
