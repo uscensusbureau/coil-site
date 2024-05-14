@@ -3,7 +3,8 @@ layout: blog-post
 date: 2024-04-25
 title: test post pagination 25
 permalink: /blog-test-pagination-25/
-project: Draft
+project: test
+tag: Census Open Innovation Labs
 authors:
     - Victoria Fine
 excerpt: "Pagination test"

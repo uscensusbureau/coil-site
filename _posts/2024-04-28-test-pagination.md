@@ -4,6 +4,7 @@ date: 2024-04-28
 title: test post pagination 28
 permalink: /blog-test-pagination-28/
 project: Draft
+tag: Census Open Innovation Labs
 authors:
     - Victoria Fine
 excerpt: "Pagination test"
