@@ -12,9 +12,9 @@
     <div class="grid-container">
         <hr class="hr-1-dark margin-y-0">
         {%
-        include post-previews.html
-        posts=page.posts
-        projects=page.tags
+        include post-preview.html
+        posts=paginator.posts
+        tags=paginator.tag
         %}
     </div>
 </section>
