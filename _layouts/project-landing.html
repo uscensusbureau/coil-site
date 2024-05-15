@@ -1,0 +1,82 @@
+---
+layout: blog-landing
+autopages:
+    enabled: true
+pagination:
+  enabled: true
+
+---
+
+<!-- 18F -->
+<section class="grid-container">
+{{ content }}
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor
+%}{% endcapture %}
+<!-- {% assign tag_words = site_tags | split:',' | sort %} -->
+
+{% for tag in tag_words %}
+
+{% capture count %}
+
+{% for tag_number in site.tags %}
+
+{% if tag_number[0] == tag %}
+
+{{tag_number[1] | size }}
+
+
+{% endif %}
+
+{% endfor %}
+
+{% endcapture %}
+
+    <a href="{{ site.baseurl }}/project/{{tag | slugify }}/" class="coil-btn text-white">{{tag}} ({{count | strip}})
+    </a>
+
+
+
+<!-- <p> {{ tag | size }} </p> -->
+
+
+
+{% endfor %}
+</section>
+
+
+<!-- me -->
+    {{ content }}
+<!-- fragile do not indent -->
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+
+    {% for tag in tag_words %}
+
+        {% capture count %}
+
+            {% for tag_number in site.tags %}
+
+                {% if tag_number[0] == tag %}
+
+                    {{tag_number[1] | size }}
+                    <!-- <p> {{tag | size }} </p> -->
+
+                {% endif %}
+
+            {% endfor %}
+
+        {% endcapture %}
+
+
+            <p>
+                <a href="{{ site.baseurl }}/project/{{tag | slugify }}/">{{tag}}</a>
+                — {{count}}
+            </p>
+
+
+        <!-- <p> {{ tag | size }} </p> -->
+
+
+
+    {% endfor %}
