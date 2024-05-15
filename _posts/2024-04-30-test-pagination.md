@@ -4,6 +4,7 @@ date: 2024-04-30
 title: test blog post pagination 30
 permalink: /blog-test-pagination-30/
 project: statventures
+tag: StatVentures
 authors:
     - Victoria Fine
 excerpt: "Pagination test"

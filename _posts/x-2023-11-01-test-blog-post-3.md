@@ -4,6 +4,7 @@ date: 2023-11-01
 title: test blog post 3
 permalink: /blog-test-3/
 project: Draft
+tag: draft
 authors:
     - Victoria Fine
 excerpt: "We are testing our blog posts. Hopefully this works."

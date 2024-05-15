@@ -4,6 +4,8 @@ title: COIL Blog
 description: "A  hub for sharing the latest on innovations, best practices, and the conversations that move open data
 forward."
 skip_index: true
+pagination:
+    enabled: true
 blog_tagline: "A hub for sharing the latest on innovations, best practices, and the conversations that move open data
 forward."
 class: blog
@@ -19,7 +21,7 @@ blurb: "A hub for sharing the latest on innovations, best practices, and the con
 {%
 include post-preview.html
 posts=paginator.posts
-tags=post.tags
+tags=paginator.tag
 %}
 
 <nav aria-label="Pagination" class="usa-pagination grid-container" id="blog-pagination">
@@ -29,9 +31,9 @@ tags=post.tags
         </li>
         {% endunless %}
         {% unless paginator.previous_page == nil %}
-        <li class="usa-pagination__item usa-pagination__arrow flex-1">
+        <li class="usa-pagination__item  flex-1">
             <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="usa-pagination__link usa-pagination__previous-page width-full flex-justify-start"
-                aria-label="Previous page"><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg" role="img" alt="Previous" aria-hidden="true" />
+                aria-label="Previous page"><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg" role="img" alt="Previous" aria-hidden="true" class="usa-pagination__arrow" />
                 <span class="usa-pagination__link-text">Previous {{ paginator.per_page }} posts</span></a>
         </li>
         {% endunless %}
@@ -39,9 +41,9 @@ tags=post.tags
             <p class="margin-0">Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
         </li>
         {% unless paginator.next_page == nil %}
-            <li class="usa-pagination__item usa-pagination__arrow flex-1">
+            <li class="usa-pagination__item flex-1">
                 <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="usa-pagination__link usa-pagination__next-page width-full flex-justify-end"
-                    aria-label="Next page"><span class="usa-pagination__link-text">Next {{ paginator.per_page }} posts</span><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_forward--white.svg" role="img" alt="Next" aria-hidden="true" /></a>
+                    aria-label="Next page"><span class="usa-pagination__link-text">Next {{ paginator.per_page }} posts</span><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_forward--white.svg" role="img" alt="Next" aria-hidden="true" class="usa-pagination__arrow" /></a>
             </li>
         {% endunless %}
         {% unless paginator.next_page != nil %}
