@@ -23,3 +23,34 @@ layout: blog-landing
      {{ content }}
     </section>
 </article>
+<nav aria-label="Pagination" class="usa-pagination grid-container" id="post-pagination">
+    <ul class="usa-pagination__list width-full">
+        {% unless page.previous != nil %}
+        <li class="flex-1">
+        </li>
+        {% endunless %}
+        {% unless page.previous == nil %}
+        <li class="usa-pagination__item  flex-1">
+            <a href="{{ site.baseurl }}{{ page.previous.url }}"
+                class="usa-pagination__link usa-pagination__previous-page width-full flex-justify-start"
+                aria-label="Previous page"><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg"
+                    role="img" alt="Previous" aria-hidden="true" class="usa-pagination__arrow" />
+                <span class="usa-pagination__link-text">Previous "{{ page.previous.title }}" </span></a>
+        </li>
+        {% endunless %}
+
+        {% unless page.next == nil %}
+        <li class="usa-pagination__item flex-1">
+            <a href="{{ site.baseurl }}{{ page.next.url }}"
+                class="usa-pagination__link usa-pagination__next-page width-full flex-justify-end"
+                aria-label="Next page"><span class="usa-pagination__link-text">Next "{{ page.next.title }}"
+                    </span><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_forward--white.svg" role="img"
+                    alt="Next" aria-hidden="true" class="usa-pagination__arrow" /></a>
+        </li>
+        {% endunless %}
+        {% unless page.next != nil %}
+        <li class="flex-1">
+        </li>
+        {% endunless %}
+    </ul>
+</nav>
