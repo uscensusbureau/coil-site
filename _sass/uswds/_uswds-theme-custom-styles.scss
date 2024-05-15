@@ -2540,6 +2540,35 @@ header.box-shadow-header {
     .post-header-intro {
       padding-left: 20px;
       padding-right: 20px;
+
+      .post-project a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        height: 32px;
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 10px;
+        line-height: 15px;
+        text-decoration: none;
+        font-weight: 600;
+        &.post-project-census-open-innovation-labs {
+            border: white solid 1px;
+          }
+
+        &.post-project-data-usability {
+          background: rgba(15, 157, 88, 1);
+        }
+
+        &.post-project-statventures {
+          background: color('blue-warm-60v');
+        }
+
+        &.post-project-the-opportunity-project {
+          background: red;
+        }
+      }
     }
 
     @include at-media('tablet') {
@@ -2568,6 +2597,10 @@ header.box-shadow-header {
             height: 242px;
           }
         }
+      .post-header-intro .post-project a {
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
   }
 
