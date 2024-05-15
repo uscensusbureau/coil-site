@@ -17,7 +17,7 @@ class: blog
             <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg" role="img" alt="Previous" aria-hidden="true" />
             <span class="margin-left-05">Blog </span>
         </a>
-        {% assign numberof = paginator.posts | size %}
+        {% assign numberof = paginator.total_posts %}
         <h1 class="margin-top-2">{{ numberof }} {% if numberof == 1 %}post{% else %}posts{% endif %} tagged with "{% if page.autopages %}{{page.autopages.display_name}}{% endif %}" </h1>
     </div>
 </section>
