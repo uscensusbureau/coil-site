@@ -79,7 +79,7 @@ describe('Nav Menus', () => {
     })
 
     it('displays mobile menu on click', () => {
-      cy.get(".usa-header--basic .usa-nav").should(".not.be.visible");
+      cy.get(".usa-header--basic .usa-nav").should("not.be.visible");
       cy.get(".usa-navbar").should("be.visible").find("button.usa-menu-btn").click();
 
       cy.get("nav.usa-nav.is-visible").should("be.visible")
