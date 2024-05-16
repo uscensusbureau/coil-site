@@ -82,7 +82,7 @@ autopages:
     layouts:
       - 'tag-results.html'
     title: 'Posts tagged with :tag' # :tag is replaced by the tag name
-    permalink: '/project/:tag'
+    permalink: '/tag/:tag'
     silent: true
     slugify:
       mode: 'default'   # :tag is slugified.

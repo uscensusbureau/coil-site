@@ -9,7 +9,7 @@ layout: blog-landing
         </div>
         <section class="post-header-intro">
             <h3 class="post-project post-project-{{page.tag}}">
-                <a href="{{ site.baseurl }}/project/{{ page.tag | slugify }}/"class="usa-label text-white post-project-{{page.tag | slugify}}">
+                <a href="{{ site.baseurl }}/tag/{{ page.tag | slugify }}/"class="usa-label text-white post-project-{{page.tag | slugify}}">
                     {{ page.tag }}
                 </a>
             </h3>
@@ -40,7 +40,7 @@ layout: blog-landing
                 aria-label="Previous page"><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg"
                     role="img" alt="Previous" aria-hidden="true" class="usa-pagination__arrow display-block" />
                 <span class="usa-pagination__link-text">Previous</span>
-                <span class="usa-pagination__link-text display-none tablet:display-block">
+                <span class="usa-pagination__link-text display-none desktop:display-block">
                     : "{{ page.previous.title }}" </span></a>
         </li>
         {% endunless %}
@@ -48,10 +48,8 @@ layout: blog-landing
         {% unless page.next == nil %}
         <li class="usa-pagination__item flex-1">
             <a href="{{ site.baseurl }}{{ page.next.url }}" class="usa-pagination__link usa-pagination__next-page width-full flex-justify-end" aria-label="Next page">
-                <span class="usa-pagination__link-text">Next
-                </span>
-                    <span class="usa-pagination__link-text display-none tablet:display-block">
-
+                <span class="usa-pagination__link-text">Next </span>
+                    <span class="usa-pagination__link-text display-none desktop:display-block">
                         :"{{ page.next.title }}"
                     </span>
 

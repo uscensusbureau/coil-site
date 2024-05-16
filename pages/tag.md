@@ -1,7 +1,7 @@
 ---
-title: Projects
-layout: project-landing
-permalink: /project/
+title: Tag
+layout: tag-landing
+permalink: /tag/
 ---
 # Tags
 
