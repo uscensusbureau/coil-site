@@ -5,4 +5,4 @@ permalink: /project/
 ---
 # Tags
 
-Click through to read posts about the following topics
+Click through to read posts about the following topics:
