@@ -21,6 +21,26 @@ describe('Homepage test', () => {
     cy.visit('/');
     headers.forEach( header => cy.get(`#${header}`));
   })
+  context("USWDS tablet:", () => {
+    beforeEach(() => {
+      cy.viewport(640, 1024);
+      cy.visit('/');
+    })
+    it("contains ids for all projects and section titles", () => {
+      headers.forEach((header) => cy.get(`#${header}`));
+    });
+  })
+
+  context("USWDS mobile:", () => {
+    beforeEach(() => {
+      cy.viewport(340, 480);
+      cy.visit('/');
+    })
+    it("contains ids for all projects and section titles", () => {
+      headers.forEach((header) => cy.get(`#${header}`));
+    });
+  })
+
 })
 
 describe('Nav Menus', () => {
