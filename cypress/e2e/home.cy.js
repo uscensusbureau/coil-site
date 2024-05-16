@@ -85,6 +85,16 @@ describe('Nav Menus', () => {
       cy.get("nav.usa-nav.is-visible").should("be.visible")
     })
   })
-
+describe("Main content", () => {
+  context("USWDS mobile spec", () => {
+    beforeEach(() => {
+      cy.viewport(360, 480)
+      cy.visit("/")
+    })
+    it("displays mobile sections", () => {
+      cy.get("#capabilities").should("be.visible")
+    })
+  })
+})
 
 })
