@@ -1,5 +1,6 @@
 const headers = [
   "coil-navbar-container",
+  "coil-navbar-container-desktop",
   "main-content",
   "coil-logo",
   "our-work-section",
