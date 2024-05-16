@@ -2445,18 +2445,25 @@ header.box-shadow-header {
     }
   }
 
-  main article {
+  main article, main nav {
     padding: 40px 16px;
-    border-top: 1px white solid;
-    border-bottom: 1px white solid;
     @include at-media('tablet') {
       padding: 0 68px;
-      border: none;
     }
     @include at-media('desktop') {
       padding: 0 108px;
-      border: none;
       padding-bottom: 64px;
+    }
+  }
+
+  main article {
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    @include at-media('tablet') {
+      border: none;
+    }
+    @include at-media('desktop') {
+      border: none;
     }
   }
 
