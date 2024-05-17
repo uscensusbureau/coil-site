@@ -43,9 +43,9 @@ class: blog
                     aria-label="Previous page">
                     <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg"
                         role="img" alt="Previous" aria-hidden="true" class="usa-pagination__arrow display-block" />
-                    <span class="usa-pagination__link-text">Previous </span>
+                    <span class="usa-pagination__link-text">Previous</span>&nbsp;
                     <span class="usa-pagination__link-text display-none tablet:display-block">
-                         {{ paginator.per_page }} posts</span></a>
+                        {{ paginator.per_page }} posts</span></a>
             </li>
             {% endunless %}
             <li class="usa-pagination__item flex-align-center flex-1 display-none tablet:display-flex">
@@ -57,8 +57,7 @@ class: blog
                     class="usa-pagination__link usa-pagination__next-page width-full flex-justify-end"
                     aria-label="Next page">
                     <span class="usa-pagination__link-text">Next</span>
-                    <span class="usa-pagination__link-text display-none tablet:display-block">
-                         {{ paginator.per_page }}
+                    &nbsp;<span class="usa-pagination__link-text display-none tablet:display-block">{{ paginator.per_page }}
                         posts</span>
                         <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_forward--white.svg" role="img"
                         alt="Next" aria-hidden="true" class="usa-pagination__arrow display-block" />
