@@ -2662,6 +2662,15 @@ header.box-shadow-header {
   }
 
   // TAG RESULTS
+  &.tags #main-content {
+    margin-top: 35px;
+    @include at-media('tablet') {
+        margin-top: 24px;
+      }
+    @include at-media('desktop') {
+        margin-top: 0;
+      }
+  }
     .coil-btn.project-tag {
       padding: 20px;
       @include at-media('tablet') {

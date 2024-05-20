@@ -2,6 +2,7 @@
 title: Tag
 layout: tag-landing
 permalink: /tag/
+class: tags
 ---
 # Tags
 
