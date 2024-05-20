@@ -2497,7 +2497,7 @@ header.box-shadow-header {
           background: color('blue-warm-60v');
         }
         &.post-project-the-opportunity-project {
-         background: red;
+         background:#d54309;
          }
       }
     }
@@ -2574,7 +2574,7 @@ header.box-shadow-header {
         }
 
         &.post-project-the-opportunity-project {
-          background: red;
+          background:#d54309;
         }
       }
     }
@@ -2662,10 +2662,20 @@ header.box-shadow-header {
   }
 
   // TAG RESULTS
+  &.tags #main-content {
+    margin-top: 35px;
+    @include at-media('tablet') {
+        margin-top: 24px;
+      }
+    @include at-media('desktop') {
+        margin-top: 0;
+      }
+  }
     .coil-btn.project-tag {
       padding: 20px;
+      margin: 8px 0;
       @include at-media('tablet') {
-        font-size: 10px;
+        font-size: 12px;
         width: calc(50% - 12px);
         margin: 16px 6px;
         padding: 16px 20px;
