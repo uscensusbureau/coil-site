@@ -37,11 +37,11 @@ layout: blog-landing
         <li class="usa-pagination__item  flex-1">
             <a href="{{ site.baseurl }}{{ page.previous.url }}"
                 class="usa-pagination__link usa-pagination__previous-page width-full flex-justify-start"
-                aria-label="Previous page"><img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg"
+                aria-label="Previous page">
+                <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg"
                     role="img" alt="Previous" aria-hidden="true" class="usa-pagination__arrow display-block" />
                 <span class="usa-pagination__link-text">Previous</span>
-                <span class="usa-pagination__link-text display-none desktop:display-block">
-                    : "{{ page.previous.title }}" </span></a>
+            </a>
         </li>
         {% endunless %}
 
@@ -49,10 +49,6 @@ layout: blog-landing
         <li class="usa-pagination__item flex-1">
             <a href="{{ site.baseurl }}{{ page.next.url }}" class="usa-pagination__link usa-pagination__next-page width-full flex-justify-end" aria-label="Next page">
                 <span class="usa-pagination__link-text">Next </span>
-                    <span class="usa-pagination__link-text display-none desktop:display-block">
-                        : "{{ page.next.title }}"
-                    </span>
-
                 <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_forward--white.svg" role="img"
                 alt="Next" aria-hidden="true" class="usa-pagination__arrow display-block" />
             </a>
