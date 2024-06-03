@@ -1,17 +1,17 @@
 ---
 layout: blog-post
-date: 2023-11-01
-title: test blog post 3
-permalink: /blog-test-3/
-project: Draft
-tag: draft
+date: 2024-04-23
+title: test blog post pagination 23
+permalink: /blog-test-pagination-23/
+tag: Data Usability
 authors:
     - Victoria Fine
-excerpt: "We are testing our blog posts. Hopefully this works."
+excerpt: "Pagination test"
 src: /assets/img/blog/features/desktop-coil-blog-expanded-post-image.png
 ---
 ## h2 right here
 Hello
+
 
 ### this is an h3
 
