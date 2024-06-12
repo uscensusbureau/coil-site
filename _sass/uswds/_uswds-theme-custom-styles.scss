@@ -2810,6 +2810,11 @@ a[href="/about#capabilities"] {
   margin-bottom: 64px;
   padding-inline: 16px;
 
+  @include at-media ('desktop') {
+      color: #fff;
+      box-shadow: none;
+    }
+
 }
 .coil-btn {
   display: inline-flex;
