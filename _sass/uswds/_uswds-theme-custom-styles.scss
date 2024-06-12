@@ -232,6 +232,7 @@ header.box-shadow-header {
     padding-bottom: 368px;
     @include at-media('desktop'){
       font-size: 2.5rem;
+      padding-bottom: 0px;
 
     }
   }
