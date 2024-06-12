@@ -228,7 +228,12 @@ header.box-shadow-header {
   height: 800px;
   p {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 24px;
+    padding-bottom: 368px;
+    @include at-media('desktop'){
+      font-size: 2.5rem;
+
+    }
   }
 
   @include at-media('desktop') {
@@ -266,6 +271,11 @@ header.box-shadow-header {
 
     h2{
       align-self: flex-start;
+      padding-top: 64px;
+      margin: 0;
+      @include at-media('desktop') {
+        padding-top: 0;
+      }
     }
   }
   ul.featured-projects-list {
@@ -362,6 +372,13 @@ header.box-shadow-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    .usa-card {
+      margin-bottom: 24px;
+    }
+    .usa-card__container {
+      border: none;
+      margin: 0;
+    }
 
     .usa-card__img {
       min-height: 250px;
@@ -421,7 +438,12 @@ header.box-shadow-header {
       background-size: cover;
       background-position: bottom;
       flex-direction: row;
+      margin: 64px 0;
       @include u-minh('mobile-lg');
+
+      @include at-media('desktop') {
+        margin: 128px 0 24px;
+      }
 
       h2 {
         margin: 0;
@@ -783,14 +805,24 @@ header.box-shadow-header {
 }
 
 .capabilities-container {
-  color: color('gray-cool-2');
-  background-image: linear-gradient(180deg, rgba(0, 80, 216, 0) 0%, rgba(0, 80, 216, .9) 103.4%), url(/assets/img/textures/about_our_capabilities_background.png);
+  #capabilities {
+    padding-top: 64px;
+  }
+  color: #13192f;
+  background: #f6f8fb;
   background-size: contain;
   h2, h3 {
-    margin-inline: 32px;
+    margin-inline: 16px;
+  }
+  h2 a {
+    color: #13192f;
+    font-size: 24px;
   }
   .capabilities-list {
     width: 100%;
+  }
+  .btn-contaner {
+    padding-inline: 32px;
   }
 }
 
@@ -799,12 +831,12 @@ header.box-shadow-header {
   @include u-flex('align-center');
   @include u-flex('justify-center');
   color: color('gray-cool-2');
-  width: 90%;
-  margin: 0 auto;
+  // width: 90%;
+  margin: 0;
   @include u-padding-x(2);
   .collaborate-section-container {
     width: 100%;
-    padding: 0 1rem;
+    padding: 0;
   }
   > * {
     color: color('gray-cool-2');
@@ -812,7 +844,7 @@ header.box-shadow-header {
   }
   a {
     // @include u-font('sans', 'sm');
-    font-size: 1.313rem;
+    // font-size: 1.313rem;
     color: white;
   }
   img {
@@ -1775,7 +1807,11 @@ a[href="#"] {
 
 }
 a[href="/about#capabilities"] {
-  color: white;
+  color:#151622;
+  box-shadow: inset 0 0 0 1px #151622;
+  margin-top: 0;
+  margin-bottom: 64px;
+  padding-inline: 16px;
 
 }
 .coil-btn {
