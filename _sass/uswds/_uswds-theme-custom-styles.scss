@@ -231,9 +231,9 @@ header.box-shadow-header {
     font-size: 24px;
     padding-bottom: 368px;
     @include at-media('desktop'){
-      font-size: 2.5rem;
-      padding-bottom: 0px;
-
+      max-width: 518px;
+      padding-bottom: 24px;
+      padding-left: 90px;
     }
   }
 
@@ -244,17 +244,12 @@ header.box-shadow-header {
       background-size: contain;
       padding: 0;
       display: flex;
-      min-height: 444px; //same height as coil-logo-container's width to make a square
+      min-height: 360px; //same height as coil-logo-container's width to make a square
       align-items: center;
 
-      p {
-        font-size: 2.5rem;
-        max-width: 34ch;
-        padding-left: 90px;
-      }
     }
     .coil-logo-container {
-      width: 444px;
+      width: 360px;
     }
   }
 
@@ -282,7 +277,7 @@ header.box-shadow-header {
   ul.featured-projects-list {
     // display: flex;
     padding: 0;
-    min-height: 425px;
+    min-height: 280px;
     flex-wrap: nowrap;
     margin-top: 0;
     li {
@@ -296,6 +291,9 @@ header.box-shadow-header {
   }
   .featured-projects-item div p{
     font-size: 1rem;
+    &.blurb {
+      margin-top: 0;
+    }
   }
 
 
@@ -307,8 +305,7 @@ header.box-shadow-header {
     padding: 32px;
     div {
         p {
-          width: 13ch;
-          font-size: 1.5rem;
+          width: 18ch;
         }
     }
   }
@@ -331,10 +328,10 @@ header.box-shadow-header {
     padding: 32px;
     div .blurb {
       width: 14ch;
-      font-size: 1.5rem;
     }
     div .name {
         font-weight: 600;
+        font-size: 18px;
       }
   }
 
@@ -353,7 +350,6 @@ header.box-shadow-header {
 
     div .blurb {
       width: 10ch;
-      font-size: 1.5rem;
     }
   }
   .statventures-logo-img,
@@ -437,23 +433,29 @@ header.box-shadow-header {
       background-image: url(/assets/img/icons/wave-ball-right.png);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: bottom;
+      background-position: 0px -160px;
       flex-direction: row;
       margin: 64px 0;
-      @include u-minh('mobile-lg');
+      min-height: 12rem;
 
       @include at-media('desktop') {
-        margin: 128px 0 24px;
+        margin: 104px 0 0px;
       }
 
       h2 {
         margin: 0;
         margin-top: -8px;
+        @include at-media('desktop') {
+          font-size: 24px;
+        }
       }
       p {
         max-width: 39%;
         font-size: 1.5rem;
         margin: 0;
+        @include at-media('desktop') {
+          font-size: 14px;
+        }
       }
 
     }
@@ -617,6 +619,9 @@ header.box-shadow-header {
 
 .coil-logo-img {
   width: 300px;
+  @include at-media('desktop'){
+    width: 180px;
+  }
 }
 
 .cr-header,
@@ -684,7 +689,7 @@ header.box-shadow-header {
             ul {
               position:absolute;
               list-style-type: none;
-              font-size: 1.3rem;
+              font-size: 14px;
             }
           }
 
@@ -700,14 +705,15 @@ header.box-shadow-header {
           }
         }
         .our-values-circle--text {
-          h3 {
-            font-size: 2rem;
+          h2 {
+            font-size: 18px;
+            margin: 0 8px;
           }
           a {
             text-decoration:underline;
             text-underline-offset: 8px;
             text-transform:uppercase;
-            font-size: 1.125rem;
+            font-size: 14px;
             position: relative;
             z-index: 99;
 
@@ -741,7 +747,7 @@ header.box-shadow-header {
           &::after {
             content: url(/assets/img/icons/design-and-user-research_line.svg);
             position: relative;
-            right: 441px;
+            right: 363px;
             top: 110px;
           }
           span {
@@ -787,7 +793,7 @@ header.box-shadow-header {
           }
           span {
             bottom: 100px;
-            left: 176px;
+            left: 216px;
           }
         }
         ul li.list-style-image-v6 {
