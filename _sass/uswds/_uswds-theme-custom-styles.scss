@@ -39,7 +39,7 @@ footer {
 }
 
 .footer-section-bottom {
-  font-size: 0.75rem;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
   @include u-flex('column');
   width: 90%;
@@ -48,7 +48,7 @@ footer {
 
   a {
       border: 0;
-      font-size: 1rem;
+      font-size: 14px;
     }
   @include at-media('desktop') {
     @include u-flex('row');
@@ -229,7 +229,11 @@ header.box-shadow-header {
   p {
     margin: 0;
     font-size: 24px;
-    padding-bottom: 368px;
+    padding-bottom: 190px;
+    @include at-media('tablet') {
+      width: 454px;
+      padding-left: 24px;
+    }
     @include at-media('desktop'){
       max-width: 518px;
       padding-bottom: 24px;
@@ -237,11 +241,14 @@ header.box-shadow-header {
     }
   }
 
+  @include at-media('tablet') {
+    background-image: url(/assets/img/textures/desktop_landing_static_murmation_full.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  }
   @include at-media('desktop') {
-      background-image: url(/assets/img/textures/desktop_landing_static_murmation_full.png);
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: contain;
       padding: 0;
       display: flex;
       min-height: 360px; //same height as coil-logo-container's width to make a square
@@ -264,13 +271,30 @@ header.box-shadow-header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include at-media('tablet') {
+      padding-left: 56px;
+      align-items: start;
+    }
+
+    @include at-media('desktop') {
+      padding-left: 0;
+    }
 
     h2{
       align-self: flex-start;
       padding-top: 64px;
       margin: 0;
+      @include at-media('tablet') {
+        font-size: 18px;
+      }
       @include at-media('desktop') {
         padding-top: 0;
+      }
+    }
+    p {
+      @include at-media('tablet') {
+        font-size: 12px;
+        width: 410px;
       }
     }
   }
@@ -375,11 +399,25 @@ header.box-shadow-header {
     .usa-card__container {
       border: none;
       margin: 0;
+      line-height: 1.4;
+    }
+
+    .usa-card__header {
+      padding-top: 16px;
+      padding-bottom: 0;
     }
 
     .usa-card__img {
-      min-height: 250px;
+      height: 130px;
       padding: 42px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    .usa-card__body:last-child {
+      padding-bottom: 16px;
     }
 
     .usa-card__heading, .usa-card__body p {
@@ -402,8 +440,8 @@ header.box-shadow-header {
   .project-card__data-usability {
     .usa-card__img {
       padding:0;
-      height: 260px;
-      // background-color: yellow;
+      // height: 260px;
+      background-color: green;
     }
   }
   .project-card__statventures {
@@ -433,7 +471,7 @@ header.box-shadow-header {
       background-image: url(/assets/img/icons/wave-ball-right.png);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 0px -160px;
+      background-position: 0% 80%;
       flex-direction: row;
       margin: 64px 0;
       min-height: 12rem;
@@ -874,11 +912,11 @@ header.box-shadow-header {
     }
     h2 {
     width: fit-content;
-    font-size: 2rem;
+    font-size: 18px;
     }
 
     a {
-      font-size: 1.2rem;
+      font-size: 14px;
     }
   }
 
