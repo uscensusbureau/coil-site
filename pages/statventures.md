@@ -28,7 +28,7 @@ splash:
 
 splash-secondary:
   title: Our Work
-  img: /photos/population-counter-img.png
+  img: /photos/current-population-section-graphic.png
   subtitle: Whether your team is looking to build a new tech product, hire new talent, or integrate design thinking into your process, COIL has a program that can help you do it.
 
 challenge-intro-static-content:
@@ -71,30 +71,42 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
     img-alt: phase clock
     banner: Address Geolocation Challenge
-    phase-status: APPLY NOW TO PHASE ONE
+    phase-status: PHASE ONE APPLICATIONS NOW CLOSED
     challenge-name: Address Geolocation Challenge
-    details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
+    details: The [Address Geolocation Challenge](https://www.challenge.gov/?challenge=statventures-geo-phase1) seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
-      [Submit a concept note for Phase 1 between March 11 and April 19](https://www.challenge.gov/?challenge=statventures-geo-phase1). Up to 10 winners receive $10,000 each and a spot in our Phase 2 innovator cohort. [Join an information session](https://statventuresgeo.splashthat.com/) to learn how to participate in Phase 1.
-    button:
-      text: Apply Now
-      src: https://www.challenge.gov/?challenge=statventures-geo-phase1
-      isExternal: true
+      Phase 1 of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 1 winners, and opportunities to apply to Phase 2.
+
   - active-challenge-two:
     class: active-challenge-two
     mobile-img: /icons/statventures-mobile-supply-chain-blue-clock.png
     desktop-img: /icons/statventures-tablet-supply-chain-blue-clock.png
     img-alt: phase clock
     banner: Supply Chain Challenge
-    phase-status: PHASE TWO NOW CLOSED
+    phase-status: PHASE TWO WINNERS ANNOUNCED
     challenge-name: Supply Chain Challenge
     details: The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
 
-      Phase 2 of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 2 winners, and opportunities to apply to Phase 3 in 2024.
+      [Phase 2](https://portal.challenge.gov/public/previews/challenges?challenge=6bb4353a-4495-43cd-a4db-42c9a1a423d8&print=true) winners have been announced. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for opportunities to apply to Phase 3 in 2024.
     button:
-      text: Meet the Phase 1 Winners
-      src: /assets/files/statventures-supply-chain-phase1-winners.pdf
+      text: Meet the Phase 2 Winners
+      src: /assets/files/statventures-supply-chain-phase2-winners.pdf
       isExternal: false
+      isDownload: true
+
+phase-text:
+  - phase-1:
+    title: "Phase 1: Concept"
+    id: "m-a2"
+    text: "Propose a technology, method, or alternative data source to improve U.S. Census Bureau data. Teams with the most innovative and promising ideas will be awarded $10,000 and an invitation to join the Phase 2 StatVentures cohort."
+  - phase-2:
+    title: "Phase 2: Roadmap"
+    id: "m-a3"
+    text: "Iterate on your concept note from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the opportunity to join in Phase 2."
+  - phase-3:
+    title: "Phase 3: Test"
+    id: "m-a4"
+    text: "Test your roadmap in a real-world scenario. Prototype demos are evaluated on their potential to serve the U.S. Census Bureau’s mission and goals, and ultimately have the opportunity to be awarded additional funds and pursue adoption by the U.S. Census Bureau."
 ---
 
 
