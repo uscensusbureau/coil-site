@@ -878,7 +878,7 @@ header.box-shadow-header {
   color: color('gray-cool-2');
   // width: 90%;
   margin: 0;
-  @include u-padding-x(2);
+  @include u-padding-x(4);
   .collaborate-section-container {
     width: 100%;
     padding: 0;
@@ -1044,15 +1044,43 @@ header.box-shadow-header {
     color: color('indigo-cool-90');
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 56px;
+    h1 {
+      font-size: 2rem;
+    }
     p {
-      padding-bottom: 64px;
+      padding-bottom: 16px;
+      margin-top: 16px;
+      font-size: 1rem;
     }
     @include at-media('tablet') {
       background-image: url(/assets/img/textures/desktop-portfolio-splash-graphic.png);
       background-color: unset;
+      padding-top: 64px;
+      padding-left: 40px;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        padding-top: 8px;
+        margin-top: 0;
+        width: 364px;
+        font-size: .75rem;
+      }
       }
     @include at-media('desktop') {
       background-image: url(/assets/img/textures/portfolio-splash-animation.gif);
+      padding-top: 104px;
+      padding-left: 48px;
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: .875rem;
+        width: 500px;
+        margin-bottom: 48px;
+      }
       }
   }
 
@@ -1079,6 +1107,10 @@ header.box-shadow-header {
 
     &.program-statventures {
       background: color('blue-warm-60v');
+
+      .coil-btn {
+        margin-bottom: 3.5rem;
+      }
 
       .full-width-screen-spilt {
         display: none;
@@ -1123,20 +1155,23 @@ header.box-shadow-header {
           }
       }
       img {
-        @include at-media('tablet') {
-            height: 201.9px;
-            width: 201.9px;
-          }
+        height: 202px;
+        width: 202px;
         @include at-media('desktop') {
             height: 323.05px;
             width: 323.05px;
           }
       }
+      .coil-btn {
+        margin-bottom: 3.5rem;
+      }
     }
 
     &.program-summit {
       background: hsla(218, 100%, 42%, 0.2);
-
+      .coil-btn {
+          margin-bottom: 3.5rem;
+        }
       @include at-media('tablet'){
         h2 {
           width: 20ch;
@@ -1157,13 +1192,21 @@ header.box-shadow-header {
 
   section.past-programs {
 
+    .usa-card {
+      margin-bottom: 1.5rem;
+    }
 
     .usa-card__heading {
       text-align: start;
+      font-size: 1.3125rem;
+    }
+
+    .usa-card__body{
+      padding-top: 0;
     }
 
     .usa-card__body p {
-      font-size: .75rem;
+      font-size: 1rem;
 
       @include at-media('desktop') {
         font-size: .875rem;
