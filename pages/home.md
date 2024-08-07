@@ -6,6 +6,11 @@ class: coil
 
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
+banner:
+  text: "Missed Census Open Innovation Summit 2024? Watch the recordings on YouTube!"
+  href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme
+  isExternal: true
+
 hero:
   text: 'Trailblazing open government through cross-sector collaboration, design, and technology.'
   subtext: Want to work with us?
