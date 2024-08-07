@@ -95,14 +95,29 @@ $coil-left-padding-wide: 10;
  ****************/
 h1 {
   // @include u-font('sans', '2xl');
-  font-size: 2.5rem;
+  font-size: 2rem;
   @include u-margin(0);
   font-weight: 600;
+
+  @include at-media('tablet') {
+    font-size: 1.5rem;
+  }
+
+    @include at-media('desktop') {
+      font-size: 2rem;
+    }
+
 }
 h2 {
   // @include u-font('sans', 'xl');
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
+  @include at-media('tablet') {
+    font-size: 1.125rem;
+  }
+  @include at-media('desktop') {
+    font-size: 1.5rem;
+  }
 }
 
 h2, h3 {
