@@ -1,0 +1,73 @@
+---
+layout: blog-landing
+autopages:
+    permalink: /tag/:tag
+pagination:
+    enabled: true
+class: blog
+
+---
+
+
+
+<section class="usa-section section-padding-sm">
+    <div class="grid-container">
+        <a href="{{ site.baseurl }}/blog/" class="display-flex flex-align-center text-white">
+            <span class="usa-sr-only"> Back to</span>
+            <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg" role="img" alt="Previous" aria-hidden="true" />
+            <span class="margin-left-05">Blog </span>
+        </a>
+        {% assign numberof = paginator.total_posts %}
+        <h1 class="margin-top-2">{{ numberof }} {% if numberof == 1 %}post{% else %}posts{% endif %} tagged with "{% if page.autopages %}{{page.autopages.display_name}}{% endif %}" </h1>
+    </div>
+</section>
+
+<section class="padding-sm page-tag-results">
+    <div class="grid-container">
+        {%
+        include post-preview.html
+        posts=paginator.posts
+        tags=paginator.tag
+        %}
+    </div>
+    <nav aria-label="Pagination" class="usa-pagination grid-container" id="blog-pagination">
+        <ul class="usa-pagination__list width-full">
+            {% unless paginator.previous_page != nil %}
+            <li class="flex-1">
+            </li>
+            {% endunless %}
+            {% unless paginator.previous_page == nil %}
+            <li class="usa-pagination__item  flex-1">
+                <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}"
+                    class="usa-pagination__link usa-pagination__previous-page width-full flex-justify-start"
+                    aria-label="Previous page">
+                    <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_back--white.svg"
+                        role="img" alt="Previous" aria-hidden="true" class="usa-pagination__arrow display-block" />
+                    <span class="usa-pagination__link-text">Previous</span>&nbsp;
+                    <span class="usa-pagination__link-text display-none tablet:display-block">
+                        {{ paginator.per_page }} posts</span></a>
+            </li>
+            {% endunless %}
+            <li class="usa-pagination__item flex-align-center flex-1 display-none tablet:display-flex">
+                <p class="margin-0">Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+            </li>
+            {% unless paginator.next_page == nil %}
+            <li class="usa-pagination__item flex-1">
+                <a href="{{ site.baseurl }}{{ paginator.next_page_path }}"
+                    class="usa-pagination__link usa-pagination__next-page width-full flex-justify-end"
+                    aria-label="Next page">
+                    <span class="usa-pagination__link-text">Next</span>
+                    &nbsp;<span class="usa-pagination__link-text display-none tablet:display-block">{{ paginator.per_page }}
+                        posts</span>
+                        <img src="{{site.baseurl}}/assets/img/usa-icons-bg/arrow_forward--white.svg" role="img"
+                        alt="Next" aria-hidden="true" class="usa-pagination__arrow display-block" />
+                    </a>
+            </li>
+            {% endunless %}
+            {% unless paginator.next_page != nil %}
+            <li class="flex-1">
+            </li>
+            {% endunless %}
+        </ul>
+    </nav>
+</section>

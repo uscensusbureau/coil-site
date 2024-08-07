@@ -50,12 +50,17 @@ footer {
       border: 0;
       font-size: 14px;
     }
-  @include at-media('desktop') {
+  @include at-media('tablet') {
     @include u-flex('row');
     a {
     border: unset;
+    }
   }
-}
+
+  @include at-media('desktop') {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
 }
 
@@ -126,6 +131,28 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 }
 #main-content {
   border-top: 0;
+}
+.site-banner {
+  position: relative;
+  background: color('gold-20v');
+
+  & .usa-accordion {
+    justify-content: center;
+
+    .usa-banner__inner {
+      justify-content: center;
+    }
+  }
+
+  a {
+    font-size: 1rem;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: color('indigo-cool-90');
+    }
+  }
 }
 .coil-header {
   @include u-position('sticky');
@@ -1196,18 +1223,39 @@ header.box-shadow-header {
 
 .statventures {
 
+
+  & .statventures-btn svg {
+      fill: currentColor;
+      margin: 0 4px;
+    }
   & .statventures-btn {
-    color: color('blue-warm-60v');
-    box-shadow: inset 0 0 0 2px color('blue-warm-60v');
-    padding: .5rem;
-    background-color: color('gray-cool-2');
+    display: inline-flex;
+    justify-content: center;
+    color: inherit;
+    box-shadow: inset 0 0 0 2px;
+    padding: .5rem 1.25rem;
+    background-color: transparent;
     text-decoration: none;
     border-radius: .5rem;
+    font-size: 16px;
+    line-height: 24px;
+    @include at-media('tablet') {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    @include at-media('desktop') {
+      font-size: 18px;
+      line-height: 27px;
+    }
 
     &:hover,
     &:active {
       background-color: color('blue-warm-60v');
       color: color('gray-cool-2');
+      svg {
+        fill: color('gray-cool-2');
+      }
     }
   }
 
@@ -1233,6 +1281,86 @@ header.box-shadow-header {
   }
 
   background: color('gray-cool-2');
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+
+    @include at-media('tablet') {
+      font-size: 18px;
+      line-height: 27px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+
+  h3,
+  h3 button {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+
+    @include at-media('tablet') {
+      font-size: 16px;
+      line-height: 24px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 21px;
+      line-height: 32px;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    @include at-media('tablet') {
+      font-size: 14px;
+      line-height: 21px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+
+    @include at-media('tablet') {
+      font-size: 12px;
+      line-height: 18px;
+      }
+
+    @include at-media('desktop') {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+
+    @include at-media('tablet') {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @include at-media('desktop') {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
 
   &>* {
     display: flex;
@@ -1349,6 +1477,13 @@ header.box-shadow-header {
       &.splash {
         color: color('blue-warm-60v');
 
+        p {
+          @include at-media('tablet') {
+          font-size: 16px;
+          line-height: 24px;
+          }
+        }
+
         & figure {
           width: 50%;
           // background-image: url(/assets/img/statventures/photos/data-processor-img.png);
@@ -1373,12 +1508,68 @@ header.box-shadow-header {
           align-items: flex-start;
           justify-content: center;
           padding: 0 3rem;
+          padding-inline: 32px;
+
+          @include at-media('tablet') {
+            padding-left: 88px;
+            padding-right: 72px;
+            padding-bottom: 40px;
+          }
+          @include at-media('desktop') {
+            padding-right: 56px;
+          }
+        }
+
+        a {
+          @include at-media('tablet') {
+            font-size: 14px;
+            line-height: 21px;
+          }
+          @include at-media('desktop') {
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 24px;
+          }
         }
 
       }
 
       &.splash-secondary {
-        text-align: center;
+        text-align: left;
+        @include at-media('mobile'){
+          h2 {
+            margin: 0;
+            margin-top: 16px;
+          }
+        }
+
+        @include at-media('tablet') {
+          text-align: center;
+          section {
+            padding: 0 56px;
+            h2 {
+              margin: 32px 0 16px
+            }
+          }
+        }
+
+
+        p.subheading {
+            font-size: 16px;
+            line-height: 24px;
+
+            @include at-media('tablet') {
+              font-size: 14px;
+              line-height: 21px;
+              margin: 16px 0;
+            }
+
+            @include at-media('desktop') {
+              font-size: 18px;
+              line-height: 27px;
+              margin: 0 0 16px;
+            }
+          }
 
         figure {
           background-image: linear-gradient(359.64deg, #13192F 0.33%, rgba(217, 217, 217, 0) 99.71%);
@@ -1399,6 +1590,19 @@ header.box-shadow-header {
             color: white;
           }
         }
+      // trying to consolidate code but not sure if the rule works as intended
+      // @include at-media-max ('tablet') {
+      //   order: 3;
+      //   @include u-padding-x(2);
+      //   text-align: left;
+      //   color: color('blue-warm-60v');
+      //   font-size: 1.35rem;
+      //   padding-bottom: 16px;
+
+      //   figure {
+      //     display: none;
+      //   }
+      // }
       }
 
       @media (max-width: 'desktop') {
@@ -1409,7 +1613,6 @@ header.box-shadow-header {
 
       section.scrolling-words-container {
         display: flex;
-        font-size: 4rem;
         flex-direction: column;
         align-items: start;
         justify-content: center;
@@ -1419,9 +1622,32 @@ header.box-shadow-header {
         font-weight: bold;
         padding: 0;
 
+        @include at-media('mobile') {
+          font-size: 32px;
+          line-height: 48px;
+          padding-top: 48px;
+        }
+
+        @include at-media('tablet') {
+          font-size: 32px;
+          line-height: 40px;
+          margin-top: 56px;
+        }
+
+        @include at-media('desktop') {
+          font-size: 40px;
+          line-height: 60px;
+          margin-top: 0px;
+        }
+
         div.scrolling-words-box {
           height: 5.5rem;
           overflow: hidden;
+          margin: -8px 0;
+
+          @include at-media('tablet') {
+            margin: -12px 0;
+          }
 
           ul {
             margin: 0;
@@ -1460,24 +1686,7 @@ header.box-shadow-header {
         color: color('gray-cool-2');
       }
 
-      &.site-banner {
-        position: relative;
-        background: color('gold-20v');
 
-        & .usa-accordion {
-          justify-content: center;
-        }
-
-        a {
-          font-size: 1rem;
-
-          &:hover,
-          &:active,
-          &:visited {
-            color: color('indigo-cool-90');
-          }
-        }
-      }
 
       &.mobile-only {
         @include at-media('desktop') {
@@ -1486,22 +1695,118 @@ header.box-shadow-header {
         }
       }
 
+      &.winners {
+        // flex-direction: row;
+        // background: color('blue-warm-60v');
+        min-height: 680px;
+        padding-left: 0px;
+        padding-right: 0px;
+        color: white;
+        background-size: cover;
+        @include at-media('desktop') {
+          flex-direction: row;
+          min-height: 310px;
+
+        }
+        .winner-content-wrapper {
+          background: color('blue-warm-60v');
+          width: 100%;
+          padding: 56px 3rem;
+          height: 100%;
+          @include at-media('desktop') {
+            background-image: url(/assets/img/statventures/textures/desktop-phase-one-winners-graphic.png);
+            background-position-y: bottom -150px;
+            background-position-x: right -170px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include u-flex('fill');
+            @include u-minh('full');
+            width: auto;
+          }
+        }
+        .winner-content {
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          // padding: 0 3rem;
+          h2 {
+            max-width: 31ch;
+          }
+          & .statventures-btn:hover {
+            border: 1px white solid;
+          }
+          @include at-media('desktop') {
+                & .statventures-btn {
+                  max-width: 200px;
+                }
+              }
+            }
+      }
+
       &.challenge-intro--mobile {
         background: color('indigo-cool-90');
         color: color('gray-cool-2');
 
-        #accordion-intro h4.usa-accordion__heading button {
-          background-color: color('blue-warm-60v');
-          color: color('gray-cool-2');
-          background-blend-mode: color-burn;
-        }
+        p.subheading {
+          font-size: 16px;
+          line-height: 24px;
+          }
 
-        .usa-accordion__button {
-          @include add-background-svg("usa-icons-bg/add--white")
+        .content-container, .active-challeges {
+        @include at-media('tablet') {
+            display: none;
+          }
+        }
+        .usa-accordion__button[aria-expanded="true"] {
+          @include add-background-svg("usa-icons-bg/remove--white")
         }
 
         .usa-accordion__button[aria-expanded="false"] {
-          @include add-background-svg("usa-icons-bg/remove--white");
+          @include add-background-svg("usa-icons-bg/add--white");
+        }
+
+        h2 {
+          @include at-media('mobile') {
+            margin: 0;
+          }
+        }
+
+        #accordion-phases,
+        #accordion-phases h3.usa-accordion__heading button {
+          background-color: color('indigo-cool-90');
+          color: color('gray-cool-2');
+          // border-bottom: 1px solid color('gray-cool-2');
+          margin-top: 0;
+        }
+
+        #accordion-container {
+          @include at-media('mobile') {
+            padding-top: 16px;
+          }
+        }
+
+        #accordion-phases {
+          margin-top: 24px;
+          margin-bottom: 48px;
+          border-bottom: 1px solid;
+          border-top: 1px solid;
+          @include at-media('tablet') {
+            margin-top: 32px;
+            margin-bottom: 56px;
+          }
+
+          h3 {
+            @include at-media('tablet') {
+                padding-top: 8px;
+            }
+          }
+          .usa-prose p {
+            max-width: fit-content;
+          }
+        }
+
+        button.usa-accordion__button {
+          padding-block: 24px;
         }
 
         #m-a1 {
@@ -1510,24 +1815,22 @@ header.box-shadow-header {
           border-bottom: 1px solid color('gray-cool-2');
         }
 
-        #accordion-phases,
-        #accordion-phases h4.usa-accordion__heading button,
         #m-a2,
         #m-a3,
         #m-a4 {
-          background-color: color('indigo-cool-90');
-          color: color('gray-cool-2');
-          border-bottom: 1px solid color('gray-cool-2');
-          margin-top: 0;
+          background: white;
+          color: black;
+          padding-bottom: 24px;
         }
 
-        h4.usa-accordion__heading:nth-child(2) {
+        h3.usa-accordion__heading {
           border-top: color('gray-cool-2') solid 1px;
         }
 
 
         #accordion-phases h5 {
           color: color('gold-20v');
+          display: none;
         }
 
         & .accordion-phases & .usa-accordion__heading {
@@ -1543,18 +1846,49 @@ header.box-shadow-header {
         color: color('gray-cool-2');
         // min-height: 80vh;
         justify-content: space-around;
-        min-height: 550px;
+        // min-height: 550px;
         padding: 2rem 0;
+        display: none;
+        @include at-media('tablet') {
+            display: flex;
+            padding: 42px 0 24px;
+          }
+
+        h2 {
+            @include at-media('desktop') {
+              margin: 48px 0 16px;
+              }
+          }
 
         & h3 {
           text-align: center;
           max-width: 66%;
           font-weight: 400;
+
+          @include at-media('tablet') {
+            font-size: 14px;
+            line-height: 21px;
+            max-width: 388px;
+            margin-top: 2px;
+            margin-bottom: 24px;
+          }
+
+          @include at-media('desktop') {
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 0;
+            margin-bottom: 24px;
+            max-width: 696px;
+          }
         }
 
         & .content-container {
           @include grid-container;
           flex-flow: column nowrap;
+
+          .statventures-btn {
+            align-self: auto;
+          }
         }
 
         & .content-container .split-paragraph {
@@ -1567,8 +1901,22 @@ header.box-shadow-header {
           border-radius: 1rem;
           max-width: 66%;
 
+          @include at-media('tablet') {
+            max-width: 69%;
+          }
+
           p {
             padding: 0 2rem;
+            @include at-media ('tablet') {
+              font-size: 14px;
+              line-height: 21px;
+            }
+
+            @include at-media ('desktop') {
+            font-size: 18px;
+            line-height: 27px;
+            margin: 24px 0px;
+            }
           }
         }
 
@@ -1580,7 +1928,6 @@ header.box-shadow-header {
       &.challenge-intro--card-content {
         background: color('gray-cool-2');
         padding: 5rem 0;
-
 
 
         & .content-container {
@@ -1601,22 +1948,17 @@ header.box-shadow-header {
           align-self: center;
         }
 
+        h2 {
+          margin: 0;
+        }
+
         h5 {
           margin-bottom: 0;
           font-size: 1.25rem;
         }
 
-        & .card-container {
-          margin-top: -70px;
-        }
-
-
-        & .active-phase {
-          position: relative;
-          top: 60px;
-          right: 40px;
-          z-index: 1;
-          width: 10%;
+        .card-container {
+          margin-top: 40px;
         }
 
         & .usa-card__container {
@@ -1626,6 +1968,14 @@ header.box-shadow-header {
           justify-content: space-between;
         }
 
+        & .usa-card__heading {
+          font-size: 14px;
+          line-height: 28px;
+          @include at-media('desktop') {
+              font-size: 25px;
+              line-height: 50px;
+            }
+        }
 
         & .usa-card__img img {
           aspect-ratio: 1;
@@ -1638,6 +1988,7 @@ header.box-shadow-header {
           align-self: stretch;
 
           div {
+            display: none;
             background: color('gray-cool-2');
             color: color('blue-warm-60v');
             border: color('blue-warm-60v') 2px solid;
@@ -1649,7 +2000,7 @@ header.box-shadow-header {
           }
         }
 
-        li.usa-card:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(1) {
+        li.usa-card:nth-child(2)>div:nth-child(1)>div:nth-child(3)>div:nth-child(1) {
           color: color('gray-cool-2');
           background-color: color('blue-warm-60v');
           border: none;
@@ -1659,6 +2010,115 @@ header.box-shadow-header {
       }
 
 
+    }
+
+    .active-challenges {
+      @include at-media('tablet') {
+        padding-bottom: 16px;
+      }
+      @include at-media('desktop') {
+        padding-bottom: 64px;
+      }
+    }
+    .active-challenge-banner {
+      margin-top: 48px;
+      @include at-media('tablet') {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      @include at-media('desktop') {
+        margin-top: 80px;
+        margin-bottom: 64px;
+      }
+      .content-container {
+        display: grid;
+        align-items: center;
+        height: 32px;
+        @include at-media ('desktop') {
+          height: 48px;
+        }
+        h4 {
+          margin: 0;
+          @include at-media('tablet') {
+            padding-inline-start: 92px;
+          }
+
+          @include at-media('desktop') {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+
+    .active-challenge-content
+     {
+
+      .phase-status {
+        margin: 0;
+      }
+
+      h2.challenge-name {
+        margin: 8px 0 16px;
+      }
+      p a {
+        color: white;
+
+        :visited {
+          color: white;
+        }
+      }
+      @include at-media('tablet') {
+      padding-inline-start: 92px;
+      }
+      h3.phase-status {
+        text-align: start;
+      }
+      p {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        @include at-media('tablet') {
+          margin-bottom: 32px;
+        }
+      }
+    }
+
+    .active-challenge-one {
+      .active-challenge-banner {
+      background: #0F9D58;
+      }
+    }
+
+    .active-challenge-two {
+      .active-challenge-banner {
+      background-color: color('blue-warm-60v');
+      }
+    }
+
+    div.active-challenge-details.content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include at-media('tablet') {
+      flex-flow: row;
+      }
+    }
+
+    .active-challenge-img-container {
+      width: 100%;
+      text-align: center;
+      @include at-media('mobile') {
+        margin-bottom: 24px;
+      }
+
+      .active-challenge-img {
+        @include at-media('tablet') {
+          width: 203px;
+        }
+        @include at-media('desktop') {
+          width: 217px;
+        }
+      }
     }
 
     footer {
@@ -1689,15 +2149,39 @@ header.box-shadow-header {
       background-color: color('blue-warm-60v');
       color: color('gray-cool-2');
       width: 100%;
-      padding-top: 2rem;
+      padding-top: 3.4rem;
 
       & .all-caps {
         text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 24px;
+        @include at-media('tablet') {
+          margin-bottom: 8px;
+        }
+        @include at-media('desktop') {
+          margin-top: 0;
+          margin-bottom: 24px;
+        }
       }
 
       & .coil-logo-text-treatment {
         text-transform: uppercase;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+
+        @include at-media('mobile') {
+          margin-bottom: 6px;
+          span {
+            margin-bottom: -8px;
+          }
+        }
+
+        @include at-media('desktop') {
+          display: inline;
+        }
 
         & span:nth-child(1) {
           font-weight: 600;
@@ -1716,10 +2200,22 @@ header.box-shadow-header {
         }
 
       }
+
+      .footer-final-line {
+        margin-bottom: 40px;
+
+        @include at-media('tablet') {
+        margin-top: 0px;
+        margin-bottom: 32px;
+        }
+        @include at-media('desktop') {
+          margin: 21px 0;
+        }
+      }
     }
 
     // media query
-    @media screen and (max-width: 1024px) {
+    @include at-media-max('desktop') {
 
       // for direct children
       & .desktop {
@@ -1751,14 +2247,22 @@ header.box-shadow-header {
         &.splash {
           flex-direction: column;
 
-          .scrolling-words-container,
           p,
           a {
-            margin: 1rem .5rem;
+            margin: 1rem 0px;
           }
 
-          .scrolling-words-container {
-            font-size: 3rem;
+          a {
+            @include at-media('mobile') {
+                margin-top: 8px;
+                margin-bottom: 48px;
+              }
+
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 27px;
           }
 
           figure {
@@ -1767,13 +2271,25 @@ header.box-shadow-header {
         }
 
         &.splash-secondary {
-          order: 2;
-          @include u-padding-x(2);
-          text-align: left;
-          color: color('blue-warm-60v');
+          order: 3;
+          @include u-padding-x(4);
           font-size: 1.35rem;
-          padding-bottom: 16px;
+          padding-bottom: 32px;
+          padding-top: 32px;
+          display: flex;
+          flex-direction: column;
+          @include at-media('tablet') {
+            padding-bottom: 40px;
+          }
 
+          section {
+            max-width: 510px;
+          }
+
+          .subheading {
+            font-size: 16px;
+            line-height: 27px;
+          }
           figure {
             display: none;
           }
@@ -1784,9 +2300,28 @@ header.box-shadow-header {
         &.challenge-intro--mobile {
           order: 1;
           text-align: left;
-          padding: 0 3rem;
+          padding: 0 2rem;
 
-          .content-container,
+          @include at-media('mobile') {
+            padding-top: 32px;
+          }
+
+          a {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .active-challenge-content {
+            p a {
+                margin: 0;
+                display: inline;
+            }
+          }
+
+          .content-container {
+              margin: 1rem 0rem;
+            }
+
           a {
             margin: 1rem 0rem;
           }
@@ -1797,6 +2332,9 @@ header.box-shadow-header {
             justify-content: flex-start;
           }
         }
+        &.winners {
+          order: 2;
+        }
       }
 
       & footer {
@@ -1804,6 +2342,10 @@ header.box-shadow-header {
 
         & .footer-horizontal {
           padding: 0;
+          align-items: center;
+          @include at-media('mobile') {
+            padding-top: 72px;
+          }
         }
 
         & img {
@@ -1812,8 +2354,462 @@ header.box-shadow-header {
       }
 
     }
+
+    @include at-media('tablet'){
+      .footer-horizontal .coil-logo-text-treatment {
+        display: inline;
+      }
+    }
+
   }
 
+
+// blog
+.blog {
+  background-color: color('indigo-cool-90');
+  color: color('gray-cool-2');
+
+  .cr-header {
+    background:url(/assets/img/blog/icons/blog_hero_graphic.png);
+    background-repeat: no-repeat;
+    @include at-media('tablet') {
+      background-position: 200px;
+      background: url(/assets/img/blog/icons/blog_hero_graphic.png),
+        linear-gradient(180deg, rgba(21, 22, 34, 1) 0%, rgba(0, 80, 216, .26) 74%, rgba(0, 80, 216, 0) 100%);
+        background-repeat: no-repeat;
+        background-position-x: 80%;
+        padding-left: 40px;
+    }
+    @include at-media('desktop') {
+      padding-left: 48px;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 32px;
+    }
+
+    @include at-media('tablet') {
+    h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 305px;
+      }
+    }
+
+    @include at-media('desktop') {
+      h1 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 54px;
+      }
+
+      p {
+        font-size: 21px;
+        line-height: 32px;
+        max-width: 488px;
+      }
+    }
+  }
+
+
+  h2 a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .post-preview-container {
+    list-style-type: none;
+    padding:0;
+    li {
+      border-top: 1px white solid;
+
+      &:last-of-type{
+        border-bottom: 1px white solid;
+      }
+    }
+    @include at-media('tablet') {
+      padding: 16px;
+    }
+    @include at-media('desktop') {
+      padding: 56px 24px;
+    }
+  }
+
+  .individual-post-preview,
+  .blog-post-header,
+  section.post-content {
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .post-byline {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .post-excerpt, p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27.5px;
+    }
+
+    @include at-media('tablet') {
+      h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 15px;
+      }
+
+      .post-byline {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+
+    @include at-media('desktop') {
+      h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .post-byline {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      .post-excerpt, p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  main article, main nav {
+    padding: 40px 16px;
+    @include at-media('tablet') {
+      padding: 0 68px;
+    }
+    @include at-media('desktop') {
+      padding: 0 108px;
+      padding-bottom: 64px;
+    }
+  }
+
+  main article {
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    @include at-media('tablet') {
+      border: none;
+    }
+    @include at-media('desktop') {
+      border: none;
+    }
+  }
+
+  .individual-post-preview {
+    img.post-img {
+      object-fit: cover;
+      width: 256px;
+      height: 240px;
+    }
+    .individual-post-content {
+      padding: 0 8px;
+
+      h3 a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        height: 32px;
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        &.post-project-census-open-innovation-labs {
+          border: white solid 1px;
+        }
+        &.post-project-data-usability {
+          background: rgba(15, 157, 88, 1);
+        }
+        &.post-project-statventures {
+          background: color('blue-warm-60v');
+        }
+        &.post-project-the-opportunity-project {
+         background:#d54309;
+         }
+      }
+    }
+    @include at-media('tablet') {
+      display: flex;
+      align-items: center;
+      padding: 40px 24px;
+      padding-left: 44px;
+      padding-right: 24px;
+
+      .individual-post-img-container {
+        order: 1;
+        width: 100%;
+        text-align: right;
+        max-width: 33%;
+      }
+      img.post-img {
+        width: 150px;
+        height: 102px;
+      }
+      .individual-post-content {
+        width: 100%;
+        padding: 0px;
+      }
+    }
+    @include at-media('desktop') {
+      padding: 56px;
+      img.post-img {
+        width: 240px;
+        height: 164px;
+      }
+    }
+  }
+
+  .blog-post-header {
+
+    .post-img-container {
+      padding-left: 16px;
+      padding-right: 16px;
+
+      img.post-img {
+          object-fit: cover;
+          width: 256px;
+          height: 240px;
+        }
+    }
+
+    .post-header-intro {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .post-project a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        height: 32px;
+        padding: 16px;
+        border-radius: 16px;
+        font-size: 10px;
+        line-height: 15px;
+        text-decoration: none;
+        font-weight: 600;
+        &.post-project-census-open-innovation-labs {
+            border: white solid 1px;
+          }
+
+        &.post-project-data-usability {
+          background: rgba(15, 157, 88, 1);
+        }
+
+        &.post-project-statventures {
+          background: color('blue-warm-60v');
+        }
+
+        &.post-project-the-opportunity-project {
+          background:#d54309;
+        }
+      }
+    }
+
+    @include at-media('tablet') {
+      padding-left: 0px;
+      .post-img-container {
+        order: 2;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        img.post-img {
+            width: 492px;
+            height: 151px;
+          }
+      }
+      .post-header-intro {
+        order: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+
+    @include at-media('desktop') {
+      .post-img-container {
+          img.post-img {
+            width: 788px;
+            height: 242px;
+          }
+        }
+      .post-header-intro .post-project a {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .post-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    a {
+      color: inherit;
+      &:visited {
+        color:inherit;
+      }
+    }
+    @include at-media('tablet') {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    @include at-media('desktop') {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+    #blog-pagination ul {
+      @include at-media('mobile') {
+    // same as post preview container
+      display: flex;
+      padding: 8px 16px 48px;
+      font-size: 18px;
+      line-height: 24px;
+      }
+      @include at-media('tablet') {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      @include at-media('desktop') {
+        padding: 8px 24px 124px;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+
+  .usa-pagination__list {
+    li a {
+      color:white;
+    }
+    .usa-current {
+      outline: white solid 1px;
+      border-radius: 100%;
+    }
+  }
+
+  // TAG RESULTS
+  &.tags #main-content {
+    margin-top: 35px;
+    @include at-media('tablet') {
+        margin-top: 24px;
+      }
+    @include at-media('desktop') {
+        margin-top: 56px;
+      }
+  }
+    .coil-btn.project-tag {
+      padding: 20px;
+      margin: 8px 0;
+      @include at-media('tablet') {
+        font-size: 12px;
+        width: calc(50% - 12px);
+        margin: 16px 6px;
+        padding: 16px 20px;
+      }
+
+      @include at-media('desktop') {
+        font-size: 16px;
+        width: calc(33% - 16px);
+        margin: 16px 8px;
+        padding: 16px;
+      }
+    }
+
+  #collaborate-section {
+    h2{
+      font-size: 24px;
+    }
+
+    a {
+      font-size: 11px;
+    }
+
+    @include at-media('tablet') {
+      h2 {
+        font-size: 14px;
+      }
+
+      a {
+        font: size 9px; ;
+      }
+    }
+
+    @include at-media('desktop') {
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      a {
+        font: size 0.9rem; ;
+      }
+    }
+  }
+
+  .footer-section-bottom a {
+    font-size: 14px;
+    line-height: 21px;
+
+    @include at-media('tablet') {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @include at-media('desktop') {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+}
 
 
   // animation
