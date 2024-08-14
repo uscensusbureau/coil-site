@@ -132,11 +132,24 @@ h2, h3 {
   }
 }
 
+h3 {
+  @include at-media('tablet') {
+    font-size: 16px;
+  }
+}
+
 a[href="mailto:census.openinnovationlabs@census.gov"] {
   word-break: break-all;
 }
 
-
+p {
+  @include at-media('tablet') {
+    font-size: 15px;
+  }
+  @include at-media('desktop') {
+    font-size: 16px;
+  }
+}
 
 /***************
  * Layout
@@ -242,14 +255,13 @@ header.box-shadow-header {
 .project-card-group {
 
   .usa-card__heading {
-    font-size: 1.3rem;
+    font-size: 15px;
     color: black;
     font-family: inherit;
-    font-size: 1.3rem;
   }
 
   .usa-card__body p {
-    font-size: 1.125rem;
+    font-size: 15px;
     color: inherit;
   }
 
@@ -277,7 +289,7 @@ header.box-shadow-header {
       padding-left: 24px;
     }
     @include at-media('desktop'){
-      max-width: 518px;
+      width: 529px;
       padding-bottom: 24px;
       padding-left: 90px;
     }
@@ -335,7 +347,7 @@ header.box-shadow-header {
     }
     p {
       @include at-media('tablet') {
-        font-size: 12px;
+        font-size: 15px;
         width: 410px;
       }
     }
@@ -534,7 +546,7 @@ header.box-shadow-header {
         font-size: 1.5rem;
         margin: 0;
         @include at-media('desktop') {
-          font-size: 14px;
+          font-size: 16px;
         }
       }
 
@@ -769,7 +781,7 @@ header.box-shadow-header {
             ul {
               position:absolute;
               list-style-type: none;
-              font-size: 14px;
+              font-size: 16px;
             }
           }
 
@@ -940,7 +952,10 @@ header.box-shadow-header {
 
   h2 {
     width: 12ch;
+    @include at-media('tablet') {
+      width: 100%;
   }
+}
 
   @include at-media('desktop') {
     width: 100%;
@@ -958,7 +973,7 @@ header.box-shadow-header {
     }
 
     a {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
