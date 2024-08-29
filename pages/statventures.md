@@ -11,9 +11,9 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: "Apply Now to Address Geolocation Challenge Phase 1"
-  href: https://www.challenge.gov/?challenge=statventures-geo-phase1
-  isExternal: true
+  text: "Meet the Phase 1 Winners of the Address Geolocation Challenge"
+  href: assets/files/statventures-geolocation-phase1-winners.pdf
+  isExternal: false
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
@@ -71,11 +71,16 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
     img-alt: phase clock
     banner: Address Geolocation Challenge
-    phase-status: PHASE ONE APPLICATIONS NOW CLOSED
+    phase-status: PHASE ONE WINNERS ANNOUNCED
     challenge-name: Address Geolocation Challenge
     details: The [Address Geolocation Challenge](https://www.challenge.gov/?challenge=statventures-geo-phase1) seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
-      Phase 1 of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 1 winners, and opportunities to apply to Phase 2.
+      [Phase 1](https://www.challenge.gov/?challenge=statventures-geo-phase1) winners have been announced. [Subscribe](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) to be notified when Phase 2 launches in September 2024.
+    button:
+      text: Meet the Phase 1 Winners
+      src: /assets/files/statventures-geolocation-phase1-winners.pdf
+      isExternal: false
+      isDownload: true
 
   - active-challenge-two:
     class: active-challenge-two
