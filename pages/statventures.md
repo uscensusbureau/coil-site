@@ -12,7 +12,7 @@ font:
 # names are based on class names in layout
 banner:
   text: "Meet the Phase 1 Winners of the Address Geolocation Challenge"
-  href: assets/files/statventures-geolocation-phase1-winners.pdf
+  href: /assets/files/statventures-geolocation-phase1-winners.pdf
   isExternal: false
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
