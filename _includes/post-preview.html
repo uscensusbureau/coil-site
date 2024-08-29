@@ -12,7 +12,12 @@
                         </div>
                         {% endif %}
                         <div class="individual-post-content">
-                            <h3 class="post-project">{{post.project}}</h3>
+                            <h3 class="post-project margin-0">
+                                <a href="
+                                {{ site.baseurl }}/tag/{{ post.tag | slugify }}/" class="usa-label text-white post-project-{{post.tag | slugify}}">
+                                {{ post.tag }}
+                            </a>
+                            </h3>
                             <h2 class="post-title">
                                 <a href="{{post.url | prepend: site.baseurl/}}">{{ post.title}}</a>
                             </h2>
