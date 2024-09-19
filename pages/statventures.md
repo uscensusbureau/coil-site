@@ -73,7 +73,7 @@ active-challenges:
     banner: Address Geolocation Challenge
     phase-status: PHASE 2 NOW LIVE
     challenge-name: Address Geolocation Challenge
-    details: The [Address Geolocation Challenge](https://www.challenge.gov/?challenge=statventures-geo-phase1) seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
+    details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
       We are currently in Phase 2 of this multi-phase competition. [Meet the winners of Phase 1](https://www.challenge.gov/?challenge=statventures-geo-phase1&tab=winners).<br><br>
 
