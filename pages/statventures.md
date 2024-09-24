@@ -11,9 +11,9 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: "Meet the Phase 1 Winners of the Address Geolocation Challenge"
-  href: /assets/files/statventures-geolocation-phase1-winners.pdf
-  isExternal: false
+  text: "Check Out Phase 2 of the Address Geolocation Challenge"
+  href: https://www.challenge.gov/?challenge=statventures-geo-phase2
+  isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
@@ -71,16 +71,18 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
     img-alt: phase clock
     banner: Address Geolocation Challenge
-    phase-status: PHASE ONE WINNERS ANNOUNCED
+    phase-status: PHASE 2 NOW LIVE
     challenge-name: Address Geolocation Challenge
-    details: The [Address Geolocation Challenge](https://www.challenge.gov/?challenge=statventures-geo-phase1) seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
+    details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
-      [Phase 1](https://www.challenge.gov/?challenge=statventures-geo-phase1) winners have been announced. [Subscribe](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) to be notified when Phase 2 launches in September 2024.
+      We are currently in Phase 2 of this multi-phase competition. [Meet the winners of Phase 1](https://www.challenge.gov/?challenge=statventures-geo-phase1&tab=winners).<br><br>
+
+      [Submit a roadmap](https://www.challenge.gov/?challenge=statventures-geo-phase2) between November 4 and December 13, 2024. Compete for a total of up to $250,000, divided across up to 6 prizes. [Join an information session](https://www.census.gov/data/academy/webinars/2024/statventures-address-geolocation-challenge-phase-2.html) to learn more.
     button:
-      text: Meet the Phase 1 Winners
-      src: /assets/files/statventures-geolocation-phase1-winners.pdf
-      isExternal: false
-      isDownload: true
+      text: Check Out Phase 2
+      src: https://www.challenge.gov/?challenge=statventures-geo-phase2
+      isExternal: true
+      isDownload: false
 
   - active-challenge-two:
     class: active-challenge-two
@@ -88,7 +90,7 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-supply-chain-blue-clock.png
     img-alt: phase clock
     banner: Supply Chain Challenge
-    phase-status: PHASE TWO WINNERS ANNOUNCED
+    phase-status: PHASE 2 WINNERS ANNOUNCED
     challenge-name: Supply Chain Challenge
     details: The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
 
@@ -107,7 +109,7 @@ phase-text:
   - phase-2:
     title: "Phase 2: Roadmap"
     id: "m-a3"
-    text: "Iterate on your concept note from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will receive awards and be invited to join the Phase 3 cohort. Missed Phase 1? Don’t worry, new “walk-on” teams have the opportunity to join in Phase 2."
+    text: "Iterate on your concept note from Phase 1, with insight and feedback from Census Bureau experts. Teams are challenged to develop a clear implementation roadmap and articulate a value proposition. Finalists with the most promising roadmaps will receive awards and may have the opportunity to advance to Phase 3. Missed Phase 1? Don’t worry, new “walk-on” teams have the opportunity to join in Phase 2."
   - phase-3:
     title: "Phase 3: Test"
     id: "m-a4"
