@@ -77,7 +77,7 @@ active-challenges:
 
       We are currently in Phase 2 of this multi-phase competition. [Meet the winners of Phase 1](https://www.challenge.gov/?challenge=statventures-geo-phase1&tab=winners).<br><br>
 
-      [Submit a roadmap](https://www.challenge.gov/?challenge=statventures-geo-phase2) between November 4 and December 13, 2024. Compete for a total of up to $250,000, divided across up to 6 prizes. [Join an information session]([https://www.census.gov/data/academy/webinars/2024/statventures-address-geolocation-challenge-phase-2.html](https://www.census.gov/data/academy/webinars/2024/statventures-address-geolocation-challenge-phase-2.html)) to learn more.
+      [Submit a roadmap](https://www.challenge.gov/?challenge=statventures-geo-phase2) between November 4 and December 13, 2024. Compete for a total of up to $250,000, divided across up to 6 prizes. [Join an information session](https://www.census.gov/data/academy/webinars/2024/statventures-address-geolocation-challenge-phase-2.html) to learn more.
     button:
       text: Check Out Phase 2
       src: https://www.challenge.gov/?challenge=statventures-geo-phase2
