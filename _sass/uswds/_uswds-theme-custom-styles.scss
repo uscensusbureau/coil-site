@@ -2507,6 +2507,11 @@ header.box-shadow-header {
     }
   }
 
+  figure figcaption {
+   font-style: italic;
+   text-align: center;
+ }
+
   .post-preview-container {
     list-style-type: none;
     padding:0;
@@ -2884,7 +2889,11 @@ header.box-shadow-header {
 
 }
 
-
+ .blog article.statventures-brand {
+  div.text-wrap-container {
+    flex-basis: fit-content;
+  }
+ }
   // animation
   // animation
   // https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/
