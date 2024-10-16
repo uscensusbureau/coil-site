@@ -32,9 +32,18 @@ Next, after aligning on StatVentures’ audiences and key messages, we gathered 
 
 We had a few parameters for the brand system. Firstly, StatVentures needs to fit neatly into the COIL brand with clear association to the COIL design system, including typography, color palette, and wordmark.
 
-<figure>
-    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/2024-11-01/svblog_image1.jpg"
-         alt="test"
+<figure class="desktop:display-none">
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image1_1.jpg"
+         alt="COIL brand system materials"
+         >
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image1_2.jpg"
+         alt="COIL brand system materials"
+         >
+    <figcaption>The COIL brand system is an extension of the <a href="https://www.census.gov/about/policies/style-guide.html">Census Bureau brand system</a> – including adaptations of its corporate color palette for print and web products.</figcaption>
+</figure>
+<figure class="display-none desktop:display-block">
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image1.jpg"
+         alt="COIL brand system materials"
          >
     <figcaption>The COIL brand system is an extension of the <a href="https://www.census.gov/about/policies/style-guide.html">Census Bureau brand system</a> – including adaptations of its corporate color palette for print and web products.</figcaption>
 </figure>
@@ -54,8 +63,8 @@ The Census Bureau is rich with inspirational individuals, accomplishments, and i
 
 <div class="display-flex wrap-container">
 <figure class="image-wrap-container">
-<img src="{{site.baseurl}}/assets/img/blog/in-post-image/2024-11-01/svblog_image2.jpg"
-alt="test"
+<img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image2.jpg"
+alt="U.S. Census Bureau staff using Hollerith electrical tabulator"
 class="imgage-wrap"
 >
 <figcaption> <a href="https://www.loc.gov/item/2007678038/">Image</a></figcaption>
@@ -81,9 +90,16 @@ We aimed to honor the Census Bureau’s past achievements while ensuring the bra
 ## Step 4: Solicit Feedback, Iterate, Repeat
 Inspired by Census Bureau technological innovation and machinery, we next embarked on designing a first draft of the brand system. To ensure we were on the right path and meeting our core objectives, we solicited feedback from senior leadership. We employed an “I Like, I Wish, I Wonder” critique format in which participants noted what they liked about the design, what they wished to see, and what they wondered we could try.
 
-<figure>
-    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/2024-11-01/svblog_image3.png"
-         alt="test">
+<figure class="desktop:display-none">
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image3_1.jpg"
+         alt="Draft of StatVentures' brand system">
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image3_2.jpg"
+         alt="Draft of StatVentures' brand system">
+    <figcaption>The first draft of the StatVentures’ brand system, which was refined after a feedback session with the program’s senior leadership.</figcaption>
+</figure>
+<figure class="display-none desktop:display-block">
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image3.png"
+         alt="Draft of StatVentures' brand system">
     <figcaption>The first draft of the StatVentures’ brand system, which was refined after a feedback session with the program’s senior leadership.</figcaption>
 </figure>
 
@@ -95,8 +111,8 @@ As we considered our target audiences of tech innovators and statistically-minde
 Take a closer look at [archival images of Hollerith’s invention](https://www.si.edu/object/hollerith-tabulating-machine%3Anmah_694410) to see many references to its intricate mechanics in StatVentures’ final brand system. You’ll see our homage to the machine’s tabulator dials in the StatVentures logo letter “A”, in the pattern iconography splashed across our digital assets (and this blog post’s header), and in the markers indicating the three phases of every StatVentures challenge.
 
 <figure>
-    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/2024-11-01/svblog_image4.png"
-         alt="test"
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image4.png"
+         alt="A close up of the Hollerith machine, the “A” in the StatVentures logo, and the Phase 2 “clock” icongraphy"
          >
     <figcaption class="text-wrap"> A close up of the <a href="https://www.loc.gov/item/2007678038/">Hollerith machine</a>, the “A” in the StatVentures logo, and the Phase 2 “clock”.</figcaption>
 </figure>
@@ -105,11 +121,9 @@ We’ve also manipulated and [incorporated](https://coil.census.gov/statventures
 
 
 
-[Caption] A before and after example of an altered historic [image](https://www.nist.gov/timeline#event-774351) used in StatVentures materials.
-
 <figure>
-    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/2024-11-01/svblog_image5.jpg"
-         alt="test"
+    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image5.jpg"
+         alt="A before and after example of an altered historic image used in StatVentures materials."
          >
     <figcaption class="text-wrap"> A before and after example of an altered historic <a href="https://www.nist.gov/timeline#event-774351">image</a> used in StatVentures materials.</figcaption>
 </figure>
