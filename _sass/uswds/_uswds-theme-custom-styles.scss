@@ -2890,6 +2890,13 @@ header.box-shadow-header {
 }
 
  .blog article.statventures-brand {
+  div.wrap-container {
+    flex-direction: column;
+
+    @include at-media('desktop') {
+      flex-direction: row;
+    }
+  }
   div.text-wrap-container {
     flex-basis: fit-content;
   }
