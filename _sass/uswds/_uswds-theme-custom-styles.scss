@@ -2507,10 +2507,16 @@ header.box-shadow-header {
     }
   }
 
-  figure figcaption {
-   font-style: italic;
-   text-align: center;
- }
+  figure {
+    text-align: center;
+    img {
+      max-height: 640px;
+    }
+    figcaption {
+    font-style: italic;
+    text-align: center;
+    }
+  }
 
   .post-preview-container {
     list-style-type: none;
