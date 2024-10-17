@@ -1,13 +1,13 @@
 ---
 layout: blog-post
 date: 2024-10-01
-title: How We Built a Brand System for StatVentures, the Census Bureau’s First Venture Fund
+title: How We Built a Brand System for StatVentures, the U.S. Census Bureau’s First Venture Fund
 permalink: /statventures-brand/
 project: StatVentures
 tag: StatVentures
 authors:
     - Alessandra Hartkopf, Senior Designer & Digital Team Lead
-excerpt: "A behind the scenes look at COIL’s newest brand that nods to 19th-century technology with a 21st-century approach."
+excerpt: "A behind-the-scenes look at COIL’s newest brand that nods to 19th-century technology with a 21st-century approach."
 src: /assets/img/blog/features/statventures-brand.png
 ---
 In 2022, [COIL](https://coil.census.gov/) launched [StatVentures](https://coil.census.gov/statventures/), a first-ever venture fund for the Census Bureau. The program took years of careful planning and research, but one of the things we get the most questions about is the branding. Read on for a step-by-step, behind-the-scenes look at how we developed the visual design for StatVentures that brought the “sizzle” to the program operation’s “steak”.
