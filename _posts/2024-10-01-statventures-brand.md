@@ -58,7 +58,7 @@ Our brainstorms led us to a shared vision for the StatVentures brand: a nod to t
 
 
 ## Step 3: Find Inspiration at Your Agency
-The Census Bureau is rich with inspirational individuals, accomplishments, and innovations from which to draw. To inform the StatVentures brand, we narrowed in on the Census Bureau’s [long history of technology innovation](https://www.census.gov/history/www/innovations/technology/).
+The Census Bureau is rich with inspirational individuals, accomplishments, and innovations from which to draw. To inform the StatVentures brand, we narrowed in on the Census Bureau’s [long history of technology innovation](https://www.census.gov/about/history/bureau-history/census-innovations.html).
 
 
 <div class="display-flex wrap-container">
@@ -74,7 +74,7 @@ class="imgage-wrap"
 As far back as the late 1800s, the Census Bureau posed challenges to the American people to identify more efficient methods to process unprecedented data. After the 1890 Decennial Census, Herman Hollerith, a former Census Bureau employee, answered the call with his electro-mechanical tabulating machine.
 </p>
 <p>
-<a href="https://www.census.gov/history/www/innovations/technology/the_hollerith_tabulator.html">The Hollerith Machine</a> revolutionized the bureau’s data processing* and some 133 years later, served as the brand inspiration for StatVentures, the Census Bureau’s newest challenge to the American people.
+<a href="https://www.census.gov/library/photos/1880/herman-hollerith.html">The Hollerith Machine</a> revolutionized the bureau’s data processing* and some 133 years later, served as the brand inspiration for StatVentures, the Census Bureau’s newest challenge to the American people.
 </p>
 
 <p>
@@ -85,6 +85,7 @@ Honoring history when designing a brand for government initiatives conveys a few
 
 We aimed to honor the Census Bureau’s past achievements while ensuring the brand reflects StatVentures’ core traits and goals. By blending history with modern design, we convey a sense of progress and innovation in this century while maintaining a strong foundation rooted in past centuries.
 
+_*Side note: While we took inspiration from the Hollerith Machine’s mechanics and innovations, that machine transformed data processing methods within the bureau, rather than the innovations in data_ collection _that_ *we currently seek* _at StatVentures._
 
 
 ## Step 4: Solicit Feedback, Iterate, Repeat
@@ -117,7 +118,7 @@ Take a closer look at [archival images of Hollerith’s invention](https://www.s
     <figcaption class="text-wrap"> A close up of the <a href="https://www.loc.gov/item/2007678038/">Hollerith machine</a>, the “A” in the StatVentures logo, and the Phase 2 “clock”.</figcaption>
 </figure>
 
-We’ve also manipulated and [incorporated](https://coil.census.gov/statventures/) historic images of Census tabulators at work on the next iterations of Census Bureau machines – the [UNIVAC](https://www.census.gov/history/www/innovations/technology/univac_i.html) and [FOSDIC](https://www.census.gov/history/www/innovations/technology/fosdic.html) – that harken back to the bureau’s past but add a futuristic texture that evokes data points.
+We’ve also manipulated and [incorporated](https://coil.census.gov/statventures/) historic images of Census tabulators at work on the next iterations of Census Bureau machines – the [UNIVAC](https://www.census.gov/history/www/innovations/technology/univac_i.html) and [FOSDIC](https://www.census.gov/about/history/bureau-history/census-innovations/technology/fosdic.html) – that harken back to the bureau’s past but add a futuristic texture that evokes data points.
 
 
 

@@ -2507,10 +2507,16 @@ header.box-shadow-header {
     }
   }
 
-  figure figcaption {
-   font-style: italic;
-   text-align: center;
- }
+  figure {
+    text-align: center;
+    img {
+      max-height: 640px;
+    }
+    figcaption {
+    font-style: italic;
+    text-align: center;
+    }
+  }
 
   .post-preview-container {
     list-style-type: none;
@@ -2888,7 +2894,11 @@ header.box-shadow-header {
   }
 
 }
+.blog .post ul li {
+  padding-bottom: 16px;
+}
 
+// blog post styling
  .blog article.statventures-brand {
   div.wrap-container {
     flex-direction: column;
