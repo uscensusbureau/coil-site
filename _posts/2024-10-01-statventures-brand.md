@@ -85,20 +85,13 @@ Honoring history when designing a brand for government initiatives conveys a few
 
 We aimed to honor the Census Bureau’s past achievements while ensuring the brand reflects StatVentures’ core traits and goals. By blending history with modern design, we convey a sense of progress and innovation in this century while maintaining a strong foundation rooted in past centuries.
 
-_*Side note: While we took inspiration from the Hollerith Machine’s mechanics and innovations, that machine transformed data processing methods within the bureau, rather than the innovations in data_ collection _that_ *we currently seek* _at StatVentures._
+_*Side note: While we took inspiration from the Hollerith Machine’s mechanics and innovations, that machine transformed data_ processing _methods within the bureau, rather than the innovations in data_ collection _that_ *we currently seek* _at StatVentures._
 
 
 ## Step 4: Solicit Feedback, Iterate, Repeat
 Inspired by Census Bureau technological innovation and machinery, we next embarked on designing a first draft of the brand system. To ensure we were on the right path and meeting our core objectives, we solicited feedback from senior leadership. We employed an “I Like, I Wish, I Wonder” critique format in which participants noted what they liked about the design, what they wished to see, and what they wondered we could try.
 
-<figure class="desktop:display-none">
-    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image3_1.jpg"
-         alt="Draft of StatVentures' brand system">
-    <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image3_2.jpg"
-         alt="Draft of StatVentures' brand system">
-    <figcaption>The first draft of the StatVentures’ brand system, which was refined after a feedback session with the program’s senior leadership.</figcaption>
-</figure>
-<figure class="display-none desktop:display-block">
+<figure>
     <img src="{{site.baseurl}}/assets/img/blog/in-post-image/statventures-brand/svblog_image3.png"
          alt="Draft of StatVentures' brand system">
     <figcaption>The first draft of the StatVentures’ brand system, which was refined after a feedback session with the program’s senior leadership.</figcaption>
