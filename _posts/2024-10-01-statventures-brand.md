@@ -12,7 +12,7 @@ src: /assets/img/blog/features/statventures-brand.png
 ---
 In 2022, [COIL](https://coil.census.gov/) launched [StatVentures](https://coil.census.gov/statventures/), a first-ever venture fund for the Census Bureau. The program took years of careful planning and research, but one of the things we get the most questions about is the branding. Read on for a step-by-step, behind-the-scenes look at how we developed the visual design for StatVentures that brought the “sizzle” to the program operation’s “steak”.
 
-## Step One: Step Back
+## Step 1: Step Back
 Our first step in designing a brand system for any government program: step back and reflect on your audience and your goals.
 
 For every new effort, COIL’s digital team (which includes me, a UX researcher and designer, a graphic and interaction designer, and a front-end web developer) takes a measured approach. We first meet with [COIL’s leadership](https://coil.census.gov/about/) to understand our shared objectives and align on key messages. This conversation (or series of conversations) informs our guiding document: “The Creative Brief.”
@@ -129,11 +129,11 @@ We hope this blog post will serve as a starter guide on how to build a brand sys
 ## How You Can Use This Process in Your Work
 Here are some tangible steps to take back to your agency when designing a brand for government:
 
-- **Write a Creative Brief** -- including the project’s overview, deliverables, audiences, key messages, tone, timeline, and team roles -- and use it as a guide throughout the project.
+- **Write a Creative Brief** including the project’s overview, deliverables, audiences, key messages, tone, timeline, and team roles -- and use it as a guide throughout the project.
 - **Identify Your Initiative’s Target Audience(s).** People should be at the center of design, decision-making, problem solving, and participatory processes. Identify whom you most want your brand to reach and design materials that will entice and appeal to them.
 - **Find Visual Inspiration at Your Agency.** Look to your agency’s core values, accomplishments, and history for inspiration.
 - **Solicit Feedback.** Reach out to your senior leadership, program champions, and stakeholders for structured feedback on your ideas and first drafts. Use frameworks such as “I like, I wish, I wonder…” to help stakeholders provide useful, constructive feedback.
-- **If you can…Hire Design Talent!** Not to put the cart before the horse - don’t forget to source design talent! If you have the budget, hiring a visual designer onto your team is invaluable to building impactful materials that inspire your audiences to take action. Even if you don’t have a dedicated designer available to you, you can adopt most of these suggestions as a program designer!
+- **If you can…Hire Design Talent!** Not to put the cart before the horse – don’t forget to source design talent! If you have the budget, hiring a visual designer onto your team is invaluable to building impactful materials that inspire your audiences to take action. Even if you don’t have a dedicated designer available to you, you can adopt most of these suggestions as a program designer!
 
 
 ## More About StatVentures
