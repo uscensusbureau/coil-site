@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-date: 2024-10-01
+date: 2024-10-23
 title: How We Built a Brand System for StatVentures, the U.S. Census Bureau’s First Venture Fund
 permalink: /statventures-brand/
 project: StatVentures
