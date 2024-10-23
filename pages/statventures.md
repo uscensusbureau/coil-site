@@ -11,7 +11,7 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: "Check Out Phase 2 of the Address Geolocation Challenge"
+  text: "Apply Now to Address Geolocation Challenge Phase 2"
   href: https://www.challenge.gov/?challenge=statventures-geo-phase2
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
@@ -71,7 +71,7 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
     img-alt: phase clock
     banner: Address Geolocation Challenge
-    phase-status: PHASE 2 NOW LIVE
+    phase-status: APPLY NOW TO PHASE 2
     challenge-name: Address Geolocation Challenge
     details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
@@ -79,7 +79,7 @@ active-challenges:
 
       [Submit a roadmap](https://www.challenge.gov/?challenge=statventures-geo-phase2) between November 4 and December 13, 2024. Compete for a total of up to $250,000, divided across up to 6 prizes.
     button:
-      text: Check Out Phase 2
+      text: Apply Now
       src: https://www.challenge.gov/?challenge=statventures-geo-phase2
       isExternal: true
       isDownload: false
