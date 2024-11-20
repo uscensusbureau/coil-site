@@ -2,7 +2,7 @@
 layout: blog-post
 date: 2024-11-20
 title: "Timely Conversations and Honest Realizations: How The Opportunity Project Fostered a Vital Collaboration with Indigenous Communities"
-permalink: /top-indigenous
+permalink: /top-indigenous/
 project: The Opportunity Project
 tag: The Opportunity Project
 authors:
