@@ -8,7 +8,7 @@ tag: The Opportunity Project
 authors:
     - Dominica Zhu-Pierre Louis
 excerpt: "The story behind The Opportunity Project Indigenous Communities-Focused Sprints."
-src: /assets/img/blog/features/desktop-coil-blog-expanded-post-image.png
+src: /assets/img/blog/features/top-indigenous.png
 ---
 In 2024, [The Opportunity Project](https://opportunity.census.gov/) (TOP) launched its first set of Indigenous-led product development [sprints](https://opportunity.census.gov/sprints/) focused on challenges facing American Indian, Alaska Natives, and Native Hawaiian communities across the nation.
 
