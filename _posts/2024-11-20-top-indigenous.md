@@ -4,7 +4,7 @@ date: 2024-11-20
 title: "Timely Conversations and Honest Realizations: How The Opportunity Project Fostered a Vital Collaboration with Indigenous Communities"
 permalink: /top-indigenous
 project: The Opportunity Project
-tag: Draft
+tag: The Opportunity Project
 authors:
     - Dominica Zhu-Pierre Louis
 excerpt: "The story behind The Opportunity Project Indigenous Communities-Focused Sprints."
