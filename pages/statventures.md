@@ -77,12 +77,6 @@ active-challenges:
 
       [Phase 2](https://www.challenge.gov/?challenge=statventures-geo-phase2) of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 2 winners, and opportunities to apply to Phase 3.
 
-    button:
-      text: Apply Now
-      src: https://www.challenge.gov/?challenge=statventures-geo-phase2
-      isExternal: true
-      isDownload: false
-
   - active-challenge-two:
     class: active-challenge-two
     mobile-img: /icons/statventures-mobile-supply-chain-blue-clock.png
