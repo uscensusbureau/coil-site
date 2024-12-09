@@ -2507,6 +2507,17 @@ header.box-shadow-header {
     }
   }
 
+  figure {
+    text-align: center;
+    img {
+      max-height: 530px;
+    }
+    figcaption {
+    font-style: italic;
+    text-align: center;
+    }
+  }
+
   .post-preview-container {
     list-style-type: none;
     padding:0;
@@ -2883,8 +2894,29 @@ header.box-shadow-header {
   }
 
 }
+.blog .post ul li {
+  padding-bottom: 16px;
+}
 
+// blog post styling
+ .blog article.statventures-brand {
+  div.wrap-container {
+    flex-direction: column;
 
+    @include at-media('desktop') {
+      flex-direction: row;
+    }
+  }
+  figure.image-wrap-container {
+    margin-bottom: 0;
+  }
+  div.text-wrap-container {
+    flex-basis: fit-content;
+    p:nth-child(3) {
+        margin-bottom: 0;
+      }
+  }
+ }
   // animation
   // animation
   // https://1stwebdesigner.com/10-cool-pure-css-scrolling-text-animations/

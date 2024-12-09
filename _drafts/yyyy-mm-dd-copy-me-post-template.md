@@ -4,6 +4,7 @@ date: 2023-01-01
 title: Post title
 permalink: /blog-url
 project: Draft
+tag: Draft
 authors:
     - COIL Team
 excerpt: "We are testing our blog posts. Hopefully this works."
