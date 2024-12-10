@@ -87,7 +87,7 @@ active-challenges:
     challenge-name: Supply Chain Challenge
     details: The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
 
-      [Phase 2](https://www.challenge.gov/?challenge=statventures-supply-chain-p2) winners have been announced. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for opportunities to apply to Phase 3 in 2024.
+      [Phase 2](https://www.challenge.gov/?challenge=statventures-supply-chain-p2) winners have been announced. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for opportunities to apply to Phase 3.
     button:
       text: Meet the Phase 2 Winners
       src: /assets/files/statventures-supply-chain-phase2-winners.pdf
