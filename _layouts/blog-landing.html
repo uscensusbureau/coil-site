@@ -12,9 +12,7 @@ class: blog
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 {% include coil-nav.html %}
 <main id="main-content">
-  {% if page.class == 'blog-landing' %}
-    {% include cr-header.html %}
-  {% endif %}
+  {% include cr-header.html %}
   {{ content }}
 </main>
 <div class="combined-footer">
