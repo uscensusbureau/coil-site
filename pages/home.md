@@ -47,8 +47,8 @@ coil-capabilities:
   - name: Design & User Research
   - name: Challenges, Tech Sprints, & Crowdsourcing
   - name: Strategic Cross-Sector Collaborations
-  - name: Policy Innovation
-  - name: Facilitation
+  - name: Promoting Government Efficiency
+  - name: Event Design
 ---
 
 If you’re interested in participating in TOP, please [fill out this interest form]({{ site.top-form }}).
