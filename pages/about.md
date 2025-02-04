@@ -23,7 +23,7 @@ coil-capabilities:
       Strategic Cross-Sector Collaborations
     blurb: We develop high-ROI avenues to partner with all levels of government, industry, academia, communities, and civil society. We can help you reach outside your usual stakeholder network and implement more valuable ways to engage your audience.
   - name: |-
-      Promoting Government Efficiency<br><br>
+      Promoting Government Efficiency<br>
     blurb: We prototype repeatable and scalable innovations – such as processes, use of high value legal authorities, and hiring strategies – at the Census Bureau and can help you determine how to leverage them in your work.
   - name: |-
       Event Design<br><br>
