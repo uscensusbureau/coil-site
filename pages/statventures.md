@@ -78,7 +78,7 @@ active-challenges:
       [Phase 2](https://www.challenge.gov/?challenge=statventures-geo-phase2) of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 2 winners, and opportunities to apply to Phase 3.
     button:
       text: Meet the Phase 1 Winners
-      src: /assets/files/statventures-supply-chain-phase1-winners.pdf
+      src: /assets/files/statventures-geolocation-phase1-winners.pdf
       isExternal: false
       isDownload: true
 
