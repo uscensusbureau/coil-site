@@ -7,8 +7,8 @@ class: coil
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
 banner:
-  text: "Missed Census Open Innovation Summit 2024? Watch the recordings on YouTube!"
-  href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme
+  text: "Website will be unavailable due to planned outage."
+  href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme 
   isExternal: true
 
 hero:
