@@ -7,8 +7,8 @@ class: coil
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
 banner:
-  text: "Due to a lapse in federal funding, this website is not being updated."
-  href: https://www.commerce.gov/news/blog
+  text: "Missed Census Open Innovation Summit 2024? Watch the recordings on YouTube!"
+  href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme
   isExternal: true
 
 hero:
@@ -29,12 +29,12 @@ project-card-group:
     alt: StatVentures Logo
     blurb: The future of Census Bureau data.
     internal-link: statventures/
-  - name: Data Usability & Equity
+  - name: Data Usability
     class: data-usability
     image: ../assets/img/projects/mobile_homepage_data_usability_card.png
     alt: Photo of people gathered around a laptop
     blurb: Improving access to data resources.
-    internal-link: portfolio#program-data-usability-equity
+    internal-link: portfolio#program-data-usability
   - name: The Opportunity Project
     class: top
     image: ../assets/img/logos/top-full-white-logo.png
@@ -47,8 +47,8 @@ coil-capabilities:
   - name: Design & User Research
   - name: Challenges, Tech Sprints, & Crowdsourcing
   - name: Strategic Cross-Sector Collaborations
-  - name: Policy Innovation
-  - name: Facilitation
+  - name: Promoting Government Efficiency
+  - name: Event Design
 ---
 
 If you’re interested in participating in TOP, please [fill out this interest form]({{ site.top-form }}).

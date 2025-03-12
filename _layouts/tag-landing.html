@@ -1,0 +1,46 @@
+---
+layout: blog-landing
+autopages:
+    enabled: true
+pagination:
+  enabled: true
+
+---
+
+<!-- 18F -->
+<section class="grid-container">
+{{ content }}
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor
+%}{% endcapture %}
+<!-- {% assign tag_words = site_tags | split:',' | sort %} -->
+<div class="grid-row flex-justify-start padding-x-6 tablet:padding-x-0">
+{% for tag in tag_words %}
+
+{% capture count %}
+
+{% for tag_number in site.tags %}
+
+{% if tag_number[0] == tag %}
+
+{{tag_number[1] | size }}
+
+
+{% endif %}
+
+{% endfor %}
+
+{% endcapture %}
+
+    <a href="{{ site.baseurl }}/tag/{{tag | slugify }}/" class="coil-btn text-white project-tag">{{tag}} ({{count | strip}})
+    </a>
+
+
+
+<!-- <p> {{ tag | size }} </p> -->
+
+
+
+{% endfor %}
+</div>
+</section>
