@@ -2,7 +2,7 @@
 layout: blog-landing
 ---
 
-<article class="grid-container">
+<article class="post grid-container {{ page.permalink | slugify }}">
     <header class="blog-post-header display-flex flex-column">
         <div class="post-img-container">
             <img class="post-img" src="{{site.baseurl}}{{page.src}}" alt="">
