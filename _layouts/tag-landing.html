@@ -14,7 +14,7 @@ pagination:
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor
 %}{% endcapture %}
 <!-- {% assign tag_words = site_tags | split:',' | sort %} -->
-<div class="grid-row">
+<div class="grid-row flex-justify-start padding-x-6 tablet:padding-x-0">
 {% for tag in tag_words %}
 
 {% capture count %}
@@ -32,7 +32,7 @@ pagination:
 
 {% endcapture %}
 
-    <a href="{{ site.baseurl }}/project/{{tag | slugify }}/" class="coil-btn text-white project-tag">{{tag}} ({{count | strip}})
+    <a href="{{ site.baseurl }}/tag/{{tag | slugify }}/" class="coil-btn text-white project-tag">{{tag}} ({{count | strip}})
     </a>
 
 
