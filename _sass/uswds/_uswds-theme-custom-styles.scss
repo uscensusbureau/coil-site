@@ -190,7 +190,7 @@ p {
   @include u-border-bottom('2px', 'white');
   @include u-padding-y(2);
 }
-#coil-navbar-container {
+#coil-navbar-container, #coil-navbar-container-desktop {
   align-items: center;
 
   .usa-menu-btn {

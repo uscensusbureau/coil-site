@@ -1,22 +1,5 @@
-<!-- directly under happening now section -->
-
-{% assign data = include.data %}
-{% assign hasTags = data.tags %}
-<div class="coil-project-lg display-none" id="{{ data.title | slugify }}">
-  <div class="project-content">
-    {% include image.html src=data.img.src alt=data.img.alt %}
-    <div class="project-texts">
-      {% include project-large-text.html data=data %}
-
-      {% if data.subproject %}
-        {% include project-large-text.html data=data.subproject isSubproject=true %}
-      {% endif %}
-    </div>
-  </div>
-</div>
-
-<ul class="featured-projects-list grid-row display-none desktop:display-flex">
-  <li class="featured-projects-item highlight-project project-item-statventures">
+<ul id="featured-projects-list" class="featured-projects-list grid-row display-none desktop:display-flex">
+  <li id="project-item-statventures" class="featured-projects-item highlight-project project-item-statventures">
     <a href="{{site.baseurl}}/statventures/" target="_blank" class="text-no-underline">
       <div>
         <p class="blurb">The future of Census&nbsp;Bureau data.</p>
@@ -25,7 +8,7 @@
       </div>
     </a>
   </li>
-  <li class="featured-projects-item grid-col project-item-data-usability">
+  <li id="project-item-data-usability" class="featured-projects-item grid-col project-item-data-usability">
     <a href="{{site.baseurl}}/portfolio#program-data-usability" target="_blank" class="text-no-underline">
     <div>
       <p class="blurb">Improving access to data resources.</p>
@@ -33,7 +16,7 @@
     </div>
   </a>
   </li>
-  <li class="featured-projects-item grid-col project-item-top">
+  <li id="project-item-top" class="featured-projects-item grid-col project-item-top">
     <a href="https://opportunity.census.gov/" target="_blank" class="text-no-underline">
     <div>
         <p class="blurb">Digital tools for the public good.</p>

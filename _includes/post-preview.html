@@ -4,7 +4,7 @@
     <ul class="post-preview-container">
         {% if posts %}
             {% for post in posts %}
-                <li class="individual-post-item">
+                <li class="individual-post-item" id="{{post.title | slugify}}">
                     <article class="individual-post-preview">
                         {%if post.src %}
                         <div class="individual-post-img-container">

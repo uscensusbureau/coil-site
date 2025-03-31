@@ -15,10 +15,10 @@ class: home
   </div>
 </header>
 
-<main id="main-content">
+<main id="main-content" data-testId="main-content">
 
 
-  <section id="our-work-section">
+  <section id="our-work-section" data-testId="our-work-section">
     <!-- projects section -->
     {% include coil-project-large.html %}
     <section class="our-work-blurb">
@@ -26,11 +26,12 @@ class: home
       <p>Census Open Innovation Labs (COIL) is an office at the U.S. Census Bureau, with a portfolio of award-winning projects that continue to raise the bar for open innovation across government.</p>
     </section>
 
-    <section class="margin-top-2 margin-bottom-5 desktop:display-none">
+
+    <section id="project-card-group" class="margin-top-2 margin-bottom-5 desktop:display-none">
       {% include card-group.html %}
     </section>
   </section>
-  <section class="our-values">
+  <section id="our-values" class="our-values">
     <div class="our-values-circle">
       <div class="outer-circle">
               <ul>
