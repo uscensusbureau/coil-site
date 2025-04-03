@@ -8,7 +8,13 @@ class: home
   <div class="grid-col-fill height-full display-flex desktop:flex-column flex-wrap">
     <!-- add nav include here -->
     {% include coil-nav.html %}
-    <p class="">Trailblazing open government through cross-sector collaboration, design, and technology.</p>
+    <p class="desktop:display-none">
+      Trailblazing open government through cross-sector collaboration, design, and technology.
+    </p>
+    <p class="display-none desktop:display-inline">
+      <span class="text-uppercase display-inline-block">Census Open Innovation Labs</span><br/>
+      Trailblazing open government through<br/>cross-sector collaboration, design, and technology.
+    </p>
   </div>
 </header>
 
