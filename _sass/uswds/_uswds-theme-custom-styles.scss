@@ -19,7 +19,6 @@ body {
 
 footer {
   flex-grow: 1;
-  // background-image:url(/assets/img/icons/wave-ball-footer.png);
   background-repeat: no-repeat;
   // background-position-y: bottom;
   // background-color: color('indigo-cool-90');
@@ -29,7 +28,7 @@ footer {
 }
 
 .footer-info {
-  background-image: url(/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
+  background-image: url(/coil-site/assets/img/textures/mobile-yellow-ball-wave-footer-graphic.png);
   background-repeat: no-repeat;
   background-size: cover;
   @include at-media('desktop') {
@@ -66,7 +65,7 @@ footer {
 
 .combined-footer {
   @include at-media('desktop') {
-      background-image: url(/assets/img/textures/footer_background.png);
+      background-image: url(/coil-site/assets/img/textures/footer_background.png);
 
     }
 }
@@ -274,7 +273,7 @@ header.box-shadow-header {
 .coil-hero {
   @include u-margin-top(0);
   padding: 0 32px;
-  background: url(/assets/img/textures/mobile_homepage_static_background.png);
+  background: url(/coil-site/assets/img/textures/mobile_homepage_static_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -296,7 +295,7 @@ header.box-shadow-header {
   }
 
   @include at-media('tablet') {
-    background-image: url(/assets/img/textures/desktop_landing_static_murmation_full.png);
+    background-image: url(/coil-site/assets/img/textures/desktop_landing_static_murmation_full.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -377,7 +376,7 @@ header.box-shadow-header {
 
   .project-item-statventures {
     background: color('blue-warm-60v');
-    background-image: url(/assets/img/textures/statventures_placard_graphic.png);
+    background-image: url(/coil-site/assets/img/textures/statventures_placard_graphic.png);
       background-repeat: no-repeat;
       background-size: cover;
     padding: 32px;
@@ -400,7 +399,7 @@ header.box-shadow-header {
 
   .project-item-data-usability {
     background: green;
-    background-image: url(/assets/img/projects/desktop_homepage_data_usability_graphic.png);
+    background-image: url(/coil-site/assets/img/projects/desktop_homepage_data_usability_graphic.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px;
@@ -415,7 +414,7 @@ header.box-shadow-header {
 
   .project-item-top {
     background: color('red-warm-50v');
-    background-image: url(/assets/img/textures/TOP_placard_pattern.png);
+    background-image: url(/coil-site/assets/img/textures/TOP_placard_pattern.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px;
@@ -522,7 +521,7 @@ header.box-shadow-header {
     .our-work-blurb {
       align-items: baseline;
       gap: 32px;
-      background-image: url(/assets/img/icons/wave-ball-right.png);
+      background-image: url(/coil-site/assets/img/icons/wave-ball-right.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 0% 80%;
@@ -748,7 +747,7 @@ header.box-shadow-header {
 
 
       .our-values-circle {
-          background-image: url(/assets/img/textures/animation-pulse.gif);
+          background-image: url(/coil-site/assets/img/textures/animation-pulse.gif);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -823,7 +822,7 @@ header.box-shadow-header {
         }
         ul li.list-style-image-v1{
           &::after{
-            content: url(/assets/img/icons/creative-solutions.svg);
+            content: url(/coil-site/assets/img/icons/creative-solutions.svg);
             position: relative;
             bottom: -40px;
             right: 380px;
@@ -837,7 +836,7 @@ header.box-shadow-header {
         }
         ul li.list-style-image-v2{
           &::after {
-            content: url(/assets/img/icons/design-and-user-research_line.svg);
+            content: url(/coil-site/assets/img/icons/design-and-user-research_line.svg);
             position: relative;
             right: 363px;
             top: 110px;
@@ -849,7 +848,7 @@ header.box-shadow-header {
         }
         ul li.list-style-image-v3 {
           &::after{
-            content: url(/assets/img/icons/challenges-line.svg);
+            content: url(/coil-site/assets/img/icons/challenges-line.svg);
             position: relative;
             right: 434px;
             top: 160px;
@@ -864,7 +863,7 @@ header.box-shadow-header {
 
         ul li.list-style-image-v4 {
           &::before{
-            content: url(/assets/img/icons/strategic-cross-sector-collab_line.svg);
+            content: url(/coil-site/assets/img/icons/strategic-cross-sector-collab_line.svg);
             position: relative;
             bottom: -70px;
             left: 344px;
@@ -878,7 +877,7 @@ header.box-shadow-header {
         }
         ul li.list-style-image-v5 {
           &::before{
-            content: url(/assets/img/icons/policy-innovation.svg);
+            content: url(/coil-site/assets/img/icons/policy-innovation.svg);
             position: relative;
             left: 360px;
             bottom: 80px;
@@ -892,7 +891,7 @@ header.box-shadow-header {
         }
         ul li.list-style-image-v6 {
           &::before{
-            content: url(/assets/img/icons/facillitation-line.svg);
+            content: url(/coil-site/assets/img/icons/facillitation-line.svg);
             position: relative;
             bottom: 300px;
             left: 280px;
@@ -995,7 +994,7 @@ header.box-shadow-header {
   }
 
   #capabilities {
-    background-image: url(/assets/img/textures/about_our_capabilities_background.png);
+    background-image: url(/coil-site/assets/img/textures/about_our_capabilities_background.png);
     background-size: contain;
     ul {
       @include grid-gap;
@@ -1044,7 +1043,7 @@ header.box-shadow-header {
   }
   #coil-team {
     background: color('indigo-cool-90');
-      background-image: url(/assets/img/textures/desktop_our_capabilities_static_murmation.png);
+      background-image: url(/coil-site/assets/img/textures/desktop_our_capabilities_static_murmation.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 50%;
@@ -1095,7 +1094,7 @@ header.box-shadow-header {
 
   .cr-header {
     // background-color: #f7f9fa;
-    background-image: url(/assets/img/textures/mobile-portfolio-splash-graphic.png);
+    background-image: url(/coil-site/assets/img/textures/mobile-portfolio-splash-graphic.png);
     background-size: cover;
     background-repeat: no-repeat;
     // background-attachment: fixed;
@@ -1113,7 +1112,7 @@ header.box-shadow-header {
       font-size: 1rem;
     }
     @include at-media('tablet') {
-      background-image: url(/assets/img/textures/desktop-portfolio-splash-graphic.png);
+      background-image: url(/coil-site/assets/img/textures/desktop-portfolio-splash-graphic.png);
       background-color: unset;
       padding-top: 64px;
       padding-left: 40px;
@@ -1128,7 +1127,7 @@ header.box-shadow-header {
       }
       }
     @include at-media('desktop') {
-      background-image: url(/assets/img/textures/portfolio-splash-animation.gif);
+      background-image: url(/coil-site/assets/img/textures/portfolio-splash-animation.gif);
       padding-top: 104px;
       padding-left: 48px;
       h1 {
@@ -1561,7 +1560,7 @@ header.box-shadow-header {
 
         & figure {
           width: 50%;
-          // background-image: url(/assets/img/statventures/photos/data-processor-img.png);
+          // background-image: url(/coil-site/assets/img/statventures/photos/data-processor-img.png);
           background-position: right bottom;
           background-blend-mode: soft-light;
           // background-color: color('indigo-cool-90');
@@ -1789,7 +1788,7 @@ header.box-shadow-header {
           padding: 56px 3rem;
           height: 100%;
           @include at-media('desktop') {
-            background-image: url(/assets/img/statventures/textures/desktop-phase-one-winners-graphic.png);
+            background-image: url(/coil-site/assets/img/statventures/textures/desktop-phase-one-winners-graphic.png);
             background-position-y: bottom -150px;
             background-position-x: right -170px;
             background-repeat: no-repeat;
@@ -1916,7 +1915,7 @@ header.box-shadow-header {
       }
 
       &.challenge-intro--static-content {
-        background: color('indigo-cool-90') url(/assets/img/statventures/textures/grid-bg-texture.png);
+        background: color('indigo-cool-90') url(/coil-site/assets/img/statventures/textures/grid-bg-texture.png);
         background-size: contain;
         color: color('gray-cool-2');
         // min-height: 80vh;
@@ -2445,11 +2444,11 @@ header.box-shadow-header {
   color: color('gray-cool-2');
 
   .cr-header {
-    background:url(/assets/img/blog/icons/blog_hero_graphic.png);
+    background:url(/coil-site/assets/img/blog/icons/blog_hero_graphic.png);
     background-repeat: no-repeat;
     @include at-media('tablet') {
       background-position: 200px;
-      background: url(/assets/img/blog/icons/blog_hero_graphic.png),
+      background: url(/coil-site/assets/img/blog/icons/blog_hero_graphic.png),
         linear-gradient(180deg, rgba(21, 22, 34, 1) 0%, rgba(0, 80, 216, .26) 74%, rgba(0, 80, 216, 0) 100%);
         background-repeat: no-repeat;
         background-position-x: 80%;
@@ -2941,7 +2940,7 @@ header.box-shadow-header {
   .usa-menu.btn {
     background: yellow;
     &::before{
-      content: url(/assets/img/icons/hamburger-menu.png);
+      content: url(/coil-site/assets/img/icons/hamburger-menu.png);
     }
   }
 
