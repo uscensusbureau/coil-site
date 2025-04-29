@@ -1094,7 +1094,7 @@ header.box-shadow-header {
 
   .cr-header {
     // background-color: #f7f9fa;
-    background-image: url(/coil-site/assets/img/textures/mobile-portfolio-splash-graphic.png);
+    background-image: url('/assets/img/textures/mobile-portfolio-splash-graphic.png');
     background-size: cover;
     background-repeat: no-repeat;
     // background-attachment: fixed;
@@ -1112,7 +1112,7 @@ header.box-shadow-header {
       font-size: 1rem;
     }
     @include at-media('tablet') {
-      background-image: url(/coil-site/assets/img/textures/desktop-portfolio-splash-graphic.png);
+      background-image: url('/assets/img/textures/desktop-portfolio-splash-graphic.png');
       background-color: unset;
       padding-top: 64px;
       padding-left: 40px;
@@ -1127,7 +1127,7 @@ header.box-shadow-header {
       }
       }
     @include at-media('desktop') {
-      background-image: url(/coil-site/assets/img/textures/portfolio-splash-animation.gif);
+      background-image: url(/assets/img/textures/portfolio-splash-animation.gif);
       padding-top: 104px;
       padding-left: 48px;
       h1 {
