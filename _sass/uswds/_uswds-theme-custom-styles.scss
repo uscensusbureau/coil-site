@@ -1127,7 +1127,7 @@ header.box-shadow-header {
       }
       }
     @include at-media('desktop') {
-      background-image: url(/coil-site/assets/img/textures/portfolio-splash-animation.gif);
+      background-image: url('/coil-site/assets/img/textures/portfolio-splash-animation.gif');
       padding-top: 104px;
       padding-left: 48px;
       h1 {
