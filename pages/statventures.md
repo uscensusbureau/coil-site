@@ -11,7 +11,7 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: "Address Geolocation Phase 2 Applications Now Closed"
+  text: "Website will be unavailable due to planned outage."
   href: https://www.challenge.gov/?challenge=statventures-geo-phase2
   isExternal: true
 # new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
@@ -76,6 +76,11 @@ active-challenges:
     details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
       [Phase 2](https://www.challenge.gov/?challenge=statventures-geo-phase2) of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 2 winners, and opportunities to apply to Phase 3.
+    button:
+      text: Meet the Phase 1 Winners
+      src: /assets/files/statventures-geolocation-phase1-winners.pdf
+      isExternal: false
+      isDownload: true
 
   - active-challenge-two:
     class: active-challenge-two
