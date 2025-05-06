@@ -5,7 +5,6 @@ _site
 .env
 vendor
 node_modules
-assets/uswds
 assets/fonts/source-sans-pro
 assets/fonts/roboto-mono
 assets/fonts/merriweather
