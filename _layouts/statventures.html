@@ -50,7 +50,7 @@ class:
         <p class="subheading">StatVentures tests and funds cutting-edge technologies and ideas, while providing direct partnership and feedback from the Census Bureau to make government adoption of new approaches faster and easier.</p>
     </section>
     <figure class="desktop">
-        <img src='{{ site.baseurl }}/assets/img/statventures{{page.splash-secondary.img}}' alt="Population count machine displaying the current population of the US as 206751918 Source: Library of Congress">
+        <img src={{'/assets/img/statventures'| append: {{page.splash-secondary.img}} | relative_url}} alt="Population count machine displaying the current population of the US as 206751918 Source: Library of Congress">
         <figcaption>Image Source: Library of Congress</figcaption>
     </figure>
 </header>
@@ -70,14 +70,14 @@ class:
             <div class="{{challenge.class}} width-full">
                 <div class="active-challenge-details content-container">
                     <div class="active-challenge-img-container">
-                        <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.mobile-img}}" alt="{{challenge.img-alt}}" class="active-challenge-img">
+                        <img src="{{'/assets/img/statventures' | append: {{challenge.mobile-img}} | relative_url}}" alt="{{challenge.img-alt}}" class="active-challenge-img">
                     </div>
                     <div class="active-challenge-content width-full">
                         <h3 class="display-none">{{challenge.phase-status}}</h3>
                         <h2>{{challenge.challenge-name}}</h2>
                         <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" |replace: "SITE.BASEURL", site.baseurl }}</p>
                         {% if challenge.button %}
-                        <a class="statventures-btn" href="{% unless challenge.button.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}" target="_blank">
+                        <a class="statventures-btn" href="{% unless challenge.button.isExternal %}/{% endunless %}{{challenge.button.src}}" target="_blank">
                             {% if challenge.button.isDownload %}
                                 <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24" aria-hidden="true"
                                     class="width-205 margin-right-05">
@@ -141,7 +141,7 @@ class:
                     <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" }}</p>
                     {% if challenge.button %}
                         <a class="statventures-btn"
-                            href="{% unless challenge.button.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}"
+                            href="{% unless challenge.button.isExternal %}/{% endunless %}{{challenge.button.src}}"
                             target="_blank">
                             {% if challenge.button.isDownload %}
                             <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24" aria-hidden="true"
@@ -156,7 +156,7 @@ class:
                     {% endif %}
                 </div>
                 <div class="active-challenge-img-container">
-                    <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.desktop-img}}" alt="{{challenge.img-alt}}"  class="active-challenge-img">
+                    <img src="{{ '/assets/img/statventures'| append: {{challenge.desktop-img}} | relative_url}}" alt="{{challenge.img-alt}}"  class="active-challenge-img">
                 </div>
             </div>
         </div>
@@ -258,7 +258,7 @@ class:
     class="footer-section-bottom usa-media-block__footer grid-row display-flex flex-align-center padding-top-3 padding-bottom-6 tablet:padding-bottom-7 desktop:padding-y-4"
   >
     {% for link in site.data.navigation.footer %}
-      <a href="{% unless link.isExternal %}{{ site.baseurl }}/{% endunless %}{{ link.href }}"
+      <a href="{% unless link.isExternal %}/{% endunless %}{{ link.href }}"
         class="border-base-dark
           {% unless forloop.first %} border-left tablet:padding-left-2 {% endunless %}
           {% unless forloop.last %} tablet:padding-right-2 {% endunless %}

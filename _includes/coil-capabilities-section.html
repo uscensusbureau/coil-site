@@ -3,12 +3,12 @@
     <div class="grid-container">
         <!-- <div class="grid-col"> -->
         <h2 class="margin-top-0 margin-bottom-1 desktop:margin-y-7 tablet-h2">
-            <a href="{{site.baseurl}}/portfolio" class="text-white text-no-underline">Our Capabilities</a>
+            <a href="/portfolio" class="text-white text-no-underline">Our Capabilities</a>
         </h2>
         <div class="display-flex">
             {% if page.name == "about.md" %}
             <img class="display-none desktop:display-inline-block capabilities-icon margin-x-4"
-                src="{{site.baseurl}}/assets/img/icons/desktop_about_capabilities_line_feature.png" alt="">
+                src="{{'/assets/img/icons/desktop_about_capabilities_line_feature.png'| relative_url}}" alt="">
 
             {% endif %}
             <ul class="usa-list usa-list--unstyled display-flex flex-row flex-wrap capabilities-list">

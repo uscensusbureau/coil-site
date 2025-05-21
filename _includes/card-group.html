@@ -2,14 +2,14 @@
     {% for project in page.project-card-group %}
     <li class="usa-card tablet:grid-col-6 project-card__{{project.class | slugify}}">
         {% if project.internal-link %}
-        <a href="{{site.baseurl}}/{{project.internal-link}}" class="text-no-underline" target="_blank">
+        <a href="/{{project.internal-link}}" class="text-no-underline" target="_blank">
             <div class="usa-card__container">
                 <div class="usa-card__header">
                     <h2 class="usa-card__heading">{{project.name}}</h2>
                 </div>
                 <div class="usa-card__media usa-card__media--exdent">
                     <div class="usa-card__img">
-                        <img src="{{site.baseurl}}/{{project.image}}" alt="{{project.alt}}" />
+                        <img src="/{{project.image}}" alt="{{project.alt}}" />
                     </div>
                 </div>
                 <div class="usa-card__body">
