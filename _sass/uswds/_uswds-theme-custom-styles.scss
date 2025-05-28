@@ -273,10 +273,10 @@ header.box-shadow-header {
 .coil-hero {
   @include u-margin-top(0);
   padding: 0 32px;
-  background: url(/assets/img/textures/mobile_homepage_static_background.png);
+  background: url(/assets/img/homepage/coil-intermediate-hero.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left top;
+  background-size: auto 60%;
+  background-position: bottom right;
   color: color('gray-cool-2');
   height: 800px;
   p {
@@ -288,24 +288,34 @@ header.box-shadow-header {
       padding-left: 24px;
     }
     @include at-media('desktop'){
-      width: 529px;
+      width: 513px;
       padding-bottom: 24px;
-      padding-left: 90px;
+      padding-left: 80px;
+      line-height: 133%;
+      font-weight: 400;
+      font-size: 32px;
+      span {
+        font-size: 14px;
+        margin-bottom: 16px;
+      }
     }
   }
 
   @include at-media('tablet') {
-    background-image: url(/assets/img/textures/desktop_landing_static_murmation_full.png);
-    background-position: right;
+    background-image: url(/assets/img/homepage/coil-intermediate-hero.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
+    background-position: right;
 
   }
   @include at-media('desktop') {
       padding: 0;
       display: flex;
-      min-height: 360px; //same height as coil-logo-container's width to make a square
+      // min-height: 360px; //was same height as coil-logo-container's width to make a square
       align-items: center;
+      min-height: 526px;
+      background-size: 45%;
+      background-position: right;
 
     }
     .coil-logo-container {
@@ -985,8 +995,88 @@ header.box-shadow-header {
   background-color: color('indigo-cool-90');
   color: color('gray-cool-2');
 
+.tablet-h2 {
+    font-size: 1.125rem;
+    @include u-margin-y(0);
+
+    @include at-media('tablet') {
+      font-weight: 600;
+    }
+
+    @include at-media('desktop') {
+      font-size: 1.5rem;
+    }
+  }
+
+  .tablet-p {
+    font-size: 0.75rem;
+    line-height: 18px;
+    max-width: 248px;
+    @include u-margin-top(1);
+    @include u-margin-bottom(2);
+
+    @include at-media('desktop') {
+      font-size: .875rem;
+      line-height: 21px;
+      max-width: 360px;
+    }
+  }
+
+  .tablet-btn {
+    display: inline-flex;
+    font-size: 0.75rem;
+    align-items: center;
+
+    @include at-media('desktop') {
+      font-size: 1rem;
+    }
+  }
+
+
   .cr-header {
     background: linear-gradient(0deg, rgba(0, 80, 216, 0) 0%, rgba(0, 80, 216, 0.26) 26%, rgba(21, 22, 34, 1) 52%);
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      padding-bottom: 16px;
+      margin-top: 16px;
+      font-size: 1rem;
+    }
+
+    @include at-media('tablet') {
+      padding-top: 64px;
+      padding-left: 40px;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        padding-top: 8px;
+        margin-top: 0;
+        width: 364px;
+        font-size: .875rem;
+      }
+    }
+
+    @include at-media('desktop') {
+      padding-top: 104px;
+      padding-left: 48px;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 24px;
+        width: 500px;
+        margin-bottom: 48px;
+      }
+    }
   }
 
   .coil-history {
@@ -1004,16 +1094,29 @@ header.box-shadow-header {
         // text-align: center;
         @include u-padding-x(1);
         @include u-padding-y(3);
-
+        h3 {
+          font-size: 1.125rem;
+          font-weight: 600;
+        }
+        p {
+          font-size: 0.75rem;
+          line-height: 18px;
+        }
+        @include at-media('tablet') {
+          p {
+          font-size: .875rem;
+          line-height: 21px;
+          }
+        }
         @include at-media('desktop') {
           @include grid-col(4);
           @include u-border(0);
           h3 {
-            font-size: 1.3rem;
-          }
-
-          p {
             font-size: 1.125rem;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 24px;
           }
         }
 
@@ -1062,11 +1165,10 @@ header.box-shadow-header {
     font-size: 1.125rem;
     @include u-margin-y(0);
     @include at-media('tablet') {
-          font-weight: normal;
+          font-weight: 600;
       }
     @include at-media('desktop') {
       font-size:1.5rem;
-      font-weight: 600;
       }
   }
   .tablet-p {
@@ -1075,9 +1177,14 @@ header.box-shadow-header {
     max-width: 248px;
     @include u-margin-top(1);
     @include u-margin-bottom(2);
-    @include at-media('desktop') {
+    @include at-media('tablet') {
         font-size: .875rem;
         line-height: 21px;
+        max-width: 360px;
+      }
+    @include at-media('desktop') {
+        font-size: 1rem;
+        line-height: 24px;
         max-width: 360px;
       }
   }
@@ -1086,6 +1193,10 @@ header.box-shadow-header {
     display: inline-flex;
     font-size: 0.75rem;
     align-items: center;
+    @include at-media('tablet') {
+        font-size: .875rem;
+        font-weight: 600;
+      }
     @include at-media('desktop') {
         font-size: 1rem;
       }
@@ -1123,7 +1234,7 @@ header.box-shadow-header {
         padding-top: 8px;
         margin-top: 0;
         width: 364px;
-        font-size: .75rem;
+        font-size: .875rem;
       }
       }
     @include at-media('desktop') {
@@ -1135,7 +1246,8 @@ header.box-shadow-header {
       }
 
       p {
-        font-size: .875rem;
+        font-size: 1rem;
+        line-height: 24px;
         width: 500px;
         margin-bottom: 48px;
       }
@@ -1186,7 +1298,10 @@ header.box-shadow-header {
             // ,img
             {
               grid-column: 3/-1;
-              object-fit: cover;
+              img {
+                object-fit: cover;
+              }
+
             }
             .content-block {
               grid-column: 2/3;
@@ -1256,7 +1371,11 @@ header.box-shadow-header {
 
     .usa-card__heading {
       text-align: start;
-      font-size: 1.3125rem;
+      font-size: 1.125rem;
+
+      @include at-media('tablet') {
+          font-size: 1rem;
+        }
     }
 
     .usa-card__body{
@@ -1266,8 +1385,11 @@ header.box-shadow-header {
     .usa-card__body p {
       font-size: 1rem;
 
-      @include at-media('desktop') {
+      @include at-media('tablet') {
         font-size: .875rem;
+      }
+      @include at-media('desktop') {
+        font-size: 1rem;
       }
     }
 
