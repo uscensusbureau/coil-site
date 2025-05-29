@@ -294,7 +294,7 @@ header.box-shadow-header {
 .coil-hero {
   @include u-margin-top(0);
   padding: 0 32px;
-  background: url(/assets/img/homepage/coil-splash-grid-cropped.png);
+  background: url(/assets/img/textures/coil-splash-grid-cropped.png);
   background-repeat: no-repeat;
   background-size: auto 60%;
   background-position: bottom right;
@@ -327,7 +327,7 @@ header.box-shadow-header {
   }
 
   @include at-media('tablet') {
-    background-image: url(/assets/img/homepage/coil-splash-grid-cropped.png);
+    background-image: url(/assets/img/textures/coil-splash-grid-cropped.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right;
