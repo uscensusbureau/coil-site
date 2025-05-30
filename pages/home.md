@@ -25,19 +25,19 @@ work-section:
 project-card-group:
   - name: StatVentures
     class: statventures
-    image: ../assets/uswds/img-custom/logos/statventures_placard_logo.png
+    image: /assets/uswds/img-custom/logos/statventures_placard_logo.png
     alt: StatVentures Logo
     blurb: The future of Census Bureau data.
     internal-link: statventures/
   - name: Data Usability
     class: data-usability
-    image: ../assets/uswds/img-custom/projects/mobile_homepage_data_usability_card.png
+    image: /assets/uswds/img-custom/projects/mobile_homepage_data_usability_card.png
     alt: Photo of people gathered around a laptop
     blurb: Improving access to data resources.
     internal-link: portfolio#program-data-usability
   - name: The Opportunity Project
     class: top
-    image: ../assets/uswds/img-custom/logos/top-full-white-logo.png
+    image: /assets/uswds/img-custom/logos/top-full-white-logo.png
     alt: The Opportunity Project Logo
     blurb: Digital tools for the public good.
     external-link: https://opportunity.census.gov/
