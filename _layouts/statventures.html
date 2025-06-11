@@ -8,8 +8,8 @@ class:
         <p>Current Challenges: Supply Chain & Address Geolocation</p>
     </div>
     <div class="logo-container">
-        <img src="{{ site.baseurl }}/assets/img/statventures{{page.bar.img}}" alt="StatVentures logo" class="logo-img-blue">
-        <!-- <img src="" alt="stat logo" class="logo-img-white"> -->
+        <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.bar.img}}' alt="StatVentures logo" class="logo-img-blue">
+        <!--tests dropping the relative_url keywork -->
     </div>
     <div class="bar--text">
         <p>Address Geolocation Phase 2 Applications Now Closed</p>
@@ -18,8 +18,8 @@ class:
 
 <header class="splash">
     <figure>
-        <img class="desktop" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img}}" alt="StatVentures Census Open Innovation Labs" data-proofer-ignore >
-        <img class="mobile-only" src="{{ site.baseurl }}/assets/img/statventures{{page.splash.img-tablet}}" alt="StatVentures Census Open Innovation Labs" data-proofer-ignore>
+        <img class="desktop" src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.splash.img}}' alt="StatVentures Census Open Innovation Labs" data-proofer-ignore >
+        <img class="mobile-only" src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.splash.img-tablet}}' alt="StatVentures Census Open Innovation Labs" data-proofer-ignore>
         <!-- <figcaption>Image Source: US Census Bureau</figcaption> -->
     </figure>
     <section class="content-container">
@@ -50,7 +50,7 @@ class:
         <p class="subheading">StatVentures tests and funds cutting-edge technologies and ideas, while providing direct partnership and feedback from the Census Bureau to make government adoption of new approaches faster and easier.</p>
     </section>
     <figure class="desktop">
-        <img src='{{ site.baseurl }}/assets/img/statventures{{page.splash-secondary.img}}' alt="Population count machine displaying the current population of the US as 206751918 Source: Library of Congress">
+        <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.splash-secondary.img}}' alt="Population count machine displaying the current population of the US as 206751918 Source: Library of Congress">
         <figcaption>Image Source: Library of Congress</figcaption>
     </figure>
 </header>
@@ -70,14 +70,14 @@ class:
             <div class="{{challenge.class}} width-full">
                 <div class="active-challenge-details content-container">
                     <div class="active-challenge-img-container">
-                        <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.mobile-img}}" alt="{{challenge.img-alt}}" class="active-challenge-img">
+                        <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{challenge.mobile-img}}' alt="{{challenge.img-alt}}" class="active-challenge-img">
                     </div>
                     <div class="active-challenge-content width-full">
                         <h3 class="display-none">{{challenge.phase-status}}</h3>
                         <h2>{{challenge.challenge-name}}</h2>
                         <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" |replace: "SITE.BASEURL", site.baseurl }}</p>
                         {% if challenge.button %}
-                        <a class="statventures-btn" href="{% unless challenge.button.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}" target="_blank">
+                        <a class="statventures-btn" href="{% unless challenge.button.isExternal %}/{% endunless %}{{challenge.button.src}}" target="_blank">
                             {% if challenge.button.isDownload %}
                                 <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24" aria-hidden="true"
                                     class="width-205 margin-right-05">
@@ -141,7 +141,7 @@ class:
                     <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" }}</p>
                     {% if challenge.button %}
                         <a class="statventures-btn"
-                            href="{% unless challenge.button.isExternal %}{{site.baseurl}}{% endunless %}{{challenge.button.src}}"
+                            href="{% unless challenge.button.isExternal %}/{% endunless %}{{challenge.button.src}}"
                             target="_blank">
                             {% if challenge.button.isDownload %}
                             <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24" aria-hidden="true"
@@ -156,7 +156,7 @@ class:
                     {% endif %}
                 </div>
                 <div class="active-challenge-img-container">
-                    <img src="{{ site.baseurl }}/assets/img/statventures{{challenge.desktop-img}}" alt="{{challenge.img-alt}}"  class="active-challenge-img">
+                    <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{challenge.desktop-img}}' alt="{{challenge.img-alt}}"  class="active-challenge-img">
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@ class:
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
                             <div class="usa-card__img phase-1-img">
-                                <img src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content.phase-1.icon}}" alt="" data-proofer-ignore/>
+                                <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.challenge-intro-card-content.phase-1.icon}}' alt="" data-proofer-ignore/>
                             </div>
                         </div>
 
@@ -211,7 +211,7 @@ class:
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
                             <div class="usa-card__img phase-2-img">
-                                <img src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content.phase-2.icon}}" alt="" data-proofer-ignore="" />
+                                <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.challenge-intro-card-content.phase-2.icon}}' alt="" data-proofer-ignore="" />
                             </div>
                         </div>
                         <div class="usa-card__footer">
@@ -226,7 +226,7 @@ class:
                         </div>
                         <div class="usa-card__media usa-card__media--inset">
                             <div class="usa-card__img phase-3-img">
-                                <img src="{{ site.baseurl }}/assets/img/statventures{{page.challenge-intro-card-content.phase-3.icon}}" alt="" data-proofer-ignore="" />
+                                <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.challenge-intro-card-content.phase-3.icon}}' alt="" data-proofer-ignore="" />
                             </div>
                         </div>
 
@@ -252,13 +252,14 @@ class:
         <h5 class="all-caps">StatVentures is a program of</h5>
         <h2 class="coil-logo-text-treatment"><span>CENSUS</span> <span>OPEN</span> <span>INNOVATION</span> <span>LABS</span></h2>
         <h3 class="footer-final-line">at the U.S. Census Bureau.</h3>
-        <img src="{{ site.baseurl }}/assets/img/statventures{{page.footer-horizontal-desktop.icon}}" alt="">
+        <img src='{{site.baseurl}}/assets/uswds/img-custom/statventures{{page.footer-horizontal-desktop.icon}}' alt="">
+        <!-- testing dropping relative_url -->
     </section>
     <section
     class="footer-section-bottom usa-media-block__footer grid-row display-flex flex-align-center padding-top-3 padding-bottom-6 tablet:padding-bottom-7 desktop:padding-y-4"
   >
     {% for link in site.data.navigation.footer %}
-      <a href="{% unless link.isExternal %}{{ site.baseurl }}/{% endunless %}{{ link.href }}"
+      <a href="{% unless link.isExternal %}/{% endunless %}{{ link.href }}"
         class="border-base-dark
           {% unless forloop.first %} border-left tablet:padding-left-2 {% endunless %}
           {% unless forloop.last %} tablet:padding-right-2 {% endunless %}

@@ -14,7 +14,7 @@ banner:
   text: "Website will be unavailable due to planned outage."
   href: https://www.challenge.gov/?challenge=statventures-geo-phase2
   isExternal: true
-# new img src "{{ site.baseurl }}/assets/img/statventures{{page.###.img/icon}}"
+# new img src "{{ site.baseurl }}/assets/uswds/img-custom/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
 
