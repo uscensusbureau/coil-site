@@ -5,13 +5,16 @@ class: home
 
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 <header class="coil-hero grid-row">
-  <div class="coil-logo-container display-none desktop:display-flex flex-column flex-justify-center flex-align-center">
-    <img class="coil-logo-img margin-top-3" src="{{'/assets/img/logos/coil-logo-l-navy.png' | relative_url}}" alt="Census Open Innovation Labs Logo">
-  </div>
   <div class="grid-col-fill height-full display-flex desktop:flex-column flex-wrap">
     <!-- add nav include here -->
     {% include coil-nav.html %}
-    <p class="">Trailblazing open government through cross-sector collaboration, design, and technology.</p>
+    <p class="desktop:display-none">
+      Trailblazing open government through cross-sector collaboration, design, and technology.
+    </p>
+    <p class="display-none desktop:display-inline">
+      <span class="text-uppercase display-inline-block">Census Open Innovation Labs</span><br />
+      Trailblazing open government through<br />cross-sector collaboration, design, and technology.
+    </p>
   </div>
 </header>
 
@@ -23,7 +26,8 @@ class: home
     {% include coil-project-large.html %}
     <section class="our-work-blurb">
       <h2>Who We Are</h2>
-      <p>Census Open Innovation Labs (COIL) is an office at the U.S. Census Bureau, with a portfolio of award-winning projects that continue to raise the bar for open innovation across government.</p>
+      <p>Census Open Innovation Labs (COIL) is an office at the U.S. Census Bureau, with a portfolio of award-winning
+        projects that continue to raise the bar for open innovation across government.</p>
     </section>
 
     <section class="margin-top-2 margin-bottom-5 desktop:display-none">
@@ -33,30 +37,30 @@ class: home
   <section class="our-values">
     <div class="our-values-circle">
       <div class="outer-circle">
-              <ul>
-                <li class="list-style-image-v1">
-                  <span>Creative Solutions to Sticky Problems</span>
-                </li>
-                <li class="list-style-image-v2">
-                  <span>Design & User Research</span>
-                </li>
-                <li class="list-style-image-v3">
-                  <span>Challenges, Tech Sprints, & Crowdsourcing</span>
-                </li>
-                <li class="list-style-image-v4">
-                  <span>Strategic Cross-Sector Collaborations</span>
-                </li>
-                <li class="list-style-image-v5">
-                  <span>Promoting Government Efficiency</span>
-                </li>
-                <li class="list-style-image-v6">
-                  <span>Event Design</span>
-                </li>
-              </ul>
+        <ul>
+          <li class="list-style-image-v1">
+            <span>Creative Solutions to Sticky Problems</span>
+          </li>
+          <li class="list-style-image-v2">
+            <span>Design & User Research</span>
+          </li>
+          <li class="list-style-image-v3">
+            <span>Challenges, Tech Sprints, & Crowdsourcing</span>
+          </li>
+          <li class="list-style-image-v4">
+            <span>Strategic Cross-Sector Collaborations</span>
+          </li>
+          <li class="list-style-image-v5">
+            <span>Promoting Government Efficiency</span>
+          </li>
+          <li class="list-style-image-v6">
+            <span>Event Design</span>
+          </li>
+        </ul>
         <div class="inner-circle">
           <section class="our-values-circle--text">
             <h2>Our Capabilities</h2>
-            <a href="{{ site.baseurl }}/about#capabilities" target="_blank" class="text-uppercase"> Explore</a>
+            <a href="/about#capabilities" target="_blank" class="text-uppercase"> Explore</a>
           </section>
         </div>
       </div>
@@ -65,11 +69,11 @@ class: home
   <div class="desktop:display-none capabilities-container">
     {% include coil-capabilities-section.html %}
     <div class="grid-container btn-contaner">
-      <a class="coil-btn display-inline-block" href="{{site.baseurl}}/about#capabilities" target="_blank">EXPLORE</a>
+      <a class="coil-btn display-inline-block" href="/about#capabilities" target="_blank">EXPLORE</a>
     </div>
   </div>
 </main>
 <div class="combined-footer">
-    {% include coil-collaborate-section.html %}
-    {% include coil-footer.html %}
+  {% include coil-collaborate-section.html %}
+  {% include coil-footer.html %}
 </div>
