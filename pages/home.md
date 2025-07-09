@@ -8,7 +8,7 @@ typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
 banner:
   text: "Website will be unavailable due to planned outage."
-  href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme 
+  href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme
   isExternal: true
 
 hero:
@@ -25,7 +25,7 @@ work-section:
 project-card-group:
   - name: StatVentures
     class: statventures
-    image: /assets/uswds/img-custom/logos/statventures_placard_logo.png
+    image: /assets/uswds/img-custom/logos/horizontal_white_statventures.png
     alt: StatVentures Logo
     blurb: The future of Census Bureau data.
     internal-link: statventures/
@@ -43,7 +43,7 @@ project-card-group:
     external-link: https://opportunity.census.gov/
 
 coil-capabilities:
-  - name: Creative Solutions to Sticky Problems
+  - name: Creative New Approaches
   - name: Design & User Research
   - name: Challenges, Tech Sprints, & Crowdsourcing
   - name: Strategic Cross-Sector Collaborations
