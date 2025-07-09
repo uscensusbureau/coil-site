@@ -13,7 +13,7 @@
             {% endif %}
             <ul class="usa-list usa-list--unstyled display-flex flex-row flex-wrap capabilities-list">
                 {% for capability in capabilities %}
-                <li class="border-top grid-col-full margin-y-3">
+                <li class="border-top grid-col-full margin-y-3 desktop:margin-y-1">
                     {% if page.name == "about.md" %}
                     <h3>{{ capability.name }}</h3>
                     <p>{{ capability.blurb }}</p>

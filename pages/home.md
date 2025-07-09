@@ -25,7 +25,7 @@ work-section:
 project-card-group:
   - name: StatVentures
     class: statventures
-    image: /assets/uswds/img-custom/logos/statventures_placard_logo.png
+    image: /assets/uswds/img-custom/logos/horizontal_white_statventures.png
     alt: StatVentures Logo
     blurb: The future of Census Bureau data.
     internal-link: statventures/
