@@ -11,10 +11,10 @@ header:
 
 coil-capabilities:
   - name: |-
-      Creative Solutions to Sticky Problems
+      Creative New Approaches
     blurb: We help you identify unique solutions when well-worn paths are unsuccessful.
   - name: |-
-      Design & User Research<br><br>
+      Design & User Research<br>
     blurb: We develop and implement world-class branding, design, digital tools, and websites. We also conduct rapid, rigorous user research to diagnose user experience (UX) problems and make improvements for data consumers.
   - name: |-
       Challenges, Tech Sprints, & Crowdsourcing
@@ -26,6 +26,6 @@ coil-capabilities:
       Promoting Government Efficiency<br>
     blurb: We prototype repeatable and scalable innovations – such as processes, use of high value legal authorities, and hiring strategies – at the Census Bureau and can help you determine how to leverage them in your work.
   - name: |-
-      Event Design<br><br>
+      Event Design<br>
     blurb: We create award-winning, highly engaging events. If you need a cross-sector or internal conference, demo day, workshop, or brainstorm expertly facilitated to deliver insights, ideas, strategies, conclusions, or consensus, COIL's world-class facilitators can help design and implement sessions for your team.
 ---
