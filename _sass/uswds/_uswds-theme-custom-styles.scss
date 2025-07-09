@@ -1279,6 +1279,10 @@ header.box-shadow-header {
         }
 
         @include at-media('tablet') {
+          h3 {
+            font-size: 1rem;
+          }
+
           p {
             font-size: 1rem;
             // line-height: 100%;
@@ -1368,7 +1372,7 @@ header.box-shadow-header {
     @include u-margin-bottom(2);
 
     @include at-media('tablet') {
-      font-size: .875rem;
+      font-size: 1rem;
       line-height: 21px;
       max-width: 360px;
     }
@@ -1432,7 +1436,7 @@ header.box-shadow-header {
         padding-top: 8px;
         margin-top: 0;
         width: 364px;
-        font-size: .875rem;
+        // font-size: .875rem;
       }
     }
 
@@ -1607,7 +1611,7 @@ header.box-shadow-header {
       font-size: 1rem;
 
       @include at-media('tablet') {
-        font-size: .875rem;
+        font-size: 1rem;
       }
 
       @include at-media('desktop') {
