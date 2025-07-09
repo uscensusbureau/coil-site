@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>How We Built a Brand System for StatVentures, the U.S. Census Bureau’s First Venture Fund | Census Open Innovation Labs</title>
+
+
+
+<meta name="description" content="Trailblazing open government through cross-sector collaboration, design, and technology.">
+<meta property="og:description" content="Trailblazing open government through cross-sector collaboration, design, and technology.">
+
+
+
+<link rel="shortcut icon" type="image/ico"
+  href="/pr-preview/pr-359/assets/uswds/img-custom/favicons/favicon.ico">
+
+<link rel="icon" type="image/png"
+  href="/pr-preview/pr-359/assets/uswds/img-custom/favicons/favicon.png">
+
+<link rel="icon" type="image/png"
+  sizes="192x192"
+  href="/pr-preview/pr-359/assets/uswds/img-custom/favicons/favicon-192.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  href="/pr-preview/pr-359/assets/uswds/img-custom/favicons/favicon-57.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="72x72"
+  href="/pr-preview/pr-359/assets/uswds/img-custom/favicons/favicon-72.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="114x114"
+  href="/pr-preview/pr-359/assets/uswds/img-custom/favicons/favicon-114.png">
+
+<link rel="apple-touch-icon-precomposed" type=""
+  sizes="144x144"
+  href="/pr-preview/pr-359/assets/uswds/img-custom/favicons/favicon-144.png">
+
+
+<!-- cards -->
+<meta property="og:title" content="How We Built a Brand System for StatVentures, the U.S. Census Bureau’s First Venture Fund | Census Open Innovation Labs">
+
+<meta property="og:url" content="/statventures-brand/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- end of OG/FB cards -->
+    
+
+
+
+<link rel="stylesheet"
+  href="/pr-preview/pr-359/assets/uswds/css/styles.css"
+  media="screen">
+
+    
+      
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5HT6RV40X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  // `forceSSL` was used for analytics.js (the older Google Analytics script). It isn't documented for gtag.js, but the term occurs in the gtag.js code; figure it doesn't hurt to leave it in. -@afeld, 5/29/19
+  gtag('config', 'G-E5HT6RV40X', { 'anonymize_ip': true, 'forceSSL': true });
+</script>
+
+
+
+<!-- Digital Analytics Program roll-up, see https://analytics.usa.gov for data -->
+<script async id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=CEN"></script>
+
+    
+  </head>
+  <body class="blog  ">
+    <section class="usa-banner flex-align-center" aria-label="Official government website">
+  <div class="usa-accordion flex-justify-center">
+    <header class="usa-banner__header">
+      <div class="usa-banner__inner flex-justify-center">
+        <div class="grid-col-auto">
+          <img class="usa-banner__header-flag" src="/pr-preview/pr-359/assets/uswds/img/us_flag_small.png" alt="U.S. flag">
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+        </div>
+        <button class="usa-accordion__button usa-banner__button"
+          aria-expanded="false" aria-controls="gov-banner-default">
+          <span class="usa-banner__button-text">Here’s how you know</span>
+        </button>
+      </div>
+    </header>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/pr-preview/pr-359/assets/uswds/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">
+          <div class="">
+            <p>
+              <strong>
+                Official websites use .gov
+</strong>
+              <br/>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/pr-preview/pr-359/assets/uswds/img/icon-https.svg " role="img" alt="" aria-hidden="true">
+          <div class="">
+            <p>
+              <strong>
+                Secure .gov websites use HTTPS
+</strong>
+              <br/>
+              A <strong>lock</strong> (
+<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title-default banner-lock-description-default" focusable="false"><title id="banner-lock-title-default">Lock</title><desc id="banner-lock-description-default">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>
+) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- based on 18F blog/index.html -->
+  <!-- this is what get compiled to make the page. Kind like main.scss it can include base styles + partcials in the form of includes -->
+  <!-- because base has the coil-nav + coil-footer the content will be wrapped around it -->
+  <!-- This creates a layout that is to be linked in an md file -->
+
+
+
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<!-- <a class="usa-skipnav" href="#main-content">Skip to main content</a> -->
+
+
+
+<header class="usa-header usa-header--basic minh-15 box-shadow-header">
+  <div class="usa-nav-container maxw-full padding-left-0 margin-top-4 desktop:margin-top-0" id="coil-navbar-container">
+    <div class="usa-navbar border-0">
+      <div class="usa-logo margin-left-0 minh-9 margin-top-205" id="coil-logo">
+        <!-- <em class="usa-logo__text"><a href="/pr-preview/pr-359/" title="Home">COIL</a></em> -->
+        <a class="width-15 display-inline-block" href="/" title="Home">
+          <img src="/pr-preview/pr-359/assets/uswds/img-custom/logos/coil_logo_l-white.png" alt="Census Open Innovation Labs Homepage"
+            class="width-15 padding-3 display-inline-block">
+        </a>
+      </div>
+      <button type="button" class="usa-menu-btn">
+        <pre class="margin-0 padding-05 font-family-sans">
+          Menu
+          <span class="font-sans-xl hamburger-icon display-inline-block">☰</span>
+        </pre>
+        </span>
+      </button>
+      <!-- <button type="button" class="usa-menu-btn">
+        <span class="menu-btn-content-container display-inline-block">Menu
+          <span class="font-sans-xl hamburger-icon display-inline-block">☰</span>
+        </span>
+      </button> -->
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button type="button" class="usa-nav__close">
+        <img src="/pr-preview/pr-359/assets/uswds/img-custom/usa-icons/close.svg" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-dark-background usa-accordion" style="background:#151622;">
+        <li class="usa-nav__primary-item">
+          <a href="/" class="usa-nav-link"><span>Home</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a href="/about" class="usa-nav-link"><span>About</span></a>
+        </li>
+        <li class="usa-nav__primary-item">
+                    <a href="/portfolio" class="usa-nav-link"><span>Portfolio</span></a>
+                </li>
+        <li class="usa-nav__primary-item">
+          <a href="mailto:census.openinnovationlabs@census.gov?subject=Collaborate with COIL" class="usa-nav-link border border-white"
+            style="border-bottom:1px white solid; font-weight: normal;"><span>Collaborate With
+              Us</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  
+<header class="cr-header usa-section">
+    <div class="grid-container grid-row width-full desktop:height-mobile">
+        <div class="grid-col display-flex flex-column flex-justify-center">
+            
+        </div>
+    </div>
+</header>
+  <article class="post grid-container statventures-brand">
+    <header class="blog-post-header display-flex flex-column">
+        <div class="post-img-container">
+            <img class="post-img" src="/pr-preview/pr-359/assets/img/blog/features/statventures-brand.png" alt="">
+        </div>
+        <section class="post-header-intro">
+            <h3 class="post-project post-project-StatVentures">
+                <a href="/pr-preview/pr-359/tag/statventures/"class="usa-label text-white post-project-statventures">
+                    StatVentures
+                </a>
+            </h3>
+            <h1 class="post-title">How We Built a Brand System for StatVentures, the U.S. Census Bureau’s First Venture Fund</h1>
+            <p class="post-byline">
+                By 
+                Alessandra Hartkopf, Senior Designer & Digital Team Lead
+                
+                on <time>October 23, 2024</time>
+            </p>
+            <p class="post-excerpt">A behind-the-scenes look at COIL’s newest brand that nods to 19th-century technology with a 21st-century approach.</p>
+        </section>
+    </header>
+    <section class="post-content">
+     <p>In 2022, <a href="https://coil.census.gov/">COIL</a> launched <a href="https://coil.census.gov/statventures/">StatVentures</a>, a first-ever venture fund for the Census Bureau. The program took years of careful planning and research, but one of the things we get the most questions about is the branding. Read on for a step-by-step, behind-the-scenes look at how we developed the visual design for StatVentures that brought the “sizzle” to the program operation’s “steak”.</p>
+
+<h2 id="step-1-step-back">Step 1: Step Back</h2>
+<p>Our first step in designing a brand system for any government program: step back and reflect on your audience and your goals.</p>
+
+<p>For every new effort, COIL’s digital team (which includes me, a UX researcher and designer, a graphic and interaction designer, and a front-end web developer) takes a measured approach. We first meet with <a href="https://coil.census.gov/about/">COIL’s leadership</a> to understand our shared objectives and align on key messages. This conversation (or series of conversations) informs our guiding document: “The Creative Brief.”</p>
+
+<p>The creative brief outlines the project overview, the digital team’s deliverables, audiences, key messages, the tone we aim to strike, the project’s timeline and team roles, and offers some points of inspiration to get our design brainstorm rolling. The creative brief guides us through the project and we refer back to it constantly to ensure we’re meeting deadlines, that our designs are communicating the project’s key messages and tone, and most crucially: that we’re addressing our audiences’ needs.</p>
+
+<p>We identified a few key groups that we wanted to reach with the StatVentures program and brand system. Those were:</p>
+<ul>
+  <li>Technologists and startups looking for opportunities to build commercial partnerships and business relationships with the federal government</li>
+  <li>Smart people or organizations in adjacent industries who like to compete</li>
+  <li>People or organizations who have a potential for a great solution but have never thought of working with the government before</li>
+</ul>
+
+<p>We’ve also done quite a bit of foundational work at COIL to classify four key <a href="https://guides.18f.gov/methods/decide/personas/">personas</a> (fictional representatives of our target audiences). While our programs aim to reach all of our target audiences at some time in their user journeys, we often pinpoint a “primary audience” for our designs. For StatVentures, that is “Technologist Tim”, who is a data analyst for a social impact healthtech company. He is a frequent user of Census data to understand his company’s target markets and help the product team build user-friendly tools. Tim has questions about data and ideas of how to improve Census data delivery.</p>
+
+<h2 id="step-2-a-shared-vision">Step 2: A Shared Vision</h2>
+
+<p>Next, after aligning on StatVentures’ audiences and key messages, we gathered our resources to inform a shared design vision.</p>
+
+<p>We had a few parameters for the brand system. Firstly, StatVentures needs to fit neatly into the COIL brand with clear association to the COIL design system, including typography, color palette, and wordmark.</p>
+
+<figure class="desktop:display-none">
+    <img src="/pr-preview/pr-359/assets/img/blog/in-post-image/statventures-brand/svblog_image1_1.jpg" alt="COIL brand system materials" />
+    <img src="/pr-preview/pr-359/assets/img/blog/in-post-image/statventures-brand/svblog_image1_2.jpg" alt="COIL brand system materials" />
+    <figcaption>The COIL brand system is an extension of the <a href="https://www.census.gov/about/policies/style-guide.html">Census Bureau brand system</a> – including adaptations of its corporate color palette for print and web products.</figcaption>
+</figure>
+<figure class="display-none desktop:display-block">
+    <img src="/pr-preview/pr-359/assets/img/blog/in-post-image/statventures-brand/svblog_image1.jpg" alt="COIL brand system materials" />
+    <figcaption>The COIL brand system is an extension of the <a href="https://www.census.gov/about/policies/style-guide.html">Census Bureau brand system</a> – including adaptations of its corporate color palette for print and web products.</figcaption>
+</figure>
+
+<p>Secondly, all of our web designs and websites use the <a href="https://designsystem.digital.gov/">U.S. Web Design System</a>, which informs our web colors, web components, and web accessibility (a core tenet of our web development).</p>
+
+<p>Finally, we considered the visual associations between other federal venture capital initiatives to their umbrella organizations: like <a href="https://www.afrl.af.mil/RG/">AFWERX</a> at the U.S. Air Force, the <a href="https://www.diu.mil/">Defense Innovation Unit</a> at the Department of Defense, and <a href="https://www.iqt.org/">In-Q-Tel</a> (not a government entity but originally launched by the CIA), considered by many at COIL to be the gold standard for government venture funds.</p>
+
+<p>With these criteria in mind, we embarked on multiple brainstorms. We aimed to strike a chord between COIL’s visual values (e.g. trustworthy, official, polished, approachable, fun, and positive) and StatVentures’ evocative characteristics (e.g. analytical, speedy, efficient, technical, streamlined, and low-risk). The marriage of these values is reflected in our designs that are intended to be both engaging and refined, striking a balance between confident and approachable.</p>
+
+<p>Our brainstorms led us to a shared vision for the StatVentures brand: a nod to the Census Bureau’s 19th-century technological innovation with a 21st-century approach.</p>
+
+<h2 id="step-3-find-inspiration-at-your-agency">Step 3: Find Inspiration at Your Agency</h2>
+<p>The Census Bureau is rich with inspirational individuals, accomplishments, and innovations from which to draw. To inform the StatVentures brand, we narrowed in on the Census Bureau’s <a href="https://www.census.gov/about/history/bureau-history/census-innovations.html">long history of technology innovation</a>.</p>
+
+<div class="display-flex wrap-container">
+<figure class="image-wrap-container">
+<img src="/pr-preview/pr-359/assets/img/blog/in-post-image/statventures-brand/svblog_image2.jpg" alt="U.S. Census Bureau staff using Hollerith electrical tabulator" class="imgage-wrap" />
+<figcaption> <a href="https://www.loc.gov/item/2007678038/">Image</a></figcaption>
+</figure>
+<div class="text-wrap-container">
+<p>
+As far back as the late 1800s, the Census Bureau posed challenges to the American people to identify more efficient methods to process unprecedented data. After the 1890 Decennial Census, Herman Hollerith, a former Census Bureau employee, answered the call with his electro-mechanical tabulating machine.
+</p>
+<p>
+<a href="https://www.census.gov/library/photos/1880/herman-hollerith.html">The Hollerith Machine</a> revolutionized the bureau’s data processing* and some 133 years later, served as the brand inspiration for StatVentures, the Census Bureau’s newest challenge to the American people.
+</p>
+
+<p>
+Honoring history when designing a brand for government initiatives conveys a few central messages. We communicate credibility, continuity, and reliability to the public; and we highlight the Census Bureau’s long-held core values, principles, and goals.
+</p>
+</div>
+</div>
+
+<p>We aimed to honor the Census Bureau’s past achievements while ensuring the brand reflects StatVentures’ core traits and goals. By blending history with modern design, we convey a sense of progress and innovation in this century while maintaining a strong foundation rooted in past centuries.</p>
+
+<p><em>*Side note: While we took inspiration from the Hollerith Machine’s mechanics and innovations, that machine transformed data</em> processing <em>methods within the bureau, rather than the innovations in data</em> collection <em>that</em> <em>we currently seek</em> <em>at StatVentures.</em></p>
+
+<h2 id="step-4-solicit-feedback-iterate-repeat">Step 4: Solicit Feedback, Iterate, Repeat</h2>
+<p>Inspired by Census Bureau technological innovation and machinery, we next embarked on designing a first draft of the brand system. To ensure we were on the right path and meeting our core objectives, we solicited feedback from senior leadership. We employed an “I Like, I Wish, I Wonder” critique format in which participants noted what they liked about the design, what they wished to see, and what they wondered we could try.</p>
+
+<figure>
+    <img src="/pr-preview/pr-359/assets/img/blog/in-post-image/statventures-brand/svblog_image3.png" alt="Draft of StatVentures' brand system" />
+    <figcaption>The first draft of the StatVentures’ brand system, which was refined after a feedback session with the program’s senior leadership.</figcaption>
+</figure>
+
+<p>Insights from the group were fundamental to later iterations and the final version of the brand you see today. Feedback included requests for a more serious color palette that downplayed the primary color scheme and added deeper blues, suggestions to revise the logo treatments to be less cluttered and “cutesy”, and a clear consensus for references to the enumeration machines to be more overt.</p>
+
+<p>As we considered our target audiences of tech innovators and statistically-minded individuals, we refined the logo treatments, color palette, and infused elements of the bureau’s technological history throughout StatVentures’ logo, iconography, and imagery.</p>
+
+<p>Take a closer look at <a href="https://www.si.edu/object/hollerith-tabulating-machine%3Anmah_694410">archival images of Hollerith’s invention</a> to see many references to its intricate mechanics in StatVentures’ final brand system. You’ll see our homage to the machine’s tabulator dials in the StatVentures logo letter “A”, in the pattern iconography splashed across our digital assets (and this blog post’s header), and in the markers indicating the three phases of every StatVentures challenge.</p>
+
+<figure>
+    <img src="/pr-preview/pr-359/assets/img/blog/in-post-image/statventures-brand/svblog_image4.png" alt="A close up of the Hollerith machine, the “A” in the StatVentures logo, and the Phase 2 “clock” icongraphy" />
+    <figcaption class="text-wrap"> A close up of the <a href="https://www.loc.gov/item/2007678038/">Hollerith machine</a>, the “A” in the StatVentures logo, and the Phase 2 “clock”.</figcaption>
+</figure>
+
+<p>We’ve also manipulated and <a href="https://coil.census.gov/statventures/">incorporated</a> historic images of Census tabulators at work on the next iterations of Census Bureau machines – the <a href="https://www.census.gov/history/www/innovations/technology/univac_i.html">UNIVAC</a> and <a href="https://www.census.gov/about/history/bureau-history/census-innovations/technology/fosdic.html">FOSDIC</a> – that harken back to the bureau’s past but add a futuristic texture that evokes data points.</p>
+
+<figure>
+    <img src="/pr-preview/pr-359/assets/img/blog/in-post-image/statventures-brand/svblog_image5.jpg" alt="A before and after example of an altered historic image used in StatVentures materials." />
+    <figcaption class="text-wrap"> A before and after example of an altered historic <a href="https://www.nist.gov/timeline#event-774351">image</a> used in StatVentures materials.</figcaption>
+</figure>
+
+<p>While taking inspiration from the bureau’s accomplished history, the StatVentures brand is rooted in our present and oriented toward our future. It seamlessly integrates into the existing COIL brand, aligning with our design system’s typography and color palette while also communicating to the public our collective potential.</p>
+
+<p>We hope this blog post will serve as a starter guide on how to build a brand system for government programs. Until then, don’t be a stranger: drop us a line with your thoughts on design in government.</p>
+
+<h2 id="how-you-can-use-this-process-in-your-work">How You Can Use This Process in Your Work</h2>
+<p>Here are some tangible steps to take back to your agency when designing a brand for government:</p>
+
+<ul>
+  <li><strong>Write a Creative Brief</strong> including the project’s overview, deliverables, audiences, key messages, tone, timeline, and team roles – and use it as a guide throughout the project.</li>
+  <li><strong>Identify Your Initiative’s Target Audience(s).</strong> People should be at the center of design, decision-making, problem solving, and participatory processes. Identify whom you most want your brand to reach and design materials that will entice and appeal to them.</li>
+  <li><strong>Find Visual Inspiration at Your Agency.</strong> Look to your agency’s core values, accomplishments, and history for inspiration.</li>
+  <li><strong>Solicit Feedback.</strong> Reach out to your senior leadership, program champions, and stakeholders for structured feedback on your ideas and first drafts. Use frameworks such as “I like, I wish, I wonder…” to help stakeholders provide useful, constructive feedback.</li>
+  <li><strong>If you can…Hire Design Talent!</strong> Not to put the cart before the horse – don’t forget to source design talent! If you have the budget, hiring a visual designer onto your team is invaluable to building impactful materials that inspire your audiences to take action. Even if you don’t have a dedicated designer available to you, you can adopt most of these suggestions as a program designer!</li>
+</ul>
+
+<h2 id="more-about-statventures">More About StatVentures</h2>
+
+<p>StatVentures scouts technology through collaborations with innovators outside of government to ensure the U.S. Census Bureau continues to provide the highest quality data.</p>
+
+<p>StatVentures is a program of <a href="https://coil.census.gov/">Census Open Innovation Labs</a>, at the U.S. Census Bureau.</p>
+
+<p>View our current challenges and learn more about the program at: <a href="http://coil.census.gov/statventures">coil.census.gov/statventures</a></p>
+
+    </section>
+</article>
+<nav aria-label="Pagination" class="usa-pagination grid-container" id="post-pagination">
+    <ul class="usa-pagination__list width-full">
+        
+        
+        <li class="usa-pagination__item  flex-1">
+            <a href="/pr-preview/pr-359/welcome/"
+                class="usa-pagination__link usa-pagination__previous-page width-full flex-justify-start"
+                aria-label="Previous page">
+                <img src="/pr-preview/pr-359/assets/img/usa-icons-bg/arrow_back--white.svg"
+                    role="img" alt="Previous" aria-hidden="true" class="usa-pagination__arrow display-block" />
+                <span class="usa-pagination__link-text">Previous</span>
+            </a>
+        </li>
+        
+
+        
+        
+        <li class="flex-1">
+        </li>
+        
+    </ul>
+</nav>
+</main>
+<div class="combined-footer">
+  <section id="collaborate-section">
+        <div class="grid-row flex-align-center desktop:flex-justify-center margin-top-7 collaborate-section-container">
+            <h2 class="margin-y-0">Collaborate With Us</h2>
+            <a href="mailto:census.openinnovationlabs@census.gov?subject=Collaborate with COIL" class="text-uppercase text-white coil-btn ">Email COIL</a>
+            <img class="grid-col-2 display-none desktop:display-inline collaborate-section-icon" src="/pr-preview/pr-359/assets/uswds/img-custom/icons/about_collaborate_email_asset.png" alt="">
+            <a class="text-white display-none desktop:display-inline" target="_blank" href="mailto:census.openinnovationlabs@census.gov?subject=Collaborate with COIL"  rel="noopener">census.openinnovationlabs@census.gov</a>
+
+        </div>
+</section>
+  <footer class="footer-info" role="contentinfo">
+  <div
+    class="footer-section-bottom usa-media-block__footer grid-row display-flex desktop:flex-row flex-column grid-container desktop:flex-align-center padding-top-4 padding-bottom-7"
+  >
+    
+      <a href="/pr-preview/pr-359/"
+        class="text-white
+          
+           padding-right-2 
+        "
+      >Census Open Innovation Labs</a>
+    
+      <a href="https://www.census.gov/about/policies/privacy.html"
+        class="text-white
+           border-left 
+           padding-right-2 
+        "
+      >Privacy</a>
+    
+      <a href="https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility"
+        class="text-white
+           border-left 
+           padding-right-2 
+        "
+      >Accessibility</a>
+    
+      <a href="https://github.com/census-coil/coil-site"
+        class="text-white
+           border-left 
+          
+        "
+      >GitHub</a>
+    
+  </div>
+</footer>
+</div>
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/pr-preview/pr-359/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+
+  </body>
+</html>
