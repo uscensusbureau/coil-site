@@ -7,7 +7,7 @@ class: coil
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
 
 banner:
-  text: "Missed Census Open Innovation Summit 2024? Watch the recordings on YouTube!"
+  text: "Website will be unavailable due to planned outage."
   href: https://www.youtube.com/watch?v=Jj6WyVAmvmQ&list=PLewV-zKXDZkghdjPUCmmU02T7xI2dUPme
   isExternal: true
 
@@ -25,30 +25,30 @@ work-section:
 project-card-group:
   - name: StatVentures
     class: statventures
-    image: ../assets/img/logos/statventures_placard_logo.png
+    image: /assets/uswds/img-custom/logos/horizontal_white_statventures.png
     alt: StatVentures Logo
     blurb: The future of Census Bureau data.
     internal-link: statventures/
   - name: Data Usability
     class: data-usability
-    image: ../assets/img/projects/mobile_homepage_data_usability_card.png
+    image: /assets/uswds/img-custom/projects/mobile_homepage_data_usability_card.png
     alt: Photo of people gathered around a laptop
     blurb: Improving access to data resources.
     internal-link: portfolio#program-data-usability
   - name: The Opportunity Project
     class: top
-    image: ../assets/img/logos/top-full-white-logo.png
+    image: /assets/uswds/img-custom/logos/top-full-white-logo.png
     alt: The Opportunity Project Logo
     blurb: Digital tools for the public good.
     external-link: https://opportunity.census.gov/
 
 coil-capabilities:
-  - name: Creative Solutions to Sticky Problems
+  - name: Creative New Approaches
   - name: Design & User Research
   - name: Challenges, Tech Sprints, & Crowdsourcing
   - name: Strategic Cross-Sector Collaborations
-  - name: Policy Innovation
-  - name: Facilitation
+  - name: Promoting Government Efficiency
+  - name: Event Design
 ---
 
 If you’re interested in participating in TOP, please [fill out this interest form]({{ site.top-form }}).
