@@ -141,7 +141,7 @@ class:
                     <p>{{ challenge.details | markdownify | remove: "<p>" | remove: "</p>" }}</p>
                     {% if challenge.button %}
                         <a class="statventures-btn"
-                            href="{% unless challenge.button.isExternal %}/{% endunless %}{{challenge.button.src}}"
+                            href="{% unless challenge.button.isExternal %}{{site.baseurl}}/{% endunless %}{{challenge.button.src}}"
                             target="_blank">
                             {% if challenge.button.isDownload %}
                             <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24" aria-hidden="true"
