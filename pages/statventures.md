@@ -71,11 +71,11 @@ active-challenges:
     desktop-img: /icons/statventures-tablet-geolocation-green-clock.png
     img-alt: phase clock
     banner: Address Geolocation Challenge
-    phase-status: PHASE 2 APPLICATIONS NOW CLOSED
+    phase-status: PHASE 2 WINNERS ANNOUNCED
     challenge-name: Address Geolocation Challenge
     details: The Address Geolocation Challenge seeks to innovate the ways the Census Bureau geolocates residential addresses, especially in rural and remote locations.<br><br>
 
-      [Phase 2](https://www.challenge.gov/?challenge=statventures-geo-phase2) of this competition has closed. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for the announcement of Phase 2 winners, and opportunities to apply to Phase 3.
+      [Phase 2](https://www.challenge.gov/?challenge=statventures-geo-phase2) winners have been announced. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) to learn about future opportunities to participate in a StatVentures competition.
     button:
       text: Meet the Phase 1 Winners
       src: /assets/files/statventures-geolocation-phase1-winners.pdf
@@ -92,7 +92,7 @@ active-challenges:
     challenge-name: Supply Chain Challenge
     details: The Supply Chain Challenge seeks ideas to radically improve the way the Census Bureau measures supply chains, including manufacturing, imports and exports, transportation and delivery of goods, and other key topics.<br><br>
 
-      [Phase 2](https://www.challenge.gov/?challenge=statventures-supply-chain-p2) winners have been announced. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) for opportunities to apply to Phase 3.
+      [Phase 2](https://www.challenge.gov/?challenge=statventures-supply-chain-p2) winners have been announced. [Subscribe to updates](https://public.govdelivery.com/accounts/USCENSUS/signup/38054) to learn about future opportunities to participate in a StatVentures competition.
     button:
       text: Meet the Phase 2 Winners
       src: /assets/files/statventures-supply-chain-phase2-winners.pdf
