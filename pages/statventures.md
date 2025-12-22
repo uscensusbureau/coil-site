@@ -11,9 +11,9 @@ font:
   extra-bold: /poppins/Poppins-ExtraBold.ttf
 # names are based on class names in layout
 banner:
-  text: "Website will be unavailable due to planned outage."
-  href: https://www.challenge.gov/?challenge=statventures-geo-phase2
-  isExternal: true
+  text: "Meet the Address Geolocation Phase 2 Winners"
+  href: /assets/files/statventures-geolocation-phase2-winners.pdf
+  isExternal: false
 # new img src "{{ site.baseurl }}/assets/uswds/img-custom/statventures{{page.###.img/icon}}"
 bar:
   img: /logos/Stacked_Blue_StatVentures.png
